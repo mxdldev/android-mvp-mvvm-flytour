@@ -8,7 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/lib_common" />
+            <option value="$PROJECT_DIR$/module_app" />
+            <option value="$PROJECT_DIR$/module_find" />
+            <option value="$PROJECT_DIR$/module_main" />
+            <option value="$PROJECT_DIR$/module_me" />
+            <option value="$PROJECT_DIR$/module_trip" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

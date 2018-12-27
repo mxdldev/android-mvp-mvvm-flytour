@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">module_main</string>
+    <string name="title_tour">出游</string>
+    <string name="title_find">发现</string>
+    <string name="title_my">我的</string>
+</resources>
