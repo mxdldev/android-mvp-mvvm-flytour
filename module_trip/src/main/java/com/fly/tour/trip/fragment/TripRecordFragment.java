@@ -41,9 +41,6 @@ import com.fly.tour.trip.view.RecordTopBar;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * Description: <出游记录><br>
@@ -52,13 +49,12 @@ import butterknife.OnClick;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class TripRecordFragment extends Fragment implements RecordToolBar.RecordToolBarClickListener{
+public class TripRecordFragment extends BaseFragment implements RecordToolBar.RecordToolBarClickListener {
     public static final String TAG = TripRecordFragment.class.getName();
     RecordTopBar mRecordTopBar;
     ImageButton mBtnStart;
     RecordToolBar mRecordToolBar;
     TextureMapView mMapView;
-
     private Messenger mServiceMessenger;
     private TrackMoveService mTrackMoveHandlerThread;
     private Polyline mMovePolyline;// 移动轨迹线
@@ -70,6 +66,40 @@ public class TripRecordFragment extends Fragment implements RecordToolBar.Record
     private Float distance = 0f;//总距离(米)
     long startTime = 0;//开始时间（毫秒）
     long totalTime = 0;//总时间（毫秒）
+
+
+    public static TripRecordFragment newInstance() {
+        return new TripRecordFragment();
+    }
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mMapView.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View initView(LayoutInflater inflater, ViewGroup container) {
+        View view = inflater.inflate(R.layout.fragment_trip_record, container, false);
+        mRecordTopBar = view.findViewById(R.id.view_topbar);
+        mBtnStart = view.findViewById(R.id.btn_start);
+        mRecordToolBar = view.findViewById(R.id.view_toolbar);
+        mMapView = view.findViewById(R.id.map);
+        mRecordToolBar.setListener(this);
+        mMap = mMapView.getMap();
+        mBtnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onStartClick();
+            }
+        });
+        return view;
+    }
+
+    @Override
+    public void initData(Bundle savedInstanceState) {
+        startTrackCollectService();
+        startTrackMoveService();
+    }
 
     private Handler mClientHandler = new Handler() {
         @Override
@@ -124,7 +154,7 @@ public class TripRecordFragment extends Fragment implements RecordToolBar.Record
                     if (msg.obj instanceof Float) {
                         Log.v("MYTAG", "distance update start...");
                         Float value = (Float) msg.obj;
-                        Log.v("MYTAG", "distance："+value);
+                        Log.v("MYTAG", "distance：" + value);
                         distance += value;
                         mRecordTopBar.setTxtDistance(NumberUtils.keepPrecision(distance / 1000, 2) + "");
                     }
@@ -132,13 +162,11 @@ public class TripRecordFragment extends Fragment implements RecordToolBar.Record
             }
         }
     };
-
-
     Handler timerHandler = new Handler();
     Runnable timerRunnable = new Runnable() {
         @Override
         public void run() {
-            long  millis  = totalTime + (System.currentTimeMillis() - startTime);
+            long millis = totalTime + (System.currentTimeMillis() - startTime);
             int seconds = (int) (millis / 1000);
             int hour = seconds / (60 * 60);
             seconds = seconds % (60 * 60);
@@ -146,57 +174,11 @@ public class TripRecordFragment extends Fragment implements RecordToolBar.Record
             int minutes = seconds / 60;
             seconds = seconds % 60;
 
-            mRecordTopBar.setTxtTime(String.format("%02d:%02d:%02d",hour, minutes, seconds));
+            mRecordTopBar.setTxtTime(String.format("%02d:%02d:%02d", hour, minutes, seconds));
 
             timerHandler.postDelayed(this, 1000);
         }
     };
-    public static TripRecordFragment newInstance() {
-        return new TripRecordFragment();
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_trip_record, container, false);
-        //ButterKnife.bind(this, view);
-        return view;
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        //获取地图控件引用
-        // TextureMapView mMapView = (TextureMapView) view.findViewById(R.id.map);
-        //在activity执行onCreate时执行mMapView.onCreate(savedInstanceState)，创建地图
-        mRecordTopBar = view.findViewById(R.id.view_topbar);
-        mBtnStart = view.findViewById(R.id.btn_start);
-        mRecordToolBar = view.findViewById(R.id.view_toolbar);
-        mMapView = view.findViewById(R.id.map);
-
-        mRecordToolBar.setListener(this);
-        mMapView.onCreate(savedInstanceState);
-        mMap = mMapView.getMap();
-
-        mBtnStart.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                onStartClick();
-            }
-        });
-        //long time = System.currentTimeMillis();
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        //mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(Double.valueOf("39.950437"),Double.valueOf("116.337399")),17));
-
-
-        startTrackCollectService();
-        startTrackMoveService();
-
-    }
 
     //开启轨迹显示服务
     private void startTrackMoveService() {
@@ -263,10 +245,10 @@ public class TripRecordFragment extends Fragment implements RecordToolBar.Record
             Message obtain = Message.obtain();
             obtain.what = msgtype;
             //如果停止了，把时间和距离同步到数据库
-            if(TrackCollectEvent.STOP == msgtype){
+            if (TrackCollectEvent.STOP == msgtype) {
                 Bundle data = new Bundle();
-                data.putLong("totaltime",totalTime);
-                data.putFloat("distance",distance);
+                data.putLong("totaltime", totalTime);
+                data.putFloat("distance", distance);
                 obtain.setData(data);
             }
             try {
@@ -283,7 +265,7 @@ public class TripRecordFragment extends Fragment implements RecordToolBar.Record
         //停止计时
         totalTime += System.currentTimeMillis() - startTime;
         timerHandler.removeCallbacks(timerRunnable);
-        mRecordTopBar.setDistanceAndTime("0.0","00:00");
+        mRecordTopBar.setDistanceAndTime("0.0", "00:00");
 
         //时间，距离同步到库里
 

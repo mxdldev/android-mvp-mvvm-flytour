@@ -29,7 +29,6 @@ public class TouchyRecyclerView extends RecyclerView {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-
         if (event.getAction() == MotionEvent.ACTION_DOWN
                 && findChildViewUnder(event.getX(), event.getY()) == null) {
             if (listener != null) {

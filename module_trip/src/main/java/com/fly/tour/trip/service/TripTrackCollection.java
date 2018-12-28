@@ -25,7 +25,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Description: <><br>
+ * Description: <TripTrackCollection><br>
  * Author:      gxl<br>
  * Date:        2018/12/27<br>
  * Version:     V1.0.0<br>

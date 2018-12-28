@@ -29,38 +29,22 @@ import io.reactivex.functions.Consumer;
  * Update:     <br>
  */
 public class TripMainFragment extends BaseFragment {
-    private String[] titles = {"线路","记录","组队"};
-    private List<Fragment> mArrayList = new ArrayList<Fragment>(){
+    private String[] titles = {"线路", "记录", "组队"};
+    private List<Fragment> mArrayList = new ArrayList<Fragment>() {
         {
             add(TripRouteFragment.newInstance());
             add(TripRecordFragment.newInstance());
             add(TripTeamFragment.newInstance());
         }
-    } ;
+    };
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        new RxPermissions(this).request(Manifest.permission.ACCESS_COARSE_LOCATION,
-                Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Consumer<Boolean>() {
-            @Override
-            public void accept(Boolean aBoolean) throws Exception {
-                if (!aBoolean) {
-                    Toast.makeText(getContext(), "没有相关权限", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-    }
-
-    public static TripMainFragment newInstance(){
+    public static TripMainFragment newInstance() {
         return new TripMainFragment();
     }
 
-
     @Override
     public View initView(LayoutInflater inflater, ViewGroup container) {
-        View view = inflater.inflate(R.layout.fragment_trip_main, container,false);
+        View view = inflater.inflate(R.layout.fragment_trip_main, container, false);
         ViewPager viewPager = view.findViewById(R.id.pager_tour);
         TabLayout tabLayout = view.findViewById(R.id.layout_tour);
         viewPager.setAdapter(new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
@@ -86,6 +70,13 @@ public class TripMainFragment extends BaseFragment {
 
     @Override
     public void initData(Bundle savedInstanceState) {
-
+        new RxPermissions(this).request(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Consumer<Boolean>() {
+            @Override
+            public void accept(Boolean aBoolean) throws Exception {
+                if (!aBoolean) {
+                    Toast.makeText(getContext(), "没有相关权限", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 }

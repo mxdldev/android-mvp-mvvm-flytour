@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.trip.R;
 
 
@@ -18,14 +19,18 @@ import com.fly.tour.trip.R;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class TripTeamFragment extends Fragment {
+public class TripTeamFragment extends BaseFragment {
     public static TripTeamFragment newInstance() {
         return new TripTeamFragment();
     }
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View initView(LayoutInflater inflater, ViewGroup container) {
         return inflater.inflate(R.layout.fragment_trip_team, container, false);
+    }
+
+    @Override
+    public void initData(Bundle savedInstanceState) {
+
     }
 }

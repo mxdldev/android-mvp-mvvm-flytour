@@ -2,6 +2,8 @@ package com.fly.tour.common.base;
 
 import android.os.Bundle;
 
+import com.fly.tour.common.mvp.BasePresenter;
+
 /**
  * Description: <><br>
  * Author:      gxl<br>
@@ -9,8 +11,8 @@ import android.os.Bundle;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseMvpFragment<V, T extends BasePresenter<V>> extends  BaseFragment {
-    public T mPresenter;
+public abstract class BaseMvpFragment<V, P extends BasePresenter<V>> extends  BaseFragment {
+    public P mPresenter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,5 +30,5 @@ public abstract class BaseMvpFragment<V, T extends BasePresenter<V>> extends  Ba
         }
         super.onDestroy();
     }
-    public abstract T initPresenter();
+    public abstract P initPresenter();
 }

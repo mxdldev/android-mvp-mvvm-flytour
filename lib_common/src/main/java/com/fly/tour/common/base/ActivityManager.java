@@ -23,7 +23,7 @@ import java.util.List;
  * Version: V1.0.0<br>
  * Update: <br>
  */
-public class ActivityCollectManager {
+public class ActivityManager {
 
   private static List<Activity> mActivityList = new ArrayList<Activity>();
 
