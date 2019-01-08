@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.MeasureSpec;
 import android.widget.ScrollView;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -406,5 +405,24 @@ public class BitmapUtil {
         options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
         options.inJustDecodeBounds = false;
         return BitmapFactory.decodeFile(path, options);
+    }
+    public static int[] getImageSize(String url) {
+        int[] size = new int[]{0, 0};
+        if (FileUtil.isImageFile(url)) {
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            // 设置为true,表示解析Bitmap对象，该对象不占内存
+            options.inJustDecodeBounds = true;
+            BitmapFactory.decodeFile(url, options);
+            options.inPreferredConfig = Bitmap.Config.RGB_565;
+            // 图片宽高
+            switch (getBitmapDegree(url)) {
+                case 90:
+                case 270:
+                    return new int[]{options.outHeight, options.outWidth};
+                default:
+                    return new int[]{options.outWidth, options.outHeight};
+            }
+        }
+        return size;
     }
 }
