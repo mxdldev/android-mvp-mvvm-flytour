@@ -406,6 +406,12 @@ public class BitmapUtil {
         options.inJustDecodeBounds = false;
         return BitmapFactory.decodeFile(path, options);
     }
+
+    /**
+     * 获取图片原始的宽、高
+     * @param url
+     * @return
+     */
     public static int[] getImageSize(String url) {
         int[] size = new int[]{0, 0};
         if (FileUtil.isImageFile(url)) {

@@ -7,6 +7,10 @@ import android.support.annotation.NonNull;
 
 import com.fly.tour.common.BaseApplication;
 
+import static com.fly.tour.common.util.NetUtil.NetType.NET_4G;
+import static com.fly.tour.common.util.NetUtil.NetType.NO_NET;
+import static com.fly.tour.common.util.NetUtil.NetType.WIFI;
+
 /**
  * Description: <ToastUtil><br>
  * Author: gxl<br>
@@ -64,5 +68,28 @@ public class NetUtil {
         }
         return false;
     }
-
+    public static NetType isNetWorkState(Context context) {
+        ConnectivityManager manager =
+                (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = manager.getActiveNetworkInfo();
+        if (activeNetwork != null) {
+            if (activeNetwork.isConnected()) {
+                if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
+                    // Logger.v(TAG, "当前WiFi连接可用 ");
+                    return WIFI;
+                } else if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE) {
+                    // Logger.v(TAG, "当前移动网络连接可用 ");
+                    return NET_4G;
+                }
+            } else {
+                // Logger.v(TAG, "当前没有网络连接，请确保你已经打开网络 ");
+                return NO_NET;
+            }
+        } else {
+            // Logger.v(TAG, "当前没有网络连接，请确保你已经打开网络 ");
+            return NO_NET;
+        }
+        return NO_NET;
+    }
+    public enum NetType{WIFI,NET_4G,NO_NET};
 }
