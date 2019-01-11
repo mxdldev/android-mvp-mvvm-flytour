@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.MeasureSpec;
 import android.widget.ScrollView;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -77,8 +78,7 @@ public class BitmapUtil {
      */
     public static Bitmap convertViewToBitmap(View view) {
         if (view == null) return null;
-        view.measure(MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED),
-                MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED));
+        view.measure(MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED), MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED));
         view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
         view.buildDrawingCache();
         Bitmap bitmap = Bitmap.createBitmap(scaled720Bitmap(view.getDrawingCache()));
@@ -94,9 +94,7 @@ public class BitmapUtil {
     public static Bitmap combineBitmap_Title(Context context, String titleStr, View view) {
         if (context == null || view == null) return null;
 
-        Bitmap bitmap = view instanceof ScrollView
-                ? convertViewToBitmap((ScrollView) view)
-                : convertViewToBitmap(view);
+        Bitmap bitmap = view instanceof ScrollView ? convertViewToBitmap((ScrollView) view) : convertViewToBitmap(view);
 
         Paint textPaint = new Paint();
         textPaint.setAntiAlias(true);
@@ -120,15 +118,12 @@ public class BitmapUtil {
         titlePaint.setStrokeWidth(titleHeight);
         titleCanvas.drawLine(0, titleHeight / 2, bitmap.getWidth(), titleHeight / 2, titlePaint);
         // 绘制标题文字
-        titleCanvas.drawText(titleStr, bitmap.getWidth() / 2 - textWidth / 2,
-                titleHeight / 2 + textHeight / 3, textPaint);
+        titleCanvas.drawText(titleStr, bitmap.getWidth() / 2 - textWidth / 2, titleHeight / 2 + textHeight / 3, textPaint);
         //??? titleCanvas.save(Canvas.ALL_SAVE_FLAG);
         titleCanvas.restore();
-        titleBitmap = Bitmap.createScaledBitmap(titleBitmap, 720,
-                (int) ((720f / titleBitmap.getWidth()) * titleBitmap.getHeight()), true);
+        titleBitmap = Bitmap.createScaledBitmap(titleBitmap, 720, (int) ((720f / titleBitmap.getWidth()) * titleBitmap.getHeight()), true);
         // 合成两个bitmap
-        Bitmap newBitmap = Bitmap.createBitmap(bitmap.getWidth(),
-                bitmap.getHeight() + titleBitmap.getHeight(), Bitmap.Config.RGB_565);
+        Bitmap newBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight() + titleBitmap.getHeight(), Bitmap.Config.RGB_565);
         Canvas canvas = new Canvas(newBitmap);
         canvas.drawBitmap(titleBitmap, 0, 0, null);
         canvas.drawBitmap(bitmap, 0, titleBitmap.getHeight(), null);
@@ -304,8 +299,7 @@ public class BitmapUtil {
         return BitmapFactory.decodeFile(imageUri.getPath(), options);
     }
 
-    public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth,
-                                            int reqHeight) {
+    public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
         final int height = options.outHeight;
         final int width = options.outWidth;
         int inSampleSize = 1;
@@ -348,8 +342,7 @@ public class BitmapUtil {
             // 从指定路径下读取图片，并获取其EXIF信息
             ExifInterface exifInterface = new ExifInterface(path);
             // 获取图片的旋转信息
-            int orientation = exifInterface.getAttributeInt(ExifInterface.TAG_ORIENTATION,
-                    ExifInterface.ORIENTATION_NORMAL);
+            int orientation = exifInterface.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
             switch (orientation) {
                 case ExifInterface.ORIENTATION_ROTATE_90:
                     degree = 90;
@@ -383,7 +376,8 @@ public class BitmapUtil {
         try {
             // 将原始图片按照旋转矩阵进行旋转，并得到新的图片
             returnBm = Bitmap.createBitmap(bm, 0, 0, bm.getWidth(), bm.getHeight(), matrix, true);
-        } catch (OutOfMemoryError e) {}
+        } catch (OutOfMemoryError e) {
+        }
         if (returnBm == null) {
             returnBm = bm;
         }
@@ -430,5 +424,44 @@ public class BitmapUtil {
             }
         }
         return size;
+    }
+
+    public static int[] getAdjustImageSize(Context context, int sourceWidth, int sourceHeight) {
+        int screenWidth = ScreenUtils.getScreenWidth(context);
+        int screenHeight = ScreenUtils.getScreenHeight(context);
+        //默认的宽和高
+        int coverWidth = 0;// - DisplayUtil.dip2px(16) * 2;
+        int coverHeight = 0;//
+
+        if (sourceWidth > 0 && sourceHeight > 0) {
+            //如果是横屏图
+            if (sourceWidth > sourceHeight) {
+                //图比屏幕还宽则以屏幕的宽为基准进行缩放
+                if (sourceWidth > screenWidth) {
+                    coverWidth = screenWidth;//屏幕的宽就是图片的宽
+                    float scaleRate = (float) screenWidth / sourceWidth;//缩放比例
+                    coverHeight = (int) (scaleRate * sourceHeight);//图片的宽高等比例的缩小
+                } else {
+                    //否则图片是多大的就显示多大的
+                    coverWidth = sourceWidth;
+                    coverHeight = sourceHeight;
+                }
+            } else {
+                //如果是竖屏的图，且比屏幕还高则以屏幕的高为基准进行等比例缩放
+                if (sourceHeight > screenHeight) {
+                    coverHeight = screenHeight;//屏幕的高就是图片的高
+                    float scaleRate = (float) screenHeight / sourceHeight;//缩放比例
+                    coverWidth = (int) (scaleRate * sourceWidth);//图片的宽等比例的缩小
+                } else {
+                    //否则图片是多大的就显示多大的
+                    coverWidth = sourceWidth;
+                    coverHeight = sourceHeight;
+                }
+            }
+        }
+        if (coverWidth == 0 && coverHeight == 0) {
+            return null;
+        }
+        return new int[]{coverWidth, coverHeight};
     }
 }
