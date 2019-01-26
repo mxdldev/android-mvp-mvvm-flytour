@@ -78,14 +78,14 @@ sourceSets {
 }
 ```
 * 4.3 组件之间调用和通信
-在组件化开发的时候，组件之间是没有依赖关系，我们不能在使用显示调用来跳转页面了，因为我们组件化的目的之一就是解决模块间的强依赖问题，假如现在要从A业务组件跳转到业务B组件，并且要携带参数跳转，这时候怎么办呢？而且组件这么多怎么管理也是个问题，这时候就需要引入“路由”的概念了，由本文开始的组件化模型下的业务关系图可知路由就是起到一个转发的作用。这里我们会用到开源库的“ActivityRouter”。<br>
+在组件化开发的时候，组件之间是没有依赖关系，我们不能在使用显示调用来跳转页面了，因为我们组件化的目的之一就是解决模块间的强依赖问题，假如现在要从A业务组件跳转到业务B组件，并且要携带参数跳转，这时候怎么办呢？而且组件这么多怎么管理也是个问题，这时候就需要引入“路由”的概念了，由本文开始的组件化模型下的业务关系图可知路由就是起到一个转发的作用,这里我们会用到开源库的ActivityRouter。<br>
 ![](https://img-blog.csdnimg.cn/20190126212318172.png)
 ### 5. FlyTour组件化框架
-* 功能展示<br>
+* 功能展示<br><br>
 ![](https://img-blog.csdnimg.cn/20190126222359146.gif)
-* 项目结构<br>
-![](https://img-blog.csdnimg.cn/20190126214200270.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dlZHVvXzgz,size_16,color_FFFFFF,t_70)
-* 源码地址<br>
+* 项目结构<br><br>
+![](https://img-blog.csdnimg.cn/20190126214200270.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dlZHVvXzgz,size_16,color_FFFFFF,t_70)<br>
+* 源码地址<br><br>
 欢迎加星，打call https://github.com/geduo83/FlyTour
 ### 6.问题反馈
 在使用中有任何问题，请留言，或加入Android、Java开发技术交流群
