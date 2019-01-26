@@ -1,10 +1,10 @@
 ### 1.前言
 在长期的实战开发过程中，随着APP功能的不断增多，业务逻辑的越来越复杂，各个模块之间有着错综复杂的关系，各个模块高度的耦合在一起，修改一个功能牵一发而动全身，长期以来整个项目就是铁板一块。这样非常的不利于项目的后期的维护和开发。
 * 传统架构图：<br>
-![](https://img-blog.csdnimg.cn/20190126210043776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dlZHVvXzgz,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20190126210043776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dlZHVvXzgz,size_16,color_FFFFFF,t_70)<br>
 上图是目前比较普遍使用的Android APP技术架构，往往是在一个界面中存在大量的业务逻辑，而业务逻辑中充斥着各种网络请求、数据操作等行为，整个项目中也没有模块的概念，只有简单的以业务逻辑划分的文件夹，并且业务之间也是直接相互调用、高度耦合在一起的。
 * 传统业务架构图:<br>
-![](https://img-blog.csdnimg.cn/20190126215521137.png)
+![](https://img-blog.csdnimg.cn/20190126215521137.png)<br>
 为了着解决这些问题，近年来也涌现了多种插件框架实现方案，有的叫组件化，很多人将插件化和组件化混为一谈，虽然其目的都是一致的，对单一结构体的项目进行拆分进行解耦，但是其实两者是有着本质的区别。
 * 组件化：有开发模式和发布模式之分，在开发模式下每个业务模块都是都是一个独立的apk，在发布模式打包的时候，每个业务模块都变成了一个个独立的组件library。
 * 插件化：没有开发模式和发布模式之分，每个业务模块就是一个独立的apk，通过主工程apk来动态加载部署各个业务模块apk。
@@ -27,7 +27,7 @@ https://github.com/DroidPluginTeam/DroidPlugin
 以上就是几种常见的插件化框架，但是他们都是有一定学习成本的，实现比较麻烦，相比较而言组件化的实现还是比较简单的
 ### 3.组件化
 组件化架构图：<br>
-![](https://img-blog.csdnimg.cn/20190126210220224.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dlZHVvXzgz,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20190126210220224.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dlZHVvXzgz,size_16,color_FFFFFF,t_70)<br>
 上图是组件化工程模型，为了方便理解这张架构图，下面会列举一些组件化工程中用到的名词的含义：
 * 集成模式：所有的业务组件被“app壳工程”依赖，组成一个完整的APP；
 * 组件模式：可以独立开发业务组件，每一个业务组件就是一个APP；
@@ -77,7 +77,7 @@ sourceSets {
         }
 }
 ```
-4.3 组件之间调用和通信
+* 4.3 组件之间调用和通信
 在组件化开发的时候，组件之间是没有依赖关系，我们不能在使用显示调用来跳转页面了，因为我们组件化的目的之一就是解决模块间的强依赖问题，假如现在要从A业务组件跳转到业务B组件，并且要携带参数跳转，这时候怎么办呢？而且组件这么多怎么管理也是个问题，这时候就需要引入“路由”的概念了，由本文开始的组件化模型下的业务关系图可知路由就是起到一个转发的作用。这里我们会用到开源库的“ActivityRouter”。<br>
 ![](https://img-blog.csdnimg.cn/20190126212318172.png)
 ### 5. FlyTour组件化框架
