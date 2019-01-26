@@ -90,7 +90,8 @@ sourceSets {
 ### 6.问题反馈
 在使用中有任何问题，请留言，或加入Android、Java开发技术交流群
 * QQ群：810970432
-* email：geduo_83@163.com
+* email：geduo_83@163.com<br>
+![](https://img-blog.csdnimg.cn/20190126213618911.png)
 ### 7.关于作者
 ```
 var geduo_83 = {
