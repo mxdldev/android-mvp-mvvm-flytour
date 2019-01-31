@@ -7,10 +7,12 @@ package com.fly.tour.common.mvp;
  * Update:     <br>
  */
 public interface BaseView extends BaseContract.View {
-
-	void showLoading();
-
-	void hideLoading();
-
-	void showErrNetWork();
+	//显示刷新菊花
+	void showRefreshView();
+	//隐藏刷新菊花
+	void hideRefreshView();
+	//自动刷新
+	void autoRefresh();
+	//自动加载数据
+	void autoLoadData();
 }

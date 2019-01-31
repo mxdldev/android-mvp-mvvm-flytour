@@ -1,1 +1,1 @@
-include ':module_app', ':lib_common', ':module_main', ':module_trip', ':module_find', ':module_me'
+include ':module_app', ':lib_common', ':module_main', ':module_trip', ':module_find', ':module_me', ':SuperSwipeRefreshLayout'

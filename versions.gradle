@@ -52,6 +52,9 @@ deps.junit = "junit:junit:$versions.junit"
 deps.testrunner = "com.android.support.test:runner:$versions.testrunner"
 deps.testespresso =  "com.android.support.test.espresso:espresso-core:$versions.testespresso"
 
+//
+deps.eventbus = 'org.greenrobot:eventbus:3.1.1'
+
 ext.deps = deps
 
 def build_versions = [:]
