@@ -11,7 +11,6 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import jni.superswiperefreshlayout.R;
 
 /**
  * Created by gxl on 2018/7/8.
