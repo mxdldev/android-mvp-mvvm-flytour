@@ -38,10 +38,8 @@ dependencies {
     api deps.support.percent
     api deps.support.recyclerview
     api deps.support.multidex
+    api deps.support.constraint_layout
 
-    api deps.constraint_layout
-
-    //router
     api deps.arouter_api
     api deps.rxpermissions
     api deps.MultiImageSelector

@@ -5,11 +5,27 @@ versions.android_gradle_plugin = "3.2.1"
 versions.support = "28.0.0"
 versions.constraint_layout = "1.0.2"
 versions.multidex = "1.0.2"
+
 versions.junit = "4.12"
 versions.testrunner = "1.0.2"
 versions.testespresso = "3.0.2"
 
+versions.rxpermissions = "0.10.2"
+versions.MultiImageSelector = "1.2"
+versions.arouter_compiler = "1.1.4"
+versions.arouter_api = "1.3.1"
+versions.eventbus = "3.1.1"
+
 def deps = [:]
+//gradle插件依赖
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+
+//测试相关
+deps.junit = "junit:junit:$versions.junit"
+deps.testrunner = "com.android.support.test:runner:$versions.testrunner"
+deps.testespresso =  "com.android.support.test.espresso:espresso-core:$versions.testespresso"
+
+//支持库依赖
 def support = [:]
 support.annotations = "com.android.support:support-annotations:$versions.support"
 support.app_compat = "com.android.support:appcompat-v7:$versions.support"
@@ -21,15 +37,8 @@ support.design = "com.android.support:design:$versions.support"
 support.v4 = "com.android.support:support-v4:$versions.support"
 support.core_utils = "com.android.support:support-core-utils:$versions.support"
 support.multidex = "com.android.support:multidex:$versions.multidex"
+support.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
 deps.support = support
-
-//view
-deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
-deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
-deps.arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
-deps.arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"
-deps.rxpermissions = "com.github.tbruyelle:rxpermissions:$versions.rxpermissions"
-deps.MultiImageSelector = "com.github.lovetuzitong:MultiImageSelector:$versions.MultiImageSelector"
 
 //地图相关
 //compile 'com.amap.api:3dmap:latest.integration'
@@ -37,11 +46,10 @@ deps.amapnavi = 'com.amap.api:navi-3dmap:latest.integration'
 deps.amapsearch = 'com.amap.api:search:latest.integration'
 deps.amaplocation = 'com.amap.api:location:latest.integration'
 
-//测试相关
-deps.junit = "junit:junit:$versions.junit"
-deps.testrunner = "com.android.support.test:runner:$versions.testrunner"
-deps.testespresso =  "com.android.support.test.espresso:espresso-core:$versions.testespresso"
-
+deps.arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
+deps.arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"
+deps.rxpermissions = "com.github.tbruyelle:rxpermissions:$versions.rxpermissions"
+deps.MultiImageSelector = "com.github.lovetuzitong:MultiImageSelector:$versions.MultiImageSelector"
 deps.eventbus = "org.greenrobot:eventbus:$versions.eventbus"
 
 ext.deps = deps
