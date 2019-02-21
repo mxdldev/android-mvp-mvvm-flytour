@@ -32,7 +32,7 @@ public abstract class BaseFragment extends Fragment implements BaseView {
     protected View mView;
     protected TextView mTxtTitle;
     protected Toolbar mToolbar;
-    protected CustomeSwipeRefreshLayout mRefreshLayout;//刷新控件很多页面都会用到，因此抽取取来
+    //protected CustomeSwipeRefreshLayout mRefreshLayout;//刷新控件很多页面都会用到，因此抽取取来
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,12 +45,11 @@ public abstract class BaseFragment extends Fragment implements BaseView {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = initView(inflater, container);
         initTooBar(mView);
-        mRefreshLayout = mView.findViewById(onBindRefreshID());
+        //mRefreshLayout = mView.findViewById(onBindRefreshID());
         //ButterKnife.bind(this, mView);
         return mView;
     }
 
-    protected abstract int onBindRefreshID();
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -80,40 +79,28 @@ public abstract class BaseFragment extends Fragment implements BaseView {
         }
     }
 
-    @Override
-    public void showRefreshView() {
-        if(mRefreshLayout != null){
-            mRefreshLayout.setRefreshing(true);
-        }
-    }
 
-    @Override
-    public void hideRefreshView() {
-        if(mRefreshLayout != null){
-            mRefreshLayout.setRefreshing(false);
-        }
-    }
-
-    @Override
-    public void autoRefresh() {
-        if(mRefreshLayout != null){
-            mRefreshLayout.post(new Runnable() {
-                @Override
-                public void run() {
-                    showRefreshView();
-                    autoLoadData();
-                }
-            });
-        }
-    }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEvent(Object obj){
     }
-    @Override
-    public void autoLoadData() {
-    }
     public abstract View initView(LayoutInflater inflater,ViewGroup container);
     public abstract void initData(Bundle bundle);
-    public abstract String getToolbarTitle();
+    public String getToolbarTitle(){
+        return "";
+    };
+    //protected abstract int onBindRefreshID();
+    @Override
+    public void showLoading() {
 
+    }
+
+    @Override
+    public void hideLoading() {
+
+    }
+
+    @Override
+    public void showErrNetWork() {
+
+    }
 }
