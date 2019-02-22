@@ -1,0 +1,33 @@
+@startuml
+
+package "FlyCloud微服务工程架构" {
+[移动客户端]
+}
+package "网关服务" {
+[移动客户端]-->[moudle_gateway]
+}
+package "资源组件" {
+[moudle_gateway]-->[其他资源...]
+[moudle_gateway]-->[blog资源：\n moudle_blog]
+[moudle_gateway]-->[用户资源：\n moudle_user]
+}
+
+package "基础组件" {
+功能-->[注册中心：\n moudle_eureka]
+功能-->[配置中心：\n moudle_config]
+功能-->[授权中心：\n moudle_uaa]
+功能-->[链路追踪服务：\n moudle_zipkin]
+功能-->[聚合监控服务：\n moudle_admin]
+功能-->[熔断器监控服务：\n moudle_monitor]
+功能-->[日志服务：\n moudle_log]
+功能-->[公共服务：\n lib_common]
+
+[其他资源...]-->功能
+[blog资源：\n moudle_blog]-->功能
+[用户资源：\n moudle_user]-->功能
+}
+package "中间件"{
+[配置中心：\n moudle_config] -->[MYSQL数据库]
+[日志服务：\n moudle_log] -->[ RabbitMQ组件]
+}
+@enduml
