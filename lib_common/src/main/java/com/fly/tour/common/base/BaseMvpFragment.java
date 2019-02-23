@@ -5,7 +5,7 @@ import android.os.Bundle;
 import com.fly.tour.common.mvp.BasePresenter;
 
 /**
- * Description: <><br>
+ * Description: <BaseMvpFragment><br>
  * Author:      gxl<br>
  * Date:        2018/6/11<br>
  * Version:     V1.0.0<br>

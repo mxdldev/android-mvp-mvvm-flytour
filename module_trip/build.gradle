@@ -40,10 +40,6 @@ android {
             storeFile file("debug.keystore")
         }
         release {
-//            storeFile file("95190.keystore")
-//            storePassword "mty95190"
-//            keyAlias "95190"
-//            keyPassword "mty95190"
         }
     }
 }

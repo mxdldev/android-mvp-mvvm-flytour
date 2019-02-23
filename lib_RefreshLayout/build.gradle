@@ -24,29 +24,9 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-
+    api deps.support.recyclerview
+    api deps.support.app_compat
     api deps.junit
     api deps.testrunner
     api deps.testespresso
-
-    // Support libraries
-    api deps.support.app_compat
-    api deps.support.v4
-    api deps.support.v13
-    api deps.support.design
-    api deps.support.cardview
-    api deps.support.percent
-    api deps.support.recyclerview
-    api deps.support.multidex
-    api deps.support.constraint_layout
-
-    api deps.arouter_api
-    api deps.rxpermissions
-    api deps.MultiImageSelector
-
-    api deps.amapnavi
-    api deps.amapsearch
-    api deps.amaplocation
-
-    api deps.eventbus;
 }
