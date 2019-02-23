@@ -10,8 +10,13 @@ import com.fly.tour.common.BaseApplication;
  * Update:     <br>
  */
 public class MyApplication extends BaseApplication {
+    public static MyApplication mApplication;
     @Override
     public void onCreate() {
         super.onCreate();
+        mApplication = this;
+    }
+    public getInstance(){
+        return mApplication;
     }
 }
