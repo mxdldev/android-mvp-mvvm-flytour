@@ -1,4 +1,4 @@
-package com.github.nuptboyzhb.lib;
+package com.github.lib;
 
 import org.junit.Test;
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EclipseCodeFormatterProjectSettings">
+    <option name="selectedGlobalProfile">
+      <Settings>
+        <option name="formatter" value="ECLIPSE" />
+        <option name="id" value="1493019106702" />
+        <option name="name" value="default" />
+        <option name="pathToConfigFileJava" value="D:/soft/android/eclipse-google-code-style.xml" />
+        <option name="selectedJavaProfile" value="GoogleStyle" />
+      </Settings>
+    </option>
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package com.github.nuptboyzhb.lib;
+package com.github.lib;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.github.nuptboyzhb.lib.test", appContext.getPackageName());
+        assertEquals("com.github.lib.test", appContext.getPackageName());
     }
 }

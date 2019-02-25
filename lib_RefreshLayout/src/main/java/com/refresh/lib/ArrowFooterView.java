@@ -1,4 +1,4 @@
-package com.github.nuptboyzhb.lib;
+package com.refresh.lib;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,20 +11,27 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.github.lib.R;
+import com.refresh.lib.contract.PushContract;
+
 
 /**
- * Created by gxl on 2018/7/8.
+ * Description: <ArrowFooterView><br>
+ * Author: gxl<br>
+ * Date: 2019/2/25<br>
+ * Version: V1.0.0<br>
+ * Update: <br>
  */
 
-public class FooterView extends RelativeLayout {
+public class ArrowFooterView extends RelativeLayout implements PushContract {
     private ProgressBar footerProgressBar;
     private TextView footerTextView;
     private ImageView footerImageView;
-    public FooterView(@NonNull Context context) {
+    public ArrowFooterView(@NonNull Context context) {
         this(context,null);
     }
 
-    public FooterView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public ArrowFooterView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initView(context);
     }
@@ -42,12 +49,14 @@ public class FooterView extends RelativeLayout {
         footerImageView.setImageResource(R.drawable.down_arrow);
         footerTextView.setText("上拉加载更多...");
     }
+    @Override
     public void onPushEnable(boolean enable) {
         footerProgressBar.setVisibility(View.GONE);
         footerTextView.setText(enable ? "松开加载" : "上拉加载");
         footerImageView.setVisibility(View.VISIBLE);
         footerImageView.setRotation(enable ? 0 : 180);
     }
+    @Override
     public void onLoadMore() {
         footerTextView.setText("正在加载...");
         footerImageView.setVisibility(View.GONE);

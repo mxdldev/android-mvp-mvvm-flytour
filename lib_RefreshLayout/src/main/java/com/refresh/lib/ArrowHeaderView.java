@@ -1,4 +1,4 @@
-package com.github.nuptboyzhb.lib;
+package com.refresh.lib;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,20 +11,26 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-/**
- * Created by gxl on 2018/7/8.
- */
+import com.github.lib.R;
+import com.refresh.lib.contract.PullContract;
 
-public class HeaderView extends RelativeLayout {
+/**
+ * Description: <ArrowFooterView><br>
+ * Author: gxl<br>
+ * Date: 2019/2/25<br>
+ * Version: V1.0.0<br>
+ * Update: <br>
+ */
+public class ArrowHeaderView extends RelativeLayout implements PullContract {
     private ProgressBar progressBar;
     private TextView textView;
     private ImageView imageView;
 
-    public HeaderView(@NonNull Context context) {
+    public ArrowHeaderView(@NonNull Context context) {
         this(context,null);
     }
 
-    public HeaderView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public ArrowHeaderView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initView(context);
     }
@@ -51,4 +57,5 @@ public class HeaderView extends RelativeLayout {
         imageView.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
     }
+
 }

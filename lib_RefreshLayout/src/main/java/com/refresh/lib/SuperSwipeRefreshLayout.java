@@ -1,4 +1,4 @@
-package com.github.nuptboyzhb.lib;
+package com.refresh.lib;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -54,7 +54,7 @@ import android.widget.ScrollView;
  */
 @SuppressLint("ClickableViewAccessibility")
 public class SuperSwipeRefreshLayout extends ViewGroup {
-    private static final String LOGTAG = SuperSwipeRefreshLayout.class.getSimpleName();
+    private static final String LOG_TAG = "CustomeSwipeRefreshLayout";
     private static final int HEADER_VIEW_HEIGHT = 50;// HeaderView height (dp)
 
     private static final float DECELERATE_INTERPOLATION_FACTOR = 2f;
@@ -133,26 +133,6 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
     private float density = 1.0f;
 
     private boolean isProgressEnable = true;
-    private boolean isEnableRefresh = true;//是否启用下拉刷新
-    private boolean isEnableLoadMore = true;//是否启用上拉加载更多
-    private HeaderView mHeaderView;
-    private FooterView mFooterView;
-    private OnRefreshListener mOnRefreshListener;
-    private OnLoadMoreListener mOnLoadMoreListener;
-    public interface OnRefreshListener{
-        void onRefresh();
-    }
-    public interface OnLoadMoreListener{
-        void onLoadMore();
-    }
-
-    public void setOnRefreshListener(OnRefreshListener onRefreshListener) {
-        mOnRefreshListener = onRefreshListener;
-    }
-
-    public void setOnLoadMoreListener(OnLoadMoreListener onLoadMoreListener) {
-        mOnLoadMoreListener = onLoadMoreListener;
-    }
 
     /**
      * 下拉时，超过距离之后，弹回来的动画监听器
@@ -281,50 +261,6 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
         mSpinnerFinalOffset = DEFAULT_CIRCLE_TARGET * metrics.density;
         density = metrics.density;
         mTotalDragDistance = mSpinnerFinalOffset;
-
-        mHeaderView = new HeaderView(context);
-        mFooterView = new FooterView(context);
-        setHeaderView(mHeaderView);
-        setFooterView(mFooterView);
-
-        setOnPullRefreshListener(new OnPullRefreshListener() {
-            @Override
-            public void onRefresh() {
-                mHeaderView.onRefresh();
-                if(mOnRefreshListener != null){
-                    mOnRefreshListener.onRefresh();
-                }
-            }
-
-            @Override
-            public void onPullDistance(int distance) {
-
-            }
-
-            @Override
-            public void onPullEnable(boolean enable) {
-                mHeaderView.onPullEnable(enable);
-            }
-        });
-        setOnPushLoadMoreListener(new OnPushLoadMoreListener() {
-            @Override
-            public void onLoadMore() {
-                mFooterView.onLoadMore();
-                if(mOnLoadMoreListener != null){
-                    mOnLoadMoreListener.onLoadMore();
-                }
-            }
-
-            @Override
-            public void onPushDistance(int distance) {
-
-            }
-
-            @Override
-            public void onPushEnable(boolean enable) {
-                mFooterView.onPushEnable(enable);
-            }
-        });
     }
 
     /**
@@ -390,7 +326,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
      *
      * @param listener
      */
-    private void setOnPullRefreshListener(OnPullRefreshListener listener) {
+    public void setOnPullRefreshListener(OnPullRefreshListener listener) {
         mListener = listener;
     }
 
@@ -403,7 +339,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
      *
      * @param onPushLoadMoreListener
      */
-    private void setOnPushLoadMoreListener(
+    public void setOnPushLoadMoreListener(
             OnPushLoadMoreListener onPushLoadMoreListener) {
         this.mOnPushLoadMoreListener = onPushLoadMoreListener;
     }
@@ -544,7 +480,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
         final int childTop = getPaddingTop() + distance - pushDistance;// 根据偏移量distance更新
         final int childWidth = width - getPaddingLeft() - getPaddingRight();
         final int childHeight = height - getPaddingTop() - getPaddingBottom();
-        Log.d(LOGTAG, "debug:onLayout childHeight = " + childHeight);
+        Log.d(LOG_TAG, "debug:onLayout childHeight = " + childHeight);
         child.layout(childLeft, childTop, childLeft + childWidth, childTop
                 + childHeight);// 更新目标View的位置
         int headViewWidth = mHeadViewContainer.getMeasuredWidth();
@@ -724,7 +660,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
 
             case MotionEvent.ACTION_MOVE:
                 if (mActivePointerId == INVALID_POINTER) {
-                    Log.e(LOGTAG,
+                    Log.e(LOG_TAG,
                             "Got ACTION_MOVE event but don't have an active pointer id.");
                     return false;
                 }
@@ -795,10 +731,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
         }
     }
 
-    private boolean handlerPullTouchEvent(MotionEvent ev, int action) {
-        if(!isEnableRefresh){
-            return false;
-        }
+    protected boolean handlerPullTouchEvent(MotionEvent ev, int action) {
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 mActivePointerId = MotionEventCompat.getPointerId(ev, 0);
@@ -809,7 +742,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
                 final int pointerIndex = MotionEventCompat.findPointerIndex(ev,
                         mActivePointerId);
                 if (pointerIndex < 0) {
-                    Log.e(LOGTAG,
+                    Log.e(LOG_TAG,
                             "Got ACTION_MOVE event but have an invalid active pointer id.");
                     return false;
                 }
@@ -880,7 +813,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
             case MotionEvent.ACTION_CANCEL: {
                 if (mActivePointerId == INVALID_POINTER) {
                     if (action == MotionEvent.ACTION_UP) {
-                        Log.e(LOGTAG,
+                        Log.e(LOG_TAG,
                                 "Got ACTION_UP event but don't have an active pointer id.");
                     }
                     return false;
@@ -932,21 +865,18 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
      * @param action
      * @return
      */
-    private boolean handlerPushTouchEvent(MotionEvent ev, int action) {
-        if(!isEnableLoadMore){
-            return false;
-        }
+    protected boolean handlerPushTouchEvent(MotionEvent ev, int action) {
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 mActivePointerId = MotionEventCompat.getPointerId(ev, 0);
                 mIsBeingDragged = false;
-                Log.d(LOGTAG, "debug:onTouchEvent ACTION_DOWN");
+                Log.d(LOG_TAG, "debug:onTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE: {
                 final int pointerIndex = MotionEventCompat.findPointerIndex(ev,
                         mActivePointerId);
                 if (pointerIndex < 0) {
-                    Log.e(LOGTAG,
+                    Log.e(LOG_TAG,
                             "Got ACTION_MOVE event but have an invalid active pointer id.");
                     return false;
                 }
@@ -976,7 +906,7 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
             case MotionEvent.ACTION_CANCEL: {
                 if (mActivePointerId == INVALID_POINTER) {
                     if (action == MotionEvent.ACTION_UP) {
-                        Log.e(LOGTAG,
+                        Log.e(LOG_TAG,
                                 "Got ACTION_UP event but don't have an active pointer id.");
                     }
                     return false;
@@ -1291,9 +1221,6 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
 
         public void onPullEnable(boolean enable);
     }
-    public abstract class AbstractOnPullRefreshListener implements OnPullRefreshListener{
-
-    }
 
     /**
      * 上拉加载更多
@@ -1537,23 +1464,4 @@ public class SuperSwipeRefreshLayout extends ViewGroup {
 
     }
 
-    public void setEnableRefresh(boolean enableRefresh) {
-        isEnableRefresh = enableRefresh;
-    }
-
-    public void setEnableLoadMore(boolean enableLoadMore) {
-        isEnableLoadMore = enableLoadMore;
-    }
-    public void autoRefresh(){
-        postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                mHeaderView.onRefresh();
-                setRefreshing(true);
-                if(mOnRefreshListener != null){
-                    mOnRefreshListener.onRefresh();
-                }
-            }
-        },1000 * 1);
-    }
 }
