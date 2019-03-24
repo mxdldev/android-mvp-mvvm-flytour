@@ -14,35 +14,35 @@ import com.fly.tour.common.view.CustomeSwipeRefreshLayout;
  */
 public abstract class BaseRefreshActivity<V,P extends BasePresenter<V>> extends  BaseMvpActivity<V,P> implements BaseView {
     protected CustomeSwipeRefreshLayout mRefreshLayout;
-    @Override
-    public void showRefreshView() {
-        if(mRefreshLayout != null){
-            mRefreshLayout.setRefreshing(true);
-        }
-    }
-
-    @Override
-    public void hideRefreshView() {
-        if(mRefreshLayout != null){
-            mRefreshLayout.setRefreshing(false);
-        }
-    }
-
-    @Override
-    public void autoRefresh() {
-        if(mRefreshLayout != null){
-            mRefreshLayout.post(new Runnable() {
-                @Override
-                public void run() {
-                    showRefreshView();
-                    autoLoadData();
-                }
-            });
-        }
-    }
-    @Override
-    public void autoLoadData() {
-    }
+//    @Override
+//    public void showRefreshView() {
+//        if(mRefreshLayout != null){
+//            mRefreshLayout.setRefreshing(true);
+//        }
+//    }
+//
+//    @Override
+//    public void hideRefreshView() {
+//        if(mRefreshLayout != null){
+//            mRefreshLayout.setRefreshing(false);
+//        }
+//    }
+//
+//    @Override
+//    public void autoRefresh() {
+//        if(mRefreshLayout != null){
+//            mRefreshLayout.post(new Runnable() {
+//                @Override
+//                public void run() {
+//                    showRefreshView();
+//                    autoLoadData();
+//                }
+//            });
+//        }
+//    }
+//    @Override
+//    public void autoLoadData() {
+//    }
 
     @Override
     protected void initRefreshView() {

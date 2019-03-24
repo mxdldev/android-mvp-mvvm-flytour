@@ -41,7 +41,6 @@ support.constraint_layout = "com.android.support.constraint:constraint-layout:$v
 deps.support = support
 
 //地图相关
-//compile 'com.amap.api:3dmap:latest.integration'
 deps.amapnavi = 'com.amap.api:navi-3dmap:latest.integration'
 deps.amapsearch = 'com.amap.api:search:latest.integration'
 deps.amaplocation = 'com.amap.api:location:latest.integration'

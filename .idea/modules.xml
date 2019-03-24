@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlyTour.iml" filepath="$PROJECT_DIR$/FlyTour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_RefreshLayout/lib_RefreshLayout.iml" filepath="$PROJECT_DIR$/lib_RefreshLayout/lib_RefreshLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_common/lib_common.iml" filepath="$PROJECT_DIR$/lib_common/lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_app/module_app.iml" filepath="$PROJECT_DIR$/module_app/module_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_find/module_find.iml" filepath="$PROJECT_DIR$/module_find/module_find.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_main/module_main.iml" filepath="$PROJECT_DIR$/module_main/module_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_me/module_me.iml" filepath="$PROJECT_DIR$/module_me/module_me.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_trip/module_trip.iml" filepath="$PROJECT_DIR$/module_trip/module_trip.iml" />
+    </modules>
+  </component>
+</project>

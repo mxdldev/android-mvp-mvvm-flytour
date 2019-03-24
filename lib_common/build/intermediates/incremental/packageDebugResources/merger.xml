@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\workspace\FlyTour\lib_common\src\main\res"><file path="D:\workspace\FlyTour\lib_common\src\main\res\drawable\ic_launcher_background.xml" preprocessing="true" qualifiers=""><generated-file path="D:\workspace\FlyTour\lib_common\build\generated\res\pngs\debug\drawable-xxxhdpi\ic_launcher_background.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="D:\workspace\FlyTour\lib_common\build\generated\res\pngs\debug\drawable-mdpi\ic_launcher_background.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="D:\workspace\FlyTour\lib_common\build\generated\res\pngs\debug\drawable-ldpi\ic_launcher_background.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="D:\workspace\FlyTour\lib_common\build\generated\res\pngs\debug\drawable-xxhdpi\ic_launcher_background.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="D:\workspace\FlyTour\lib_common\build\generated\res\pngs\debug\drawable-hdpi\ic_launcher_background.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="D:\workspace\FlyTour\lib_common\build\generated\res\pngs\debug\drawable-xhdpi\ic_launcher_background.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="D:\workspace\FlyTour\lib_common\build\generated\res\pngs\debug\drawable-anydpi-v21\ic_launcher_background.xml" qualifiers="anydpi-v21" type="drawable"/></file></source><source path="D:\workspace\FlyTour\lib_common\build\generated\res\rs\debug"/><source path="D:\workspace\FlyTour\lib_common\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\workspace\FlyTour\lib_common\src\main\res"><file name="loading" path="D:\workspace\FlyTour\lib_common\src\main\res\anim\loading.xml" qualifiers="" type="anim"/><file name="base_loading" path="D:\workspace\FlyTour\lib_common\src\main\res\drawable\base_loading.xml" qualifiers="" type="drawable"/><file name="btn_back_menu" path="D:\workspace\FlyTour\lib_common\src\main\res\drawable\btn_back_menu.xml" qualifiers="" type="drawable"/><file name="rotate_progress_bg" path="D:\workspace\FlyTour\lib_common\src\main\res\drawable\rotate_progress_bg.xml" qualifiers="" type="drawable"/><file name="base_activity" path="D:\workspace\FlyTour\lib_common\src\main\res\layout\base_activity.xml" qualifiers="" type="layout"/><file name="base_content" path="D:\workspace\FlyTour\lib_common\src\main\res\layout\base_content.xml" qualifiers="" type="layout"/><file name="base_loading" path="D:\workspace\FlyTour\lib_common\src\main\res\layout\base_loading.xml" qualifiers="" type="layout"/><file name="button_network_err" path="D:\workspace\FlyTour\lib_common\src\main\res\layout\button_network_err.xml" qualifiers="" type="layout"/><file name="common_toolbar" path="D:\workspace\FlyTour\lib_common\src\main\res\layout\common_toolbar.xml" qualifiers="" type="layout"/><file name="fragment_photo_select" path="D:\workspace\FlyTour\lib_common\src\main\res\layout\fragment_photo_select.xml" qualifiers="" type="layout"/><file name="rotate_progress_dialog_layout" path="D:\workspace\FlyTour\lib_common\src\main\res\layout\rotate_progress_dialog_layout.xml" qualifiers="" type="layout"/><file name="car01" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car01.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car01_2" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car01_2.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car02" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car02.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car02_2" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car02_2.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car03" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car03.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car03_2" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car03_2.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car04" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car04.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car04_2" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car04_2.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car05" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car05.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car05_2" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car05_2.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car06" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car06.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="car06_2" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\car06_2.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="default_ptr_rotate" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\default_ptr_rotate.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="expend_btn" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\expend_btn.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_menu_back_dark" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\ic_menu_back_dark.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_menu_back_light" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\ic_menu_back_light.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_network" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\ic_network.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="reduce_btn" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\reduce_btn.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="rotate_process_success" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\rotate_process_success.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="rotate_progress_back_bg" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\rotate_progress_back_bg.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="rotate_progress_front_bg" path="D:\workspace\FlyTour\lib_common\src\main\res\mipmap-xhdpi\rotate_progress_front_bg.png" qualifiers="xhdpi-v4" type="mipmap"/><file path="D:\workspace\FlyTour\lib_common\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="AppTheme.NoActionBar">
+        <attr format="reference|color" name="baseTitleTextColor"/>
+        <attr format="reference|color" name="titleDividerColor"/>
+        <attr format="dimension" name="titleDividerLine"/> 
+    </declare-styleable><declare-styleable name="MagicTextView">
+        <attr format="color" name="innerShadowColor"/>
+        <attr format="dimension" name="innerShadowRadius"/>
+        <attr format="dimension" name="innerShadowDx"/>
+        <attr format="dimension" name="innerShadowDy"/>
+
+        <attr format="color" name="outerShadowColor"/>
+        <attr format="dimension" name="outerShadowRadius"/>
+        <attr format="dimension" name="outerShadowDx"/>
+        <attr format="dimension" name="outerShadowDy"/>
+
+        <attr format="string" name="typeface"/>
+
+        <attr format="reference|color" name="foreground"/>
+        <attr format="reference|color" name="backgroundcolor"/>
+
+        <attr format="dimension" name="strokeWidth"/>
+        <attr format="dimension" name="strokeMiter"/>
+        <attr format="color" name="strokeColor"/>
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0"/>
+            <enum name="bevel" value="1"/>
+            <enum name="round" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ExpandableTextView">
+        <attr format="integer" name="maxCollapsedLines"/>
+        <attr format="integer" name="animDuration"/>
+        <attr format="float" name="animAlphaStart"/>
+        <attr format="reference" name="expandIndicator"/>
+        <attr format="reference" name="collapseIndicator"/>
+        <attr format="enum" name="expandToggleType">
+            <enum name="ImageButton" value="0"/>
+            <enum name="TextView" value="1"/>
+        </attr>
+        <attr format="reference" name="expandableTextId"/>
+        <attr format="reference" name="expandCollapseToggleId"/>
+        <attr format="boolean" name="expandToggleOnTextClick"/>
+    </declare-styleable></file><file path="D:\workspace\FlyTour\lib_common\src\main\res\values\colors.xml" qualifiers=""><color name="colorPrimary">#3F51B5</color><color name="colorPrimaryDark">#303F9F</color><color name="colorAccent">#FF4081</color></file><file path="D:\workspace\FlyTour\lib_common\src\main\res\values\ids.xml" qualifiers=""><item name="glide_tag" type="id"/><item name="expandable_text" type="id"/><item name="expand_collapse" type="id"/></file><file path="D:\workspace\FlyTour\lib_common\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">lib_common</string></file><file path="D:\workspace\FlyTour\lib_common\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style><style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="titleDividerLine">1dp</item>
+        <item name="titleDividerColor">@android:color/transparent</item>
+    </style><style name="AppTheme.BackBar" parent="AppTheme.NoActionBar">
+        <item name="navigationIcon">@drawable/btn_back_menu</item>
+        <item name="colorPrimaryDark">#2a2a2a</item>
+        <item name="baseTitleTextColor">#2a2a2a</item>
+        <item name="colorPrimary">#ff0000</item>
+    </style><style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/><style name="AppTheme.ImageButton">
+        <item name="android:textColor">#2a2a2a</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">@null</item>
+    </style><style name="testToolBar" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style></file></source><source path="D:\workspace\FlyTour\lib_common\build\generated\res\rs\debug"/><source path="D:\workspace\FlyTour\lib_common\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\workspace\FlyTour\lib_common\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\workspace\FlyTour\lib_common\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="MagicTextView">
+        <attr format="color" name="innerShadowColor"/>
+        <attr format="dimension" name="innerShadowRadius"/>
+        <attr format="dimension" name="innerShadowDx"/>
+        <attr format="dimension" name="innerShadowDy"/>
+
+        <attr format="color" name="outerShadowColor"/>
+        <attr format="dimension" name="outerShadowRadius"/>
+        <attr format="dimension" name="outerShadowDx"/>
+        <attr format="dimension" name="outerShadowDy"/>
+
+        <attr format="string" name="typeface"/>
+
+        <attr format="reference|color" name="foreground"/>
+        <attr format="reference|color" name="backgroundcolor"/>
+
+        <attr format="dimension" name="strokeWidth"/>
+        <attr format="dimension" name="strokeMiter"/>
+        <attr format="color" name="strokeColor"/>
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0"/>
+            <enum name="bevel" value="1"/>
+            <enum name="round" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ExpandableTextView">
+        <attr format="integer" name="maxCollapsedLines"/>
+        <attr format="integer" name="animDuration"/>
+        <attr format="float" name="animAlphaStart"/>
+        <attr format="reference" name="expandIndicator"/>
+        <attr format="reference" name="collapseIndicator"/>
+        <attr format="enum" name="expandToggleType">
+            <enum name="ImageButton" value="0"/>
+            <enum name="TextView" value="1"/>
+        </attr>
+        <attr format="reference" name="expandableTextId"/>
+        <attr format="reference" name="expandCollapseToggleId"/>
+        <attr format="boolean" name="expandToggleOnTextClick"/>
+    </declare-styleable><declare-styleable name="AppTheme.NoActionBar">
+        <attr format="reference|color" name="baseTitleTextColor"/>
+        <attr format="reference|color" name="titleDividerColor"/>
+        <attr format="dimension" name="titleDividerLine"/> 
+    </declare-styleable></configuration></mergedItems></merger>
