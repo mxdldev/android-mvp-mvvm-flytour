@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference"/>
+        <attr name="wheel_selected_item_position" format="integer"/>
+        <attr name="wheel_item_text_size" format="dimension"/>
+        <attr name="wheel_item_text_color" format="color"/>
+        <attr name="wheel_selected_item_text_color" format="color"/>
+        <attr name="wheel_same_width" format="boolean"/>
+        <attr name="wheel_maximum_width_text" format="string"/>
+        <attr name="wheel_maximum_width_text_position" format="integer"/>
+        <attr name="wheel_visible_item_count" format="integer"/>
+        <attr name="wheel_item_space" format="dimension"/>
+        <attr name="wheel_cyclic" format="boolean"/>
+        <attr name="wheel_indicator" format="boolean"/>
+        <attr name="wheel_indicator_color" format="color"/>
+        <attr name="wheel_indicator_size" format="dimension"/>
+        <attr name="wheel_curtain" format="boolean"/>
+        <attr name="wheel_curtain_color" format="color"/>
+        <attr name="wheel_atmospheric" format="boolean"/>
+        <attr name="wheel_curved" format="boolean"/>
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SingleDateAndTimePicker">
+        <attr name="picker_todayText" format="string"/>
+        <attr name="picker_textColor" format="color"/>
+        <attr name="picker_selectedTextColor" format="color"/>
+        <attr name="picker_textSize" format="dimension"/>
+        <attr name="picker_curved" format="boolean"/>
+        <attr name="picker_cyclic" format="boolean"/>
+        <attr name="picker_mustBeOnFuture" format="boolean"/>
+        <attr name="picker_visibleItemCount" format="integer"/>
+        <attr name="picker_selectorColor" format="integer"/>
+        <attr name="picker_selectorHeight" format="dimension"/>
+        <attr name="picker_displayMonth" format="boolean"/>
+        <attr name="picker_displayYears" format="boolean"/>
+        <attr name="picker_displayDays" format="boolean"/>
+        <attr name="picker_displayMinutes" format="boolean"/>
+        <attr name="picker_displayHours" format="boolean"/>
+    </declare-styleable>
+</resources>

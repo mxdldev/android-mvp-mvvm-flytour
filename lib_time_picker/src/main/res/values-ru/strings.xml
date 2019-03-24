@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picker_today">Сегодня</string>
+    <string name="picker_am">ДП</string>
+    <string name="picker_pm">ПП</string>
+</resources>

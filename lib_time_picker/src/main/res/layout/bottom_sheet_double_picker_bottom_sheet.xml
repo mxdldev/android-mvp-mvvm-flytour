@@ -1,0 +1,103 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/sheetContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/buttonTab0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/double_date_picker_button_background_selector_ios"
+                android:text="0"
+                android:textColor="@color/double_date_picker_button_text_selector_ios"
+                />
+            <Button
+                android:id="@+id/buttonTab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/double_date_picker_button_background_selector_ios"
+                android:text="1"
+                android:textColor="@color/double_date_picker_button_text_selector_ios"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <FrameLayout
+                android:id="@+id/tab0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                    android:id="@+id/picker_tab_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_weight="1"
+                    app:picker_curved="true"
+                    app:picker_cyclic="true"
+                    app:picker_textSize="20sp"
+                    app:picker_visibleItemCount="7"
+                    app:picker_selectedTextColor="@color/picker_button_background_selected"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                    android:id="@+id/picker_tab_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    app:picker_curved="true"
+                    app:picker_cyclic="true"
+                    app:picker_textSize="20sp"
+                    app:picker_visibleItemCount="7"
+                    app:picker_selectedTextColor="@color/picker_button_background_selected"
+                    />
+
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="@android:string/ok"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/picker_button_background_selected"
+            />
+
+    </LinearLayout>
+</FrameLayout>

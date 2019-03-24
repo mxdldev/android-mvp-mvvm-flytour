@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picker_today">Dnes</string>
+    <string name="picker_am">dop.</string>
+    <string name="picker_pm">odp.</string>
+</resources>
