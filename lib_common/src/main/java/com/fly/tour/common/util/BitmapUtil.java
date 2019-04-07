@@ -1,4 +1,4 @@
-package com.fly.tour.common.util;
+package com.zjx.vcars.common.util;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,6 +9,7 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.media.ExifInterface;
 import android.net.Uri;
+import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.view.View.MeasureSpec;
@@ -463,5 +464,15 @@ public class BitmapUtil {
             return null;
         }
         return new int[]{coverWidth, coverHeight};
+    }
+    public static int getBitmapSize(Bitmap bitmap) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {    //API 19
+            return bitmap.getAllocationByteCount();
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {//API 12
+            return bitmap.getByteCount();
+        }
+        // 在低版本中用一行的字节x高度
+        return bitmap.getRowBytes() * bitmap.getHeight();                //earlier version
     }
 }

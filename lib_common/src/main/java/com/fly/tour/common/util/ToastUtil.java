@@ -1,8 +1,8 @@
-package com.fly.tour.common.util;
+package com.zjx.vcars.common.util;
 
 import android.widget.Toast;
 
-import com.fly.tour.common.BaseApplication;
+import com.zjx.vcars.common.BaseApplication;
 
 /**
  * Description: <吐司工具类><br>

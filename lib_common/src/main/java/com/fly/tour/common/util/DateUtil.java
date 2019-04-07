@@ -1,4 +1,4 @@
-package com.fly.tour.common.util;
+package com.zjx.vcars.common.util;
 
 import android.text.TextUtils;
 
@@ -18,7 +18,7 @@ import java.util.Date;
 public class DateUtil {
 
     public enum FormatType {
-        yyyy, yyyyMM, yyyyMMdd, yyyyMMddHHmm, yyyyMMddHHmmss, MMdd, HHmm
+        yyyy, yyyyMM, yyyyMMdd, yyyyMMddHHmm, yyyyMMddHHmmss, MMdd, HHmm,MM,dd;
     }
     /**
      * 格式化时间字符串
@@ -36,7 +36,13 @@ public class DateUtil {
         Date date = parseTime(time);
         return formatDate(date, type);
     }
-
+    public static String formatDate(String time, FormatType fromtype,FormatType totype) {
+        if (TextUtils.isEmpty(time)) {
+            return "";
+        }
+        Date date = parseTime(time,fromtype);
+        return formatDate(date, totype);
+    }
     public static String formatDate(Date time, FormatType type) {
         if (time == null) {
             return "";
@@ -68,6 +74,12 @@ public class DateUtil {
                 break;
             case HHmm:
                 sdf = new SimpleDateFormat("HH:mm");
+                break;
+            case MM:
+                sdf = new SimpleDateFormat("MM");
+                break;
+            case dd:
+                sdf = new SimpleDateFormat("dd");
                 break;
             default:
                 sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -295,5 +307,28 @@ public class DateUtil {
      */
     public static String getLaterTimeByDay(int day) {
         return getLaterTimeByHour(day * 24);
+    }
+
+    /**
+     * 获取给定时间以后几天的时间戳
+     * @param date
+     * @param day
+     * @return
+     */
+    public static String getLaterTimeByDay(String date,int day){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(parseTime(date, FormatType.yyyyMMdd));
+        calendar.set(Calendar.HOUR, calendar.get(Calendar.HOUR) + day * 24);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(calendar.getTime());
+    }
+    /**
+     * 获取当前时间的位置：一天24小时以半小时为单位划分为48个单元格
+     * @return
+     */
+    public static int getCurrTimePosition() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        return (int)Math.ceil((double)(calendar.get(Calendar.HOUR_OF_DAY) * 60 + calendar.get(Calendar.MINUTE)) / 30);
     }
 }

@@ -1,8 +1,8 @@
-package com.fly.tour.common.util;
+package com.zjx.vcars.common.util;
 
 import android.content.Context;
 
-import com.fly.tour.common.BaseApplication;
+import com.zjx.vcars.common.BaseApplication;
 
 /**
  * Description: <单位转换工具类><br>

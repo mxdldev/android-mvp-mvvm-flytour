@@ -1,4 +1,4 @@
-package com.fly.tour.common.util;
+package com.zjx.vcars.common.util;
 
 import android.content.Context;
 import android.content.pm.PackageManager;

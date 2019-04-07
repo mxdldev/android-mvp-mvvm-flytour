@@ -1,4 +1,4 @@
-package com.fly.tour.common.util;
+package com.zjx.vcars.common.util;
 
 import android.Manifest;
 import android.app.Activity;
@@ -8,8 +8,10 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.content.FileProvider;
 
 import com.tbruyelle.rxpermissions2.RxPermissions;
+import com.zjx.vcars.common.util.ToastUtil;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -20,17 +22,17 @@ import me.nereo.multi_image_selector.MultiImageSelector;
 
 /**
  * Description: <h3>多媒体工具类</h3>
- *     <ul>
- *         <li>1.图片选择器，可算多张图片</li>
- *         <li>2.拍照</li>
- *         <li>3.拍视频</li>
- *         <li>4.创建一个图片路径</li>
- *         <li>5.创建一个视频路径</li>
- *     </ul>
- *     <h3>注意事项：</h3>
- *     <ul><li>1. 拍照、拍视频、选择图片完成的回调都在onActivityResult中回调的</l1>
- *     <li>2.选择图片获取：List<String> path = data.getStringArrayListExtra(MultiImageSelectorActivity.EXTRA_RESULT)</li>
- *      </ul>
+ * <ul>
+ * <li>1.图片选择器，可算多张图片</li>
+ * <li>2.拍照</li>
+ * <li>3.拍视频</li>
+ * <li>4.创建一个图片路径</li>
+ * <li>5.创建一个视频路径</li>
+ * </ul>
+ * <h3>注意事项：</h3>
+ * <ul><li>1. 拍照、拍视频、选择图片完成的回调都在onActivityResult中回调的</l1>
+ * <li>2.选择图片获取：List<String> path = data.getStringArrayListExtra(MultiImageSelectorActivity.EXTRA_RESULT)</li>
+ * </ul>
  * Author:      gxl<br>
  * Date:        2018/12/25<br>
  * Version:     V1.0.0<br>
@@ -42,14 +44,14 @@ public class MultiMediaUtil {
     public static final int TAKE_VIDEO = 1003;
 
     /**
-     *
      * 打开图片选择器，选择图片<br>
      * 来获取图片
+     *
      * @param activity
      * @param count：选择图片个数
      * @param requestcode
      */
-    public static void pohotoSelect(Activity activity, int count, int requestcode) {
+    public static void pohotoSelect(FragmentActivity activity, int count, int requestcode) {
         pohotoSelect(activity, null, count, requestcode);
     }
 
@@ -57,21 +59,38 @@ public class MultiMediaUtil {
         pohotoSelect(null, fragment, count, requestcode);
     }
 
-    private static void pohotoSelect(Activity activity, Fragment fragment, int count, int requestcode) {
+    private static void pohotoSelect(final FragmentActivity activity, final Fragment fragment, final int count, final int requestcode) {
+        RxPermissions rxPermissions = null;
         if (activity != null) {
-            MultiImageSelector.create().showCamera(false).count(count).single().multi()
-                    //.origin(ArrayList<String>)
-                    .start(activity, requestcode);
+            rxPermissions = new RxPermissions(activity);
         } else if (fragment != null) {
-            MultiImageSelector.create().showCamera(false).count(count).single().multi()
-                    //.origin(ArrayList<String>)
-                    .start(fragment, requestcode);
+            rxPermissions = new RxPermissions(fragment);
         }
+        rxPermissions.request(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE).subscribe(new Consumer<Boolean>() {
+            @Override
+            public void accept(Boolean aBoolean) throws Exception {
+                if (aBoolean) {
+                    if (activity != null) {
+                        MultiImageSelector.create().showCamera(false).count(count).single().multi()
+                                //.origin(ArrayList<String>)
+                                .start(activity, requestcode);
+                    } else if (fragment != null) {
+                        MultiImageSelector.create().showCamera(false).count(count).single().multi()
+                                //.origin(ArrayList<String>)
+                                .start(fragment, requestcode);
+                    }
+                } else {
+                    ToastUtil.showToast("无读写外部存储设备权限");
+                }
+            }
+        });
+
 
     }
 
     /**
      * 拍照
+     *
      * @param activity
      * @param path:照片存放的路径
      * @param requestcode
@@ -105,11 +124,11 @@ public class MultiMediaUtil {
                             Intent intent = new Intent();
                             intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
                             intent.addCategory(Intent.CATEGORY_DEFAULT);
-                            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
-
                             if (activity != null) {
+                                intent.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(activity, "com.zjx.vcars.fileprovider", file));
                                 activity.startActivityForResult(intent, requestcode);
                             } else if (fragment != null) {
+                                intent.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(fragment.getContext(), "com.zjx.vcars.fileprovider", file));
                                 fragment.startActivityForResult(intent, requestcode);
                             }
                         }
@@ -127,6 +146,7 @@ public class MultiMediaUtil {
 
     /**
      * 拍视频
+     *
      * @param activity
      * @param path:视频存放的路径
      * @param requestcode
@@ -159,10 +179,12 @@ public class MultiMediaUtil {
                             Intent intent = new Intent();
                             intent.setAction(MediaStore.ACTION_VIDEO_CAPTURE);
                             intent.addCategory(Intent.CATEGORY_DEFAULT);
-                            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
+                            //intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
                             if (activity != null) {
+                                intent.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(activity, "com.zjx.vcars.fileprovider", file));
                                 activity.startActivityForResult(intent, requestcode);
                             } else if (fragment != null) {
+                                intent.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(fragment.getContext(), "com.zjx.vcars.fileprovider", file));
                                 fragment.startActivityForResult(intent, requestcode);
                             }
 
