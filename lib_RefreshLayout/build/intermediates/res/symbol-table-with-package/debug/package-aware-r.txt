@@ -596,6 +596,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rotate_daisy
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id action_bar
@@ -646,6 +647,7 @@ id icon
 id icon_group
 id image
 id image_view
+id img_daisy
 id info
 id italic
 id item_touch_helper_previous_elevation
@@ -708,6 +710,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id txt_loading
 id uniform
 id up
 id wrap_content
@@ -744,6 +747,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout layout_daisy
 layout layout_footer
 layout layout_head
 layout notification_action

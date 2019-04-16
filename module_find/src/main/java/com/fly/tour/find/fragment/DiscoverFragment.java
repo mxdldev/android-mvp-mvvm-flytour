@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.find.R;
-import com.refresh.lib.ArrowRefreshLayout;
 import com.refresh.lib.DaisyRefreshLayout;
 
 
@@ -34,32 +33,7 @@ public class DiscoverFragment extends BaseFragment {
     public View initView(LayoutInflater inflater, ViewGroup container) {
         View view = inflater.inflate(R.layout.fragment_discover_main, container, false);
         mSuperSwipeRefreshLayout = view.findViewById(R.id.refresh_layout);
-        mSuperSwipeRefreshLayout.setOnRefreshListener(new ArrowRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                Log.v(TAG,"refresh start");
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.v(TAG,"response ok");
-                        mSuperSwipeRefreshLayout.setRefreshing(false);
-                    }
-                },1000 * 5);
-            }
-        });
-        mSuperSwipeRefreshLayout.setOnLoadMoreListener(new ArrowRefreshLayout.OnLoadMoreListener() {
-            @Override
-            public void onLoadMore() {
-                Log.v(TAG,"loadMore start");
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.v(TAG,"response ok");
-                        mSuperSwipeRefreshLayout.setLoadMore(false);
-                    }
-                },1000 * 5);
-            }
-        });
+
 //        mSuperSwipeRefreshLayout.autoRefresh();
 //        new Handler().postDelayed(new Runnable() {
 //            @Override

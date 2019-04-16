@@ -1,7 +1,9 @@
 package com.fly.tour.common.base;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 
+import com.fly.tour.common.mvp.BaseModel;
 import com.fly.tour.common.mvp.BasePresenter;
 
 /**
@@ -11,24 +13,25 @@ import com.fly.tour.common.mvp.BasePresenter;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseMvpFragment<V, P extends BasePresenter<V>> extends  BaseFragment {
-    public P mPresenter;
-
+public abstract class BaseMvpFragment<M extends BaseModel,V,P extends BasePresenter<M,V>> extends BaseFragment {
+    protected P mPresenter;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        mPresenter = initPresenter();
-        if (mPresenter != null) {
-            mPresenter.attach((V) this);
-        }
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mPresenter = initPresenter();
+        if(mPresenter != null){
+            mPresenter.attach((V) this);
+            mPresenter.injectLifecycle(mActivity);
+        }
     }
 
     @Override
     public void onDestroy() {
-        if (mPresenter != null) {
-            mPresenter.dettach();
+        if(mPresenter != null){
+            mPresenter.detach();
         }
         super.onDestroy();
     }
     public abstract P initPresenter();
 }
+

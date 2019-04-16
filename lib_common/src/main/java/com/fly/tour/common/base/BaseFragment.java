@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.fly.tour.common.R;
 import com.fly.tour.common.mvp.BaseView;
 import com.fly.tour.common.view.CustomeSwipeRefreshLayout;
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -28,7 +29,7 @@ import org.greenrobot.eventbus.ThreadMode;
  *
  */
 public abstract class BaseFragment extends Fragment implements BaseView {
-    protected AppCompatActivity mActivity;
+    protected RxAppCompatActivity mActivity;
     protected View mView;
     protected TextView mTxtTitle;
     protected Toolbar mToolbar;
@@ -36,7 +37,7 @@ public abstract class BaseFragment extends Fragment implements BaseView {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mActivity = (AppCompatActivity) getActivity();
+        mActivity = (RxAppCompatActivity) getActivity();
         EventBus.getDefault().register(this);
     }
 

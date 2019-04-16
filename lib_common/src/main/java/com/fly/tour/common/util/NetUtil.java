@@ -1,14 +1,15 @@
-package com.zjx.vcars.common.util;
+package com.fly.tour.common.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
-import com.zjx.vcars.common.BaseApplication;
 
-import static com.zjx.vcars.common.util.NetUtil.NetType.NET_4G;
-import static com.zjx.vcars.common.util.NetUtil.NetType.NO_NET;
-import static com.zjx.vcars.common.util.NetUtil.NetType.WIFI;
+import com.fly.tour.common.BaseApplication;
+
+import static com.fly.tour.common.util.NetUtil.NetType.NET_4G;
+import static com.fly.tour.common.util.NetUtil.NetType.NO_NET;
+import static com.fly.tour.common.util.NetUtil.NetType.WIFI;
 
 
 /**

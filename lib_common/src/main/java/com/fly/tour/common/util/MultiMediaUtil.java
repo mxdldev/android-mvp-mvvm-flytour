@@ -1,4 +1,4 @@
-package com.zjx.vcars.common.util;
+package com.fly.tour.common.util;
 
 import android.Manifest;
 import android.app.Activity;
@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.FileProvider;
 
 import com.tbruyelle.rxpermissions2.RxPermissions;
-import com.zjx.vcars.common.util.ToastUtil;
+import com.fly.tour.common.util.ToastUtil;
 
 import java.io.File;
 import java.text.SimpleDateFormat;

@@ -1,9 +1,9 @@
-package com.zjx.vcars.common.util.log.klog;
+package com.fly.tour.common.util.log.klog;
 
 import android.util.Log;
 
-import com.zjx.vcars.common.util.log.KLog;
-import com.zjx.vcars.common.util.log.KLogUtil;
+import com.fly.tour.common.util.log.KLog;
+import com.fly.tour.common.util.log.KLogUtil;
 
 import java.io.StringReader;
 import java.io.StringWriter;

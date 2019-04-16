@@ -1,8 +1,8 @@
-package com.zjx.vcars.common.util.log.klog;
+package com.fly.tour.common.util.log.klog;
 
 import android.util.Log;
 
-import com.zjx.vcars.common.util.log.KLog;
+import com.fly.tour.common.util.log.KLog;
 
 /**
  * Created by zhaokaiqiang on 15/11/18.

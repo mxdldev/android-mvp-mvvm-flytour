@@ -1,4 +1,4 @@
-package com.zjx.vcars.common.util;
+package com.fly.tour.common.util;
 
 /**
  * Description: <动态获取资源id><br>

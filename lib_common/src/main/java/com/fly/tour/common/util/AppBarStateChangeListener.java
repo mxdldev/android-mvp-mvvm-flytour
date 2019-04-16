@@ -1,4 +1,4 @@
-package com.zjx.vcars.common.util;
+package com.fly.tour.common.util;
 
 import android.support.design.widget.AppBarLayout;
 

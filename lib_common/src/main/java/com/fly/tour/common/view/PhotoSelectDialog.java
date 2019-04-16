@@ -72,8 +72,8 @@ public class PhotoSelectDialog extends BottomSheetDialogFragment implements View
     public void onClick(View v) {
         int i = v.getId();
         if (i == R.id.btn_take_photo) {
-            mPhotoPath = MultiMediaUtil.getPhotoPath(getActivity());
-            MultiMediaUtil.takePhoto(this, mPhotoPath, MultiMediaUtil.TAKE_PHONE);
+            mPhotoPath = com.fly.tour.common.util.MultiMediaUtil.getPhotoPath(getActivity());
+            MultiMediaUtil.takePhoto(this, mPhotoPath, com.fly.tour.common.util.MultiMediaUtil.TAKE_PHONE);
 
         } else if (i == R.id.btn_select_photo) {
             MultiMediaUtil.pohotoSelect(this, 1, MultiMediaUtil.SELECT_IMAGE);

@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.fly.tour.common.R;
 import com.fly.tour.common.view.CustomeSwipeRefreshLayout;
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -28,7 +29,7 @@ import org.greenrobot.eventbus.ThreadMode;
  * Update: <br>
  *
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends RxAppCompatActivity {
     protected static final String TAG = BaseActivity.class.getSimpleName();
     protected TextView mTxtTitle;
     protected Toolbar mToolbar;

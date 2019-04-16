@@ -1,4 +1,4 @@
-package com.zjx.vcars.common.util;
+package com.fly.tour.common.util;
 
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;

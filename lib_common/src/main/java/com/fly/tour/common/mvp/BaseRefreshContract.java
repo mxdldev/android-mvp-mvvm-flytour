@@ -1,4 +1,4 @@
-package com.zjx.vcars.common.mvp;
+package com.fly.tour.common.mvp;
 
 /**
  * Description: <基本的刷新数据协议><br>

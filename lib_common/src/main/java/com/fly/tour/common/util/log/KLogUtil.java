@@ -1,4 +1,4 @@
-package com.zjx.vcars.common.util.log;
+package com.fly.tour.common.util.log;
 
 import android.text.TextUtils;
 import android.util.Log;

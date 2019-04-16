@@ -1,13 +1,13 @@
-package com.zjx.vcars.common.util.log;
+package com.fly.tour.common.util.log;
 
 
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.zjx.vcars.common.util.log.klog.BaseLog;
-import com.zjx.vcars.common.util.log.klog.FileLog;
-import com.zjx.vcars.common.util.log.klog.JsonLog;
-import com.zjx.vcars.common.util.log.klog.XmlLog;
+import com.fly.tour.common.util.log.klog.BaseLog;
+import com.fly.tour.common.util.log.klog.FileLog;
+import com.fly.tour.common.util.log.klog.JsonLog;
+import com.fly.tour.common.util.log.klog.XmlLog;
 
 import java.io.File;
 import java.io.PrintWriter;

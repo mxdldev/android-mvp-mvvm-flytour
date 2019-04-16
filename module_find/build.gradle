@@ -44,5 +44,4 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':lib_common')
-    implementation project(':lib_RefreshLayout');
 }

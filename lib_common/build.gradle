@@ -24,7 +24,7 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-
+    api project(":lib_RefreshLayout")
     api deps.junit
     api deps.testrunner
     api deps.testespresso
@@ -49,4 +49,8 @@ dependencies {
     api deps.amaplocation
 
     api deps.eventbus;
+
+    api deps.rxlifecycle
+    api deps.rxlifecycle_android
+    api deps.rxlifecycle_components
 }

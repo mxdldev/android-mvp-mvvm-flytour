@@ -17,13 +17,14 @@ import com.fly.tour.main.entity.MainChannel;
 import com.fly.tour.me.fragment.MeFragment;
 import com.fly.tour.trip.fragment.TripMainFragment;
 import com.tbruyelle.rxpermissions2.RxPermissions;
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 import java.util.List;
 
 import io.reactivex.functions.Consumer;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends RxAppCompatActivity {
     private TripMainFragment mTripMainFragment;
     private DiscoverFragment mDiscoverFragment;
     private Fragment mCurrFragment;//当前的Fragment
