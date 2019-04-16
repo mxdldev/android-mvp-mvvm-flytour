@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="EclipseCodeFormatter">
-    <option name="defaultSettings" value="true" />
-    <option name="formatter" value="ECLIPSE" />
-    <option name="id" value="1476596672120" />
-    <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="D:/android_tool/Eclipse_riverlet.xml" />
-    <option name="selectedJavaProfile" value="Eclipse [Riverlet]" />
-  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />

@@ -1057,6 +1057,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable down_arrow
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1166,11 +1167,15 @@ id fill
 id filled
 id fixed
 id footer
+id footer_image_view
+id footer_pb_view
+id footer_text_view
 id forever
 id ghost_view
 id glide_tag
 id grid
 id group_divider
+id head_container
 id home
 id homeAsUp
 id icon
@@ -1178,6 +1183,7 @@ id icon_group
 id ifRoom
 id image
 id image_grid
+id image_view
 id img_err
 id img_progress
 id img_wheel1
@@ -1221,10 +1227,12 @@ id parent
 id parentPanel
 id parent_matrix
 id path
+id pb_view
 id pin
 id progress_circular
 id progress_horizontal
 id radio
+id refresh_layout
 id right
 id right_icon
 id right_side
@@ -1278,6 +1286,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id text_input_password_toggle
+id text_view
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -1385,6 +1394,8 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_discover_main
 layout fragment_photo_select
+layout layout_footer
+layout layout_head
 layout mis_activity_default
 layout mis_cmp_customer_actionbar
 layout mis_fragment_multi_image

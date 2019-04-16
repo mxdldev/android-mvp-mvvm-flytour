@@ -4,7 +4,7 @@
             "outputFile": "D:\\workspace\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gxl\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\d2b0d3bfc0665e06135bd5152eb823c2\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\e7ccba5fd75cbbd30a40bb4ff8d1e07d\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\gxl\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\9e1e68198ea12c30613b5a36d08941f3\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

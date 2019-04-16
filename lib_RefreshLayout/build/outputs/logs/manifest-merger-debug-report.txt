@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
-INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
-INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
-INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
-INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
-INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
-INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
+ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
+INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
+INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
+INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
+INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
+INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
+INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
 	package
-		ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:2:11-46
+		ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:2:11-35
 		INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml
 		INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml
-		ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
+		ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
 		INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml
-		ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:48
+		ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:1-2:37
 		INJECTED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\workspace\FlyTour\lib_RefreshLayout\src\main\AndroidManifest.xml:1:11-69
