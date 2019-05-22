@@ -170,8 +170,8 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-compat-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-28.0.0" level="project" />
+    <orderEntry type="module" module-name="module_news" />
     <orderEntry type="module" module-name="module_main" />
-    <orderEntry type="module" module-name="module_trip" />
     <orderEntry type="module" module-name="module_me" />
     <orderEntry type="module" module-name="module_find" />
     <orderEntry type="module" module-name="lib_refresh_layout" />

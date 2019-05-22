@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/module_find/module_find.iml" filepath="$PROJECT_DIR$/module_find/module_find.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_main/module_main.iml" filepath="$PROJECT_DIR$/module_main/module_main.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_me/module_me.iml" filepath="$PROJECT_DIR$/module_me/module_me.iml" />
-      <module fileurl="file://$PROJECT_DIR$/module_trip/module_trip.iml" filepath="$PROJECT_DIR$/module_trip/module_trip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_news/module_news.iml" filepath="$PROJECT_DIR$/module_news/module_news.iml" />
     </modules>
   </component>
 </project>

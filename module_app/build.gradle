@@ -26,6 +26,6 @@ dependencies {
         implementation project(':module_main')
         implementation project(':module_find')
         implementation project(':module_me')
-        implementation project(':module_trip')
+        implementation project(':module_news')
     }
 }
