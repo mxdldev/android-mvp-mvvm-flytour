@@ -24,7 +24,7 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    api project(":lib_RefreshLayout")
+    api project(":lib_refresh_layout")
     api deps.junit
     api deps.testrunner
     api deps.testespresso

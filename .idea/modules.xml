@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FlyTour.iml" filepath="$PROJECT_DIR$/FlyTour.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib_RefreshLayout/lib_RefreshLayout.iml" filepath="$PROJECT_DIR$/lib_RefreshLayout/lib_RefreshLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_common/lib_common.iml" filepath="$PROJECT_DIR$/lib_common/lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_refresh_layout/lib_refresh_layout.iml" filepath="$PROJECT_DIR$/lib_refresh_layout/lib_refresh_layout.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_app/module_app.iml" filepath="$PROJECT_DIR$/module_app/module_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_find/module_find.iml" filepath="$PROJECT_DIR$/module_find/module_find.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_main/module_main.iml" filepath="$PROJECT_DIR$/module_main/module_main.iml" />

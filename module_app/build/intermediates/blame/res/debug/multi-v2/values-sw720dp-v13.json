@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\FlyTour0522\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "outputFile": "D:\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\MultiImageSelector-1.2.aar\\5b0dc57011d3fb8d5ae5217abae81b4a\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",

@@ -1106,7 +1106,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable rotate_daisy
 drawable rotate_progress_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1181,9 +1180,6 @@ id fill
 id filled
 id fixed
 id footer
-id footer_image_view
-id footer_pb_view
-id footer_text_view
 id forever
 id ghost_view
 id glide_tag
@@ -1412,7 +1408,6 @@ layout design_text_input_password_icon
 layout fragment_me_main
 layout fragment_photo_select
 layout layout_daisy
-layout layout_footer
 layout layout_head
 layout mis_activity_default
 layout mis_cmp_customer_actionbar

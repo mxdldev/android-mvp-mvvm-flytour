@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\FlyTour0522\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-el\\values-el.xml",
+            "outputFile": "D:\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-el\\values-el.xml",
             "map": [
                 {
                     "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\values-el\\values-el.xml",

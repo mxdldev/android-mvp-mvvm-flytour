@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\workspace\\FlyTour0522\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\percent-28.0.0.aar\\d99812fcd43c4fd558ef671d8a45616d\\res\\values\\values.xml",
@@ -20,23 +20,6 @@
                         "endLines": "1626",
                         "endColumns": "24",
                         "endOffsets": "98285"
-                    }
-                },
-                {
-                    "source": "D:\\workspace\\FlyTour0522\\FlyTour\\module_main\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "6,7,8",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "248,290,330",
-                        "endColumns": "41,39,41",
-                        "endOffsets": "285,325,367"
-                    },
-                    "to": {
-                        "startLines": "2348,2349,2350",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "144207,144249,144289",
-                        "endColumns": "41,39,41",
-                        "endOffsets": "144244,144284,144326"
                     }
                 },
                 {
@@ -59,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "D:\\workspace\\FlyTour0522\\FlyTour\\module_app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\FlyTour\\module_app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -78,20 +61,20 @@
                     }
                 },
                 {
-                    "source": "D:\\workspace\\FlyTour0522\\FlyTour\\module_app\\src\\main\\res\\values\\colors.xml",
+                    "source": "D:\\FlyTour\\module_main\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "4,2,3",
+                        "startLines": "6,7,8",
                         "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
+                        "startOffsets": "248,290,330",
+                        "endColumns": "41,39,41",
+                        "endOffsets": "285,325,367"
                     },
                     "to": {
-                        "startLines": "192,193,194",
+                        "startLines": "2348,2349,2350",
                         "startColumns": "4,4,4",
-                        "startOffsets": "9973,10019,10066",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "10014,10061,10112"
+                        "startOffsets": "144207,144249,144289",
+                        "endColumns": "41,39,41",
+                        "endOffsets": "144244,144284,144326"
                     }
                 },
                 {
@@ -131,7 +114,7 @@
                     }
                 },
                 {
-                    "source": "D:\\workspace\\FlyTour0522\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
                         "startLines": "12",
                         "startColumns": "4",
@@ -150,6 +133,23 @@
                     }
                 },
                 {
+                    "source": "D:\\FlyTour\\module_app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "44",
+                        "endOffsets": "57"
+                    },
+                    "to": {
+                        "startLines": "2317",
+                        "startColumns": "4",
+                        "startOffsets": "141221",
+                        "endColumns": "44",
+                        "endOffsets": "141261"
+                    }
+                },
+                {
                     "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\e7ccba5fd75cbbd30a40bb4ff8d1e07d\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,5,6,7,8,10,11,12,13,14",
@@ -164,6 +164,23 @@
                         "startOffsets": "12971,134870,134923,134976,135029,258894,259070,259192,259454,259649",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "13055,134918,134971,135024,135077,258955,259187,259248,259515,259711"
+                    }
+                },
+                {
+                    "source": "D:\\FlyTour\\module_app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
+                    },
+                    "to": {
+                        "startLines": "192,193,194",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "9973,10019,10066",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "10014,10061,10112"
                     }
                 },
                 {
@@ -205,23 +222,6 @@
                     }
                 },
                 {
-                    "source": "D:\\workspace\\FlyTour0522\\FlyTour\\module_app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "44",
-                        "endOffsets": "57"
-                    },
-                    "to": {
-                        "startLines": "2317",
-                        "startColumns": "4",
-                        "startOffsets": "141221",
-                        "endColumns": "44",
-                        "endOffsets": "141261"
-                    }
-                },
-                {
                     "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\6fcad92a714e9aa1b838108651f7bcf0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,35,36,37,38,45,47,50",
@@ -238,6 +238,25 @@
                         "endLines": "15,188,189,190,191,994,2075,2076,2077,2415,3804,3807,3810",
                         "endColumns": "51,60,61,61,63,24,58,56,53,12,12,12,12",
                         "endOffsets": "781,9780,9842,9904,9968,54732,126319,126376,126430,148310,238509,238635,238763"
+                    }
+                },
+                {
+                    "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "5,10,24,49,50,51,58,59,65,74,80",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "199,495,1204,2244,2289,2334,2696,2786,3089,3505,3777",
+                        "endLines": "9,23,48,49,50,51,58,64,73,79,82",
+                        "endColumns": "24,24,24,44,44,38,89,12,12,12,12",
+                        "endOffsets": "490,1199,2239,2284,2329,2368,2781,3084,3500,3772,3922"
+                    },
+                    "to": {
+                        "startLines": "937,1202,1395,2228,2229,2231,2366,2367,2373,2382,4725",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "50924,73488,85241,135888,135933,136018,145369,145459,145762,146178,300890",
+                        "endLines": "941,1215,1419,2228,2229,2231,2366,2372,2381,2387,4727",
+                        "endColumns": "24,24,24,44,44,38,89,12,12,12,12",
+                        "endOffsets": "51215,74192,86276,135928,135973,136052,145454,145757,146173,146445,301035"
                     }
                 },
                 {
@@ -293,25 +312,6 @@
                         "startOffsets": "135978,136347,136486,136533,136588,137182,137236,137288,137337,137398",
                         "endColumns": "39,42,46,54,44,53,51,48,60,49",
                         "endOffsets": "136013,136385,136528,136583,136628,137231,137283,137332,137393,137443"
-                    }
-                },
-                {
-                    "source": "D:\\workspace\\FlyTour0522\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "5,10,24,49,50,51,58,59,65,74,80",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "199,495,1204,2244,2289,2334,2696,2786,3089,3505,3777",
-                        "endLines": "9,23,48,49,50,51,58,64,73,79,82",
-                        "endColumns": "24,24,24,44,44,38,89,12,12,12,12",
-                        "endOffsets": "490,1199,2239,2284,2329,2368,2781,3084,3500,3772,3922"
-                    },
-                    "to": {
-                        "startLines": "937,1202,1395,2228,2229,2231,2366,2367,2373,2382,4725",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "50924,73488,85241,135888,135933,136018,145369,145459,145762,146178,300890",
-                        "endLines": "941,1215,1419,2228,2229,2231,2366,2372,2381,2387,4727",
-                        "endColumns": "24,24,24,44,44,38,89,12,12,12,12",
-                        "endOffsets": "51215,74192,86276,135928,135973,136052,145454,145757,146173,146445,301035"
                     }
                 }
             ]

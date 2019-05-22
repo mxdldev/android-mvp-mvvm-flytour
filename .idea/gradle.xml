@@ -8,8 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lib_RefreshLayout" />
             <option value="$PROJECT_DIR$/lib_common" />
+            <option value="$PROJECT_DIR$/lib_refresh_layout" />
             <option value="$PROJECT_DIR$/module_app" />
             <option value="$PROJECT_DIR$/module_find" />
             <option value="$PROJECT_DIR$/module_main" />
