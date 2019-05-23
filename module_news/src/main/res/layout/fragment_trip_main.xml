@@ -21,19 +21,19 @@
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="路线"
+            android:text="移动开发"
             />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="记录"
+            android:text="人工智能"
             />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="组队"
+            android:text="大数据"
             />
     </android.support.design.widget.TabLayout>
     <android.support.v4.view.ViewPager

@@ -28,7 +28,7 @@
         android:theme="@style/AppTheme">
         <!-- 高德定位服务 -->
         <service android:name="com.amap.api.location.APSService"/>
-        <service android:name="com.fly.tour.trip.service.TrackCollectService"/>
+        <service android:name="com.fly.tour.trip.com.fly.tour.news.service.TrackCollectService"/>
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="ff73fbe44349261fdabbeda975ae8131"/>

@@ -42,13 +42,8 @@ dependencies {
 
     api deps.arouter_api
     api deps.rxpermissions
-    api deps.MultiImageSelector
-
-    api deps.amapnavi
-    api deps.amapsearch
-    api deps.amaplocation
-
     api deps.eventbus;
+    api deps.MultiImageSelector
 
     api deps.rxlifecycle
     api deps.rxlifecycle_android

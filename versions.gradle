@@ -66,11 +66,6 @@ support.multidex = "com.android.support:multidex:$versions.multidex"
 support.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
 deps.support = support
 
-//地图相关
-//compile 'com.amap.api:3dmap:latest.integration'
-deps.amapnavi = 'com.amap.api:navi-3dmap:latest.integration'
-deps.amapsearch = 'com.amap.api:search:latest.integration'
-deps.amaplocation = 'com.amap.api:location:latest.integration'
 
 deps.arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
 deps.arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"

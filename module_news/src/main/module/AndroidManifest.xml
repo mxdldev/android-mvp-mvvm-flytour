@@ -26,9 +26,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name="debug.TripApplication"
+        android:name="debug.NewsApplication"
         >
-        <activity android:name="com.fly.tour.trip.MainActivity">
+        <activity android:name="com.fly.tour.trip.com.fly.tour.news.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -37,7 +37,7 @@
         </activity>
         <!-- 高德定位服务 -->
         <service android:name="com.amap.api.location.APSService"/>
-        <service android:name="com.fly.tour.trip.service.TrackCollectService"/>
+        <service android:name="com.fly.tour.trip.com.fly.tour.news.service.TrackCollectService"/>
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="ebc6eb680b62e5aec5c33eea25c6a5c5"/>

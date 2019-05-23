@@ -1,31 +1,20 @@
 package com.fly.tour.main;
 
-import android.Manifest;
-import android.os.Build;
 import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
-
 import com.fly.tour.find.fragment.DiscoverFragment;
 import com.fly.tour.main.entity.MainChannel;
 import com.fly.tour.me.fragment.MeFragment;
-import com.fly.tour.trip.fragment.TripMainFragment;
-import com.tbruyelle.rxpermissions2.RxPermissions;
+import com.fly.tour.news.fragment.MainNewsFragment;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
-
-import java.util.List;
-
-import io.reactivex.functions.Consumer;
 
 
 public class MainActivity extends RxAppCompatActivity {
-    private TripMainFragment mTripMainFragment;
+    private MainNewsFragment mMainNewsFragment;
     private DiscoverFragment mDiscoverFragment;
     private Fragment mCurrFragment;//当前的Fragment
     private MeFragment mMeFragment;
@@ -39,8 +28,8 @@ public class MainActivity extends RxAppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int i = menuItem.getItemId();
                 if (i == R.id.navigation_trip) {
-                    switchContent(mCurrFragment, mTripMainFragment, MainChannel.TRIP.name);
-                    mCurrFragment = mTripMainFragment;
+                    switchContent(mCurrFragment, mMainNewsFragment, MainChannel.TRIP.name);
+                    mCurrFragment = mMainNewsFragment;
 
                     return true;
                 } else if (i == R.id.navigation_discover) {
@@ -58,20 +47,11 @@ public class MainActivity extends RxAppCompatActivity {
             }
         });
 
-        mTripMainFragment = TripMainFragment.newInstance();
+        mMainNewsFragment = MainNewsFragment.newInstance();
         mDiscoverFragment = DiscoverFragment.newInstance();
         mMeFragment = MeFragment.newInstance();
-        mCurrFragment = mTripMainFragment;
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, mTripMainFragment, MainChannel.TRIP.name).commit();
-        // startActivity(new Intent(this,TestActivity.class));
-//        new RxPermissions(this).request(Manifest.permission.ACCESS_COARSE_LOCATION,
-//                Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.READ_EXTERNAL_STORAGE,
-//                Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(new Consumer<Boolean>() {
-//            @Override
-//            public void accept(Boolean aBoolean) throws Exception {
-//
-//            }
-//        });
+        mCurrFragment = mMainNewsFragment;
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, mMainNewsFragment, MainChannel.TRIP.name).commit();
     }
     public void switchContent(Fragment from, Fragment to, String tag) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();

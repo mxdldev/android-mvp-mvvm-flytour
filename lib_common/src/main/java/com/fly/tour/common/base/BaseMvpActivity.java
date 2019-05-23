@@ -9,7 +9,7 @@ import com.fly.tour.common.mvp.BasePresenter;
 /**
  * Description: <BaseMvpActivity><br>
  * Author:      gxl<br>
- * Date:        2018/6/11<br>
+ * Date:        2018/1/16<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */

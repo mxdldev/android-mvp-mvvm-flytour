@@ -6,9 +6,9 @@
     <string name="app_name">module_main</string>
     <string name="title_find">发现</string>
     <string name="title_my">我的</string>
-    <string name="title_tour">出游</string>
+    <string name="title_news">新闻</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>

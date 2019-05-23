@@ -7,7 +7,7 @@ import com.trello.rxlifecycle2.LifecycleProvider;
 /**
  * Description: <BaseModel><br>
  * Author:      gxl<br>
- * Date:        2019/3/18<br>
+ * Date:        2018/3/18<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
@@ -29,5 +29,5 @@ public class BaseModel {
         return mContext;
     }
 
-    public void destory(){};
+    public void destory(){}
 }

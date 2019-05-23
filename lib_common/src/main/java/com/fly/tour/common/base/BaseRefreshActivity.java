@@ -1,19 +1,15 @@
 package com.fly.tour.common.base;
 
-
 import com.fly.tour.common.mvp.BaseModel;
-import com.fly.tour.common.mvp.BasePresenter;
 import com.fly.tour.common.mvp.BaseRefreshPresenter;
 import com.fly.tour.common.mvp.BaseRefreshView;
-import com.fly.tour.common.mvp.BaseView;
-import com.fly.tour.common.view.CustomeSwipeRefreshLayout;
 import com.refresh.lib.BaseRefreshLayout;
 import com.refresh.lib.DaisyRefreshLayout;
 
 /**
- * Description: <有下拉刷新、上拉加载更多的Activity><br>
+ * Description: <下拉刷新、上拉加载更多的Activity><br>
  * Author:      gxl<br>
- * Date:        2019/1/18<br>
+ * Date:        2018/2/26<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
@@ -28,18 +24,21 @@ public abstract class BaseRefreshActivity<M extends BaseModel, V extends BaseRef
 
     public void initRefreshView() {
         mRefreshLayout = findViewById(onBindRreshLayout());
+        // 下拉刷新
         mRefreshLayout.setOnRefreshListener(new BaseRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 onRefreshEvent();
             }
         });
+        // 上拉加载
         mRefreshLayout.setOnLoadMoreListener(new BaseRefreshLayout.OnLoadMoreListener() {
             @Override
             public void onLoadMore() {
                 onLoadMoreEvent();
             }
         });
+        // 自动加载
         mRefreshLayout.setOnAutoLoadListener(new BaseRefreshLayout.OnAutoLoadListener() {
             @Override
             public void onAutoLoad() {

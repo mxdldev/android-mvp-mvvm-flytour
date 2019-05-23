@@ -9,7 +9,7 @@ import com.fly.tour.common.mvp.BasePresenter;
 /**
  * Description: <BaseMvpFragment><br>
  * Author:      gxl<br>
- * Date:        2018/6/11<br>
+ * Date:        2018/1/15<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
@@ -34,4 +34,3 @@ public abstract class BaseMvpFragment<M extends BaseModel,V,P extends BasePresen
     }
     public abstract P initPresenter();
 }
-

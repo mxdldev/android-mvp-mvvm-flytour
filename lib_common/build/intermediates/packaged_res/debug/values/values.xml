@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1976D2</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="menu_color">#1976D2</color>
+    <color name="textColorPrimary">#333333</color>
     <declare-styleable name="AppTheme.NoActionBar">
         <attr format="reference|color" name="baseTitleTextColor"/>
         <attr format="reference|color" name="titleDividerColor"/>
-        <attr format="dimension" name="titleDividerLine"/> <!-- 是否显示 titlebar 的分割线-->
+        <attr format="dimension" name="titleDividerLine"/> 
     </declare-styleable>
     <declare-styleable name="ExpandableTextView">
         <attr format="integer" name="maxCollapsedLines"/>
@@ -51,34 +53,20 @@
     <item name="expandable_text" type="id"/>
     <item name="glide_tag" type="id"/>
     <string name="app_name">lib_common</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="AppTheme.BackBar" parent="AppTheme.NoActionBar">
-        <item name="navigationIcon">@drawable/btn_back_menu</item>
-        <item name="colorPrimaryDark">#2a2a2a</item>
-        <item name="baseTitleTextColor">#2a2a2a</item>
-        <item name="colorPrimary">#ff0000</item>
+    <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
     </style>
-    <style name="AppTheme.ImageButton">
-        <item name="android:textColor">#2a2a2a</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:paddingLeft">10dp</item>
-        <item name="android:paddingRight">10dp</item>
-        <item name="android:minHeight">0dp</item>
-        <item name="android:minWidth">0dp</item>
-        <item name="android:background">@null</item>
-    </style>
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="titleDividerLine">1dp</item>
-        <item name="titleDividerColor">@android:color/transparent</item>
-    </style>
-    <style name="testToolBar" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
-        <item name="overlapAnchor">false</item>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/menu_color</item>
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>

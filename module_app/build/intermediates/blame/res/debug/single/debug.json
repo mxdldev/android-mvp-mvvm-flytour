@@ -1,11 +1,19 @@
 [
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape0.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape0.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_empty_pic_net.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\empty_pic_net.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_start.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_start.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_start.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -48,6 +56,14 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape19.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape19.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape35.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape35.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
@@ -64,6 +80,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape28.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape28.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable\\mtrl_tabs_default_indicator.xml"
     },
@@ -72,20 +92,16 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car05.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car05.png"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -156,12 +172,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\FlyTour\\module_app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\FlyTour\\module_app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -170,6 +186,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape2.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape2.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -204,12 +224,24 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\anim\\abc_popup_enter.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape37.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape37.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_stub_no_car.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\stub_no_car.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape60.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape60.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
@@ -228,12 +260,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
@@ -244,28 +276,32 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_rotate_progress_bg.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\rotate_progress_bg.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "D:\\FlyTour\\module_app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_rotate_progress_bg.xml.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\rotate_progress_bg.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car03.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car03.png"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape17.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape17.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape42.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape42.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -278,6 +314,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_round_blue.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\shape_round_blue.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mis_asv.png.flat",
@@ -297,7 +337,11 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_trip_team.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_team.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_team.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape46.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape46.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -324,12 +368,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_design_snackbar_background.xml.flat",
@@ -344,12 +388,16 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape62.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape62.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -368,12 +416,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_top.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
@@ -384,12 +432,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape53.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape53.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape40.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape40.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_tabbar_icon_my_select.png.flat",
         "source": "D:\\FlyTour\\module_main\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\tabbar_icon_my_select.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_map_icon_video.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_video.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_video.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_light.xml.flat",
@@ -402,6 +458,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape4.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape4.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -424,12 +484,16 @@
         "source": "D:\\FlyTour\\module_main\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_bottom_discover.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car01.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car01.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape33.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape33.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape9.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape9.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
@@ -508,8 +572,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_base_activity.xml.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\base_activity.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape13.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape13.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape26.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape26.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -524,8 +592,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable\\notification_bg.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape39.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape39.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_trip_main.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_main.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_main.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_top_material.xml.flat",
@@ -533,7 +605,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_photo.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_photo.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_photo.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -542,6 +614,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape65.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape65.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -576,6 +652,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape12.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape12.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_tabbar_icon_find_select.png.flat",
         "source": "D:\\FlyTour\\module_main\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\tabbar_icon_find_select.png"
     },
@@ -586,6 +666,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\e7ccba5fd75cbbd30a40bb4ff8d1e07d\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_stub_init_loading.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\stub_init_loading.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -620,6 +704,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape7.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape7.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
@@ -628,8 +716,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color-v23\\abc_tint_default.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_empty_pic_data.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\empty_pic_data.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_trip_record_toolbar_pause.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_trip_record_toolbar_pause.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_trip_record_toolbar_pause.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -638,6 +730,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_tabbar_icon_trip_normal.png.flat",
         "source": "D:\\FlyTour\\module_main\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\tabbar_icon_trip_normal.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape8.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape8.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
@@ -681,7 +777,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_trip_record_btn_bg.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_trip_record_btn_bg.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_trip_record_btn_bg.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
@@ -708,6 +804,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape21.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape21.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
@@ -716,20 +816,16 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_view_trans_loading.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\view_trans_loading.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car01_2.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car01_2.png"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car02_2.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car02_2.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -748,12 +844,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape63.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape63.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car06_2.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car06_2.png"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
@@ -784,8 +880,16 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\MultiImageSelector-1.2.aar\\5b0dc57011d3fb8d5ae5217abae81b4a\\res\\color\\mis_folder_text_color.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape5.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape5.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape11.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape11.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -804,12 +908,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car05_2.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car05_2.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape48.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape48.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
@@ -817,7 +921,11 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_map_icon_pic.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_pic.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_pic.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape22.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape22.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -856,20 +964,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color\\abc_tint_spinner.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_loading.xml.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\anim\\loading.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_radio.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_pic_map_empty.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_pic_map_empty.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_pic_map_empty.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_loading_anim.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\loading_anim.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -916,6 +1024,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\MultiImageSelector-1.2.aar\\5b0dc57011d3fb8d5ae5217abae81b4a\\res\\drawable-xxhdpi-v4\\mis_default_error.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_stub_trans_loading.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\stub_trans_loading.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_bottom_trip.xml.flat",
         "source": "D:\\FlyTour\\module_main\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_bottom_trip.xml"
     },
@@ -924,8 +1036,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape24.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape24.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_trip_record.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_record.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_record.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_expend_btn.png.flat",
@@ -1053,7 +1169,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_pic.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_pic.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_pic.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1084,6 +1200,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape51.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape51.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_me_main.xml.flat",
         "source": "D:\\FlyTour\\module_me\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_me_main.xml"
     },
@@ -1092,12 +1212,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_view_init_loading.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\view_init_loading.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\color\\mtrl_fab_ripple_color.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape49.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape49.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1121,11 +1249,19 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_trip_record_toolbar_bg.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_trip_record_toolbar_bg.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_trip_record_toolbar_bg.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape64.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape64.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape10.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape10.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1140,6 +1276,14 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape23.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape23.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape36.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape36.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
@@ -1150,6 +1294,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape6.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape6.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_fast_out_slow_in.xml.flat",
@@ -1180,16 +1328,16 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-xhdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape50.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape50.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\e7ccba5fd75cbbd30a40bb4ff8d1e07d\\res\\layout\\notification_template_media_custom.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\animator\\mtrl_btn_unelevated_state_list_anim.xml"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car04.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car04.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_colored_ripple_color.xml.flat",
@@ -1200,12 +1348,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_stub_no_data.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\stub_no_data.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_rotate_process_success.png.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\rotate_process_success.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape43.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape43.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1220,8 +1376,16 @@
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\rotate_progress_dialog_layout.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape27.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape27.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape1.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape1.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
@@ -1245,7 +1409,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_view_record_toolbar.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\layout\\view_record_toolbar.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\layout\\view_record_toolbar.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -1272,16 +1436,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape34.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape34.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_item_tint.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car06.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car06.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape52.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape52.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -1300,6 +1468,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_loading_bg.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\loading_bg.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -1310,6 +1482,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_photo_select.xml.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_photo_select.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape25.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape25.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -1377,7 +1553,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_background.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\drawable-v24\\ic_launcher_background.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\drawable-v24\\ic_launcher_background.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
@@ -1392,12 +1568,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape45.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape45.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape32.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape32.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1436,8 +1620,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\MultiImageSelector-1.2.aar\\5b0dc57011d3fb8d5ae5217abae81b4a\\res\\color\\mis_default_text_color.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_view_no_data.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\view_no_data.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_food.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_food.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_food.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
@@ -1481,7 +1669,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_map_icon_end.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_end.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_end.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -1490,6 +1678,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape38.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape38.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1508,6 +1700,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape54.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape54.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\FlyTour\\module_app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
@@ -1518,10 +1714,6 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_base_content.xml.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\base_content.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_ic_menu_back_dark.png.flat",
@@ -1553,7 +1745,11 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_view_record_topbar.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\layout\\view_record_topbar.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\layout\\view_record_topbar.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_empty_pic_nocar.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\empty_pic_nocar.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
@@ -1565,7 +1761,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_stop.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_stop.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_stop.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
@@ -1573,7 +1769,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_time.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_time.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_time.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_tabbar_icon_trip_select.png.flat",
@@ -1594,6 +1790,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape47.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape47.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1620,12 +1820,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim\\design_snackbar_in.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape59.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape59.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout\\mtrl_layout_snackbar.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape18.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape18.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_vector_test.xml.flat",
@@ -1652,10 +1860,6 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car02.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car02.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
@@ -1666,6 +1870,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\layout-v16\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape41.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape41.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
@@ -1689,7 +1897,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_mileage.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_mileage.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_mileage.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
@@ -1698,6 +1906,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape3.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape3.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_clear_material.xml.flat",
@@ -1710,6 +1922,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape61.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape61.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
@@ -1756,6 +1972,14 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_stub_net_error.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\stub_net_error.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape20.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape20.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -1778,6 +2002,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape57.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape57.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1857,11 +2085,11 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_trip_route.xml.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_route.xml"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_trip_route.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_pause.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_pause.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_pause.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1870,10 +2098,6 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\e7ccba5fd75cbbd30a40bb4ff8d1e07d\\res\\layout\\notification_template_media.xml"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_base_loading.xml.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\base_loading.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -1920,6 +2144,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\MultiImageSelector-1.2.aar\\5b0dc57011d3fb8d5ae5217abae81b4a\\res\\drawable-xxhdpi-v4\\mis_btn_unselected.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape14.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape14.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_ic_menu_back_light.png.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\ic_menu_back_light.png"
     },
@@ -1949,7 +2177,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_ic_tour_track.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\ic_tour_track.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\ic_tour_track.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -1996,20 +2224,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car03_2.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car03_2.png"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_car04_2.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\car04_2.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_map_icon_start.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_start.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_start.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
@@ -2030,6 +2250,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape58.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape58.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
@@ -2062,6 +2286,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape55.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape55.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -2112,12 +2340,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_base_loading.xml.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\base_loading.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape16.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape16.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar_include.xml.flat",
@@ -2126,6 +2354,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape31.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape31.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -2192,6 +2424,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_root.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_root.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -2220,6 +2456,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-v21\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape15.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape15.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_select_dialog_material.xml"
     },
@@ -2240,6 +2480,14 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape29.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape29.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape44.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape44.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -2252,12 +2500,20 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_common_toolbar_leftbtn.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\common_toolbar_leftbtn.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_icon.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape56.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape56.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -2274,6 +2530,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape30.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape30.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -2297,7 +2557,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_map_icon_my.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_my.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\map_icon_my.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
@@ -2324,6 +2584,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_view_net_error.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\view_net_error.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
     },
@@ -2334,6 +2598,14 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "D:\\FlyTour\\module_app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_rotate_daisy.png.flat",
+        "source": "D:\\FlyTour\\lib_refresh_layout\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\rotate_daisy.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_activity_root.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\activity_root.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
@@ -2361,7 +2633,7 @@
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4_record_icon_video.png.flat",
-        "source": "D:\\FlyTour\\module_trip\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_video.png"
+        "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\mipmap-xhdpi-v4\\record_icon_video.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",

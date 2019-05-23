@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar_root"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:minHeight="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    android:elevation="4dp"
-    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/toolbar_root"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="?attr/actionBarSize"
+                                   android:background="?attr/colorPrimary"
+                                   android:elevation="0dp"
+                                   android:minHeight="?attr/actionBarSize"
+                                   android:theme="@style/ToolbarTheme"
+                                   app:layout_collapseMode="pin"
+                                   app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
     <TextView
         android:id="@+id/toolbar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textColor="#000000"
-        android:textSize="17sp"
         android:layout_gravity="center"
-        />
+        android:text="易车队"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="17sp"/>
 </android.support.v7.widget.Toolbar>
