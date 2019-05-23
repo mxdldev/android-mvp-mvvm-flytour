@@ -10,15 +10,26 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+        }
     }
 
     buildTypes {
+        debug{
+            buildConfigField "boolean", 'IS_DEBUG', 'true'
+        }
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", 'IS_DEBUG', 'false'
         }
     }
+
 
 }
 
@@ -48,4 +59,11 @@ dependencies {
     api deps.rxlifecycle
     api deps.rxlifecycle_android
     api deps.rxlifecycle_components
+
+    api deps.dagger
+    api deps.glide
+
+    annotationProcessor deps.glide_compiler
+    annotationProcessor deps.arouter_compiler
+
 }

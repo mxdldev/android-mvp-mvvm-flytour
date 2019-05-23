@@ -6,26 +6,27 @@ if (isModule.toBoolean()) {
 
 android {
     compileSdkVersion build_versions.target_sdk
+
     defaultConfig {
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
-        versionCode 1
-        versionName "1.0"
+        versionCode app_version.version_code
+        versionName app_version.version_name
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [moduleName: project.getName()]
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
-    }
 
+    }
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            consumerProguardFiles  'proguard-rules.pro'
         }
+
     }
     sourceSets {
         main {
@@ -44,4 +45,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':lib_common')
+    annotationProcessor deps.arouter_compiler
+    annotationProcessor deps.glide_compiler
+    annotationProcessor deps.dagger_compiler
 }

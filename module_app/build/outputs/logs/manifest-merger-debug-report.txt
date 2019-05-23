@@ -26,6 +26,7 @@ MERGED from [com.android.support:multidex:1.0.2] C:\Users\gxl\.m2\repository\cac
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ac2c47804bd4fe2186d848ca9085ab05\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\rxpermissions-0.10.2.aar\72f3b90104269830b2368c21d6d6d1d0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.trello.rxlifecycle2:rxlifecycle-android:2.2.1] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\rxlifecycle-android-2.2.1.aar\8144b50d6d49c397a483aeeed99a3032\AndroidManifest.xml:13:1-19:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\glide-4.8.0.aar\e894587856572f96d5b25ae68413dd4e\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support.test:monitor:1.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\monitor-1.0.2.aar\ac2501bae76fc0e007993ac2d5fe99ce\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f65a24b428141e82af00d828b3b06614\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\83f57839337e2a9830440cfff025c667\AndroidManifest.xml:17:1-22:12
@@ -44,6 +45,7 @@ MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\gxl\.m2\r
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f900622b1baa2820a3e9c2d44c116eba\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fc175a156c14e3e26b1fcc721f99af74\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\88f8000f02932036798e5ed335b55420\AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\96a3c8003ac5f37a2ee73591a7a478ad\AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1499916fe74367262b42af47605ae7e5\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\01c39babf10614775b184e88dee2c066\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\9bdd9e73074558bc9e4425a3d142bf6a\AndroidManifest.xml:17:1-22:12
@@ -91,10 +93,14 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gx
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ac2c47804bd4fe2186d848ca9085ab05\AndroidManifest.xml:9:5-20
 MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\rxpermissions-0.10.2.aar\72f3b90104269830b2368c21d6d6d1d0\AndroidManifest.xml:9:5-20
 MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\rxpermissions-0.10.2.aar\72f3b90104269830b2368c21d6d6d1d0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\glide-4.8.0.aar\e894587856572f96d5b25ae68413dd4e\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\glide-4.8.0.aar\e894587856572f96d5b25ae68413dd4e\AndroidManifest.xml:10:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fc175a156c14e3e26b1fcc721f99af74\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fc175a156c14e3e26b1fcc721f99af74\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\88f8000f02932036798e5ed335b55420\AndroidManifest.xml:22:5-23:19
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\88f8000f02932036798e5ed335b55420\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\96a3c8003ac5f37a2ee73591a7a478ad\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\96a3c8003ac5f37a2ee73591a7a478ad\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fc175a156c14e3e26b1fcc721f99af74\AndroidManifest.xml:22:18-91
 	android:supportsRtl
@@ -159,6 +165,8 @@ MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\gxl\.m2\reposit
 MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\rxpermissions-0.10.2.aar\72f3b90104269830b2368c21d6d6d1d0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.trello.rxlifecycle2:rxlifecycle-android:2.2.1] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\rxlifecycle-android-2.2.1.aar\8144b50d6d49c397a483aeeed99a3032\AndroidManifest.xml:17:5-44
 MERGED from [com.trello.rxlifecycle2:rxlifecycle-android:2.2.1] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\rxlifecycle-android-2.2.1.aar\8144b50d6d49c397a483aeeed99a3032\AndroidManifest.xml:17:5-44
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\glide-4.8.0.aar\e894587856572f96d5b25ae68413dd4e\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\glide-4.8.0.aar\e894587856572f96d5b25ae68413dd4e\AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support.test:monitor:1.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\monitor-1.0.2.aar\ac2501bae76fc0e007993ac2d5fe99ce\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support.test:monitor:1.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\monitor-1.0.2.aar\ac2501bae76fc0e007993ac2d5fe99ce\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f65a24b428141e82af00d828b3b06614\AndroidManifest.xml:20:5-44
@@ -195,6 +203,8 @@ MERGED from [com.android.support:support-compat:28.0.0] C:\Users\gxl\.m2\reposit
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fc175a156c14e3e26b1fcc721f99af74\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\88f8000f02932036798e5ed335b55420\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\88f8000f02932036798e5ed335b55420\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\96a3c8003ac5f37a2ee73591a7a478ad\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\96a3c8003ac5f37a2ee73591a7a478ad\AndroidManifest.xml:5:5-7:41
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1499916fe74367262b42af47605ae7e5\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1499916fe74367262b42af47605ae7e5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\01c39babf10614775b184e88dee2c066\AndroidManifest.xml:20:5-44

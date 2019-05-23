@@ -6,35 +6,52 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
-import com.fly.tour.find.fragment.DiscoverFragment;
+
+import com.alibaba.android.arouter.facade.annotation.Autowired;
+import com.alibaba.android.arouter.launcher.ARouter;
+import com.fly.tour.common.base.BaseActivity;
+import com.fly.tour.common.provider.IFindProvider;
+import com.fly.tour.common.provider.IMeProvider;
+import com.fly.tour.common.provider.INewsProvider;
 import com.fly.tour.main.entity.MainChannel;
-import com.fly.tour.me.fragment.MeFragment;
-import com.fly.tour.news.fragment.MainNewsFragment;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 
-public class MainActivity extends RxAppCompatActivity {
-    private MainNewsFragment mMainNewsFragment;
-    private DiscoverFragment mDiscoverFragment;
-    private Fragment mCurrFragment;//当前的Fragment
-    private MeFragment mMeFragment;
+public class MainActivity extends BaseActivity {
+    @Autowired(name = "/news/main")
+    INewsProvider mNewsProvider;
+
+    @Autowired(name = "/find/main")
+    IFindProvider mFindProvider;
+
+    @Autowired(name = "/me/main")
+    IMeProvider mMeProvider;
+
+    private Fragment mNewsFragment;
+    private Fragment mFindFragment;
+    private Fragment mMeFragment;
+    private Fragment mCurrFragment;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+    public int onBindLayout() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+        BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int i = menuItem.getItemId();
                 if (i == R.id.navigation_trip) {
-                    switchContent(mCurrFragment, mMainNewsFragment, MainChannel.TRIP.name);
-                    mCurrFragment = mMainNewsFragment;
+                    switchContent(mCurrFragment, mNewsFragment, MainChannel.NEWS.name);
+                    mCurrFragment = mNewsFragment;
 
                     return true;
                 } else if (i == R.id.navigation_discover) {
-                    switchContent(mCurrFragment, mDiscoverFragment, MainChannel.DISCOVER.name);
-                    mCurrFragment = mDiscoverFragment;
+                    switchContent(mCurrFragment, mFindFragment, MainChannel.FIND.name);
+                    mCurrFragment = mFindFragment;
 
                     return true;
                 } else if (i == R.id.navigation_me) {
@@ -46,14 +63,30 @@ public class MainActivity extends RxAppCompatActivity {
                 return false;
             }
         });
-
-        mMainNewsFragment = MainNewsFragment.newInstance();
-        mDiscoverFragment = DiscoverFragment.newInstance();
-        mMeFragment = MeFragment.newInstance();
-        mCurrFragment = mMainNewsFragment;
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, mMainNewsFragment, MainChannel.TRIP.name).commit();
+        if(mNewsProvider != null){
+            mNewsFragment = mNewsProvider.getMainNewsFragment();
+        }
+        if(mFindProvider != null){
+            mFindFragment = mFindProvider.getMainFindFragment();
+        }
+        if(mMeProvider != null){
+            mMeFragment = mMeProvider.getMainMeFragment();
+        }
+        mCurrFragment = mNewsFragment;
+        if(mNewsFragment != null){
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, mNewsFragment, MainChannel.NEWS.name).commit();
+        }
     }
+
+    @Override
+    public void initData() {
+
+    }
+
     public void switchContent(Fragment from, Fragment to, String tag) {
+        if (from == null || to == null) {
+            return;
+        }
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         if (!to.isAdded()) {
             transaction.hide(from).add(R.id.frame_content, to, tag).commit();
@@ -61,5 +94,4 @@ public class MainActivity extends RxAppCompatActivity {
             transaction.hide(from).show(to).commit();
         }
     }
-
 }

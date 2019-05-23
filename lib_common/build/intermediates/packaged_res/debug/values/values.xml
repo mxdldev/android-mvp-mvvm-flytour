@@ -8,7 +8,7 @@
     <declare-styleable name="AppTheme.NoActionBar">
         <attr format="reference|color" name="baseTitleTextColor"/>
         <attr format="reference|color" name="titleDividerColor"/>
-        <attr format="dimension" name="titleDividerLine"/> 
+        <attr format="dimension" name="titleDividerLine"/> <!-- 是否显示 titlebar 的分割线-->
     </declare-styleable>
     <declare-styleable name="ExpandableTextView">
         <attr format="integer" name="maxCollapsedLines"/>

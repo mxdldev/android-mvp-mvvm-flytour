@@ -7,10 +7,4 @@
     <string name="title_find">发现</string>
     <string name="title_my">我的</string>
     <string name="title_news">新闻</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
 </resources>

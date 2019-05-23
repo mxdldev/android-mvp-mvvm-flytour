@@ -92,12 +92,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
@@ -172,12 +172,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\FlyTour\\module_app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -236,12 +236,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape60.png.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape60.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
@@ -260,12 +260,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
@@ -276,28 +276,28 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_rotate_progress_bg.xml.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\rotate_progress_bg.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "D:\\FlyTour\\module_app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_rotate_progress_bg.xml.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable\\rotate_progress_bg.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape17.png.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape17.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout-v26\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape42.png.flat",
@@ -368,12 +368,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_design_snackbar_background.xml.flat",
@@ -388,12 +388,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape62.png.flat",
@@ -416,12 +416,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_top.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_top.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
@@ -984,16 +984,16 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
@@ -1244,16 +1244,16 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape64.png.flat",
+        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape64.png"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_trip_record_toolbar_bg.xml.flat",
         "source": "D:\\FlyTour\\module_news\\build\\intermediates\\packaged_res\\debug\\drawable\\ic_trip_record_toolbar_bg.xml"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape64.png.flat",
-        "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape64.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
@@ -1444,12 +1444,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape52.png.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape52.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -1816,12 +1816,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_in.xml.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape59.png.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape59.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_in.xml.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\anim\\design_snackbar_in.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
@@ -1920,12 +1920,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape61.png.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\loading_shape61.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
@@ -2420,12 +2420,12 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\ef064cd6e5b13eb240faa86782342caf\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_root.xml.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_root.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -2600,12 +2600,12 @@
         "source": "D:\\FlyTour\\module_app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_rotate_daisy.png.flat",
-        "source": "D:\\FlyTour\\lib_refresh_layout\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\rotate_daisy.png"
-    },
-    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_activity_root.xml.flat",
         "source": "D:\\FlyTour\\lib_common\\build\\intermediates\\packaged_res\\debug\\layout\\activity_root.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_rotate_daisy.png.flat",
+        "source": "D:\\FlyTour\\lib_refresh_layout\\build\\intermediates\\packaged_res\\debug\\drawable-xhdpi-v4\\rotate_daisy.png"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",

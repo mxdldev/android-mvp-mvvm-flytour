@@ -8,7 +8,7 @@ package com.fly.tour.main.entity;
  * Update:     <br>
  */
 public enum MainChannel {
-    TRIP(0,"TRIP"),DISCOVER(1,"DISCOVER"),ME(2,"ME");
+    NEWS(0,"NEWS"), FIND(1,"FIND"),ME(2,"ME");
     public int id;
     public String name;
     MainChannel(int id, String name){

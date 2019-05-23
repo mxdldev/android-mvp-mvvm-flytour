@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="易车队"
+        android:text="飞旅新闻"
         android:textColor="?attr/colorPrimaryDark"
         android:textSize="17sp"/>
 </android.support.v7.widget.Toolbar>

@@ -11,10 +11,10 @@ import com.fly.tour.find.R;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class DiscoverFragment extends BaseFragment {
-    public static final String TAG = DiscoverFragment.class.getSimpleName();
-    public static DiscoverFragment newInstance() {
-        return new DiscoverFragment();
+public class FindFragment extends BaseFragment {
+    public static final String TAG = FindFragment.class.getSimpleName();
+    public static FindFragment newInstance() {
+        return new FindFragment();
     }
     @Override
     public int onBindLayout() {
