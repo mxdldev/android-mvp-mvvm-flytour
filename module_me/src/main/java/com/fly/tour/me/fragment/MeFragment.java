@@ -1,5 +1,6 @@
 package com.fly.tour.me.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fly.tour.common.base.BaseFragment;
+import com.fly.tour.common.view.SettingBarView;
+import com.fly.tour.me.AddNewsTypeActivity;
 import com.fly.tour.me.R;
 
 
@@ -18,14 +22,52 @@ import com.fly.tour.me.R;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class MeFragment extends Fragment {
-    public static MeFragment newInstance(){
+public class MeFragment extends BaseFragment{
+
+    private SettingBarView mSetNewsType;
+    private SettingBarView mSetNewsDetail;
+
+    public static MeFragment newInstance() {
         return new MeFragment();
     }
 
-    @Nullable
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_me_main,container,false);
+    public int onBindLayout() {
+        return R.layout.fragment_me_main;
     }
+
+    @Override
+    public void initView(View view) {
+        mSetNewsType = view.findViewById(R.id.view_setting_news_type);
+        mSetNewsDetail = view.findViewById(R.id.view_setting_news_detail);
+    }
+
+    @Override
+    public void initListener() {
+        mSetNewsType.setOnClickSettingBarViewListener(new SettingBarView.OnClickSettingBarViewListener() {
+            @Override
+            public void onClick() {
+                startActivity(new Intent(mActivity,AddNewsTypeActivity.class));
+            }
+        });
+        mSetNewsDetail.setOnClickSettingBarViewListener(new SettingBarView.OnClickSettingBarViewListener() {
+            @Override
+            public void onClick() {
+
+            }
+        });
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public String getToolbarTitle() {
+        return "我的";
+    }
+
+
 }

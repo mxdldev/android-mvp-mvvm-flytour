@@ -42,6 +42,8 @@ versions.rxlifecycle_components = "2.2.1"
 versions.nohttp = "1.1.4"
 versions.nohttp_ok = "1.1.4"
 
+versions.stetho =  "1.3.1";
+
 def deps = [:]
 //gradle插件依赖
 deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
@@ -97,6 +99,8 @@ deps.rxlifecycle_components = "com.trello.rxlifecycle2:rxlifecycle-components:$v
 //nohttp
 deps.nohttp = "com.yanzhenjie.nohttp:nohttp:$versions.nohttp"
 deps.nohttp_ok = "com.yanzhenjie.nohttp:okhttp:$versions.nohttp_ok"
+
+deps.stetho = "com.facebook.stetho:stetho:$versions.stetho"
 
 ext.deps = deps
 

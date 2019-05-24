@@ -87,7 +87,6 @@ attr backgroundcolor
 attr barLength
 attr barrierAllowsGoneWidgets
 attr barrierDirection
-attr baseTitleTextColor
 attr behavior_autoHide
 attr behavior_fitToContents
 attr behavior_hideable
@@ -457,6 +456,13 @@ attr searchViewStyle
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr set_content
+attr set_content_hint
+attr set_left_icon
+attr set_left_icon_visable
+attr set_right_icon
+attr set_right_icon_visable
+attr set_title
 attr showAsAction
 attr showDividers
 attr showMotionSpec
@@ -560,8 +566,6 @@ attr tickMarkTintMode
 attr tint
 attr tintMode
 attr title
-attr titleDividerColor
-attr titleDividerLine
 attr titleEnabled
 attr titleMargin
 attr titleMarginBottom
@@ -650,6 +654,8 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color color_black
+color color_white
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1067,6 +1073,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_back_menu
+drawable callback_white_icon
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1150,6 +1157,9 @@ drawable loading_shape65
 drawable loading_shape7
 drawable loading_shape8
 drawable loading_shape9
+drawable me_icon_company
+drawable me_icon_organization
+drawable me_icon_setting
 drawable mis_action_btn
 drawable mis_asv
 drawable mis_asy
@@ -1164,6 +1174,7 @@ drawable mis_selector_indicator
 drawable mis_text_indicator
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
+drawable navbar_icon_return
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1179,9 +1190,12 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rotate_daisy
 drawable rotate_progress_bg
+drawable shape_btn_blue_bg
 drawable shape_round_blue
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable usecar_icon_star
+drawable usecar_list_icon_into
 id ImageButton
 id TextView
 id action0
@@ -1216,6 +1230,7 @@ id bottom
 id bt_toolbar_left
 id btn_back
 id btn_cancel
+id btn_me_save_news_type
 id btn_net_refresh
 id btn_select_photo
 id btn_take_photo
@@ -1273,8 +1288,10 @@ id image_view
 id img_daisy
 id img_err
 id img_init_loading
+id img_left_icon
 id img_no_data
 id img_progress
+id img_right_icon
 id img_trans_loading
 id indicator
 id info
@@ -1283,6 +1300,7 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layout_setting_bar
 id left
 id line1
 id line3
@@ -1397,6 +1415,8 @@ id txt_err_title
 id txt_loading
 id txt_net_error
 id txt_progress
+id txt_set_content
+id txt_set_title
 id txt_subtitle
 id uniform
 id unlabeled
@@ -1404,8 +1424,11 @@ id up
 id useLogo
 id view_init_loading
 id view_net_error
+id view_news_type
 id view_no_data
 id view_offset_helper
+id view_setting_news_detail
+id view_setting_news_type
 id view_stub_content
 id view_stub_error
 id view_stub_init_loading
@@ -1467,6 +1490,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_news_type_add
 layout activity_root
 layout button_network_err
 layout common_toolbar
@@ -1528,6 +1552,7 @@ layout tooltip
 layout view_init_loading
 layout view_net_error
 layout view_no_data
+layout view_setting_bar
 layout view_trans_loading
 mipmap default_ptr_rotate
 mipmap expend_btn
@@ -1619,6 +1644,8 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
+style AppTheme_BackBar
+style AppTheme_BlackBackBar
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2158,7 +2185,6 @@ styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_drawableBottom android_drawableEnd android_drawableLeft android_drawableRight android_drawableStart android_drawableTop android_textAppearance
 styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType firstBaselineToTopHeight fontFamily lastBaselineToBottomHeight lineHeight textAllCaps
 styleable AppCompatTheme actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme android_windowAnimationStyle android_windowIsFloating autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingLeft listPreferredItemPaddingRight panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
-styleable AppTheme_NoActionBar baseTitleTextColor titleDividerColor titleDividerLine
 styleable BottomAppBar backgroundTint fabAlignmentMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll
 styleable BottomNavigationView elevation itemBackground itemHorizontalTranslationEnabled itemIconSize itemIconTint itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable BottomSheetBehavior_Layout behavior_fitToContents behavior_hideable behavior_peekHeight behavior_skipCollapsed
@@ -2206,6 +2232,7 @@ styleable RecyclerView android_descendantFocusability android_orientation fastSc
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_imeOptions android_inputType android_maxWidth closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
+styleable SettingBarView set_content set_content_hint set_left_icon set_left_icon_visable set_right_icon set_right_icon_visable set_title
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth
 styleable Spinner android_dropDownWidth android_entries android_popupBackground android_prompt popupTheme

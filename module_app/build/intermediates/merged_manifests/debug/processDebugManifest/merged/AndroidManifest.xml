@@ -43,7 +43,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- 高德定位服务 -->
+        </activity>
+        <activity
+            android:name="com.fly.tour.me.AddNewsTypeActivity"
+            android:label="新闻类型设置"
+            android:theme="@style/AppTheme.BackBar" /> <!-- 高德定位服务 -->
         <service android:name="com.amap.api.location.APSService" />
         <service android:name="com.fly.tour.trip.com.fly.tour.news.service.TrackCollectService" />
 

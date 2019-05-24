@@ -36,6 +36,7 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     api project(":lib_refresh_layout")
+    api project(":lib_db_news")
     api deps.junit
     api deps.testrunner
     api deps.testespresso
@@ -62,6 +63,8 @@ dependencies {
 
     api deps.dagger
     api deps.glide
+
+    api deps.stetho
 
     annotationProcessor deps.glide_compiler
     annotationProcessor deps.arouter_compiler

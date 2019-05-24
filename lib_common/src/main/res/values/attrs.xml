@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="AppTheme.NoActionBar">
-        <attr name="baseTitleTextColor" format="reference|color" />
-        <attr name="titleDividerColor" format="reference|color" />
-        <attr name="titleDividerLine" format="dimension" /> <!-- 是否显示 titlebar 的分割线-->
-    </declare-styleable>
     <declare-styleable name="MagicTextView">
         <attr name="innerShadowColor" format="color"/>
         <attr name="innerShadowRadius" format="dimension"/>
@@ -43,5 +38,14 @@
         <attr name="expandableTextId" format="reference"/>
         <attr name="expandCollapseToggleId" format="reference"/>
         <attr name="expandToggleOnTextClick" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SettingBarView">
+        <attr name="set_left_icon_visable" format="boolean" />
+        <attr name="set_left_icon" format="reference" />
+        <attr name="set_title" format="string" />
+        <attr name="set_content" format="string" />
+        <attr name="set_content_hint" format="string" />
+        <attr name="set_right_icon_visable" format="boolean" />
+        <attr name="set_right_icon" format="reference" />
     </declare-styleable>
 </resources>

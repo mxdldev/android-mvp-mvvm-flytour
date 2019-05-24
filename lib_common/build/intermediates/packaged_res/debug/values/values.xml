@@ -3,13 +3,10 @@
     <color name="colorAccent">#1976D2</color>
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#000000</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
     <color name="menu_color">#1976D2</color>
     <color name="textColorPrimary">#333333</color>
-    <declare-styleable name="AppTheme.NoActionBar">
-        <attr format="reference|color" name="baseTitleTextColor"/>
-        <attr format="reference|color" name="titleDividerColor"/>
-        <attr format="dimension" name="titleDividerLine"/> <!-- 是否显示 titlebar 的分割线-->
-    </declare-styleable>
     <declare-styleable name="ExpandableTextView">
         <attr format="integer" name="maxCollapsedLines"/>
         <attr format="integer" name="animDuration"/>
@@ -49,6 +46,15 @@
             <enum name="round" value="2"/>
         </attr>
     </declare-styleable>
+    <declare-styleable name="SettingBarView">
+        <attr format="boolean" name="set_left_icon_visable"/>
+        <attr format="reference" name="set_left_icon"/>
+        <attr format="string" name="set_title"/>
+        <attr format="string" name="set_content"/>
+        <attr format="string" name="set_content_hint"/>
+        <attr format="boolean" name="set_right_icon_visable"/>
+        <attr format="reference" name="set_right_icon"/>
+    </declare-styleable>
     <item name="expand_collapse" type="id"/>
     <item name="expandable_text" type="id"/>
     <item name="glide_tag" type="id"/>
@@ -59,6 +65,16 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
+    <style name="AppTheme.BackBar" parent="AppTheme">
+        <item name="navigationIcon">@drawable/navbar_icon_return</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
+    <style name="AppTheme.BlackBackBar" parent="AppTheme">
+        <item name="colorPrimary">@color/color_black</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <item name="navigationIcon">@drawable/callback_white_icon</item>
         <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
     </style>
     <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">

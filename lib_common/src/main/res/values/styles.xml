@@ -18,4 +18,15 @@
         <item name="actionMenuTextColor">@color/menu_color</item>
         <item name="android:textSize">16sp</item>
     </style>
+
+    <style name="AppTheme.BlackBackBar" parent="AppTheme">
+        <item name="colorPrimary">@color/color_black</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <item name="navigationIcon">@drawable/callback_white_icon</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
+    <style name="AppTheme.BackBar" parent="AppTheme">
+        <item name="navigationIcon">@drawable/navbar_icon_return</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
 </resources>

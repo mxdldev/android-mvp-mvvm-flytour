@@ -233,9 +233,5 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public <T> void onEvent(BaseActivityEvent<T> event) {
-        //App在前台，如果当前就在回话列表或者消息列表那么就要立即刷新，其他页面需要弹窗提示查看消息
-
     }
-
-
 }

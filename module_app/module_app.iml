@@ -128,6 +128,8 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:interpolator-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-28.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.stetho:stetho:1.3.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: commons-cli:commons-cli:1.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v13-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.github.lovetuzitong:MultiImageSelector-1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:drawerlayout-28.0.0" level="project" />
@@ -195,6 +197,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-28.0.0" level="project" />
     <orderEntry type="module" module-name="module_news" />
     <orderEntry type="module" module-name="module_main" />
+    <orderEntry type="module" module-name="lib_db_news" />
     <orderEntry type="module" module-name="module_me" />
     <orderEntry type="module" module-name="module_find" />
     <orderEntry type="module" module-name="lib_refresh_layout" />

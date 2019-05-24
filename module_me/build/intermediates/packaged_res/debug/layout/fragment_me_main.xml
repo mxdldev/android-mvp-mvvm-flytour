@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical">
 
+    <com.fly.tour.common.view.SettingBarView
+        android:id="@+id/view_setting_news_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:set_left_icon="@drawable/me_icon_company"
+        app:set_left_icon_visable="true"
+        app:set_title="设置新闻类型"
+        />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:background="#ededed"
+        />
+
+    <com.fly.tour.common.view.SettingBarView
+        android:id="@+id/view_setting_news_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:set_left_icon="@drawable/me_icon_organization"
+        app:set_left_icon_visable="true"
+        app:set_title="添加新闻"
+        />
 </LinearLayout>
