@@ -16,226 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d282b9c-a0de-4236-bc7b-9ff67b569c52" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/view/SettingBarView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/res/drawable-xhdpi/callback_white_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/res/drawable-xhdpi/navbar_icon_return.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/res/drawable-xhdpi/usecar_icon_star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/res/drawable-xhdpi/usecar_list_icon_into.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/res/drawable/shape_btn_blue_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/res/layout/view_setting_bar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/androidTest/java/com/fly/tour/db/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/NewsDBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/NewsDBHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsTypeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_db_news/src/test/java/com/fly/tour/db/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_main/src/main/res/color/color_state_menu_navi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/AddNewsTypeActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/contract/NewsTypeContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/model/NewsTypeModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsTypePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/res/drawable-xhdpi/me_icon_company.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/res/drawable-xhdpi/me_icon_organization.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/res/drawable-xhdpi/me_icon_setting.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_me/src/main/res/layout/activity_news_type_add.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/packaged_res/debug/layout/common_toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/packaged_res/debug/layout/common_toolbar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/lib_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/lib_common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/BaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/BaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/res/layout/common_toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/res/layout/common_toolbar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/res/layout/common_toolbar_leftbtn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/res/layout/common_toolbar_leftbtn.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/res/values/attrs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_common_toolbar.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_common_toolbar.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_fragment_me_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_fragment_me_main.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/module_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/module_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/find/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/find/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/module_find.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/module_find.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/main/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/main/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/intermediates/packaged_res/debug/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/intermediates/packaged_res/debug/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/module_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/module_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/cardview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/me/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/me/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/packaged_res/debug/layout/fragment_me_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/packaged_res/debug/layout/fragment_me_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/module_me.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/module_me.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/fragment/MeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/fragment/MeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/module/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/module/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/res/layout/fragment_me_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/res/layout/fragment_me_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_news/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_news/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/versions.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/versions.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -290,11 +71,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MeFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/fragment/MeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+            <state relative-caret-position="92">
+              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+              <folding>
+                <element signature="e#1241#1455#0" expanded="true" />
+                <element signature="e#1454#1455#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -317,7 +102,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
+            <state relative-caret-position="314">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
@@ -350,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/BaseApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="96">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -9857,18 +9642,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558613049838</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="NewsDB add">
+      <created>1558693030292</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558693030292</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1452" height="865" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="12" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="10" visible="true" weight="0.41666666" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="10" visible="true" weight="0.25706214" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.37570623" />
@@ -9937,7 +9728,8 @@
     <MESSAGE value="refresh update" />
     <MESSAGE value="big update" />
     <MESSAGE value="Arouter add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arouter add" />
+    <MESSAGE value="NewsDB add" />
+    <option name="LAST_COMMIT_MESSAGE" value="NewsDB add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -10300,13 +10092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/fragment/MeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/AddNewsTypeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -10347,26 +10132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_me/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/view/SettingBarView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-293">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/versions.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-373">
@@ -10390,10 +10155,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/BaseApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="96">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_me/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/view/SettingBarView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-293">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/fragment/MeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="e#1241#1455#0" expanded="true" />
+            <element signature="e#1454#1455#0" expanded="true" />
           </folding>
         </state>
       </provider>
