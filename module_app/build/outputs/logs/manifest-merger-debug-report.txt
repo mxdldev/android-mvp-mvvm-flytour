@@ -6,7 +6,7 @@ INJECTED from D:\FlyTour\module_app\src\main\AndroidManifest.xml:2:1-17:12
 INJECTED from D:\FlyTour\module_app\src\main\AndroidManifest.xml:2:1-17:12
 MERGED from [:module_main] D:\FlyTour\module_main\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-27:12
 MERGED from [:module_find] D:\FlyTour\module_find\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-20:12
-MERGED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-28:12
+MERGED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-33:12
 MERGED from [:module_news] D:\FlyTour\module_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-48:12
 MERGED from [:lib_common] D:\FlyTour\lib_common\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-13:12
 MERGED from [:lib_refresh_layout] D:\FlyTour\lib_refresh_layout\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
@@ -82,8 +82,8 @@ MERGED from [:module_main] D:\FlyTour\module_main\build\intermediates\merged_man
 MERGED from [:module_main] D:\FlyTour\module_main\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-25:19
 MERGED from [:module_find] D:\FlyTour\module_find\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-18:19
 MERGED from [:module_find] D:\FlyTour\module_find\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-18:19
-MERGED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-26:19
-MERGED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-26:19
+MERGED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-31:19
+MERGED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-31:19
 MERGED from [:module_news] D:\FlyTour\module_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:31:5-46:19
 MERGED from [:module_news] D:\FlyTour\module_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:31:5-46:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\design-28.0.0.aar\ef064cd6e5b13eb240faa86782342caf\AndroidManifest.xml:22:5-20
@@ -272,6 +272,14 @@ ADDED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifest
 		ADDED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:25:13-52
 	android:name
 		ADDED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:23:13-64
+activity#com.fly.tour.me.NewsDetailAddActivity
+ADDED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:26:9-30:20
+	android:label
+		ADDED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:28:13-33
+	android:theme
+		ADDED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:29:13-52
+	android:name
+		ADDED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:27:13-65
 uses-permission#android.permission.INTERNET
 ADDED from [:module_news] D:\FlyTour\module_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
 	android:name

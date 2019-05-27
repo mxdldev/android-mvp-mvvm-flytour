@@ -14,8 +14,7 @@ import com.fly.tour.common.event.RequestCode;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.CommonDialogFragment;
 import com.fly.tour.db.entity.NewsType;
-import com.fly.tour.me.adapter.NewsTypeListAdapter;
-import com.fly.tour.me.contract.NewsTypeAddContract;
+import com.fly.tour.me.adapter.NewsTypeShowAdapter;
 import com.fly.tour.me.contract.NewsTypeListContract;
 import com.fly.tour.me.model.NewsTypeListModel;
 import com.fly.tour.me.presenter.NewsTypeListPresenter;
@@ -25,7 +24,7 @@ import java.util.List;
 public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel, NewsTypeListContract.View<NewsType>, NewsTypeListPresenter, NewsType> implements NewsTypeListContract.View<NewsType> {
 
     private RecyclerView mRecViewNewsType;
-    private NewsTypeListAdapter mNewsTypeListAdapter;
+    private NewsTypeShowAdapter mNewsTypeShowAdapter;
 
     public int onBindLayout() {
         return R.layout.activity_news_type_list;
@@ -50,14 +49,14 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
     public void initView() {
         mRecViewNewsType = findViewById(R.id.recview);
         mRecViewNewsType.setLayoutManager(new LinearLayoutManager(this));
-        mNewsTypeListAdapter = new NewsTypeListAdapter(this);
-        mRecViewNewsType.setAdapter(mNewsTypeListAdapter);
+        mNewsTypeShowAdapter = new NewsTypeShowAdapter(this);
+        mRecViewNewsType.setAdapter(mNewsTypeShowAdapter);
     }
 
     @Override
     public void initListener() {
 
-        mNewsTypeListAdapter.setDeleteClickLisenter(new NewsTypeListAdapter.DeleteClickLisenter() {
+        mNewsTypeShowAdapter.setDeleteClickLisenter(new NewsTypeShowAdapter.DeleteClickLisenter() {
             @Override
             public void onClickDeleteListener(final int id) {
                 new CommonDialogFragment.Builder().setTitle("信息提示").setDescribe("确定删除吗？").setLeftbtn("取消").setRightbtn("确定").setOnDialogClickListener(new CommonDialogFragment.OnDialogClickListener() {
@@ -109,7 +108,7 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
     @Override
     public void refreshData(List<NewsType> data) {
-        mNewsTypeListAdapter.refresh(data);
+        mNewsTypeShowAdapter.refresh(data);
     }
 
     @Override

@@ -1237,6 +1237,7 @@ id btn_cancel
 id btn_common_dialog_left
 id btn_common_dialog_right
 id btn_me_news_type_delete
+id btn_me_save_news_detail
 id btn_me_save_news_type
 id btn_net_refresh
 id btn_select_photo
@@ -1346,6 +1347,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recview
+id recview_me_news_type
 id refview_news_type
 id right
 id right_icon
@@ -1428,6 +1430,7 @@ id txt_loading
 id txt_me_news_type_time
 id txt_me_news_type_title
 id txt_net_error
+id txt_news_detail
 id txt_progress
 id txt_set_content
 id txt_set_title
@@ -1438,6 +1441,8 @@ id up
 id useLogo
 id view_halving_line
 id view_init_loading
+id view_me_set_news_title
+id view_me_set_news_type
 id view_net_error
 id view_news_type
 id view_no_data
@@ -1505,6 +1510,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_news_detail_add
 layout activity_news_type_add
 layout activity_news_type_list
 layout activity_root
@@ -1525,11 +1531,13 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_bottom_select
 layout fragment_common_dialog
 layout fragment_me_main
 layout fragment_photo_select
 layout fragment_root
-layout item_news_type
+layout item_news_type_select
+layout item_news_type_show
 layout layout_daisy
 layout layout_head
 layout mis_activity_default

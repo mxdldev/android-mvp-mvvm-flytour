@@ -92,6 +92,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_bottom_select.xml.flat",
+        "source": "D:\\FlyTour\\module_me\\build\\intermediates\\packaged_res\\debug\\layout\\fragment_bottom_select.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
@@ -258,6 +262,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_item_news_type_show.xml.flat",
+        "source": "D:\\FlyTour\\module_me\\build\\intermediates\\packaged_res\\debug\\layout\\item_news_type_show.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -606,6 +614,10 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_item_news_type_select.xml.flat",
+        "source": "D:\\FlyTour\\module_me\\build\\intermediates\\packaged_res\\debug\\layout\\item_news_type_select.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_loading_shape39.png.flat",
@@ -2160,6 +2172,10 @@
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\e7ccba5fd75cbbd30a40bb4ff8d1e07d\\res\\layout\\notification_template_media.xml"
     },
     {
+        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_activity_news_detail_add.xml.flat",
+        "source": "D:\\FlyTour\\module_me\\build\\intermediates\\packaged_res\\debug\\layout\\activity_news_detail_add.xml"
+    },
+    {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -2286,10 +2302,6 @@
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
-    },
-    {
-        "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\layout_item_news_type.xml.flat",
-        "source": "D:\\FlyTour\\module_me\\build\\intermediates\\packaged_res\\debug\\layout\\item_news_type.xml"
     },
     {
         "merged": "D:\\FlyTour\\module_app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",

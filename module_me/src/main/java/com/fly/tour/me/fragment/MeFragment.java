@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.common.view.SettingBarView;
+import com.fly.tour.me.NewsDetailAddActivity;
 import com.fly.tour.me.NewsTypeAddActivity;
 import com.fly.tour.me.NewsTypeListActivity;
 import com.fly.tour.me.R;
@@ -49,7 +50,7 @@ public class MeFragment extends BaseFragment{
         mSetNewsDetail.setOnClickSettingBarViewListener(new SettingBarView.OnClickSettingBarViewListener() {
             @Override
             public void onClick() {
-
+                startActivity(new Intent(mActivity,NewsDetailAddActivity.class));
             }
         });
     }
