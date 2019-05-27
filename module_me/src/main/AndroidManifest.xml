@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".AddNewsTypeActivity"
+            android:name=".NewsTypeAddActivity"
             android:label="新闻类型设置"
-            android:theme="@style/AppTheme.BackBar"
-            />
+            android:theme="@style/AppTheme.BackBar"/>
+        <activity
+            android:name=".NewsTypeListActivity"
+            android:label="新闻类型列表"
+            android:theme="@style/AppTheme.BackBar"/>
     </application>
 
 </manifest>

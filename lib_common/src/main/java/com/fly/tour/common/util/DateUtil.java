@@ -18,7 +18,7 @@ import java.util.Date;
 public class DateUtil {
 
     public enum FormatType {
-        yyyy, yyyyMM, yyyyMMdd, yyyyMMddHHmm, yyyyMMddHHmmss, MMdd, HHmm,MM,dd;
+        yyyy, yyyyMM, yyyyMMdd, yyyyMMddHHmm, yyyyMMddHHmmss, MMdd, HHmm,MM,dd,MMddHHmm;
     }
     /**
      * 格式化时间字符串
@@ -80,6 +80,9 @@ public class DateUtil {
                 break;
             case dd:
                 sdf = new SimpleDateFormat("dd");
+                break;
+            case MMddHHmm:
+                sdf = new SimpleDateFormat("MM-dd HH:mm");
                 break;
             default:
                 sdf = new SimpleDateFormat("yyyy-MM-dd");

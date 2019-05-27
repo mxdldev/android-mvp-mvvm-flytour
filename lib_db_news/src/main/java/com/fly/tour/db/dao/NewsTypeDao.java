@@ -2,10 +2,15 @@ package com.fly.tour.db.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.fly.tour.db.NewsDBConfig;
 import com.fly.tour.db.NewsDBHelper;
+import com.fly.tour.db.entity.NewsType;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Description: <NewsTypeDao><br>
@@ -26,7 +31,28 @@ public class NewsTypeDao {
         values.put(NewsDBConfig.NewsType.CLUMN_TYPE_NAME, typename);
         return mDatabase.insert(NewsDBConfig.NewsType.TABLE_NAME, null, values) > 0;
     }
-    public boolean deleteNewsType(int id){
-       return mDatabase.delete(NewsDBConfig.NewsType.TABLE_NAME,"where id = ?",new String[]{id+""}) > 0;
+
+    public boolean deleteNewsType(int id) {
+        return mDatabase.delete(NewsDBConfig.NewsType.TABLE_NAME, "id = ?", new String[]{id + ""}) > 0;
+    }
+
+    public List<NewsType> getListNewsType() {
+        String query = "select * from " + NewsDBConfig.NewsType.TABLE_NAME;
+        Cursor cursor = mDatabase.rawQuery(query, null);
+        List<NewsType> typeList = null;
+        if (cursor != null && cursor.getCount() > 0) {
+            typeList = new ArrayList<>();
+            while (cursor.moveToNext()){
+                int id = cursor.getInt(0);
+                String typename = cursor.getString(1);
+                String addtime = cursor.getString(2);
+                NewsType newsType = new NewsType();
+                newsType.setId(id);
+                newsType.setTypename(typename);
+                newsType.setAddtime(addtime);
+                typeList.add(newsType);
+            }
+        }
+        return typeList;
     }
 }

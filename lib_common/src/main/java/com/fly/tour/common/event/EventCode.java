@@ -20,7 +20,7 @@ public interface EventCode {
         //3000开始
     }
 
-    interface MyCode {
+    interface MeCode {
         //4000开始
     }
 }

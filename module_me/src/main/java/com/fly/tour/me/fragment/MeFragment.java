@@ -1,17 +1,12 @@
 package com.fly.tour.me.fragment;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.common.view.SettingBarView;
-import com.fly.tour.me.AddNewsTypeActivity;
+import com.fly.tour.me.NewsTypeAddActivity;
+import com.fly.tour.me.NewsTypeListActivity;
 import com.fly.tour.me.R;
 
 
@@ -48,7 +43,7 @@ public class MeFragment extends BaseFragment{
         mSetNewsType.setOnClickSettingBarViewListener(new SettingBarView.OnClickSettingBarViewListener() {
             @Override
             public void onClick() {
-                startActivity(new Intent(mActivity,AddNewsTypeActivity.class));
+                startActivity(new Intent(mActivity,NewsTypeListActivity.class));
             }
         });
         mSetNewsDetail.setOnClickSettingBarViewListener(new SettingBarView.OnClickSettingBarViewListener() {

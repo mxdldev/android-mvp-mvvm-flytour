@@ -4,7 +4,6 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-
     <com.fly.tour.common.view.SettingBarView
         android:id="@+id/view_setting_news_type"
         android:layout_width="match_parent"

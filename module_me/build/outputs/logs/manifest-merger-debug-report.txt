@@ -1,28 +1,28 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
+ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:3:11-36
 		INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml
 		INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml
-		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
+		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
 		INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml
-		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-19:12
+		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:1-22:12
 		INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:5:5-17:19
+ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:5:5-20:19
 	android:supportsRtl
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:10:9-35
 	android:label
@@ -35,14 +35,22 @@ ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:5:5-17:19
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:11:9-40
-activity#com.fly.tour.me.AddNewsTypeActivity
-ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:12:9-16:15
+activity#com.fly.tour.me.NewsTypeAddActivity
+ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:12:9-15:54
 	android:label
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:14:13-35
 	android:theme
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:15:13-52
 	android:name
 		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:13:13-48
+activity#com.fly.tour.me.NewsTypeListActivity
+ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:16:9-19:54
+	android:label
+		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:18:13-35
+	android:theme
+		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:19:13-52
+	android:name
+		ADDED from D:\FlyTour\module_me\src\main\AndroidManifest.xml:17:13-49
 uses-sdk
 INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\FlyTour\module_me\src\main\AndroidManifest.xml

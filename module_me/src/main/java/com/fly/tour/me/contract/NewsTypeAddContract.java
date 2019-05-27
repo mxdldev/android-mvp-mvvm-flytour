@@ -3,13 +3,13 @@ package com.fly.tour.me.contract;
 import com.fly.tour.common.mvp.BaseView;
 
 /**
- * Description: <NewsTypeContract><br>
+ * Description: <NewsTypeAddContract><br>
  * Author:      gxl<br>
  * Date:        2019/5/24<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public interface NewsTypeContract {
+public interface NewsTypeAddContract {
     interface Presenter{
         void addNewsType(String typename);
     }
