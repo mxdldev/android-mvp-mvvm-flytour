@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import com.fly.tour.common.base.BaseFragment;
-import com.fly.tour.common.manager.ChannelManager;
+import com.fly.tour.common.manager.NewsDBManager;
 import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.trip.R;
 
@@ -25,7 +25,7 @@ public class MainNewsFragment extends BaseFragment {
     private List<String> titles = new ArrayList<>();
     private List<NewsListFragment> mArrayList = new ArrayList<NewsListFragment>() {
         {
-            List<NewsType> listNewsType = ChannelManager.getInstance(getContext()).getListNewsType();
+            List<NewsType> listNewsType = NewsDBManager.getInstance(getContext()).getListNewsType();
             if(listNewsType != null && listNewsType.size() > 0){
                 for(int i = 0; i < listNewsType.size();i++){
                     NewsType newsType = listNewsType.get(i);

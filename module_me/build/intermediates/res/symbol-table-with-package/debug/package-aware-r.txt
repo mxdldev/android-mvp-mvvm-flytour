@@ -1592,7 +1592,8 @@ mipmap reduce_btn
 mipmap rotate_process_success
 mipmap rotate_progress_back_bg
 mipmap rotate_progress_front_bg
-raw channel
+raw news_detail
+raw news_type
 string abc_action_bar_home_description
 string abc_action_bar_home_description_format
 string abc_action_bar_home_subtitle_description_format

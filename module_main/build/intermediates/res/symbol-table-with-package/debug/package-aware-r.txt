@@ -1585,7 +1585,8 @@ mipmap tabbar_icon_my_normal
 mipmap tabbar_icon_my_select
 mipmap tabbar_icon_trip_normal
 mipmap tabbar_icon_trip_select
-raw channel
+raw news_detail
+raw news_type
 string abc_action_bar_home_description
 string abc_action_bar_home_description_format
 string abc_action_bar_home_subtitle_description_format

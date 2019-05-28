@@ -1631,7 +1631,8 @@ public final class R {
     public static final class raw {
         private raw() {}
 
-        public static int channel = 0x7f140001;
+        public static int news_detail = 0x7f140001;
+        public static int news_type = 0x7f140002;
     }
     public static final class string {
         private string() {}

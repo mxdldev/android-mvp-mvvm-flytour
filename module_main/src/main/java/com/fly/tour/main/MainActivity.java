@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.fly.tour.common.base.BaseActivity;
+import com.fly.tour.common.manager.NewsDBManager;
 import com.fly.tour.common.provider.IFindProvider;
 import com.fly.tour.common.provider.IMeProvider;
 import com.fly.tour.common.provider.INewsProvider;
@@ -39,6 +40,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initView() {
+
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

@@ -4,6 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+<com.refresh.lib.DaisyRefreshLayout
+    android:id="@+id/refview_news_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recview_news_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.refresh.lib.DaisyRefreshLayout>
 
 </LinearLayout>

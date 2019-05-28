@@ -56,8 +56,20 @@ public class NewsTypeDao {
         return typeList;
     }
     public void addListNewStype(List<NewsType> newsTypeList){
+        mDatabase.beginTransaction();
         for(NewsType type : newsTypeList){
             addNewsType(type.getTypename());
         }
+        mDatabase.setTransactionSuccessful();
+        mDatabase.endTransaction();
+        mDatabase.close();
+    }
+    public boolean isEmpty(){
+        String sql = "select * from "+NewsDBConfig.NewsType.TABLE_NAME;
+        Cursor cursor = mDatabase.rawQuery(sql, null);
+        if(cursor != null && cursor.getCount() > 0){
+            return false;
+        }
+        return true;
     }
 }
