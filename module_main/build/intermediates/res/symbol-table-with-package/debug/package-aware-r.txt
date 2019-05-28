@@ -1503,6 +1503,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_root
+layout activity_splash
 layout button_network_err
 layout common_toolbar
 layout common_toolbar_leftbtn
@@ -1584,6 +1585,7 @@ mipmap tabbar_icon_my_normal
 mipmap tabbar_icon_my_select
 mipmap tabbar_icon_trip_normal
 mipmap tabbar_icon_trip_select
+raw channel
 string abc_action_bar_home_description
 string abc_action_bar_home_description_format
 string abc_action_bar_home_subtitle_description_format

@@ -1565,6 +1565,7 @@ int mipmap reduce_btn 0x7f110008
 int mipmap rotate_process_success 0x7f110009
 int mipmap rotate_progress_back_bg 0x7f11000a
 int mipmap rotate_progress_front_bg 0x7f11000b
+int raw channel 0x7f140001
 int string abc_action_bar_home_description 0x7f150001
 int string abc_action_bar_home_description_format 0x7f150002
 int string abc_action_bar_home_subtitle_description_format 0x7f150003

@@ -647,24 +647,24 @@ public final class R {
         public static int abc_search_dropdown_item_icons_2line = 0x7f0f001a;
         public static int abc_search_view = 0x7f0f001b;
         public static int abc_select_dialog_material = 0x7f0f001c;
-        public static int mis_activity_default = 0x7f0f0036;
-        public static int mis_cmp_customer_actionbar = 0x7f0f0037;
-        public static int mis_fragment_multi_image = 0x7f0f0038;
-        public static int mis_list_item_camera = 0x7f0f0039;
-        public static int mis_list_item_folder = 0x7f0f003a;
-        public static int mis_list_item_image = 0x7f0f003b;
-        public static int notification_media_action = 0x7f0f0040;
-        public static int notification_media_cancel_action = 0x7f0f0041;
-        public static int notification_template_big_media = 0x7f0f0042;
-        public static int notification_template_big_media_narrow = 0x7f0f0044;
-        public static int notification_template_lines = 0x7f0f0048;
-        public static int notification_template_media = 0x7f0f004a;
-        public static int notification_template_part_chronometer = 0x7f0f004c;
-        public static int notification_template_part_time = 0x7f0f004d;
-        public static int select_dialog_item_material = 0x7f0f004f;
-        public static int select_dialog_multichoice_material = 0x7f0f0050;
-        public static int select_dialog_singlechoice_material = 0x7f0f0051;
-        public static int support_simple_spinner_dropdown_item = 0x7f0f0057;
+        public static int mis_activity_default = 0x7f0f0037;
+        public static int mis_cmp_customer_actionbar = 0x7f0f0038;
+        public static int mis_fragment_multi_image = 0x7f0f0039;
+        public static int mis_list_item_camera = 0x7f0f003a;
+        public static int mis_list_item_folder = 0x7f0f003b;
+        public static int mis_list_item_image = 0x7f0f003c;
+        public static int notification_media_action = 0x7f0f0041;
+        public static int notification_media_cancel_action = 0x7f0f0042;
+        public static int notification_template_big_media = 0x7f0f0043;
+        public static int notification_template_big_media_narrow = 0x7f0f0045;
+        public static int notification_template_lines = 0x7f0f0049;
+        public static int notification_template_media = 0x7f0f004b;
+        public static int notification_template_part_chronometer = 0x7f0f004d;
+        public static int notification_template_part_time = 0x7f0f004e;
+        public static int select_dialog_item_material = 0x7f0f0050;
+        public static int select_dialog_multichoice_material = 0x7f0f0051;
+        public static int select_dialog_singlechoice_material = 0x7f0f0052;
+        public static int support_simple_spinner_dropdown_item = 0x7f0f0058;
     }
     public static final class string {
         private string() {}

@@ -57,6 +57,13 @@ dependencies {
     api deps.eventbus;
     api deps.MultiImageSelector
 
+
+    api deps.rxjava2
+    api deps.rxandroid
+    api deps.adapter_rxjava2
+    api deps.converter_gson
+    api deps.logging_interceptor
+
     api deps.rxlifecycle
     api deps.rxlifecycle_android
     api deps.rxlifecycle_components

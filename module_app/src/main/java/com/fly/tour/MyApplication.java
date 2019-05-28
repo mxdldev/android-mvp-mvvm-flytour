@@ -1,6 +1,7 @@
 package com.fly.tour;
 
 import com.fly.tour.common.BaseApplication;
+import com.fly.tour.common.manager.ChannelManager;
 
 /**
  * Description: <MyApplication><br>
@@ -13,5 +14,6 @@ public class MyApplication extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+        ChannelManager.getInstance(this).initChannel();
     }
 }

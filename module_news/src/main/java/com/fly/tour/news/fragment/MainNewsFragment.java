@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import com.fly.tour.common.base.BaseFragment;
+import com.fly.tour.common.manager.ChannelManager;
+import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.trip.R;
 
 import java.util.ArrayList;
@@ -20,12 +22,17 @@ import java.util.List;
  * Update:     <br>
  */
 public class MainNewsFragment extends BaseFragment {
-    private String[] titles = {"移动开发", "人工智能", "大数据"};
-    private List<Fragment> mArrayList = new ArrayList<Fragment>() {
+    private List<String> titles = new ArrayList<>();
+    private List<NewsListFragment> mArrayList = new ArrayList<NewsListFragment>() {
         {
-            add(NewsMobileFragment.newInstance());
-            add(NewsAIFragment.newInstance());
-            add(NewsBigDataFragment.newInstance());
+            List<NewsType> listNewsType = ChannelManager.getInstance(getContext()).getListNewsType();
+            if(listNewsType != null && listNewsType.size() > 0){
+                for(int i = 0; i < listNewsType.size();i++){
+                    NewsType newsType = listNewsType.get(i);
+                    add(NewsListFragment.newInstance(newsType));
+                    titles.add(newsType.getTypename());
+                }
+            }
         }
     };
 
@@ -35,13 +42,14 @@ public class MainNewsFragment extends BaseFragment {
 
     @Override
     public int onBindLayout() {
-        return R.layout.fragment_trip_main;
+        return R.layout.fragment_news_main;
     }
 
     @Override
     public void initView(View view) {
         ViewPager viewPager = view.findViewById(R.id.pager_tour);
         TabLayout tabLayout = view.findViewById(R.id.layout_tour);
+
         viewPager.setAdapter(new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
@@ -56,7 +64,7 @@ public class MainNewsFragment extends BaseFragment {
             @Nullable
             @Override
             public CharSequence getPageTitle(int position) {
-                return titles[position];
+                return titles.get(position);
             }
         });
         tabLayout.setupWithViewPager(viewPager);

@@ -1654,6 +1654,11 @@ public final class R {
         public static int rotate_progress_back_bg = 0x7f11000a;
         public static int rotate_progress_front_bg = 0x7f11000b;
     }
+    public static final class raw {
+        private raw() {}
+
+        public static int channel = 0x7f140001;
+    }
     public static final class string {
         private string() {}
 

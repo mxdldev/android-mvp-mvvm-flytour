@@ -55,4 +55,9 @@ public class NewsTypeDao {
         }
         return typeList;
     }
+    public void addListNewStype(List<NewsType> newsTypeList){
+        for(NewsType type : newsTypeList){
+            addNewsType(type.getTypename());
+        }
+    }
 }

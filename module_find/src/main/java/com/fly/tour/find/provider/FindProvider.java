@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.fly.tour.common.provider.IFindProvider;
-import com.fly.tour.find.fragment.FindFragment;
+import com.fly.tour.find.fragment.MainFindFragment;
 
 /**
  * Description: <FindProvider><br>
@@ -18,7 +18,7 @@ import com.fly.tour.find.fragment.FindFragment;
 public class FindProvider implements IFindProvider {
     @Override
     public Fragment getMainFindFragment() {
-        return FindFragment.newInstance();
+        return MainFindFragment.newInstance();
     }
 
     @Override

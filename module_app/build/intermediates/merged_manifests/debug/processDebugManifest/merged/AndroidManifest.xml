@@ -44,6 +44,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.fly.tour.main.SplashActivity" >
+        </activity>
         <activity
             android:name="com.fly.tour.me.NewsTypeAddActivity"
             android:label="新闻类型设置"
