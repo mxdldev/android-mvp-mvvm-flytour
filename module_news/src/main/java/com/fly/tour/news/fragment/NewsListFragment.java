@@ -55,6 +55,11 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
     }
 
     @Override
+    public boolean enableLazyData() {
+        return true;
+    }
+
+    @Override
     public void initView(View view) {
         mRecViewNewsDetail = view.findViewById(R.id.recview_news_list);
         mRecViewNewsDetail.setLayoutManager(new LinearLayoutManager(mActivity));
@@ -66,7 +71,6 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
     public void initData() {
         mPresenter.setNewsType(mNewsType.getId());
         autoLoadData();
-
     }
 
     @Override

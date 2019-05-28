@@ -35,6 +35,8 @@ public class MainNewsFragment extends BaseFragment {
             }
         }
     };
+    private TabLayout mTabLayout;
+    private ViewPager mViewPager;
 
     public static MainNewsFragment newInstance() {
         return new MainNewsFragment();
@@ -44,13 +46,24 @@ public class MainNewsFragment extends BaseFragment {
     public int onBindLayout() {
         return R.layout.fragment_news_main;
     }
-
     @Override
     public void initView(View view) {
-        ViewPager viewPager = view.findViewById(R.id.pager_tour);
-        TabLayout tabLayout = view.findViewById(R.id.layout_tour);
+        mViewPager = view.findViewById(R.id.pager_tour);
 
-        viewPager.setAdapter(new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
+        mTabLayout = view.findViewById(R.id.layout_tour);
+
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public void initListener() {
+        mViewPager.setOffscreenPageLimit(mArrayList.size());
+        mViewPager.setAdapter(new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
                 return mArrayList.get(position);
@@ -67,12 +80,23 @@ public class MainNewsFragment extends BaseFragment {
                 return titles.get(position);
             }
         });
-        tabLayout.setupWithViewPager(viewPager);
-    }
+        mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                mArrayList.get(tab.getPosition()).autoLoadData();
+            }
 
-    @Override
-    public void initData() {
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
 
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+        mTabLayout.setupWithViewPager(mViewPager);
     }
 
     @Override

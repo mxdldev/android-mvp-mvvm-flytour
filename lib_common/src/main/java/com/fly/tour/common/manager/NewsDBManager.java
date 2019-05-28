@@ -53,6 +53,8 @@ public class NewsDBManager {
             }.getType();
             mListNewsType = gson.fromJson(getStringByResId(R.raw.news_type), type);
             newsTypeDao.addListNewStype(mListNewsType);
+        }else{
+            mListNewsType = newsTypeDao.getListNewsType();
         }
         NewsDetailDao newsDetailDao = new NewsDetailDao(mContext);
         if(newsDetailDao.isEmpty()){

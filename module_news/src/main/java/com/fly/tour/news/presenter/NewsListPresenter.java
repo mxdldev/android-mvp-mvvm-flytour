@@ -35,6 +35,7 @@ public class NewsListPresenter extends BaseRefreshPresenter<NewsListModel, NewsL
 
     @Override
     public void refreshData() {
+        mView.hideNoDataView();
 
         new Handler().postDelayed(new Runnable() {
             @Override

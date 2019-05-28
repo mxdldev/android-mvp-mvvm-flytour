@@ -31,7 +31,12 @@ public class NewsTypeDao {
         values.put(NewsDBConfig.NewsType.CLUMN_TYPE_NAME, typename);
         return mDatabase.insert(NewsDBConfig.NewsType.TABLE_NAME, null, values) > 0;
     }
-
+    public boolean addNewsType(int id,String typename) {
+        ContentValues values = new ContentValues();
+        values.put(NewsDBConfig.NewsType.CLUMN_ID, id);
+        values.put(NewsDBConfig.NewsType.CLUMN_TYPE_NAME, typename);
+        return mDatabase.insert(NewsDBConfig.NewsType.TABLE_NAME, null, values) > 0;
+    }
     public boolean deleteNewsType(int id) {
         return mDatabase.delete(NewsDBConfig.NewsType.TABLE_NAME, "id = ?", new String[]{id + ""}) > 0;
     }
@@ -58,7 +63,7 @@ public class NewsTypeDao {
     public void addListNewStype(List<NewsType> newsTypeList){
         mDatabase.beginTransaction();
         for(NewsType type : newsTypeList){
-            addNewsType(type.getTypename());
+            addNewsType(type.getId(),type.getTypename());
         }
         mDatabase.setTransactionSuccessful();
         mDatabase.endTransaction();
