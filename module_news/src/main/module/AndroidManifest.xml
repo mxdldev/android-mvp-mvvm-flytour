@@ -28,19 +28,12 @@
         android:theme="@style/AppTheme"
         android:name="debug.NewsApplication"
         >
-        <activity android:name="com.fly.tour.trip.com.fly.tour.news.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        <activity
+            android:name="com.fly.tour.news.NewsDetailActivity"
+            android:label="新闻详情"
+            android:theme="@style/AppTheme.BackBar"
+            >
         </activity>
-        <!-- 高德定位服务 -->
-        <service android:name="com.amap.api.location.APSService"/>
-        <service android:name="com.fly.tour.trip.com.fly.tour.news.service.TrackCollectService"/>
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="ebc6eb680b62e5aec5c33eea25c6a5c5"/>
     </application>
 
 </manifest>

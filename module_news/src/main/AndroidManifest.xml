@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.fly.tour.trip">
+
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
@@ -17,8 +18,10 @@
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,12 +29,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!-- 高德定位服务 -->
-        <service android:name="com.amap.api.location.APSService"/>
-        <service android:name="com.fly.tour.trip.com.fly.tour.news.service.TrackCollectService"/>
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="ff73fbe44349261fdabbeda975ae8131"/>
+
+
+        <activity
+            android:name="com.fly.tour.news.NewsDetailActivity"
+            android:label="新闻详情"
+            android:theme="@style/AppTheme.BackBar"
+            >
+        </activity>
     </application>
 
 </manifest>

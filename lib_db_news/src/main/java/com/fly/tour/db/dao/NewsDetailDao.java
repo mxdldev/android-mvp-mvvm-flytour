@@ -76,4 +76,19 @@ public class NewsDetailDao {
             mDatabase.close();
         }
     }
+
+    public NewsDetail getNewsDetailById(int id) {
+        String sql = "select " + NewsDBConfig.NewsDetail.CLUMN_ID + "," + NewsDBConfig.NewsDetail.CLUMN_TITLE + "," + NewsDBConfig.NewsDetail.CLUMN_CONTENT + "," + NewsDBConfig.NewsDetail.CLUMN_ADD_TIME + " from " + NewsDBConfig.NewsDetail.TABLE_NAME + " where " + NewsDBConfig.NewsDetail.CLUMN_ID + " = " + id;
+        Cursor cursor = mDatabase.rawQuery(sql, null);
+        NewsDetail detail = null;
+        if (cursor != null && cursor.getCount() > 0) {
+            cursor.moveToNext();
+            detail = new NewsDetail();
+            detail.setId(cursor.getInt(0));
+            detail.setTitle(cursor.getString(1));
+            detail.setContent(cursor.getString(2));
+            detail.setAddtime(cursor.getString(3));
+        }
+        return detail;
+    }
 }

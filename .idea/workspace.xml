@@ -17,8 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d282b9c-a0de-4236-bc7b-9ff67b569c52" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/me/NewsDetailCurdEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/me/NewsTypeCrudEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/NewsDetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/contract/NewsDetailContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/model/NewsDetailModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsDetailPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_news/src/main/res/layout/activity_news_detail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
@@ -31,20 +34,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlyTour.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FlyTour.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseFragment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseRefreshFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseRefreshFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/EventCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/EventCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/manager/NewsDBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/manager/NewsDBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/entity/NewsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/entity/NewsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsTypeAddActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsTypeAddActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsDetailAddPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsDetailAddPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsTypeListPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsTypeListPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/MainNewsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/MainNewsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/KeyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/KeyCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_news/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module_news/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_news/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_news/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_news/src/main/module/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_news/src/main/module/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,121 +71,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainNewsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/MainNewsFragment.java">
+      <file leaf-file-name="NewsDetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/NewsDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="167" column="13" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
               <folding>
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-                <element signature="e#1159#1160#0" expanded="true" />
-                <element signature="e#3036#3037#0" expanded="true" />
-                <element signature="e#3103#3104#0" expanded="true" />
-                <element signature="e#2768#2769#0" expanded="true" />
-                <element signature="e#2819#2820#0" expanded="true" />
-                <element signature="e#2989#2990#0" expanded="true" />
-                <element signature="e#3049#3050#0" expanded="true" />
-                <element signature="e#2589#2590#0" expanded="true" />
-                <element signature="e#2616#2617#0" expanded="true" />
-                <element signature="e#4960#4961#0" expanded="true" />
-                <element signature="e#4991#4992#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsDetailAddActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsDetailAddActivity.java">
+      <file leaf-file-name="activity_news_detail.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module_news/src/main/res/layout/activity_news_detail.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
-              <folding>
-                <element signature="e#2496#3272#0" expanded="true" />
-                <element signature="e#3271#3272#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsDetailAddPresenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsDetailAddPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsDetailCurdEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/me/NewsDetailCurdEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding>
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsTypeListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsTypeListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsTypeListPresenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsTypeListPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="80" column="102" selection-start-line="80" selection-start-column="102" selection-end-line="80" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseRefreshFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseRefreshFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-              <folding>
-                <element signature="e#974#1135#0" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1183#1347#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1395#1559#0" expanded="true" />
-                <element signature="e#1558#1559#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsListFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewsListFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="-210">
+              <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
               <folding>
-                <element signature="e#1837#1838#0" expanded="true" />
-                <element signature="e#1864#1865#0" expanded="true" />
-                <element signature="e#2666#2667#0" expanded="true" />
-                <element signature="e#2706#2707#0" expanded="true" />
+                <element signature="e#2777#2966#0" expanded="true" />
+                <element signature="e#2965#2966#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsListPresenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsListPresenter.java">
+      <file leaf-file-name="NewsDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/entity/NewsDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="116">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib_common/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_news/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="38" column="19" selection-start-line="33" selection-start-column="5" selection-end-line="38" selection-end-column="19" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_news/src/main/module/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsDetailContract.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/contract/NewsDetailContract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,11 +183,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsDetailDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java">
+      <file leaf-file-name="NewsDetailPresenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsDetailPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="491">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#869#1006#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,8 +226,8 @@
       <find>NewsFragmentAdapter</find>
       <find>mRefreshLayout</find>
       <find>initView</find>
-      <find>initCommonView</find>
       <find>initNewsListFragment()</find>
+      <find>initCommonView</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -9399,13 +9402,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/RequestCode.java" />
-        <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsTypeListActivity.java" />
-        <option value="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/NewsDBConfig.java" />
-        <option value="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/util/DateUtil.java" />
-        <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/adapter/NewsTypeListAdapter.java" />
-        <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/contract/NewsDetailContract.java" />
-        <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/model/NewsDetailModel.java" />
         <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/model/NewsDetailAddModel.java" />
         <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/contract/NewsDetailAddContract.java" />
         <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/fragment/MeFragment.java" />
@@ -9418,7 +9414,6 @@
         <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsDetailAddActivity.java" />
         <option value="$PROJECT_DIR$/module_me/src/main/res/layout/activity_news_detail_add.xml" />
         <option value="$PROJECT_DIR$/module_app/src/main/java/com/fly/tour/manager/ChannelManager.java" />
-        <option value="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/KeyCode.java" />
         <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsAIFragment.java" />
         <option value="$PROJECT_DIR$/module_news/src/main/res/layout/fragment_trip_main.xml" />
         <option value="$PROJECT_DIR$/module_news/src/main/res/layout/fragment_news_main.xml" />
@@ -9435,7 +9430,6 @@
         <option value="$PROJECT_DIR$/module_main/src/main/java/com/fly/tour/main/MainActivity.java" />
         <option value="$PROJECT_DIR$/module_app/src/main/java/com/fly/tour/MyApplication.java" />
         <option value="$PROJECT_DIR$/lib_common/src/main/res/raw/news_detail" />
-        <option value="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java" />
         <option value="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsTypeDao.java" />
         <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsListPresenter.java" />
         <option value="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/me/NewsTypeCrudEvent.java" />
@@ -9449,7 +9443,16 @@
         <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/MainNewsFragment.java" />
         <option value="$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsDetailAddPresenter.java" />
         <option value="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/me/NewsDetailCurdEvent.java" />
+        <option value="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java" />
+        <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/model/NewsDetailModel.java" />
+        <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/contract/NewsDetailContract.java" />
+        <option value="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/KeyCode.java" />
+        <option value="$PROJECT_DIR$/module_news/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/module_news/src/main/module/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsListFragment.java" />
+        <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsDetailPresenter.java" />
+        <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/NewsDetailActivity.java" />
+        <option value="$PROJECT_DIR$/module_news/src/main/res/layout/activity_news_detail.xml" />
       </list>
     </option>
   </component>
@@ -9556,30 +9559,130 @@
             <path>
               <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="lib_common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="fly" type="462c0819:PsiDirectoryNode" />
-              <item name="tour" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="lib_common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fly" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="fly" type="462c0819:PsiDirectoryNode" />
               <item name="tour" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fly" type="462c0819:PsiDirectoryNode" />
+              <item name="tour" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fly" type="462c0819:PsiDirectoryNode" />
+              <item name="tour" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fly" type="462c0819:PsiDirectoryNode" />
+              <item name="tour" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="fragment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fly" type="462c0819:PsiDirectoryNode" />
+              <item name="tour" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fly" type="462c0819:PsiDirectoryNode" />
+              <item name="tour" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="presenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_news" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -9600,12 +9703,15 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\FlyTour\lib_common\src\main\res\raw" />
-      <recent name="D:\FlyTour\lib_common\src\main\res\drawable-xhdpi" />
+      <recent name="D:\FlyTour\module_me\src\main\res\layout" />
       <recent name="D:\FlyTour\lib_common\src\main\res\drawable" />
+      <recent name="D:\FlyTour\lib_common\src\main\res\layout" />
+      <recent name="D:\FlyTour\lib_common\src\main\res\drawable-xhdpi" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.fly.tour.news" />
       <recent name="com.fly.tour.main" />
       <recent name="com.fly.tour.me" />
     </key>
@@ -9616,12 +9722,10 @@
       <recent name="com.fly.tour.common.view" />
       <recent name="com.fly.tour.db.dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\FlyTour\lib_common\src\main\res\raw" />
-      <recent name="D:\FlyTour\module_me\src\main\res\layout" />
-      <recent name="D:\FlyTour\lib_common\src\main\res\drawable" />
-      <recent name="D:\FlyTour\lib_common\src\main\res\layout" />
       <recent name="D:\FlyTour\lib_common\src\main\res\drawable-xhdpi" />
+      <recent name="D:\FlyTour\lib_common\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -9853,38 +9957,46 @@
       <option name="project" value="LOCAL" />
       <updated>1559042669679</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="news refresh add">
+      <created>1559115286730</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559115286731</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="12" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Logcat" order="10" weight="0.66063976" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.6272601" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" weight="0.3295129" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2642559" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="7" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Preview" order="5" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32962447" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32962447" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Logcat" order="10" weight="0.66063976" />
       <window_info id="Captures" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3653295" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.6272601" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29369628" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1961057" />
       <window_info anchor="right" id="Gradle" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" weight="0.3295129" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2642559" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="5" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -9892,7 +10004,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Build" order="7" weight="0.6272601" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.6272601" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info id="Build Variants" order="3" side_tool="true" />
@@ -9910,11 +10022,11 @@
       <window_info anchor="right" id="Preview" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="10" visible="true" weight="0.66063976" />
+      <window_info anchor="bottom" id="Logcat" order="10" weight="0.66063976" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32962447" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="right" id="Gradle" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.30157593" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3653295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
@@ -9936,7 +10048,8 @@
     <MESSAGE value="newstype add" />
     <MESSAGE value="news add" />
     <MESSAGE value="channel auto add" />
-    <option name="LAST_COMMIT_MESSAGE" value="channel auto add" />
+    <MESSAGE value="news refresh add" />
+    <option name="LAST_COMMIT_MESSAGE" value="news refresh add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -9964,91 +10077,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module_me/src/main/res/layout/activity_news_detail_add.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/view/NewsTypeBottomSelectDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#1967#2150#0" expanded="true" />
-            <element signature="e#2149#2150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_main/src/main/res/layout/activity_splash.xml">
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_main/src/main/java/com/fly/tour/main/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_main/src/main/java/com/fly/tour/main/entity/MainChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_main/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsMobileFragment.java" />
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/KeyCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/versions.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_news/src/main/res/layout/fragment_news_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/mvp/BaseRefreshPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -10113,13 +10141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/entity/NewsDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/NewsDBConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -10152,6 +10173,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -10303,13 +10327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsListPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
@@ -10332,20 +10349,6 @@
             <element signature="e#1395#1559#0" expanded="true" />
             <element signature="e#1558#1559#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsTypeListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsTypeListPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="80" column="102" selection-start-line="80" selection-start-column="102" selection-end-line="80" selection-end-column="102" />
         </state>
       </provider>
     </entry>
@@ -10383,17 +10386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/me/NewsDetailCurdEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsDetailAddPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -10401,17 +10393,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsListFragment.java">
+    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/presenter/NewsTypeListPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="1425">
+          <caret line="80" column="102" selection-start-line="80" selection-start-column="102" selection-end-line="80" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsTypeListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/me/NewsDetailCurdEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding>
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/model/NewsDetailAddModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="86" column="43" lean-forward="true" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/model/NewsDetailModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/event/KeyCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="38" column="19" selection-start-line="33" selection-start-column="5" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/module/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/entity/NewsDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding>
+            <element signature="e#2777#2966#0" expanded="true" />
+            <element signature="e#2965#2966#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsDetailPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#869#1006#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/contract/NewsDetailContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/NewsDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+          <folding>
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/res/layout/activity_news_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>

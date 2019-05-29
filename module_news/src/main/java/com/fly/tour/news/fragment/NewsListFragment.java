@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.fly.tour.common.base.BaseAdapter;
 import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.common.base.BaseRefreshFragment;
 import com.fly.tour.common.event.KeyCode;
@@ -15,6 +16,7 @@ import com.fly.tour.common.mvp.BaseRefreshPresenter;
 import com.fly.tour.common.util.log.KLog;
 import com.fly.tour.db.entity.NewsDetail;
 import com.fly.tour.db.entity.NewsType;
+import com.fly.tour.news.NewsDetailActivity;
 import com.fly.tour.news.adapter.NewsListAdatper;
 import com.fly.tour.news.contract.NewsListContract;
 import com.fly.tour.news.model.NewsListModel;
@@ -78,6 +80,16 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
         mPresenter.setNewsType(mNewsType.getId());
         KLog.v("MYTAG","initData start:"+mNewsType.getTypename());
         autoLoadData();
+    }
+
+    @Override
+    public void initListener() {
+        mNewsListAdatper.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsDetail>() {
+            @Override
+            public void onItemClick(NewsDetail newsDetail, int position) {
+                NewsDetailActivity.startNewsDetailActivity(mActivity,newsDetail.getId());
+            }
+        });
     }
 
     @Override

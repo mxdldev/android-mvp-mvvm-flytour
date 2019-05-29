@@ -58,14 +58,12 @@
             android:name="com.fly.tour.me.NewsDetailAddActivity"
             android:label="新闻添加"
             android:theme="@style/AppTheme.BackBar" >
-        </activity> <!-- 高德定位服务 -->
-        <service android:name="com.amap.api.location.APSService" />
-        <service android:name="com.fly.tour.trip.com.fly.tour.news.service.TrackCollectService" />
-
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="ff73fbe44349261fdabbeda975ae8131" />
-
+        </activity>
+        <activity
+            android:name="com.fly.tour.news.NewsDetailActivity"
+            android:label="新闻详情"
+            android:theme="@style/AppTheme.BackBar" >
+        </activity>
         <activity
             android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
             android:configChanges="orientation|screenSize" />

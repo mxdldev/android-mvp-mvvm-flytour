@@ -13,6 +13,7 @@ public interface KeyCode {
 
     interface News {
         String NEWS_TYPE = "newstype";
+        String NEWS_ID = "newsid";
     }
 
     interface Find {
