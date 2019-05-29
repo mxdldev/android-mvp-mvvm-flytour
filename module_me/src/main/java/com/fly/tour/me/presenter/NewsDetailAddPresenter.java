@@ -3,10 +3,13 @@ package com.fly.tour.me.presenter;
 import android.content.Context;
 import android.os.Handler;
 
+import com.fly.tour.common.event.me.NewsDetailCurdEvent;
 import com.fly.tour.common.mvp.BasePresenter;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.me.contract.NewsDetailAddContract;
 import com.fly.tour.me.model.NewsDetailAddModel;
+
+import org.greenrobot.eventbus.EventBus;
 
 /**
  * Description: <NewsDetailAddPresenter><br>
@@ -36,6 +39,7 @@ public class NewsDetailAddPresenter extends BasePresenter<NewsDetailAddModel,New
                     ToastUtil.showToast("添加成功");
                     mView.hideTransLoadingView();
                     mView.finishActivity();
+                    EventBus.getDefault().post(new NewsDetailCurdEvent(type));
                 }else{
                     ToastUtil.showToast("添加失败");
                 }

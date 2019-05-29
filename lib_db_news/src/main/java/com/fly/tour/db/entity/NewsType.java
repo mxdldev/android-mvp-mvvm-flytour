@@ -70,4 +70,9 @@ public class NewsType implements Parcelable {
             return new NewsType[size];
         }
     };
+
+    @Override
+    public String toString() {
+        return "NewsType{" + "id=" + id + ", typename='" + typename + '\'' + ", addtime='" + addtime + '\'' + '}';
+    }
 }

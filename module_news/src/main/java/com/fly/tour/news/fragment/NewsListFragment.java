@@ -10,7 +10,9 @@ import android.view.View;
 import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.common.base.BaseRefreshFragment;
 import com.fly.tour.common.event.KeyCode;
+import com.fly.tour.common.event.me.NewsDetailCurdEvent;
 import com.fly.tour.common.mvp.BaseRefreshPresenter;
+import com.fly.tour.common.util.log.KLog;
 import com.fly.tour.db.entity.NewsDetail;
 import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.news.adapter.NewsListAdatper;
@@ -18,6 +20,9 @@ import com.fly.tour.news.contract.NewsListContract;
 import com.fly.tour.news.model.NewsListModel;
 import com.fly.tour.news.presenter.NewsListPresenter;
 import com.fly.tour.trip.R;
+
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.List;
 
@@ -61,6 +66,7 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
 
     @Override
     public void initView(View view) {
+        KLog.v("MYTAG","initView start:"+mNewsType.getTypename());
         mRecViewNewsDetail = view.findViewById(R.id.recview_news_list);
         mRecViewNewsDetail.setLayoutManager(new LinearLayoutManager(mActivity));
         mNewsListAdatper = new NewsListAdatper(mActivity);
@@ -70,6 +76,7 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
     @Override
     public void initData() {
         mPresenter.setNewsType(mNewsType.getId());
+        KLog.v("MYTAG","initData start:"+mNewsType.getTypename());
         autoLoadData();
     }
 
@@ -113,5 +120,11 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
     @Override
     public void loadMoreData(List<NewsDetail> data) {
         mNewsListAdatper.addAll(data);
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(NewsDetailCurdEvent curdEvent){
+        if(curdEvent.getCode() == mNewsType.getId()){
+            autoLoadData();
+        }
     }
 }

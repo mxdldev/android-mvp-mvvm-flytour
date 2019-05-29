@@ -15,6 +15,7 @@ import com.fly.tour.common.R;
 import com.fly.tour.common.event.common.BaseFragmentEvent;
 import com.fly.tour.common.mvp.BaseView;
 import com.fly.tour.common.util.NetUtil;
+import com.fly.tour.common.util.log.KLog;
 import com.fly.tour.common.view.LoadingInitView;
 import com.fly.tour.common.view.LoadingTransView;
 import com.fly.tour.common.view.NetErrorView;
@@ -112,6 +113,9 @@ public abstract class BaseFragment extends Fragment implements BaseView {
 
     private void lazyLoad() {
         //这里进行双重标记判断,必须确保onCreateView加载完毕且页面可见,才加载数据
+        KLog.v("MYTAG","lazyLoad start...");
+        KLog.v("MYTAG","isViewCreated:"+isViewCreated);
+        KLog.v("MYTAG","isViewVisable"+isViewVisable);
         if (isViewCreated && isViewVisable) {
             initData();
             //数据加载完毕,恢复标记,防止重复加载

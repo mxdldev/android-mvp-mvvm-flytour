@@ -22,5 +22,11 @@ public interface EventCode {
 
     interface MeCode {
         //4000开始
+        int NEWS_TYPE_ADD = 4000;
+        int NEWS_TYPE_DELETE = 4001;
+        int NEWS_TYPE_UPDATE = 4002;
+        int NEWS_TYPE_QUERY = 4003;
+
+        int news_detail_add  = 4004;
     }
 }

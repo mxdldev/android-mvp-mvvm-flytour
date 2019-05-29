@@ -8,11 +8,15 @@ import android.view.View;
 import android.widget.Button;
 
 import com.fly.tour.common.base.BaseMvpActivity;
+import com.fly.tour.common.event.EventCode;
+import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.SettingBarView;
 import com.fly.tour.me.contract.NewsTypeAddContract;
 import com.fly.tour.me.model.NewsTypeAddModel;
 import com.fly.tour.me.presenter.NewsTypeAddPresenter;
+
+import org.greenrobot.eventbus.EventBus;
 
 /**
  * Description: <NewsTypeAddActivity><br>
@@ -72,6 +76,7 @@ public class NewsTypeAddActivity extends BaseMvpActivity<NewsTypeAddModel,NewsTy
 
     @Override
     public void finishActivity() {
+        EventBus.getDefault().post(new NewsTypeCrudEvent(EventCode.MeCode.NEWS_TYPE_ADD));
         setResult(Activity.RESULT_OK,new Intent());
         super.finishActivity();
     }

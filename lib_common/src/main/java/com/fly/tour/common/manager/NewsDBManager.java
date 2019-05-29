@@ -28,7 +28,6 @@ public class NewsDBManager {
     public static final String TAG = NewsDBManager.class.getSimpleName();
     private static NewsDBManager newsDBManager;
     private Context mContext;
-    private List<NewsType> mListNewsType;
 
     private NewsDBManager(Context context) {
         mContext = context;
@@ -46,18 +45,16 @@ public class NewsDBManager {
     }
 
     public void initNewsDB() {
-        NewsTypeDao newsTypeDao = new NewsTypeDao(mContext);
-        if (newsTypeDao.isEmpty()) {
+        NewsTypeDao mNewsTypeDao = new NewsTypeDao(mContext);
+        if (mNewsTypeDao.isEmpty()) {
             Gson gson = new Gson();
             Type type = new TypeToken<List<NewsType>>() {
             }.getType();
-            mListNewsType = gson.fromJson(getStringByResId(R.raw.news_type), type);
-            newsTypeDao.addListNewStype(mListNewsType);
-        }else{
-            mListNewsType = newsTypeDao.getListNewsType();
+            List<NewsType> mListNewsType = gson.fromJson(getStringByResId(R.raw.news_type), type);
+            mNewsTypeDao.addListNewStype(mListNewsType);
         }
         NewsDetailDao newsDetailDao = new NewsDetailDao(mContext);
-        if(newsDetailDao.isEmpty()){
+        if (newsDetailDao.isEmpty()) {
             Gson gson = new Gson();
             Type type = new TypeToken<List<NewsDetail>>() {
             }.getType();
@@ -83,6 +80,6 @@ public class NewsDBManager {
     }
 
     public List<NewsType> getListNewsType() {
-        return mListNewsType;
+        return new NewsTypeDao(mContext).getListNewsType();
     }
 }

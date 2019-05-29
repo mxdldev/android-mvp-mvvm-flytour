@@ -5,6 +5,7 @@ import android.view.View;
 import com.fly.tour.common.mvp.BaseModel;
 import com.fly.tour.common.mvp.BaseRefreshPresenter;
 import com.fly.tour.common.mvp.BaseRefreshView;
+import com.fly.tour.common.util.log.KLog;
 import com.refresh.lib.BaseRefreshLayout;
 import com.refresh.lib.DaisyRefreshLayout;
 
@@ -68,7 +69,9 @@ public abstract class BaseRefreshFragment<M extends BaseModel,V extends BaseRefr
 
     @Override
     public void autoLoadData() {
+        KLog.v("MYTAG","autoLoadData start...");
         if(mRefreshLayout != null){
+            KLog.v("MYTAG","autoLoadData1 start...");
             mRefreshLayout.autoRefresh();
         }
     }
