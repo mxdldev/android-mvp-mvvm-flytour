@@ -10,7 +10,7 @@ MERGED from [:module_me] D:\FlyTour\module_me\build\intermediates\merged_manifes
 MERGED from [:module_news] D:\FlyTour\module_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-45:12
 MERGED from [:lib_common] D:\FlyTour\lib_common\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-13:12
 MERGED from [:lib_refresh_layout] D:\FlyTour\lib_refresh_layout\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:lib_db_news] D:\FlyTour\lib_db_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:lib_fly_db] D:\FlyTour\lib_fly_db\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support.test.espresso:espresso-core:3.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\espresso-core-3.0.2.aar\f168f8e26f5f41175b688ae477ebb326\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support.test:runner:1.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\runner-1.0.2.aar\16115587a7331bd1101901f28e79bf13\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\design-28.0.0.aar\ef064cd6e5b13eb240faa86782342caf\AndroidManifest.xml:17:1-24:12
@@ -134,8 +134,8 @@ MERGED from [:lib_common] D:\FlyTour\lib_common\build\intermediates\merged_manif
 MERGED from [:lib_common] D:\FlyTour\lib_common\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:lib_refresh_layout] D:\FlyTour\lib_refresh_layout\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:lib_refresh_layout] D:\FlyTour\lib_refresh_layout\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:lib_db_news] D:\FlyTour\lib_db_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:lib_db_news] D:\FlyTour\lib_db_news\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:lib_fly_db] D:\FlyTour\lib_fly_db\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:lib_fly_db] D:\FlyTour\lib_fly_db\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support.test.espresso:espresso-core:3.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\espresso-core-3.0.2.aar\f168f8e26f5f41175b688ae477ebb326\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support.test.espresso:espresso-core:3.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\espresso-core-3.0.2.aar\f168f8e26f5f41175b688ae477ebb326\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support.test:runner:1.0.2] C:\Users\gxl\.m2\repository\caches\transforms-1\files-1.1\runner-1.0.2.aar\16115587a7331bd1101901f28e79bf13\AndroidManifest.xml:20:5-22:41

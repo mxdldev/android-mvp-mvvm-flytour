@@ -36,7 +36,7 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     api project(":lib_refresh_layout")
-    api project(":lib_db_news")
+    api project(':lib_fly_db')
     api deps.junit
     api deps.testrunner
     api deps.testespresso

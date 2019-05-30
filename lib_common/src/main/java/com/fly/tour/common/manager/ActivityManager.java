@@ -1,4 +1,4 @@
-package com.fly.tour.common.base;
+package com.fly.tour.common.manager;
 
 import android.app.Activity;
 import android.content.Context;

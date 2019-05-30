@@ -110,16 +110,16 @@ public final class R {
         public static int notification_background = 0x7f0c0080;
         public static int notification_main_column = 0x7f0c0081;
         public static int notification_main_column_container = 0x7f0c0082;
-        public static int right = 0x7f0c0091;
-        public static int right_icon = 0x7f0c0092;
-        public static int right_side = 0x7f0c0093;
-        public static int start = 0x7f0c00ba;
-        public static int tag_transition_group = 0x7f0c00c0;
-        public static int text = 0x7f0c00c3;
-        public static int text2 = 0x7f0c00c4;
-        public static int time = 0x7f0c00cc;
-        public static int title = 0x7f0c00cd;
-        public static int top = 0x7f0c00d3;
+        public static int right = 0x7f0c0090;
+        public static int right_icon = 0x7f0c0091;
+        public static int right_side = 0x7f0c0092;
+        public static int start = 0x7f0c00b9;
+        public static int tag_transition_group = 0x7f0c00bf;
+        public static int text = 0x7f0c00c2;
+        public static int text2 = 0x7f0c00c3;
+        public static int time = 0x7f0c00cb;
+        public static int title = 0x7f0c00cc;
+        public static int top = 0x7f0c00d2;
     }
     public static final class integer {
         private integer() {}

@@ -186,7 +186,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-compat-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-28.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-28.0.0" level="project" />
-    <orderEntry type="module" module-name="lib_db_news" />
+    <orderEntry type="module" module-name="lib_fly_db" />
     <orderEntry type="module" module-name="lib_refresh_layout" />
   </component>
 </module>

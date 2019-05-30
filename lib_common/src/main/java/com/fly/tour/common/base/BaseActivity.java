@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.fly.tour.common.R;
 import com.fly.tour.common.event.common.BaseActivityEvent;
+import com.fly.tour.common.manager.ActivityManager;
 import com.fly.tour.common.mvp.BaseView;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.common.view.LoadingInitView;

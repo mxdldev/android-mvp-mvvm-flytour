@@ -1340,7 +1340,6 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
-id refresh_layout
 id right
 id right_icon
 id right_side
