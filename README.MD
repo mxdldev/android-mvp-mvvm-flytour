@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://github.com/geduo83/FlyTour/archive/v2.0.0.zip">
+   <a href="https://github.com/geduo83/FlyTour/releases">
     <img src="https://img.shields.io/github/release/geduo83/FlyTour.svg" alt="Latest Stable Version" />
   </a>
    <a href="https://developer.android.com/about/versions/android-4.0.html">
