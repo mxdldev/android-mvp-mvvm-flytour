@@ -17,100 +17,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d282b9c-a0de-4236-bc7b-9ff67b569c52" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib_fly_api/src/androidTest/java/com/fly/tour/api/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_fly_api/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_fly_api/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_fly_api/src/test/java/com/fly/tour/api/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_fly_db/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_fly_db/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib_fly_db/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/ActivityManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/fly/tour/common/base/BaseActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/lib_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/lib_common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/ActivityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/manager/ActivityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/util/SPUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/util/SPUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_api/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/androidTest/java/com/fly/tour/db/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/androidTest/java/com/fly/tour/db/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/NewsDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/NewsDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/NewsDBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/NewsDBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/dao/NewsDetailDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/dao/NewsTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/dao/NewsTypeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/entity/NewsDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/entity/NewsDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/java/com/fly/tour/db/entity/NewsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/entity/NewsType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_db_news/src/test/java/com/fly/tour/db/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_db/src/test/java/com/fly/tour/db/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_fragment_discover_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/intermediates/res/merged/debug/layout_fragment_discover_main.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/module_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/module_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/asynclayoutinflater/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/compat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/constraint/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coordinatorlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreui/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/coreutils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/customview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/design/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/drawerlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/fragment/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/graphics/drawable/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/loader/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/mediacompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/percent/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/slidingpanelayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/swiperefreshlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/transition/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v13/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v4/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/appcompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/recyclerview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/android/support/v7/viewpager/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/common/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/find/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/fly/tour/find/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/com/tbruyelle/rxpermissions2/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/generated/not_namespaced_r_class_sources/debug/generateDebugRFile/out/me/nereo/multi_image_selector/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/packaged_res/debug/layout/fragment_discover_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/packaged_res/debug/layout/fragment_discover_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/module_find.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/module_find.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_find/src/main/res/layout/fragment_discover_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_find/src/main/res/layout/fragment_discover_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/module_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/module_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_main/src/main/module/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_main/src/main/module/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_me/module_me.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_me/module_me.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_config.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_config.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_eureka.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_eureka.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_gateway.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_gateway.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_log.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_log.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_struct.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_struct.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_uaa.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_uaa.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/dagger2_struct.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/dagger2_struct.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_business.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_business.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_module.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_module.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_plugn.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_plugn.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_router.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_router.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_struct.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_struct.puml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -132,17 +51,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module_main/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -11269,28 +11178,28 @@
             <path>
               <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -11584,13 +11493,20 @@
       <option name="project" value="LOCAL" />
       <updated>1559127364557</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="news detail add">
+      <created>1559199303746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559199303746</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="PlantUML" order="3" weight="0.3297414" />
+      <window_info anchor="right" id="PlantUML" order="3" weight="0.3295129" />
       <window_info anchor="bottom" id="Android Profiler" order="12" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
@@ -11600,14 +11516,14 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Preview" order="5" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32962447" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32962447" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.16828929" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Logcat" order="10" weight="0.66063976" />
       <window_info id="Captures" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29512894" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.033379693" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.033379693" />
       <window_info anchor="right" id="Gradle" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" weight="0.3295129" />
@@ -11623,9 +11539,9 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.1961057" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.6272601" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.033379693" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="right" id="PlantUML" order="3" weight="0.3297414" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32962447" />
@@ -11640,19 +11556,19 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Preview" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.1961057" />
       <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Logcat" order="10" weight="0.66063976" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32962447" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="right" id="Gradle" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29369628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29512894" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.1961057" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2642559" />
     </layout-to-restore>
   </component>
@@ -11697,83 +11613,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/entity/NewsType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/manager/NewsDBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2845#2846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_me/src/main/java/com/fly/tour/me/NewsTypeAddActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseMvpFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="30" />
-          <folding>
-            <element signature="e#4359#4360#0" expanded="true" />
-            <element signature="e#4387#4388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/presenter/NewsListPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseRefreshFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#974#1135#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1183#1347#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1395#1559#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/MainNewsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -11801,6 +11640,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
           <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+          <folding>
+            <element signature="e#2496#3272#0" expanded="true" />
+            <element signature="e#3271#3272#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -11854,6 +11697,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -11948,39 +11796,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/single_struct.puml">
+    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_router.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/single_router.puml">
+    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_plugn.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/single_plugn.puml">
+    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_log.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/cloud_config.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/cloud_log.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/dagger2_struct.puml">
+    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/1.0.0/dagger2_struct.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/cloud_gateway.puml">
+    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_gateway.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
@@ -12008,16 +11846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
         </state>
       </provider>
     </entry>
@@ -12083,13 +11911,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/util/SPUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-103">
@@ -12111,18 +11932,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java">
+    <entry file="file://$PROJECT_DIR$/module_main/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1109">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="307">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_main/build.gradle">
+    <entry file="file://$PROJECT_DIR$/module_main/src/main/java/debug/MainApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseMvpFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseMvpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseRefreshActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#942#1103#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="e#4309#4310#0" expanded="true" />
+            <element signature="e#4355#4356#0" expanded="true" />
+            <element signature="e#4688#4689#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="109" column="23" lean-forward="true" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_main/src/main/java/com/fly/tour/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_struct.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_config.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
       </provider>
     </entry>
   </component>
