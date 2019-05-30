@@ -1,3 +1,20 @@
+<p align="center">
+   <a href="https://github.com/geduo83/FlyTour/archive/v2.0.0.zip">
+    <img src="https://img.shields.io/github/release/geduo83/FlyTour.svg" alt="Latest Stable Version" />
+  </a>
+   <a href="https://developer.android.com/about/versions/android-4.0.html">
+    <img src="https://img.shields.io/badge/API-14%2B-blue.svg?style=flat-square" alt="Min Sdk Version" />
+  </a>
+  <a href="http://www.apache.org/licenses/LICENSE-2.0">
+    <img src="http://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="License" />
+  </a>
+  <a href="https://menxindiaolong.blog.csdn.net">
+    <img src="https://img.shields.io/badge/Author-%E9%97%A8%E5%BF%83%E5%8F%BC%E9%BE%99-orange.svg?style=flat-square" alt="Author" />
+  </a>
+  <a href="https://shang.qq.com/wpa/qunwpa?idkey=7e59e59145e6c7c68932ace10f52790636451f01d1ecadb6a652b1df234df753">
+    <img src="https://img.shields.io/badge/QQ%E7%BE%A4-810970432%20%7C%20303704981-orange.svg?style=flat-square" alt="QQ Group" />
+  </a>
+</p>
 欢迎加星，打call https://github.com/geduo83/FlyTour
 在使用中有任何问题，请留言，或加入Android、Java开发技术交流群
 * QQ群：810970432
