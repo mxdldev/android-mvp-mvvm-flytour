@@ -18,18 +18,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4d282b9c-a0de-4236-bc7b-9ff67b569c52" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_config.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_config.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_eureka.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_eureka.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_gateway.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_gateway.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_log.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_log.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_struct.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_struct.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/cloud_uaa.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/cloud_uaa.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/dagger2_struct.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/dagger2_struct.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_business.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_business.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_module.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_module.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_plugn.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_plugn.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_router.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_router.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_app/src/main/assets/single_struct.puml" beforeDir="false" afterPath="$PROJECT_DIR$/module_app/src/main/assets/1.0.0/single_struct.puml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11175,32 +11163,6 @@
               <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlyTour" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlyTour" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -11218,12 +11180,11 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FlyTour\module_app\src\main\assets\1.0.0" />
       <recent name="D:\FlyTour\lib_common\src\main\res\raw" />
-      <recent name="D:\FlyTour\module_me\src\main\res\layout" />
-      <recent name="D:\FlyTour\lib_common\src\main\res\drawable" />
-      <recent name="D:\FlyTour\lib_common\src\main\res\layout" />
       <recent name="D:\FlyTour\lib_common\src\main\res\drawable-xhdpi" />
+      <recent name="D:\FlyTour\lib_common\src\main\res\drawable" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.fly.tour.news" />
@@ -11237,10 +11198,12 @@
       <recent name="com.fly.tour.common.view" />
       <recent name="com.fly.tour.db.dao" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FlyTour\module_app\src\main\assets\2.0.0" />
       <recent name="D:\FlyTour\lib_common\src\main\res\raw" />
-      <recent name="D:\FlyTour\lib_common\src\main\res\drawable-xhdpi" />
+      <recent name="D:\FlyTour\module_me\src\main\res\layout" />
       <recent name="D:\FlyTour\lib_common\src\main\res\drawable" />
+      <recent name="D:\FlyTour\lib_common\src\main\res\layout" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -11500,7 +11463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559199303746</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="readme update">
+      <created>1559206409206</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559206409206</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -11585,7 +11555,8 @@
     <MESSAGE value="channel auto add" />
     <MESSAGE value="news refresh add" />
     <MESSAGE value="news detail add" />
-    <option name="LAST_COMMIT_MESSAGE" value="news detail add" />
+    <MESSAGE value="readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
