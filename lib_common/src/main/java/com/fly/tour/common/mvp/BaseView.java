@@ -1,5 +1,7 @@
 package com.fly.tour.common.mvp;
 
+import android.content.Context;
+
 /**
  * Description: <BaseView><br>
  * Author:      gxl<br>
@@ -12,4 +14,5 @@ public interface BaseView extends ILoadView,INoDataView,ITransView,INetErrView{
     void initListener();
     void initData();
     void finishActivity();
+    Context getContext();
 }

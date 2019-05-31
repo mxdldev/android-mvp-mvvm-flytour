@@ -1,5 +1,6 @@
 package com.fly.tour.common.base;
 
+import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -234,5 +235,10 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public <T> void onEvent(BaseActivityEvent<T> event) {
+    }
+
+    @Override
+    public Context getContext() {
+        return this;
     }
 }
