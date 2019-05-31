@@ -187,7 +187,7 @@ public void hideNetWorkErrView() {
 ### MVP架构
 这是整个项目的mvp结构图：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190530144533636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9tZW54aW5kaWFvbG9uZy5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70)
-* Activity关系图：
+* Activity关系图：<br>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190407122859375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dlZHVvXzgz,size_16,color_FFFFFF,t_70)
 ### Fragment的类关系图
 Fragment的类关系图和Activity类似具体详见common组件下的base包和mvp包
