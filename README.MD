@@ -52,13 +52,13 @@
 ### 功能演示
 * 新闻下来刷新、无数据、无网络、新闻详情展示
 <div>
-<img align="left" src="https://img-blog.csdnimg.cn/2019053012120717.gif">
+<img src="https://img-blog.csdnimg.cn/2019053012120717.gif">
 <img align="right" src="https://img-blog.csdnimg.cn/20190530121236658.gif">
- </div>
+</div>
  
  * 新闻类型添加、新闻添加
 <div>
- <img align="left" src="https://img-blog.csdnimg.cn/20190530121927773.gif">
+ <img src="https://img-blog.csdnimg.cn/20190530121927773.gif">
  <img align="right" src="https://img-blog.csdnimg.cn/20190530122102683.gif">
 </div>
 
