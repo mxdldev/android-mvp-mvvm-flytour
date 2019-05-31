@@ -51,15 +51,16 @@
 * 初始版本，以车辆运动轨迹大数据采集为功能简单的实现了组件化和MVP的基本功能
 ### 功能演示
 * 新闻下来刷新、无数据、无网络、新闻详情展示
-<figure class="half">
-    <img src="https://img-blog.csdnimg.cn/2019053012120717.gif">
-    <img src="https://img-blog.csdnimg.cn/20190530121236658.gif">
- </figure>
+<div>
+<img align="left" src="https://img-blog.csdnimg.cn/2019053012120717.gif">
+<img align="right" src="https://img-blog.csdnimg.cn/20190530121236658.gif">
+ </div>
+ 
  * 新闻类型添加、新闻添加
-<figure class="half">
-     <img src="https://img-blog.csdnimg.cn/20190530121927773.gif">
-      <img src="  https://img-blog.csdnimg.cn/20190530122102683.gif">
-</figure>
+<div>
+ <img align="left" src="https://img-blog.csdnimg.cn/20190530121927773.gif">
+ <img align="right" src="https://img-blog.csdnimg.cn/20190530122102683.gif">
+</div>
 
 ### 主要功能
 ### 核心公共组件lib_common
