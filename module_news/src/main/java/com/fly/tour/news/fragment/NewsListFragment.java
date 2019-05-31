@@ -19,6 +19,8 @@ import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.news.NewsDetailActivity;
 import com.fly.tour.news.adapter.NewsListAdatper;
 import com.fly.tour.news.contract.NewsListContract;
+import com.fly.tour.news.inject.component.DaggerNewsListComponent;
+import com.fly.tour.news.inject.module.NewsListModule;
 import com.fly.tour.news.model.NewsListModel;
 import com.fly.tour.news.presenter.NewsListPresenter;
 import com.fly.tour.trip.R;
@@ -102,10 +104,6 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
         return R.id.refview_news_list;
     }
 
-    @Override
-    public NewsListPresenter initPresenter() {
-        return new NewsListPresenter(mActivity);
-    }
 
 
 
@@ -138,5 +136,10 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
         if(curdEvent.getCode() == mNewsType.getId()){
             autoLoadData();
         }
+    }
+
+    @Override
+    public void injectPresenter() {
+        DaggerNewsListComponent.builder().newsListModule(new NewsListModule(this)).build().inject(this);
     }
 }

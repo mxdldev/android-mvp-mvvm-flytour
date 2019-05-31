@@ -13,6 +13,8 @@ import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.SettingBarView;
 import com.fly.tour.me.contract.NewsTypeAddContract;
+import com.fly.tour.me.inject.component.DaggerNewsTypeAddComponent;
+import com.fly.tour.me.inject.module.NewsTypeAddModule;
 import com.fly.tour.me.model.NewsTypeAddModel;
 import com.fly.tour.me.presenter.NewsTypeAddPresenter;
 
@@ -31,8 +33,8 @@ public class NewsTypeAddActivity extends BaseMvpActivity<NewsTypeAddModel,NewsTy
     private Button mBtnSaveNewsType;
 
     @Override
-    public NewsTypeAddPresenter initPresenter() {
-        return new NewsTypeAddPresenter(this);
+    public void injectPresenter() {
+        DaggerNewsTypeAddComponent.builder().newsTypeAddModule(new NewsTypeAddModule(this)).build().inject(this);
     }
 
     @Override

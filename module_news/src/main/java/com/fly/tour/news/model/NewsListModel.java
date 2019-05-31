@@ -11,6 +11,8 @@ import com.fly.tour.news.contract.NewsListContract;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsListModel><br>
  * Author:      gxl<br>
@@ -20,9 +22,10 @@ import java.util.List;
  */
 public class NewsListModel extends BaseModel implements NewsListContract.Model {
     private NewsDetailDao mDetailDao;
-    public NewsListModel(Context context) {
+    @Inject
+    public NewsListModel(Context context, NewsDetailDao detailDao) {
         super(context);
-        mDetailDao = new NewsDetailDao(context);
+        mDetailDao = detailDao;
     }
 
     @Override

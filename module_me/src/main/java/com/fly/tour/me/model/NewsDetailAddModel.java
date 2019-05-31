@@ -6,6 +6,8 @@ import com.fly.tour.common.mvp.BaseModel;
 import com.fly.tour.db.dao.NewsDetailDao;
 import com.fly.tour.me.contract.NewsDetailAddContract;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsDetailAddModel><br>
  * Author:      gxl<br>
@@ -15,9 +17,10 @@ import com.fly.tour.me.contract.NewsDetailAddContract;
  */
 public class NewsDetailAddModel extends BaseModel implements NewsDetailAddContract.Model {
     private NewsDetailDao mNewsDetailDao;
-    public NewsDetailAddModel(Context context) {
+    @Inject
+    public NewsDetailAddModel(Context context, NewsDetailDao newsDetailDao) {
         super(context);
-        mNewsDetailDao = new NewsDetailDao(context);
+        mNewsDetailDao = newsDetailDao;
     }
 
     @Override

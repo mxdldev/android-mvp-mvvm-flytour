@@ -6,6 +6,8 @@ import android.support.annotation.Nullable;
 import com.fly.tour.common.mvp.BaseModel;
 import com.fly.tour.common.mvp.BasePresenter;
 
+import javax.inject.Inject;
+
 /**
  * Description: <BaseMvpActivity><br>
  * Author:      gxl<br>
@@ -14,18 +16,18 @@ import com.fly.tour.common.mvp.BasePresenter;
  * Update:     <br>
  */
 public abstract class BaseMvpActivity<M extends BaseModel,V,P extends BasePresenter<M,V>> extends BaseActivity {
+    @Inject
     protected P mPresenter;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        mPresenter = initPresenter();
+        injectPresenter();
         if(mPresenter != null){
-            mPresenter.attach((V) this);
             mPresenter.injectLifecycle(this);
         }
         super.onCreate(savedInstanceState);
 
     }
-    public abstract P initPresenter();
+    public abstract void injectPresenter();
 
     @Override
     protected void onDestroy() {

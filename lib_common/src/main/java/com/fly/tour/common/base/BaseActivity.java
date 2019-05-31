@@ -40,7 +40,6 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
     protected NoDataView mNoDataView;
     protected LoadingInitView mLoadingInitView;
     protected LoadingTransView mLoadingTransView;
-       private boolean isrefresh = false;
     private ViewStub mViewStubToolbar;
     private ViewStub mViewStubContent;
     private ViewStub mViewStubInitLoading;

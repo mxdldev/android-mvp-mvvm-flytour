@@ -2,17 +2,16 @@ package com.fly.tour.news;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.test.espresso.DaggerBaseLayerComponent;
 import android.widget.TextView;
 
-import com.fly.tour.common.dagger.base.BaseMvpActivity;
+import com.fly.tour.common.base.BaseMvpActivity;
 import com.fly.tour.common.event.KeyCode;
 import com.fly.tour.db.entity.NewsDetail;
 import com.fly.tour.news.contract.NewsDetailContract;
-import com.fly.tour.news.dagger.inject.component.DaggerNewsDetailComponent;
-import com.fly.tour.news.dagger.inject.module.NewsDetailModule;
-import com.fly.tour.news.dagger.model.NewsDetailModel;
-import com.fly.tour.news.dagger.presenter.NewsDetailPresenter;
+import com.fly.tour.news.inject.component.DaggerNewsDetailComponent;
+import com.fly.tour.news.inject.module.NewsDetailModule;
+import com.fly.tour.news.model.NewsDetailModel;
+import com.fly.tour.news.presenter.NewsDetailPresenter;
 import com.fly.tour.trip.R;
 
 public class NewsDetailActivity extends BaseMvpActivity<NewsDetailModel,NewsDetailContract.View,NewsDetailPresenter> implements NewsDetailContract.View{

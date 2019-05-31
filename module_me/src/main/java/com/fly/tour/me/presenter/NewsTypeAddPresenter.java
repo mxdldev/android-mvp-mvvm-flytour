@@ -7,6 +7,8 @@ import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.me.contract.NewsTypeAddContract;
 import com.fly.tour.me.model.NewsTypeAddModel;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsTypeAddPresenter><br>
  * Author:      gxl<br>
@@ -15,13 +17,10 @@ import com.fly.tour.me.model.NewsTypeAddModel;
  * Update:     <br>
  */
 public class NewsTypeAddPresenter extends BasePresenter<NewsTypeAddModel,NewsTypeAddContract.View> implements NewsTypeAddContract.Presenter {
-    public NewsTypeAddPresenter(Context context) {
-        super(context);
-    }
 
-    @Override
-    public NewsTypeAddModel initModel() {
-        return new NewsTypeAddModel(mContext);
+    @Inject
+    public NewsTypeAddPresenter(Context context, NewsTypeAddContract.View view, NewsTypeAddModel model) {
+        super(context, view, model);
     }
 
     @Override

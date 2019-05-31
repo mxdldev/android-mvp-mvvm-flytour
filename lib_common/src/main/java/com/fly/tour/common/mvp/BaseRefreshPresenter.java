@@ -10,7 +10,8 @@ import android.content.Context;
  * Update:     <br>
  */
 public abstract class BaseRefreshPresenter<M extends BaseModel,V extends BaseRefreshView<T>,T> extends BasePresenter<M,V> implements BaseRefreshContract.Presenter{
-    public BaseRefreshPresenter(Context context) {
-        super(context);
+
+    public BaseRefreshPresenter(Context context, V view, M model) {
+        super(context, view, model);
     }
 }

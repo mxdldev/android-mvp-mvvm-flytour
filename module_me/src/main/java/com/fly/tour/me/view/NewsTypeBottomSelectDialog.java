@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 
 import com.fly.tour.common.base.BaseAdapter;
 import com.fly.tour.common.util.DisplayUtil;
+import com.fly.tour.db.dao.NewsTypeDao;
 import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.R;
 import com.fly.tour.me.adapter.NewsTypeSelectAdapter;
@@ -74,7 +75,7 @@ public class NewsTypeBottomSelectDialog extends BottomSheetDialogFragment {
                 c.drawLine(0,0,0,DisplayUtil.dip2px(1), paint);
             }
         });
-        adapter.refresh(new NewsTypeListModel(getContext()).getListNewsType());
+        adapter.refresh(new NewsTypeListModel(getContext(),new NewsTypeDao(getContext())).getListNewsType());
         adapter.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsType>() {
             @Override
             public void onItemClick(NewsType newsType, int position) {

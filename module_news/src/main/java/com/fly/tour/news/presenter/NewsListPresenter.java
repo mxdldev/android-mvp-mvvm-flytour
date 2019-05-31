@@ -13,6 +13,8 @@ import com.fly.tour.news.model.NewsListModel;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsListPresenter><br>
  * Author:      gxl<br>
@@ -23,15 +25,10 @@ import java.util.List;
 public class NewsListPresenter extends BaseRefreshPresenter<NewsListModel, NewsListContract.View<NewsDetail>, NewsDetail> implements NewsListContract.Presenter {
     private int newsType = 0;
 
-    public NewsListPresenter(Context context) {
-        super(context);
+    @Inject
+    public NewsListPresenter(Context context, NewsListContract.View<NewsDetail> view, NewsListModel model) {
+        super(context, view, model);
     }
-
-    @Override
-    public NewsListModel initModel() {
-        return new NewsListModel(mContext);
-    }
-
 
     @Override
     public void refreshData() {

@@ -9,6 +9,8 @@ import com.fly.tour.me.contract.NewsTypeListContract;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsTypeListModel><br>
  * Author:      gxl<br>
@@ -18,12 +20,11 @@ import java.util.List;
  */
 public class NewsTypeListModel extends BaseModel implements NewsTypeListContract.Model {
     public NewsTypeDao mNewsTypeDao;
-
-    public NewsTypeListModel(Context context) {
+    @Inject
+    public NewsTypeListModel(Context context, NewsTypeDao newsTypeDao) {
         super(context);
-        mNewsTypeDao = new NewsTypeDao(context);
+        mNewsTypeDao = newsTypeDao;
     }
-
 
     @Override
     public List<NewsType> getListNewsType() {

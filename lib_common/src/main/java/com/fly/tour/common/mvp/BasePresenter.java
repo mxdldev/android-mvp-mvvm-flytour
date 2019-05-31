@@ -17,38 +17,24 @@ public abstract class BasePresenter<M extends BaseModel, V> {
     protected V mView;
     protected M mModel;
 
-    public BasePresenter(Context context) {
+    public BasePresenter(Context context, V view, M model) {
         mContext = context;
+        mView = view;
+        mModel = model;
     }
-
-    public void attach(V view) {
-        attachView(view);
-        attachModel();
-    }
-
     public void detach() {
         detachView();
         detachModel();
     }
-
-    public void attachView(V view) {
-        mView = view;
-    }
-
     public void detachView() {
         mView = null;
     }
 
-    public void attachModel() {
-        mModel = initModel();
-    }
 
     public void detachModel() {
         mModel.destory();
         mModel = null;
     }
-
-    public abstract M initModel();
 
     public void injectLifecycle(LifecycleProvider lifecycle) {
         if (mModel != null) {
