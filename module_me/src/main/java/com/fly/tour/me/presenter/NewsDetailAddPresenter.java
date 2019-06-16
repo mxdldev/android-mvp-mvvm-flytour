@@ -11,6 +11,8 @@ import com.fly.tour.me.model.NewsDetailAddModel;
 
 import org.greenrobot.eventbus.EventBus;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsDetailAddPresenter><br>
  * Author:      gxl<br>
@@ -19,13 +21,10 @@ import org.greenrobot.eventbus.EventBus;
  * Update:     <br>
  */
 public class NewsDetailAddPresenter extends BasePresenter<NewsDetailAddModel,NewsDetailAddContract.View> implements NewsDetailAddContract.Presenter {
-    public NewsDetailAddPresenter(Context context) {
-        super(context);
-    }
 
-    @Override
-    public NewsDetailAddModel initModel() {
-        return new NewsDetailAddModel(mContext);
+    @Inject
+    public NewsDetailAddPresenter(Context context, NewsDetailAddContract.View view, NewsDetailAddModel model) {
+        super(context, view, model);
     }
 
     @Override

@@ -12,6 +12,8 @@ import com.fly.tour.db.entity.NewsType;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsTypeDao><br>
  * Author:      gxl<br>
@@ -21,7 +23,7 @@ import java.util.List;
  */
 public class NewsTypeDao {
     private SQLiteDatabase mDatabase;
-
+    @Inject
     public NewsTypeDao(Context context) {
         mDatabase = NewsDBHelper.getInstance(context).getReadableDatabase();
     }

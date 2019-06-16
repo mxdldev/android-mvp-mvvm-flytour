@@ -11,6 +11,8 @@ import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.SettingBarView;
 import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.contract.NewsDetailAddContract;
+import com.fly.tour.me.inject.component.DaggerNewsDetailAddComponent;
+import com.fly.tour.me.inject.module.NewsDetailAddModule;
 import com.fly.tour.me.model.NewsDetailAddModel;
 import com.fly.tour.me.presenter.NewsDetailAddPresenter;
 import com.fly.tour.me.view.NewsTypeBottomSelectDialog;
@@ -83,8 +85,8 @@ public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,Ne
     }
 
     @Override
-    public NewsDetailAddPresenter initPresenter() {
-        return new NewsDetailAddPresenter(this);
+    public void injectPresenter() {
+        DaggerNewsDetailAddComponent.builder().newsDetailAddModule(new NewsDetailAddModule(this)).build().inject(this);
     }
 
 }

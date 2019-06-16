@@ -16,6 +16,8 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.List;
 import java.util.logging.Handler;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsTypeListPresenter><br>
  * Author:      gxl<br>
@@ -24,15 +26,11 @@ import java.util.logging.Handler;
  * Update:     <br>
  */
 public class NewsTypeListPresenter extends BaseRefreshPresenter<NewsTypeListModel, NewsTypeListContract.View<NewsType>, NewsType> implements NewsTypeListContract.Presenter {
-    public NewsTypeListPresenter(Context context) {
-        super(context);
-    }
 
     private boolean isfirst = true;
-
-    @Override
-    public NewsTypeListModel initModel() {
-        return new NewsTypeListModel(mContext);
+    @Inject
+    public NewsTypeListPresenter(Context context, NewsTypeListContract.View<NewsType> view, NewsTypeListModel model) {
+        super(context, view, model);
     }
 
     @Override

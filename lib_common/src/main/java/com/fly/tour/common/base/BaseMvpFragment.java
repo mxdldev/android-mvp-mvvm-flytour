@@ -6,6 +6,8 @@ import android.support.annotation.Nullable;
 import com.fly.tour.common.mvp.BaseModel;
 import com.fly.tour.common.mvp.BasePresenter;
 
+import javax.inject.Inject;
+
 /**
  * Description: <BaseMvpFragment><br>
  * Author:      gxl<br>
@@ -14,13 +16,13 @@ import com.fly.tour.common.mvp.BasePresenter;
  * Update:     <br>
  */
 public abstract class BaseMvpFragment<M extends BaseModel,V,P extends BasePresenter<M,V>> extends BaseFragment {
+   @Inject
     protected P mPresenter;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPresenter = initPresenter();
+        injectPresenter();
         if(mPresenter != null){
-            mPresenter.attach((V) this);
             mPresenter.injectLifecycle(mActivity);
         }
     }
@@ -32,5 +34,5 @@ public abstract class BaseMvpFragment<M extends BaseModel,V,P extends BasePresen
         }
         super.onDestroy();
     }
-    public abstract P initPresenter();
+    public abstract void injectPresenter();
 }

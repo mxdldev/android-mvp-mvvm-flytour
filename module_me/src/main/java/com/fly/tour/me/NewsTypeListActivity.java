@@ -16,6 +16,8 @@ import com.fly.tour.common.view.CommonDialogFragment;
 import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.adapter.NewsTypeShowAdapter;
 import com.fly.tour.me.contract.NewsTypeListContract;
+import com.fly.tour.me.inject.component.DaggerNewsTypeListComponent;
+import com.fly.tour.me.inject.module.NewsTypeListModule;
 import com.fly.tour.me.model.NewsTypeListModel;
 import com.fly.tour.me.presenter.NewsTypeListPresenter;
 
@@ -80,8 +82,8 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
     }
 
     @Override
-    public NewsTypeListPresenter initPresenter() {
-        return new NewsTypeListPresenter(this);
+    public void injectPresenter() {
+        DaggerNewsTypeListComponent.builder().newsTypeListModule(new NewsTypeListModule(this)).build().inject(this);
     }
 
     @Override

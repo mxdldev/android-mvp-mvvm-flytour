@@ -49,4 +49,5 @@ dependencies {
     annotationProcessor deps.arouter_compiler
     annotationProcessor deps.glide_compiler
     annotationProcessor deps.dagger_compiler
-}
+
+   }

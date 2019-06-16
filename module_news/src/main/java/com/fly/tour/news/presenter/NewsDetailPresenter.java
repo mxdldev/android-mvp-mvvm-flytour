@@ -10,6 +10,8 @@ import com.fly.tour.news.model.NewsDetailModel;
 
 import java.util.logging.Handler;
 
+import javax.inject.Inject;
+
 /**
  * Description: <NewsDetailPresenter><br>
  * Author:      gxl<br>
@@ -18,13 +20,10 @@ import java.util.logging.Handler;
  * Update:     <br>
  */
 public class NewsDetailPresenter extends BasePresenter<NewsDetailModel,NewsDetailContract.View> implements NewsDetailContract.Presenter{
-    public NewsDetailPresenter(Context context) {
-        super(context);
-    }
 
-    @Override
-    public NewsDetailModel initModel() {
-        return new NewsDetailModel(mContext);
+    @Inject
+    public NewsDetailPresenter(Context context, NewsDetailContract.View view, NewsDetailModel model) {
+        super(context, view, model);
     }
 
     @Override
