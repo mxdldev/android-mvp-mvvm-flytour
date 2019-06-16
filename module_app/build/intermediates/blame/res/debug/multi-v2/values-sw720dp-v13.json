@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "outputFile": "D:\\workandroid\\FlyTour-master\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\MultiImageSelector-1.2.aar\\5b0dc57011d3fb8d5ae5217abae81b4a\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\geduo\\.gradle\\caches\\transforms-1\\files-1.1\\MultiImageSelector-1.2.aar\\c59648e4e49e4c758ce8ec3164cdb117\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

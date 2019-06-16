@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
+            "outputFile": "D:\\workandroid\\FlyTour-master\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\values-zu\\values-zu.xml",
+                    "source": "C:\\Users\\geduo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\19a606a311d43f629f2a20a5aa57e61e\\res\\values-zu\\values-zu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,320,434,522,625,752,832,912,1003,1096,1190,1284,1385,1478,1573,1667,1758,1851,1937,2041,2147,2245,2352,2458,2564,2721,2817",
+                        "endColumns": "107,106,113,87,102,126,79,79,90,92,93,93,100,92,94,93,90,92,85,103,105,97,106,105,105,156,95,80",
+                        "endOffsets": "208,315,429,517,620,747,827,907,998,1091,1185,1279,1380,1473,1568,1662,1753,1846,1932,2036,2142,2240,2347,2453,2559,2716,2812,2893"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\geduo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\5b5ada02f95c0686c374c5f4509f84f2\\res\\values-zu\\values-zu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,16 +28,6 @@
                         "startOffsets": "2898",
                         "endColumns": "100",
                         "endOffsets": "2994"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\values-zu\\values-zu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,320,434,522,625,752,832,912,1003,1096,1190,1284,1385,1478,1573,1667,1758,1851,1937,2041,2147,2245,2352,2458,2564,2721,2817",
-                        "endColumns": "107,106,113,87,102,126,79,79,90,92,93,93,100,92,94,93,90,92,85,103,105,97,106,105,105,156,95,80",
-                        "endOffsets": "208,315,429,517,620,747,827,907,998,1091,1185,1279,1380,1473,1568,1662,1753,1846,1932,2036,2142,2240,2347,2453,2559,2716,2812,2893"
                     }
                 }
             ]
