@@ -16,7 +16,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d282b9c-a0de-4236-bc7b-9ff67b569c52" name="Default" comment="readme update" />
+    <list default="true" id="4d282b9c-a0de-4236-bc7b-9ff67b569c52" name="Default" comment="readme update">
+      <change beforePath="$PROJECT_DIR$/lib_fly_api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib_fly_api/build.gradle" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,17 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib_fly_api/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib_fly_db/src/main/java/com/fly/tour/db/dagger/NewsDetailDao.java" />
         <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/dagger/inject/component/NewsDetailComponent.java" />
         <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/dagger/presenter/NewsDtailPresenter.java" />
         <option value="$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/dagger/base/BaseMvpActivity.java" />
@@ -136,12 +147,14 @@
         <option value="$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/fragment/NewsListFragment.java" />
         <option value="$PROJECT_DIR$/test.MD" />
         <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/lib_fly_api/build.gradle" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1455" />
+    <option name="x" value="-8" />
+    <option name="y" value="1" />
+    <option name="width" value="1453" />
     <option name="height" value="865" />
   </component>
   <component name="ProjectView">
@@ -158,6 +171,32 @@
               <item name="FlyTour-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlyTour-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="FlyTour-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib_fly_api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib_fly_api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib_fly_api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlyTour-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlyTour-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib_fly_api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -173,6 +212,7 @@
     <property name="android.sdk.path" value="D:/soft/android/android-sdk_r24.4.1-windows/android-sdk-windows" />
     <property name="device.picker.selection" value="0715f7dafb2c1038" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vcars1.0.2-20190523/Vcars" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1560677578449" />
@@ -627,8 +667,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/dagger/base/BaseActivity.java" />
-    <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/dagger/base/BaseMvpActivity.java" />
     <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/dagger/base/BaseRefreshActivity.java" />
     <entry file="file://$PROJECT_DIR$/lib_common/src/main/java/com/fly/tour/common/base/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -738,16 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/inject/component/NewsDetailComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,6 +1029,30 @@
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_news/src/main/java/com/fly/tour/news/inject/component/NewsDetailComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_refresh_layout/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib_fly_api/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
