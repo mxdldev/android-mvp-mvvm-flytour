@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\FlyTour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "D:\\workandroid\\FlyTour-master\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5a784d472a15819f333175cdebd741e3\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\geduo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\19a606a311d43f629f2a20a5aa57e61e\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\gxl\\.m2\\repository\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\fc175a156c14e3e26b1fcc721f99af74\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\geduo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\5b5ada02f95c0686c374c5f4509f84f2\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
