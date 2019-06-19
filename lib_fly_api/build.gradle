@@ -39,5 +39,4 @@ dependencies {
     api deps.rxlifecycle
     api deps.rxlifecycle_android
     api deps.rxlifecycle_components
-    api deps.aliyunoss
 }
