@@ -17,7 +17,7 @@
 </p>
 欢迎加星，打call https://github.com/geduo83/FlyTour
 在使用中有任何问题，请留言，或加入Android、Java开发技术交流群
-* QQ群：810970432
+* QQ群：810970432<br>
 * email：geduo_83@163.com
 
 ![](https://img-blog.csdnimg.cn/20190616183350269.png)
