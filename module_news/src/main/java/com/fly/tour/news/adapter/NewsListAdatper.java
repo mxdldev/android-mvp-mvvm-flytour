@@ -6,9 +6,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.common.base.BaseAdapter;
-import com.fly.tour.db.NewsDBConfig;
-import com.fly.tour.db.entity.NewsDetail;
 import com.fly.tour.trip.R;
 
 /**

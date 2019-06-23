@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.TextView;
 
+import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.common.base.BaseMvpActivity;
 import com.fly.tour.common.event.KeyCode;
-import com.fly.tour.db.entity.NewsDetail;
 import com.fly.tour.news.contract.NewsDetailContract;
 import com.fly.tour.news.inject.component.DaggerNewsDetailComponent;
 import com.fly.tour.news.inject.module.NewsDetailModule;
@@ -40,8 +40,6 @@ public class NewsDetailActivity extends BaseMvpActivity<NewsDetailModel,NewsDeta
         mPresenter.getNewsDetailById(newsid);
     }
 
-
-
     @Override
     public void showNewsDetail(NewsDetail newsDetail) {
         mTxtNewsTitle.setText(newsDetail.getTitle());
@@ -52,4 +50,6 @@ public class NewsDetailActivity extends BaseMvpActivity<NewsDetailModel,NewsDeta
     public void injectPresenter() {
         DaggerNewsDetailComponent.builder().newsDetailModule(new NewsDetailModule(this)).build().inject(this);
     }
+
+
 }

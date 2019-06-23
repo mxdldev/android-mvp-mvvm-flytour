@@ -1,7 +1,10 @@
 package com.fly.tour.news.contract;
 
+import com.fly.tour.api.dto.RespDTO;
+import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.common.mvp.BaseView;
-import com.fly.tour.db.entity.NewsDetail;
+
+import io.reactivex.Observable;
 
 /**
  * Description: <NewsDetailContract><br>
@@ -18,6 +21,6 @@ public interface NewsDetailContract {
         void showNewsDetail(NewsDetail newsDetail);
     }
     interface Model{
-        NewsDetail getNewsDetailById(int id);
+        Observable<RespDTO<NewsDetail>> getNewsDetailById(int id);
     }
 }

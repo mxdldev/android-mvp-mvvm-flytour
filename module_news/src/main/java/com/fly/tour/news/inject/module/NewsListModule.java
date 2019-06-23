@@ -2,8 +2,7 @@ package com.fly.tour.news.inject.module;
 
 import android.content.Context;
 
-import com.fly.tour.db.entity.NewsDetail;
-import com.fly.tour.news.contract.NewsDetailContract;
+import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.news.contract.NewsListContract;
 
 import dagger.Module;

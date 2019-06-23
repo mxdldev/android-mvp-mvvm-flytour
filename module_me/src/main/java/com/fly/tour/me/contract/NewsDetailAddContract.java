@@ -1,6 +1,13 @@
 package com.fly.tour.me.contract;
 
+import com.fly.tour.api.dto.RespDTO;
+import com.fly.tour.api.news.entity.NewsDetail;
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.mvp.BaseView;
+
+import java.util.List;
+
+import io.reactivex.Observable;
 
 /**
  * Description: <NewsDetailAddContract><br>
@@ -12,9 +19,13 @@ import com.fly.tour.common.mvp.BaseView;
 public interface NewsDetailAddContract {
     interface Presenter{
         void addNewsDetail(int type,String title,String content);
+        void getListNewsType();
     }
-    interface View extends BaseView {}
+    interface View extends BaseView {
+        void showNewsType(List<NewsType> typeList);
+    }
     interface Model{
-        boolean addNewsDetail(int type,String title,String content);
+        Observable<RespDTO<NewsDetail>> addNewsDetail(int type, String title, String content);
+        Observable<RespDTO<List<NewsType>>> getNewsType();
     }
 }

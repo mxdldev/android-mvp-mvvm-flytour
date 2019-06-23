@@ -2,7 +2,7 @@ package com.fly.tour.me.inject.module;
 
 import android.content.Context;
 
-import com.fly.tour.db.entity.NewsType;
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.me.contract.NewsTypeListContract;
 
 import dagger.Module;

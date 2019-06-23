@@ -9,11 +9,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.base.BaseRefreshActivity;
 import com.fly.tour.common.event.RequestCode;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.CommonDialogFragment;
-import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.adapter.NewsTypeShowAdapter;
 import com.fly.tour.me.contract.NewsTypeListContract;
 import com.fly.tour.me.inject.component.DaggerNewsTypeListComponent;
@@ -105,7 +105,7 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
     @Override
     public void onAutoLoadEvent() {
-
+        mPresenter.refreshData();
     }
 
     @Override

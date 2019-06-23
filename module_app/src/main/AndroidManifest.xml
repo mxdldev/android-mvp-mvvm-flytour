@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".MyApplication"
-        >
+        android:usesCleartextTraffic="true">
 
     </application>
 

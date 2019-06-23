@@ -1,19 +1,20 @@
 package com.fly.tour.news.presenter;
 
 import android.content.Context;
-import android.os.Handler;
 
-import com.fly.tour.common.mvp.BaseModel;
+import com.fly.tour.api.dto.RespDTO;
+import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.common.mvp.BaseRefreshPresenter;
 import com.fly.tour.common.util.NetUtil;
-import com.fly.tour.db.NewsDBConfig;
-import com.fly.tour.db.entity.NewsDetail;
 import com.fly.tour.news.contract.NewsListContract;
 import com.fly.tour.news.model.NewsListModel;
 
 import java.util.List;
 
 import javax.inject.Inject;
+
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 /**
  * Description: <NewsListPresenter><br>
@@ -33,37 +34,65 @@ public class NewsListPresenter extends BaseRefreshPresenter<NewsListModel, NewsL
     @Override
     public void refreshData() {
         mView.hideNoDataView();
-
-        new Handler().postDelayed(new Runnable() {
+        if (!NetUtil.checkNetToast()) {
+            mView.showNetWorkErrView();
+            return;
+        }
+        mModel.getListNewsByType(newsType).subscribe(new Observer<RespDTO<List<NewsDetail>>>() {
             @Override
-            public void run() {
-                if(!NetUtil.checkNetToast()){
-                    mView.showNetWorkErrView();
-                    return;
-                }
-                List<NewsDetail> datailList = mModel.getNewsType(newsType);
-                if(datailList != null && datailList.size() > 0){
+            public void onSubscribe(Disposable d) {
+                mView.showInitLoadView();
+            }
+
+            @Override
+            public void onNext(RespDTO<List<NewsDetail>> listRespDTO) {
+                List<NewsDetail> datailList = listRespDTO.data;
+                if (datailList != null && datailList.size() > 0) {
                     mView.refreshData(datailList);
-                }else{
+                } else {
                     mView.showNoDataView();
                 }
                 mView.stopRefresh();
-
             }
-        }, 1000 * 2);
+
+            @Override
+            public void onError(Throwable e) {
+                mView.hideInitLoadView();
+            }
+
+            @Override
+            public void onComplete() {
+                mView.hideInitLoadView();
+            }
+        });
     }
 
     @Override
     public void loadMoreData() {
-        new Handler().postDelayed(new Runnable() {
+        mModel.getListNewsByType(newsType).subscribe(new Observer<RespDTO<List<NewsDetail>>>() {
             @Override
-            public void run() {
-                List<NewsDetail> datailList = mModel.getNewsType(newsType);
-                mView.loadMoreData(datailList);
-                mView.stopLoadMore();
+            public void onSubscribe(Disposable d) {
 
             }
-        }, 1000 * 2);
+
+            @Override
+            public void onNext(RespDTO<List<NewsDetail>> listRespDTO) {
+                List<NewsDetail> datailList = listRespDTO.data;
+                if (datailList != null && datailList.size() > 0) {
+                    mView.loadMoreData(datailList);
+                }
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                mView.stopLoadMore();
+            }
+
+            @Override
+            public void onComplete() {
+                mView.stopLoadMore();
+            }
+        });
     }
 
     public void setNewsType(int newsType) {

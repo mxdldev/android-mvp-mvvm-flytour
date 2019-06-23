@@ -2,15 +2,19 @@ package com.fly.tour.news.presenter;
 
 import android.content.Context;
 
+import com.fly.tour.api.dto.RespDTO;
+import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.common.mvp.BasePresenter;
 import com.fly.tour.common.util.NetUtil;
-import com.fly.tour.db.entity.NewsDetail;
 import com.fly.tour.news.contract.NewsDetailContract;
 import com.fly.tour.news.model.NewsDetailModel;
 
 import java.util.logging.Handler;
 
 import javax.inject.Inject;
+
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 /**
  * Description: <NewsDetailPresenter><br>
@@ -28,22 +32,35 @@ public class NewsDetailPresenter extends BasePresenter<NewsDetailModel,NewsDetai
 
     @Override
     public void getNewsDetailById(final int id) {
-        mView.showInitLoadView();
-        new android.os.Handler().postDelayed(new Runnable() {
+        if(!NetUtil.checkNetToast()){
+            mView.showNetWorkErrView();
+            return;
+        }
+        mModel.getNewsDetailById(id).subscribe(new Observer<RespDTO<NewsDetail>>() {
             @Override
-            public void run() {
-                if(!NetUtil.checkNetToast()){
-                    mView.showNetWorkErrView();
-                    return;
-                }
-                NewsDetail newsDetail = mModel.getNewsDetailById(id);
+            public void onSubscribe(Disposable d) {
+                mView.showInitLoadView();
+            }
+
+            @Override
+            public void onNext(RespDTO<NewsDetail> newsDetailRespDTO) {
+                NewsDetail newsDetail = newsDetailRespDTO.data;
                 if(newsDetail != null){
                     mView.showNewsDetail(newsDetail);
                 }else{
                     mView.showNoDataView();
                 }
+            }
+
+            @Override
+            public void onError(Throwable e) {
                 mView.hideInitLoadView();
             }
-        },1000 * 2);
+
+            @Override
+            public void onComplete() {
+                mView.hideInitLoadView();
+            }
+        });
     }
 }

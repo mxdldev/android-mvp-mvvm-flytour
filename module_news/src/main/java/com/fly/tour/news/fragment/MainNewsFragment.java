@@ -11,11 +11,17 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.base.BaseFragment;
+import com.fly.tour.common.base.BaseMvpFragment;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.manager.NewsDBManager;
 import com.fly.tour.common.util.log.KLog;
-import com.fly.tour.db.entity.NewsType;
+import com.fly.tour.news.contract.NewsTypeContract;
+import com.fly.tour.news.inject.component.DaggerNewsTypeComponent;
+import com.fly.tour.news.inject.module.NewsTypeModule;
+import com.fly.tour.news.model.NewsTypeModel;
+import com.fly.tour.news.presenter.NewsTypePresenter;
 import com.fly.tour.trip.R;
 
 import org.greenrobot.eventbus.Subscribe;
@@ -32,7 +38,7 @@ import java.util.logging.Handler;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class MainNewsFragment extends BaseFragment {
+public class MainNewsFragment extends BaseMvpFragment<NewsTypeModel, NewsTypeContract.View, NewsTypePresenter> implements NewsTypeContract.View{
     private List<String> titles = new ArrayList<>();
     private List<NewsListFragment> mListFragments = new ArrayList<>();
     private TabLayout mTabLayout;
@@ -52,21 +58,20 @@ public class MainNewsFragment extends BaseFragment {
     @Override
     public void initView(View view) {
         mViewPager = view.findViewById(R.id.pager_tour);
-
         mTabLayout = view.findViewById(R.id.layout_tour);
-
-
     }
 
     @Override
     public void initData() {
-
+        mPresenter.getListNewsType();
     }
 
     @Override
     public void initListener() {
-        initNewsListFragment();
         //mViewPager.setOffscreenPageLimit(mListFragments.size());
+    }
+
+    public void initTabLayout() {
         mNewsFragmentAdapter = new NewsFragmentAdapter(getChildFragmentManager());
         mViewPager.setAdapter(mNewsFragmentAdapter);
         mNewsFragmentAdapter.refreshViewPager(mListFragments);
@@ -88,6 +93,25 @@ public class MainNewsFragment extends BaseFragment {
             }
         });
         mTabLayout.setupWithViewPager(mViewPager);
+    }
+
+    @Override
+    public void injectPresenter() {
+        DaggerNewsTypeComponent.builder().newsTypeModule(new NewsTypeModule(this)).build().inject(this);
+    }
+
+    @Override
+    public void showListNewsType(List<com.fly.tour.api.newstype.entity.NewsType> listNewsType) {
+        KLog.v("MYTAG", "initNewsListFragment start..." + listNewsType.toString());
+        mListFragments.clear();
+        titles.clear();
+        if (listNewsType != null && listNewsType.size() > 0) {
+            for (int i = 0; i < listNewsType.size(); i++) {
+                NewsType newsType = listNewsType.get(i);
+                mListFragments.add(NewsListFragment.newInstance(newsType));
+                titles.add(newsType.getTypename());
+            }
+        }
     }
 
     class NewsFragmentAdapter extends FragmentPagerAdapter {
@@ -141,20 +165,6 @@ public class MainNewsFragment extends BaseFragment {
         }
     }
 
-    private void initNewsListFragment() {
-        List<NewsType> listNewsType = NewsDBManager.getInstance(getContext()).getListNewsType();
-        KLog.v("MYTAG", "initNewsListFragment start..." + listNewsType.toString());
-        mListFragments.clear();
-        titles.clear();
-        if (listNewsType != null && listNewsType.size() > 0) {
-            for (int i = 0; i < listNewsType.size(); i++) {
-                NewsType newsType = listNewsType.get(i);
-                mListFragments.add(NewsListFragment.newInstance(newsType));
-                titles.add(newsType.getTypename());
-            }
-        }
-    }
-
     @Override
     public String getToolbarTitle() {
         return null;
@@ -173,8 +183,7 @@ public class MainNewsFragment extends BaseFragment {
             KLog.v("MYTAG", "ViewPager refresh start...");
             mIsfresh = false;
             mViewPager.setCurrentItem(mListFragments.size() - 1);
-            initNewsListFragment();
-            //mViewPager.setOffscreenPageLimit(mListFragments.size());
+            initData();
             mNewsFragmentAdapter.refreshViewPager(mListFragments);
         }
     }

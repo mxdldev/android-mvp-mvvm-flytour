@@ -9,11 +9,6 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "FLYHEADER_API_KEY", '"1da11d91-7ade-4da1-855d-24adfe39d173"'
-        buildConfigField "String", "FLYHEADER_CORPID", '"1001"' // 企业编号(corpid)
-        buildConfigField "String", "FLYHEADER_VERSION", '"1.0"' // API协议版本号
-        buildConfigField "String", "FLYHEADER_PRODOCT_ID", '"1020"' // 产品编号
-        buildConfigField "String", "URL_HOST", '"https://192.168.31.105/"'
     }
 
     buildTypes {

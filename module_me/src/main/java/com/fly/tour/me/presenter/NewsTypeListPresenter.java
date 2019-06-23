@@ -2,21 +2,22 @@ package com.fly.tour.me.presenter;
 
 import android.content.Context;
 
+import com.fly.tour.api.dto.RespDTO;
+import com.fly.tour.api.http.ExceptionHandler;
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.event.EventCode;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.mvp.BaseRefreshPresenter;
 import com.fly.tour.common.util.ToastUtil;
-import com.fly.tour.common.util.log.KLog;
-import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.contract.NewsTypeListContract;
 import com.fly.tour.me.model.NewsTypeListModel;
-
 import org.greenrobot.eventbus.EventBus;
-
 import java.util.List;
-import java.util.logging.Handler;
 
 import javax.inject.Inject;
+
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 /**
  * Description: <NewsTypeListPresenter><br>
@@ -38,14 +39,16 @@ public class NewsTypeListPresenter extends BaseRefreshPresenter<NewsTypeListMode
         mView.hideNoDataView();
         if (isfirst) {
             mView.showInitLoadView();
-        }else{
-            mView.autoLoadData();
         }
-        new android.os.Handler().postDelayed(new Runnable() {
+        mModel.getListNewsType().subscribe(new Observer<RespDTO<List<NewsType>>>() {
             @Override
-            public void run() {
-                List<NewsType> listNewsType = mModel.getListNewsType();
-                KLog.v("MYTAG","listNewsType:"+listNewsType.toString());
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(RespDTO<List<NewsType>> listRespDTO) {
+                List<NewsType> listNewsType = listRespDTO.data;
                 if (listNewsType != null && listNewsType.size() > 0) {
                     mView.refreshData(listNewsType);
                 }else{
@@ -58,8 +61,16 @@ public class NewsTypeListPresenter extends BaseRefreshPresenter<NewsTypeListMode
                     mView.stopRefresh();
                 }
             }
-        }, 1000 * 2);
 
+            @Override
+            public void onError(Throwable e) {
+                mView.hideInitLoadView();
+            }
+
+            @Override
+            public void onComplete() {
+            }
+        });
     }
 
     @Override
@@ -69,19 +80,32 @@ public class NewsTypeListPresenter extends BaseRefreshPresenter<NewsTypeListMode
 
     @Override
     public void deleteNewsTypeById(final int id) {
-        mView.showTransLoadingView();
-        new android.os.Handler().postDelayed(new Runnable() {
+        mModel.deleteNewsTypeById(id).subscribe(new Observer<RespDTO>() {
             @Override
-            public void run() {
-                if(mModel.deleteNewsTypeById(id)){
+            public void onSubscribe(Disposable d) {
+                mView.showTransLoadingView();
+            }
+
+            @Override
+            public void onNext(RespDTO respDTO) {
+                if(respDTO.code == ExceptionHandler.APP_ERROR.SUCC){
                     ToastUtil.showToast("删除成功");
-                    refreshData();
+                    mView.autoLoadData();
                     EventBus.getDefault().post(new NewsTypeCrudEvent(EventCode.MeCode.NEWS_TYPE_DELETE));
                 }else{
                     ToastUtil.showToast("删除失败");
                 }
+            }
+
+            @Override
+            public void onError(Throwable e) {
                 mView.hideTransLoadingView();
             }
-        },1000 * 2);
+
+            @Override
+            public void onComplete() {
+                mView.hideTransLoadingView();
+            }
+        });
     }
 }

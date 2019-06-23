@@ -7,15 +7,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.fly.tour.api.news.entity.NewsDetail;
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.base.BaseAdapter;
-import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.common.base.BaseRefreshFragment;
 import com.fly.tour.common.event.KeyCode;
 import com.fly.tour.common.event.me.NewsDetailCurdEvent;
-import com.fly.tour.common.mvp.BaseRefreshPresenter;
 import com.fly.tour.common.util.log.KLog;
-import com.fly.tour.db.entity.NewsDetail;
-import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.news.NewsDetailActivity;
 import com.fly.tour.news.adapter.NewsListAdatper;
 import com.fly.tour.news.contract.NewsListContract;
@@ -31,7 +29,7 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.List;
 
 /**
- * Description: <人工智能><br>
+ * Description: <NewsListFragment><br>
  * Author:      gxl<br>
  * Date:        2018/12/11<br>
  * Version:     V1.0.0<br>
@@ -103,9 +101,6 @@ public class NewsListFragment extends BaseRefreshFragment<NewsListModel,NewsList
     protected int onBindRreshLayout() {
         return R.id.refview_news_list;
     }
-
-
-
 
     @Override
     public void onRefreshEvent() {

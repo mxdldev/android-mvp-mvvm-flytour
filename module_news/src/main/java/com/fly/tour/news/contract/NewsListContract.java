@@ -1,11 +1,12 @@
 package com.fly.tour.news.contract;
 
+import com.fly.tour.api.dto.RespDTO;
+import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.common.mvp.BaseRefreshView;
-import com.fly.tour.common.mvp.BaseView;
-import com.fly.tour.db.entity.NewsDetail;
-import com.fly.tour.db.entity.NewsType;
 
 import java.util.List;
+
+import io.reactivex.Observable;
 
 /**
  * Description: <NewsListContract><br>
@@ -19,6 +20,6 @@ public interface NewsListContract {
     }
     interface View<NewsDetail> extends BaseRefreshView<NewsDetail> {}
     interface Model{
-        List<NewsDetail> getNewsType(int type);
+        Observable<RespDTO<List<NewsDetail>>> getListNewsByType(int type);
     }
 }

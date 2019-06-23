@@ -3,6 +3,10 @@ package com.fly.tour.me.presenter;
 import android.content.Context;
 import android.os.Handler;
 
+import com.fly.tour.api.dto.RespDTO;
+import com.fly.tour.api.http.ExceptionHandler;
+import com.fly.tour.api.news.entity.NewsDetail;
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.event.me.NewsDetailCurdEvent;
 import com.fly.tour.common.mvp.BasePresenter;
 import com.fly.tour.common.util.ToastUtil;
@@ -11,7 +15,12 @@ import com.fly.tour.me.model.NewsDetailAddModel;
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.util.List;
+
 import javax.inject.Inject;
+
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 
 /**
  * Description: <NewsDetailAddPresenter><br>
@@ -29,22 +38,60 @@ public class NewsDetailAddPresenter extends BasePresenter<NewsDetailAddModel,New
 
     @Override
     public void addNewsDetail(final int type, final String title, final String content) {
-        mView.showTransLoadingView();
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                boolean b = mModel.addNewsDetail(type, title, content);
-                if(b){
-                    ToastUtil.showToast("添加成功");
-                    mView.hideTransLoadingView();
-                    mView.finishActivity();
-                    EventBus.getDefault().post(new NewsDetailCurdEvent(type));
-                }else{
-                    ToastUtil.showToast("添加失败");
+
+        mModel.addNewsDetail(type,title,content)
+                .subscribe(new Observer<RespDTO<NewsDetail>>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        mView.showTransLoadingView();
+                    }
+
+                    @Override
+                    public void onNext(RespDTO<NewsDetail> newsDetailRespDTO) {
+                        if(newsDetailRespDTO.code == ExceptionHandler.APP_ERROR.SUCC){
+                            ToastUtil.showToast("添加成功");
+                            mView.hideTransLoadingView();
+                            mView.finishActivity();
+                            EventBus.getDefault().post(new NewsDetailCurdEvent(type));
+                        }else{
+                            ToastUtil.showToast("添加失败");
+                        }
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        mView.hideInitLoadView();
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        mView.hideInitLoadView();
+                    }
+                });
+    }
+
+    @Override
+    public void getListNewsType() {
+            mModel.getNewsType().subscribe(new Observer<RespDTO<List<NewsType>>>() {
+                @Override
+                public void onSubscribe(Disposable d) {
+
                 }
-            }
-        },1000 * 2);
 
+                @Override
+                public void onNext(RespDTO<List<NewsType>> listRespDTO) {
+                    mView.showNewsType(listRespDTO.data);
+                }
 
+                @Override
+                public void onError(Throwable e) {
+
+                }
+
+                @Override
+                public void onComplete() {
+
+                }
+            });
     }
 }

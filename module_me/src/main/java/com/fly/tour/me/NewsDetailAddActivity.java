@@ -5,17 +5,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.base.BaseAdapter;
 import com.fly.tour.common.base.BaseMvpActivity;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.SettingBarView;
-import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.contract.NewsDetailAddContract;
 import com.fly.tour.me.inject.component.DaggerNewsDetailAddComponent;
 import com.fly.tour.me.inject.module.NewsDetailAddModule;
 import com.fly.tour.me.model.NewsDetailAddModel;
 import com.fly.tour.me.presenter.NewsDetailAddPresenter;
 import com.fly.tour.me.view.NewsTypeBottomSelectDialog;
+
+import java.util.List;
 
 public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,NewsDetailAddContract.View,NewsDetailAddPresenter> implements NewsDetailAddContract.View {
 
@@ -47,15 +49,7 @@ public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,Ne
         mViewSetNewsType.setOnClickSettingBarViewListener(new SettingBarView.OnClickSettingBarViewListener() {
             @Override
             public void onClick() {
-                NewsTypeBottomSelectDialog newsTypeBottomSelectDialog = NewsTypeBottomSelectDialog.newInstance();
-                newsTypeBottomSelectDialog.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsType>() {
-                    @Override
-                    public void onItemClick(NewsType newsType, int position) {
-                        mNewsType = newsType;
-                        mViewSetNewsType.setContent(newsType.getTypename());
-                    }
-                });
-                newsTypeBottomSelectDialog.show(getSupportFragmentManager(),"dialog");
+                mPresenter.getListNewsType();
             }
         });
         mBtnSaveNewsConent.setOnClickListener(new View.OnClickListener(){
@@ -89,4 +83,16 @@ public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,Ne
         DaggerNewsDetailAddComponent.builder().newsDetailAddModule(new NewsDetailAddModule(this)).build().inject(this);
     }
 
+    @Override
+    public void showNewsType(List<NewsType> typeList) {
+        NewsTypeBottomSelectDialog newsTypeBottomSelectDialog = NewsTypeBottomSelectDialog.newInstance(typeList);
+        newsTypeBottomSelectDialog.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsType>() {
+            @Override
+            public void onItemClick(NewsType newsType, int position) {
+                mNewsType = newsType;
+                mViewSetNewsType.setContent(newsType.getTypename());
+            }
+        });
+        newsTypeBottomSelectDialog.show(getSupportFragmentManager(),"dialog");
+    }
 }
