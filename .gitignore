@@ -9,3 +9,7 @@
 /build
 /captures
 .externalNativeBuild
+/lib_fly_api
+/lib_fly_db
+/lib_refresh_layout
+/module_news

@@ -7,7 +7,7 @@ import com.fly.tour.common.view.CustomeSwipeRefreshLayout;
 
 /**
  * Description: <有下拉刷新、上拉加载更多的Activity><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/1/18<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

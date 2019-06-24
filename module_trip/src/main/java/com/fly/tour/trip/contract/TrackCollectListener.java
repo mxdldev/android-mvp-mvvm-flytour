@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * Description: <轨迹数据采集监听器><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/13<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

@@ -1,7 +1,7 @@
 package com.fly.tour.common.mvp;
 /**
  * Description: <Presenter基础协议><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/28<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

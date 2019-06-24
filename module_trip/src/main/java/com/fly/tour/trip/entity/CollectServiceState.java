@@ -2,7 +2,7 @@ package com.fly.tour.trip.entity;
 
 /**
  * Description: <采集服务状态><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/14<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

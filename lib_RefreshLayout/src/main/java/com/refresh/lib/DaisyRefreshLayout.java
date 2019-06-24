@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 
 /**
  * Description: <小菊花样式的刷新控件><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/2/25<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

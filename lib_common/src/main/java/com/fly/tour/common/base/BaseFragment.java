@@ -21,7 +21,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Description: <公共的Fragment基类><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2018/6/6<br>
  * Version: V1.0.0<br>
  * Update: <br>

@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * Description: <BaseAdapter><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/1/15<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

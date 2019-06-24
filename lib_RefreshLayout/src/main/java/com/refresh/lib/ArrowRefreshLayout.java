@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 /**
  * Description: <带箭头的上拉下拉控件><br>
  * <li>在SuperSwipeRefreshLayout基础上进行了扩展</li>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2019/2/25<br>
  * Version: V1.0.0<br>
  * Update: <br>
