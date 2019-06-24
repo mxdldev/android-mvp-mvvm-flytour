@@ -42,7 +42,7 @@ import java.net.URLConnection;
  * <li>11.读取图片的旋转的角度</li>
  * <li>12.将图片按照某个角度进行旋转</li>
  * </ul>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2018/6/11<br>
  * Version: V1.0.0<br>
  * Update: <br>
