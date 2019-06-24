@@ -30,7 +30,7 @@ import java.util.List;
 
 /**
  * Description: <NewsListFragment><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/11<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

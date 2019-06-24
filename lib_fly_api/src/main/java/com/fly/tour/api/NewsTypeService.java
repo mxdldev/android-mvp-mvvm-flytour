@@ -14,7 +14,13 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
-
+/**
+ * Description: <NewsDetailService><br>
+ * Author:      mxdl<br>
+ * Date:        2019/6/23<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public interface NewsTypeService {
     @POST(API.URL_HOST_NEWS + "/newstype/query/all")
     Observable<RespDTO<List<NewsType>>> getListNewsType(@Header("Authorization") String tolen);

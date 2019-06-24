@@ -3,7 +3,7 @@ package com.fly.tour.api.user;
 import com.fly.tour.api.user.entity.User;
 /**
  * Description: <LoginDTO><br>
- * Author:    门心叼龙<br>
+ * Author:      mxdl<br><br>
  * Date:      2019/2/19<br>
  * Version:    V1.0.0<br>
  * Update:     <br>

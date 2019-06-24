@@ -15,7 +15,13 @@ import java.util.List;
 import javax.inject.Inject;
 
 import io.reactivex.Observable;
-
+/**
+ * Description: <NewsTypeModel><br>
+ * Author:      mxdl<br>
+ * Date:        2019/5/28<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public class NewsTypeModel extends BaseModel implements NewsTypeContract.Model {
     private NewsTypeService mNewsTypeService;
     @Inject

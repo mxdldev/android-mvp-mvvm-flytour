@@ -16,7 +16,7 @@ import javax.inject.Inject;
 
 /**
  * Description: <NewsTypeDao><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/24<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

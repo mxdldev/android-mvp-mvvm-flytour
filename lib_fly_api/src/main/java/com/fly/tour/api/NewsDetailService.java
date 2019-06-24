@@ -14,7 +14,13 @@ import retrofit2.http.Header;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
-
+/**
+ * Description: <NewsDetailService><br>
+ * Author:      mxdl<br>
+ * Date:        2019/6/23<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public interface NewsDetailService {
     @POST(API.URL_HOST_NEWS + "/newsdetail/query/all")
     Observable<RespDTO<List<NewsDetail>>> getListNewsDetailByType(@Header("Authorization") String tolen, @Query("typid") int typeid);

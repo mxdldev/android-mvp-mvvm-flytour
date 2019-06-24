@@ -24,9 +24,11 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 /**
- * https 证书工具
- *
- * @author Yan Zhenjie.
+ * Description: <SSLContextUtil><br>
+ * Author:      mxdl<br>
+ * Date:        2019/6/22<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
  */
 public class SSLContextUtil {
 

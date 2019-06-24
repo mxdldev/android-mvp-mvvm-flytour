@@ -8,10 +8,10 @@ import java.lang.reflect.Type;
 
 /**
  * Description: <RespDTO><br>
- * Author:    gxl<br>
- * Date:      2019/2/19<br>
- * Version:    V1.0.0<br>
- * Update:     <br>
+ * Author:      mxdl<br>
+ * Date:        2019/6/23<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
  */
 public class RespDTO<T> implements Serializable{
 

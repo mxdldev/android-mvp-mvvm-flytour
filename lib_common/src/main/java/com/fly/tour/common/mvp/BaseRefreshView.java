@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * Description: <BaseRefreshView><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/2/26<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

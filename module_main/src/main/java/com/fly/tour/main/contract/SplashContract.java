@@ -9,7 +9,7 @@ import io.reactivex.Observable;
 
 /**
  * Description: <SplashContract><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/6/22<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

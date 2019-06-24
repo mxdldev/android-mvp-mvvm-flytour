@@ -8,7 +8,7 @@ import io.reactivex.Observable;
 
 /**
  * Description: <NewsTypeAddContract><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/24<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

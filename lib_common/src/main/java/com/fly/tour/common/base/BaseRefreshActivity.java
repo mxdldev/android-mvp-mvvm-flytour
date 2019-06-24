@@ -8,7 +8,7 @@ import com.refresh.lib.DaisyRefreshLayout;
 
 /**
  * Description: <下拉刷新、上拉加载更多的Activity><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/2/26<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

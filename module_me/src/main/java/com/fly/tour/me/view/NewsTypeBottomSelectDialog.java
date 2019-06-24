@@ -27,11 +27,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description: <PhotoSelectDialog><br>
- * Author: gxl<br>
- * Date: 2019/1/3<br>
- * Version: V1.0.0<br>
- * Update: <br>
+ * Description: <NewsTypeListPresenter><br>
+ * Author:      mxdl<br>
+ * Date:        2019/5/27<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
  */
 public class NewsTypeBottomSelectDialog extends BottomSheetDialogFragment {
     public static final String TAG = NewsTypeBottomSelectDialog.class.getSimpleName();

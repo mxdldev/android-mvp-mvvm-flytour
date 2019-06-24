@@ -18,7 +18,7 @@ import okhttp3.ResponseBody;
 
 /**
  * Description: <SplashModel><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/6/22<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
