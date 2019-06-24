@@ -8,7 +8,7 @@ import com.fly.tour.common.util.log.KLog;
 
 /**
  * Description: <初始化应用程序><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/6/6<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

@@ -6,8 +6,8 @@ import android.view.MotionEvent;
 
 /**
  * Description: <BaseRefreshLayout><br>
- * Author:      gxl<br>
- * Date:        2019/2/25<br>
+ * Author:      mxdl<br>
+ * Date:        2019/02/25<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */

@@ -11,7 +11,7 @@ import io.reactivex.functions.Consumer;
 
 /**
  * Description: <PermissionCheckUtil><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/3/29<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

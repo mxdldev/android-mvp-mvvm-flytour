@@ -23,11 +23,11 @@ import com.fly.tour.me.adapter.NewsTypeSelectAdapter;
 import com.fly.tour.me.model.NewsTypeListModel;
 
 /**
- * Description: <PhotoSelectDialog><br>
- * Author: gxl<br>
- * Date: 2019/1/3<br>
- * Version: V1.0.0<br>
- * Update: <br>
+ * Description: <NewsTypeBottomSelectDialog><br>
+ * Author:      mxdl<br>
+ * Date:        2019/02/25<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
  */
 public class NewsTypeBottomSelectDialog extends BottomSheetDialogFragment {
     public static final String TAG = NewsTypeBottomSelectDialog.class.getSimpleName();

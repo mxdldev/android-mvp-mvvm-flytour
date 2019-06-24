@@ -4,7 +4,7 @@ import android.content.Context;
 
 /**
  * Description: <BaseView><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/3/25<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

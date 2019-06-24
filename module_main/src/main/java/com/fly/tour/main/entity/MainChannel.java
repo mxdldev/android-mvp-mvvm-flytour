@@ -2,7 +2,7 @@ package com.fly.tour.main.entity;
 
 /**
  * Description: <主频道类型><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/12<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
