@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 /**
  * Description: <数字格式化工具类><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/17<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

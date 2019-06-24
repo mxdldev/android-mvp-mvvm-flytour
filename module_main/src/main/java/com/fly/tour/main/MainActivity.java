@@ -17,7 +17,13 @@ import com.fly.tour.common.provider.INewsProvider;
 import com.fly.tour.main.entity.MainChannel;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
-
+/**
+ * Description: <BaseRefreshLayout><br>
+ * Author:      mxdl<br>
+ * Date:        2019/02/25<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public class MainActivity extends BaseActivity {
     @Autowired(name = "/news/main")
     INewsProvider mNewsProvider;

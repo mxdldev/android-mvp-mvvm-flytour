@@ -2,7 +2,7 @@ package com.fly.tour.common.mvp;
 
 /**
  * Description: <基本的刷新数据协议><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/2/25<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

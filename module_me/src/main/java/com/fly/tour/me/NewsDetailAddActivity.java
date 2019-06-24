@@ -16,7 +16,13 @@ import com.fly.tour.me.inject.module.NewsDetailAddModule;
 import com.fly.tour.me.model.NewsDetailAddModel;
 import com.fly.tour.me.presenter.NewsDetailAddPresenter;
 import com.fly.tour.me.view.NewsTypeBottomSelectDialog;
-
+/**
+ * Description: <NewsTypeBottomSelectDialog><br>
+ * Author:      mxdl<br>
+ * Date:        2019/05/25<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,NewsDetailAddContract.View,NewsDetailAddPresenter> implements NewsDetailAddContract.View {
 
     private SettingBarView mViewSetNewsType;

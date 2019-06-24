@@ -7,7 +7,7 @@ import com.trello.rxlifecycle2.LifecycleProvider;
 
 /**
  * Description: <BasePresenter><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/1/15<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
