@@ -23,7 +23,7 @@ import com.fly.tour.me.model.NewsTypeListModel;
 
 /**
  * Description: <PhotoSelectDialog><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2019/1/3<br>
  * Version: V1.0.0<br>
  * Update: <br>

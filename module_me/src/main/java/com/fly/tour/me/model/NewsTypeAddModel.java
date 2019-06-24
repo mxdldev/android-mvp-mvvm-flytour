@@ -8,7 +8,7 @@ import com.fly.tour.me.contract.NewsTypeAddContract;
 
 /**
  * Description: <NewsTypeAddModel><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/24<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

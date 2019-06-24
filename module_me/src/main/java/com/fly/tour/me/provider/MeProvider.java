@@ -9,7 +9,7 @@ import com.fly.tour.me.fragment.MainMeFragment;
 
 /**
  * Description: <MeProvider><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/23<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

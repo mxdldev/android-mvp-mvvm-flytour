@@ -13,7 +13,7 @@ import org.greenrobot.eventbus.EventBus;
 
 /**
  * Description: <NewsDetailAddPresenter><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/27<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

@@ -20,7 +20,13 @@ import com.fly.tour.me.model.NewsTypeListModel;
 import com.fly.tour.me.presenter.NewsTypeListPresenter;
 
 import java.util.List;
-
+/**
+ * Description: <NewsTypeListActivity><br>
+ * Author:      mxdl<br>
+ * Date:        2019/5/29<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel, NewsTypeListContract.View<NewsType>, NewsTypeListPresenter, NewsType> implements NewsTypeListContract.View<NewsType> {
 
     private RecyclerView mRecViewNewsType;

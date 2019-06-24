@@ -12,7 +12,7 @@ import com.fly.tour.me.R;
 
 /**
  * Description: <MainMeFragment><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/11<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

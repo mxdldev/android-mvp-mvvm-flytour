@@ -22,7 +22,7 @@ import me.nereo.multi_image_selector.MultiImageSelectorActivity;
 
 /**
  * Description: <PhotoSelectDialog><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2019/1/3<br>
  * Version: V1.0.0<br>
  * Update: <br>

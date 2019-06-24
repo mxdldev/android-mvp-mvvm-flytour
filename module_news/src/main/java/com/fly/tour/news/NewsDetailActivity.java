@@ -11,7 +11,13 @@ import com.fly.tour.news.contract.NewsDetailContract;
 import com.fly.tour.news.model.NewsDetailModel;
 import com.fly.tour.news.presenter.NewsDetailPresenter;
 import com.fly.tour.trip.R;
-
+/**
+ * Description: <NewsDetailActivity><br>
+ * Author:      mxdl<br>
+ * Date:        2019/5/29<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public class NewsDetailActivity extends BaseMvpActivity<NewsDetailModel,NewsDetailContract.View,NewsDetailPresenter> implements NewsDetailContract.View{
 
     public static void startNewsDetailActivity(Context context,int id){

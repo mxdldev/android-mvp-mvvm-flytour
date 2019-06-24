@@ -8,7 +8,7 @@ import com.fly.tour.common.mvp.BasePresenter;
 
 /**
  * Description: <BaseMvpFragment><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/1/15<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * Description: <NewsListPresenter><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/28<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

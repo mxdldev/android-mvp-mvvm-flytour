@@ -10,7 +10,7 @@ import com.fly.tour.common.R;
 
 /**
  * Description: <NetworkErrorView><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/6/20<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

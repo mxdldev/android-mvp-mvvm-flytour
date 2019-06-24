@@ -2,7 +2,7 @@ package com.fly.tour.common.event;
 
 /**
  * Description: <EventCode><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/4/4<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
