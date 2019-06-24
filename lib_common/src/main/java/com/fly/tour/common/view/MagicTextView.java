@@ -35,7 +35,7 @@ import java.util.WeakHashMap;
  *
  * https://github.com/m5/MagicTextView
  * Description: <描边效果的TextView><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2018/8/24<br>
  * Version: V1.0.0<br>
  * Update: <br>
