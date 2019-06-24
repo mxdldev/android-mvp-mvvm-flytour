@@ -12,7 +12,7 @@ import android.widget.Scroller;
 
 /**
  * Description: <横向中心子View定位的RecycleView><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2019/1/3<br>
  * Version: V1.0.0<br>
  * Update: <br>
