@@ -2,7 +2,7 @@ package com.fly.tour.trip.contract;
 
 /**
  * Description: <轨迹数据采集协议><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2018/12/6<br>
  * Version: V1.0.0<br>
  * Update: <br>

@@ -2,7 +2,7 @@ package com.fly.tour.common.mvp;
 
 /**
  * Description: <MVP基本交互协议><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/28<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

@@ -2,7 +2,7 @@ package com.fly.tour.common.util;
 
 /**
  * Description: <SPUtils><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2018/6/19<br>
  * Version: V1.0.0<br>
  * Update: <br>

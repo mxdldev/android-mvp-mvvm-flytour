@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 /**
  * Description: <文字图标居中TextView><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/8/24<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

@@ -2,7 +2,7 @@ package com.fly.tour.trip.util;
 
 /**
  * Description: <轨迹平滑所需要的工具方法><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/13<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

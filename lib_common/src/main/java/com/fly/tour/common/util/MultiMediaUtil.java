@@ -31,7 +31,7 @@ import me.nereo.multi_image_selector.MultiImageSelector;
  *     <ul><li>1. 拍照、拍视频、选择图片完成的回调都在onActivityResult中回调的</l1>
  *     <li>2.选择图片获取：List<String> path = data.getStringArrayListExtra(MultiImageSelectorActivity.EXTRA_RESULT)</li>
  *      </ul>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/25<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

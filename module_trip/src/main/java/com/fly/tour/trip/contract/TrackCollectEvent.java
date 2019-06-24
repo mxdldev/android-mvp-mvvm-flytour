@@ -4,7 +4,7 @@ import android.support.annotation.IntDef;
 
 /**
  * Description: <轨迹采集事件类型><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/13<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

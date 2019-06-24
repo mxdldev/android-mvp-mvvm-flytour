@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * Description: <BaseListViewAdapter><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/6/11<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
