@@ -14,7 +14,7 @@ import com.fly.tour.news.model.NewsDetailModel;
 import com.fly.tour.news.presenter.NewsDetailPresenter;
 import com.fly.tour.trip.R;
 /**
- * Description: <NewsTypeBottomSelectDialog><br>
+ * Description: <NewsDetailActivity><br>
  * Author:      mxdl<br>
  * Date:        2019/05/25<br>
  * Version:     V1.0.0<br>
