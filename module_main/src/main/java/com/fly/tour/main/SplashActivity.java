@@ -3,6 +3,7 @@ package com.fly.tour.main;
 import android.content.Intent;
 
 import com.fly.tour.common.base.BaseMvpActivity;
+import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.main.contract.SplashContract;
 import com.fly.tour.main.inject.component.DaggerSplashComponent;
 import com.fly.tour.main.inject.module.SplashModule;

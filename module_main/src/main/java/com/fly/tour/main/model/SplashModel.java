@@ -13,8 +13,6 @@ import com.fly.tour.main.contract.SplashContract;
 import javax.inject.Inject;
 
 import io.reactivex.Observable;
-import io.reactivex.functions.Function;
-import okhttp3.ResponseBody;
 
 /**
  * Description: <SplashModel><br>

@@ -9,13 +9,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.base.BaseFragment;
 import com.fly.tour.common.base.BaseMvpFragment;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
-import com.fly.tour.common.manager.NewsDBManager;
 import com.fly.tour.common.util.log.KLog;
 import com.fly.tour.news.contract.NewsTypeContract;
 import com.fly.tour.news.inject.component.DaggerNewsTypeComponent;
@@ -29,7 +26,6 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Handler;
 
 /**
  * Description: <MainNewsFragment><br>

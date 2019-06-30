@@ -1,20 +1,14 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion build_versions.target_sdk
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion build_versions.min_sdk
-        targetSdkVersion build_versions.target_sdk
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName()]
-            }
-        }
         ndk {
             //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
             abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
@@ -29,52 +23,53 @@ android {
             buildConfigField "boolean", 'IS_DEBUG', 'false'
         }
     }
-
-
 }
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.support["design"]
+    api rootProject.ext.support["support-v4"]
+    api rootProject.ext.support["appcompat-v7"]
+    api rootProject.ext.support["recyclerview-v7"]
+
     api project(":lib_refresh_layout")
     api project(':lib_fly_api')
-    api project(':lib_fly_db')
-    api deps.junit
-    api deps.testrunner
-    api deps.testespresso
 
-    // Support libraries
-    api deps.support.app_compat
-    api deps.support.v4
-    api deps.support.v13
-    api deps.support.design
-    api deps.support.cardview
-    api deps.support.percent
-    api deps.support.recyclerview
-    api deps.support.multidex
-    api deps.support.constraint_layout
+    api rootProject.ext.dependencies["arouter-api"]
 
-    api deps.arouter_api
-    api deps.rxpermissions
-    api deps.eventbus;
-    api deps.MultiImageSelector
+    //rxjava
+    api rootProject.ext.dependencies.rxjava
+    api rootProject.ext.dependencies.rxandroid
+    api rootProject.ext.dependencies.eventbus
 
+    //rxbinding
+    api(rootProject.ext.dependencies.rxbinding) {
+        exclude group: 'com.android.support'
+    }
+    //rx权限请求
+    api(rootProject.ext.dependencies.rxpermissions) {
+        exclude group: 'com.android.support'
+    }
 
-    api deps.rxjava2
-    api deps.rxandroid
-    api deps.adapter_rxjava2
-    api deps.converter_gson
-    api deps.logging_interceptor
+    //glide图片加载库
+    api (rootProject.ext.dependencies.glide){
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+    //recyclerview的databinding套装
+    api(rootProject.ext.dependencies.bindingcollectionadapter) {
+        exclude group: 'com.android.support'
+    }
+    api(rootProject.ext.dependencies["bindingcollectionadapter-recyclerview"]) {
+        exclude group: 'com.android.support'
+    }
+    //Google LiveData和ViewModel组件
+    api rootProject.ext.dependencies["lifecycle-extensions"]
+    annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
 
-    api deps.rxlifecycle
-    api deps.rxlifecycle_android
-    api deps.rxlifecycle_components
+    api rootProject.ext.dependencies.dagger
+    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
 
-    api deps.dagger
-    api deps.glide
-
-    api deps.stetho
-
-    annotationProcessor deps.arouter_compiler
-    annotationProcessor deps.glide_compiler
-    annotationProcessor deps.dagger_compiler
+    api rootProject.ext.dependencies.stetho
+    api rootProject.ext.dependencies.MultiImageSelector
 }

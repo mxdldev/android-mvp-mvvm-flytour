@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.Log;
 
 import com.fly.tour.api.RetrofitManager;
-import com.fly.tour.api.config.API;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.ExceptionHandler;
 import com.fly.tour.api.user.LoginDTO;

@@ -9,8 +9,6 @@ import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.news.contract.NewsDetailContract;
 import com.fly.tour.news.model.NewsDetailModel;
 
-import java.util.logging.Handler;
-
 import javax.inject.Inject;
 
 import io.reactivex.Observer;

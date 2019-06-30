@@ -6,7 +6,6 @@ import com.fly.tour.api.NewsTypeService;
 import com.fly.tour.api.RetrofitManager;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.RxAdapter;
-import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.mvp.BaseModel;
 import com.fly.tour.me.contract.NewsTypeListContract;

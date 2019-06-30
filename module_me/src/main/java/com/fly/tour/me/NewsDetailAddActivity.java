@@ -8,6 +8,7 @@ import android.widget.EditText;
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.base.BaseAdapter;
 import com.fly.tour.common.base.BaseMvpActivity;
+import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.SettingBarView;
 import com.fly.tour.me.contract.NewsDetailAddContract;

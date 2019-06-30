@@ -11,7 +11,6 @@ import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.mvp.BaseModel;
 import com.fly.tour.common.util.DateUtil;
-import com.fly.tour.db.dao.NewsDetailDao;
 import com.fly.tour.me.contract.NewsDetailAddContract;
 
 import java.util.Date;
@@ -32,7 +31,7 @@ public class NewsDetailAddModel extends BaseModel implements NewsDetailAddContra
     private NewsTypeService mNewsTypeService;
     private NewsDetailService mNewsDetailService;
     @Inject
-    public NewsDetailAddModel(Context context, NewsDetailDao newsDetailDao) {
+    public NewsDetailAddModel(Context context) {
         super(context);
         mNewsTypeService = RetrofitManager.getInstance().getNewsTypeService();
         mNewsDetailService = RetrofitManager.getInstance().getNewsDetailService();

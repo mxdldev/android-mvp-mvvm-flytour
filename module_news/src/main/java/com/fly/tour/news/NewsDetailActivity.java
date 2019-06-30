@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.common.base.BaseMvpActivity;
+import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.common.event.KeyCode;
 import com.fly.tour.news.contract.NewsDetailContract;
 import com.fly.tour.news.inject.component.DaggerNewsDetailComponent;

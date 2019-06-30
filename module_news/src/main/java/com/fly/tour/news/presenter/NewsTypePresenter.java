@@ -2,7 +2,6 @@ package com.fly.tour.news.presenter;
 
 import android.content.Context;
 
-import com.facebook.stetho.json.annotation.JsonProperty;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.mvp.BasePresenter;

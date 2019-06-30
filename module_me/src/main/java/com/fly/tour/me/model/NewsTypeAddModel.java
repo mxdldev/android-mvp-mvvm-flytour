@@ -1,7 +1,6 @@
 package com.fly.tour.me.model;
 
 import android.content.Context;
-import android.support.annotation.RestrictTo;
 
 import com.fly.tour.api.NewsTypeService;
 import com.fly.tour.api.RetrofitManager;
@@ -9,7 +8,6 @@ import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.RxAdapter;
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.mvp.BaseModel;
-import com.fly.tour.db.dao.NewsTypeDao;
 import com.fly.tour.me.contract.NewsTypeAddContract;
 
 import javax.inject.Inject;
@@ -26,7 +24,7 @@ import io.reactivex.Observable;
 public class NewsTypeAddModel extends BaseModel implements NewsTypeAddContract.Model {
     private NewsTypeService mNewsTypeService;
     @Inject
-    public NewsTypeAddModel(Context context, NewsTypeDao newsTypeDao) {
+    public NewsTypeAddModel(Context context) {
         super(context);
         mNewsTypeService = RetrofitManager.getInstance().getNewsTypeService();
     }

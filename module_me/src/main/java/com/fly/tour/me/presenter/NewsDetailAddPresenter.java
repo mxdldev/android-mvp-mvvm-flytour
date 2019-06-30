@@ -1,7 +1,6 @@
 package com.fly.tour.me.presenter;
 
 import android.content.Context;
-import android.os.Handler;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.ExceptionHandler;

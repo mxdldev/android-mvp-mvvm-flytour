@@ -2,7 +2,6 @@ package com.fly.tour;
 
 import com.fly.tour.api.RetrofitManager;
 import com.fly.tour.common.BaseApplication;
-import com.fly.tour.common.manager.NewsDBManager;
 
 /**
  * Description: <MyApplication><br>
