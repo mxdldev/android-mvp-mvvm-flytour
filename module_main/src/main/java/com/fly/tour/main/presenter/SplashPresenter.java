@@ -32,7 +32,7 @@ public class SplashPresenter extends BasePresenter<SplashModel, SplashContract.V
 
     @Override
     public void login() {
-        mModel.login("gxl","123456").subscribe(new Observer<RespDTO<LoginDTO>>() {
+        mModel.login("mxdl","123456").subscribe(new Observer<RespDTO<LoginDTO>>() {
             @Override
             public void onSubscribe(Disposable d) {
 

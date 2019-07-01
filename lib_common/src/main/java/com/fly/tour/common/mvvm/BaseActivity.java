@@ -14,7 +14,6 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.fly.tour.common.R;
 import com.fly.tour.common.event.common.BaseActivityEvent;
 import com.fly.tour.common.manager.ActivityManager;
-import com.fly.tour.common.mvp.BaseView;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.common.view.LoadingInitView;
 import com.fly.tour.common.view.LoadingTransView;
@@ -143,45 +142,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
         return true;
     }
 
-    public void showInitLoadView() {
-        showInitLoadView(true);
-    }
-
-    public void hideInitLoadView() {
-        showInitLoadView(false);
-    }
-
-    @Override
-    public void showTransLoadingView() {
-        showTransLoadingView(true);
-    }
-
-    @Override
-    public void hideTransLoadingView() {
-        showTransLoadingView(false);
-    }
-
-    public void showNoDataView() {
-        showNoDataView(true);
-    }
-
-    public void showNoDataView(int resid) {
-        showNoDataView(true, resid);
-    }
-
-    public void hideNoDataView() {
-        showNoDataView(false);
-    }
-
-    public void hideNetWorkErrView() {
-        showNetWorkErrView(false);
-    }
-
-    public void showNetWorkErrView() {
-        showNetWorkErrView(true);
-    }
-
-    private void showInitLoadView(boolean show) {
+    public void showInitLoadView(boolean show) {
         if (mLoadingInitView == null) {
             View view = mViewStubInitLoading.inflate();
             mLoadingInitView = view.findViewById(R.id.view_init_loading);
@@ -191,7 +152,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
     }
 
 
-    private void showNetWorkErrView(boolean show) {
+    public void showNetWorkErrView(boolean show) {
         if (mNetErrorView == null) {
             View view = mViewStubError.inflate();
             mNetErrorView = view.findViewById(R.id.view_net_error);
@@ -201,7 +162,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
                     if (!NetUtil.checkNetToast()) {
                         return;
                     }
-                    hideNetWorkErrView();
+                    showNetWorkErrView(false);
                     initData();
                 }
             });
@@ -210,7 +171,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
     }
 
 
-    private void showNoDataView(boolean show) {
+    public void showNoDataView(boolean show) {
         if (mNoDataView == null) {
             View view = mViewStubNoData.inflate();
             mNoDataView = view.findViewById(R.id.view_no_data);
@@ -218,14 +179,8 @@ public abstract class BaseActivity extends RxAppCompatActivity implements BaseVi
         mNoDataView.setVisibility(show ? View.VISIBLE : View.GONE);
     }
 
-    private void showNoDataView(boolean show, int resid) {
-        showNoDataView(show);
-        if (show) {
-            mNoDataView.setNoDataView(resid);
-        }
-    }
 
-    private void showTransLoadingView(boolean show) {
+    public void showTransLoadingView(boolean show) {
         if (mLoadingTransView == null) {
             View view = mViewStubTransLoading.inflate();
             mLoadingTransView = view.findViewById(R.id.view_trans_loading);

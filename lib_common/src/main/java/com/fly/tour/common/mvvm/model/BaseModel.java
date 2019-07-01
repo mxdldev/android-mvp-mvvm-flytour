@@ -1,27 +1,19 @@
 package com.fly.tour.common.mvvm.model;
 
-import android.content.Context;
-
 import com.trello.rxlifecycle2.LifecycleProvider;
 
 /**
  * Created by goldze on 2017/6/15.
  */
-public class BaseModel implements IModel {
-    private LifecycleProvider lifecycle;
+public abstract class BaseModel implements IModel {
+    private LifecycleProvider mLifecycleProvider;
 
     public void injectLifecycle(LifecycleProvider lifecycle) {
-        this.lifecycle = lifecycle;
+        this.mLifecycleProvider = lifecycle;
     }
 
-    public LifecycleProvider getLifecycle() {
-        return lifecycle;
-    }
-    public BaseModel() {
+    public LifecycleProvider getLifecycleProvider() {
+        return mLifecycleProvider;
     }
 
-    @Override
-    public void onCleared() {
-
-    }
 }
