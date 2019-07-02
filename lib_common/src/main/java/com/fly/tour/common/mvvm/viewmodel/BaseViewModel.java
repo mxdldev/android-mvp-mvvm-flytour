@@ -13,19 +13,23 @@ import com.trello.rxlifecycle2.LifecycleProvider;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BaseViewModel<M extends BaseModel> extends AndroidViewModel implements IBaseViewModel{
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
+/**
+ * Description: <BaseViewModel><br>
+ * Author:      mxdl<br>
+ * Date:        2019/06/30<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
+public class BaseViewModel<M extends BaseModel> extends AndroidViewModel implements IBaseViewModel,Consumer<Disposable> {
     protected M mModel;
-    private UIChangeLiveData mUIChangeLiveData;
+    protected UIChangeLiveData mUIChangeLiveData;
 
     public BaseViewModel(@NonNull Application application, M model) {
         super(application);
         this.mModel = model;
     }
-
-    public void injectLifecycleProvider(LifecycleProvider lifecycle) {
-        mModel.injectLifecycle(lifecycle);
-    }
-
     public UIChangeLiveData getUC() {
         if (mUIChangeLiveData == null) {
             mUIChangeLiveData = new UIChangeLiveData();
@@ -66,6 +70,13 @@ public class BaseViewModel<M extends BaseModel> extends AndroidViewModel impleme
         super.onCleared();
         if (mModel != null) {
             mModel.onCleared();
+        }
+    }
+
+    @Override
+    public void accept(Disposable disposable) throws Exception {
+        if(mModel != null){
+            mModel.addSubscribe(disposable);
         }
     }
 

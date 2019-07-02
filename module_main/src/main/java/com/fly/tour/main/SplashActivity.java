@@ -1,27 +1,21 @@
 package com.fly.tour.main;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
-
-import com.fly.tour.common.base.BaseMvpActivity;
+import android.support.annotation.Nullable;
 import com.fly.tour.common.mvvm.BaseMvvmActivity;
-import com.fly.tour.main.contract.SplashContract;
-import com.fly.tour.main.inject.component.DaggerSplashComponent;
-import com.fly.tour.main.inject.module.SplashModule;
-import com.fly.tour.main.model.SplashModel;
-import com.fly.tour.main.presenter.SplashPresenter;
+import com.fly.tour.main.mvvm.factory.MainViewModelFactory;
+import com.fly.tour.main.mvvm.viewmodel.SplashViewModel;
 
 /**
  * Description: <SplashActivity><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/6/22<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class SplashActivity extends BaseMvpActivity<SplashModel, SplashContract.View, SplashPresenter> implements SplashContract.View {
-    @Override
-    public void injectPresenter() {
-        DaggerSplashComponent.builder().splashModule(new SplashModule(this)).build().inject(this);
-    }
+public class SplashActivity extends BaseMvvmActivity<SplashViewModel> {
 
     @Override
     public int onBindLayout() {
@@ -35,12 +29,31 @@ public class SplashActivity extends BaseMvpActivity<SplashModel, SplashContract.
 
     @Override
     public void initData() {
-        mPresenter.login();
+        mViewModel.login();
     }
 
-    @Override
     public void startMainActivity() {
         startActivity(new Intent(this, MainActivity.class));
         finish();
+    }
+
+    @Override
+    public Class<SplashViewModel> onBindViewModel() {
+        return SplashViewModel.class;
+    }
+
+    @Override
+    public ViewModelProvider.Factory onBindViewModelFactory() {
+        return MainViewModelFactory.getInstance(getApplication());
+    }
+
+    @Override
+    public void initViewObservable() {
+        mViewModel.getmVoidSingleLiveEvent().observe(this, new Observer<Void>() {
+            @Override
+            public void onChanged(@Nullable Void aVoid) {
+                startMainActivity();
+            }
+        });
     }
 }

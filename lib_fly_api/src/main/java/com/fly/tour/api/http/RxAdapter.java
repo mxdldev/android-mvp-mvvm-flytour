@@ -20,7 +20,7 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * Description: <Rx适配器><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/3/18<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

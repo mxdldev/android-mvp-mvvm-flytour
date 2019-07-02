@@ -26,7 +26,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Description: <BaseActivity><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/1/16<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

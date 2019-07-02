@@ -2,9 +2,9 @@ package com.fly.tour.me;
 
 import android.app.Activity;
 import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.support.annotation.Nullable;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
@@ -12,13 +12,14 @@ import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.common.event.EventCode;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.view.SettingBarView;
-import com.fly.tour.me.mvvm.NewsTypeAddViewModel;
+import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
+import com.fly.tour.me.mvvm.viewmodel.NewsTypeAddViewModel;
 
 import org.greenrobot.eventbus.EventBus;
 
 /**
  * Description: <NewsTypeAddActivity><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/24<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
@@ -57,6 +58,11 @@ public class NewsTypeAddActivity extends BaseMvvmActivity<NewsTypeAddViewModel> 
     @Override
     public Class<NewsTypeAddViewModel> onBindViewModel() {
         return NewsTypeAddViewModel.class;
+    }
+
+    @Override
+    public ViewModelProvider.Factory onBindViewModelFactory() {
+        return MeViewModelFactory.getInstance(getApplication());
     }
 
     @Override

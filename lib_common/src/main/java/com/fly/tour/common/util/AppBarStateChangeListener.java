@@ -4,7 +4,7 @@ import android.support.design.widget.AppBarLayout;
 
 /**
  * Description: <AppBarStateChangeListener><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/1/21<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

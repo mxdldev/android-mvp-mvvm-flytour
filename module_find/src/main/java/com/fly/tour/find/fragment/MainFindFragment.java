@@ -1,12 +1,13 @@
 package com.fly.tour.find.fragment;
 
 import android.view.View;
-import com.fly.tour.common.base.BaseFragment;
+
+import com.fly.tour.common.mvvm.BaseFragment;
 import com.fly.tour.find.R;
 
 /**
  * Description: <发现Fragment><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/11<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

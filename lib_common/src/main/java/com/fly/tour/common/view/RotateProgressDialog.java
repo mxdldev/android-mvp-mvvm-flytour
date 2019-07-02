@@ -19,7 +19,7 @@ import com.fly.tour.common.util.DisplayUtil;
 
 /**
  * Description: <旋转进度的dialog><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2018/4/19<br>
  * Version: V1.0.0<br>
  * Update: <br>

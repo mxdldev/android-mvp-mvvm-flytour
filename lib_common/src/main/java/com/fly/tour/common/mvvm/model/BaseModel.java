@@ -1,19 +1,38 @@
 package com.fly.tour.common.mvvm.model;
 
+import android.app.Application;
+
 import com.trello.rxlifecycle2.LifecycleProvider;
 
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+
 /**
- * Created by goldze on 2017/6/15.
+ * Description: <BaseModel><br>
+ * Author:      mxdl<br>
+ * Date:        2019/06/30<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
  */
 public abstract class BaseModel implements IModel {
-    private LifecycleProvider mLifecycleProvider;
-
-    public void injectLifecycle(LifecycleProvider lifecycle) {
-        this.mLifecycleProvider = lifecycle;
+    protected Application mApplication;
+    private CompositeDisposable mCompositeDisposable;
+    public BaseModel(Application application) {
+        mApplication = application;
+        mCompositeDisposable = new CompositeDisposable();
+    }
+    public void addSubscribe(Disposable disposable) {
+        if (mCompositeDisposable == null) {
+            mCompositeDisposable = new CompositeDisposable();
+        }
+        mCompositeDisposable.add(disposable);
     }
 
-    public LifecycleProvider getLifecycleProvider() {
-        return mLifecycleProvider;
+    @Override
+    public void onCleared() {
+        if (mCompositeDisposable != null) {
+            mCompositeDisposable.clear();
+        }
     }
 
 }

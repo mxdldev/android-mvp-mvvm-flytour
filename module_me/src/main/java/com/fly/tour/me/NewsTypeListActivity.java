@@ -1,6 +1,7 @@
 package com.fly.tour.me;
 
 import android.app.Activity;
+import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,20 +11,17 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.base.BaseRefreshActivity;
 import com.fly.tour.common.event.RequestCode;
+import com.fly.tour.common.mvvm.BaseMvvmRefreshActivity;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.CommonDialogFragment;
 import com.fly.tour.me.adapter.NewsTypeShowAdapter;
-import com.fly.tour.me.contract.NewsTypeListContract;
-import com.fly.tour.me.inject.component.DaggerNewsTypeListComponent;
-import com.fly.tour.me.inject.module.NewsTypeListModule;
-import com.fly.tour.me.model.NewsTypeListModel;
-import com.fly.tour.me.presenter.NewsTypeListPresenter;
+import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
+import com.fly.tour.me.mvvm.viewmodel.NewsTypeListViewModel;
 
 import java.util.List;
 
-public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel, NewsTypeListContract.View<NewsType>, NewsTypeListPresenter, NewsType> implements NewsTypeListContract.View<NewsType> {
+public class NewsTypeListActivity extends BaseMvvmRefreshActivity<NewsType, NewsTypeListViewModel> {
 
     private RecyclerView mRecViewNewsType;
     private NewsTypeShowAdapter mNewsTypeShowAdapter;
@@ -57,7 +55,6 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
     @Override
     public void initListener() {
-
         mNewsTypeShowAdapter.setDeleteClickLisenter(new NewsTypeShowAdapter.DeleteClickLisenter() {
             @Override
             public void onClickDeleteListener(final int id) {
@@ -69,7 +66,7 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
                     @Override
                     public void onRightBtnClick(View view) {
-                        mPresenter.deleteNewsTypeById(id);
+                        mViewModel.deleteNewsTypeById(id);
                     }
                 }).build().show(getSupportFragmentManager(), "dialog");
             }
@@ -78,12 +75,7 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
     @Override
     public void initData() {
-        mPresenter.refreshData();
-    }
-
-    @Override
-    public void injectPresenter() {
-        DaggerNewsTypeListComponent.builder().newsTypeListModule(new NewsTypeListModule(this)).build().inject(this);
+        mViewModel.refreshData();
     }
 
     @Override
@@ -91,10 +83,9 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
         return R.id.refview_news_type;
     }
 
-
     @Override
     public void onRefreshEvent() {
-        mPresenter.refreshData();
+        mViewModel.refreshData();
     }
 
     @Override
@@ -105,7 +96,7 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
     @Override
     public void onAutoLoadEvent() {
-        mPresenter.refreshData();
+        mViewModel.refreshData();
     }
 
     @Override
@@ -122,10 +113,25 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         switch (requestCode) {
             case RequestCode.Me.NEWS_TYPE_ADD:
-                if(resultCode == Activity.RESULT_OK){
-                    mPresenter.refreshData();
+                if (resultCode == Activity.RESULT_OK) {
+                    mViewModel.refreshData();
                 }
                 break;
         }
+    }
+
+    @Override
+    public Class<NewsTypeListViewModel> onBindViewModel() {
+        return NewsTypeListViewModel.class;
+    }
+
+    @Override
+    public ViewModelProvider.Factory onBindViewModelFactory() {
+        return MeViewModelFactory.getInstance(getApplication());
+    }
+
+    @Override
+    public void initViewObservable() {
+
     }
 }

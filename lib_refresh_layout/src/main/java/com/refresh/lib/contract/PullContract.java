@@ -2,7 +2,7 @@ package com.refresh.lib.contract;
 
 /**
  * Description: <下拉刷新的协议><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/2/25<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

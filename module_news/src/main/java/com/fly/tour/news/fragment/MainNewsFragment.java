@@ -1,5 +1,7 @@
 package com.fly.tour.news.fragment;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -11,14 +13,11 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.base.BaseMvpFragment;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
+import com.fly.tour.common.mvvm.BaseMvvmFragment;
 import com.fly.tour.common.util.log.KLog;
-import com.fly.tour.news.contract.NewsTypeContract;
-import com.fly.tour.news.inject.component.DaggerNewsTypeComponent;
-import com.fly.tour.news.inject.module.NewsTypeModule;
-import com.fly.tour.news.model.NewsTypeModel;
-import com.fly.tour.news.presenter.NewsTypePresenter;
+import com.fly.tour.news.mvvm.factory.NewsViewModelFactory;
+import com.fly.tour.news.mvvm.viewmodel.NewsTypeViewModel;
 import com.fly.tour.trip.R;
 
 import org.greenrobot.eventbus.Subscribe;
@@ -29,12 +28,12 @@ import java.util.List;
 
 /**
  * Description: <MainNewsFragment><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2018/12/27<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class MainNewsFragment extends BaseMvpFragment<NewsTypeModel, NewsTypeContract.View, NewsTypePresenter> implements NewsTypeContract.View{
+public class MainNewsFragment extends BaseMvvmFragment<NewsTypeViewModel>{
     private List<String> titles = new ArrayList<>();
     private List<NewsListFragment> mListFragments = new ArrayList<>();
     private TabLayout mTabLayout;
@@ -59,7 +58,7 @@ public class MainNewsFragment extends BaseMvpFragment<NewsTypeModel, NewsTypeCon
 
     @Override
     public void initData() {
-        mPresenter.getListNewsType();
+        mViewModel.getListNewsType();
     }
 
     @Override
@@ -91,12 +90,7 @@ public class MainNewsFragment extends BaseMvpFragment<NewsTypeModel, NewsTypeCon
         mTabLayout.setupWithViewPager(mViewPager);
     }
 
-    @Override
-    public void injectPresenter() {
-        DaggerNewsTypeComponent.builder().newsTypeModule(new NewsTypeModule(this)).build().inject(this);
-    }
 
-    @Override
     public void showListNewsType(List<com.fly.tour.api.newstype.entity.NewsType> listNewsType) {
         KLog.v("MYTAG", "initNewsListFragment start..." + listNewsType.toString());
         mListFragments.clear();
@@ -108,6 +102,27 @@ public class MainNewsFragment extends BaseMvpFragment<NewsTypeModel, NewsTypeCon
                 titles.add(newsType.getTypename());
             }
         }
+    }
+
+    @Override
+    public Class<NewsTypeViewModel> onBindViewModel() {
+        return NewsTypeViewModel.class;
+    }
+
+    @Override
+    public ViewModelProvider.Factory onBindViewModelFactory() {
+        return NewsViewModelFactory.getInstance(mActivity.getApplication());
+    }
+
+    @Override
+    public void initViewObservable() {
+        mViewModel.getListSingleLiveEvent().observe(this, new Observer<List<NewsType>>() {
+            @Override
+            public void onChanged(@Nullable List<NewsType> newsTypes) {
+                showListNewsType(newsTypes);
+                initTabLayout();
+            }
+        });
     }
 
     class NewsFragmentAdapter extends FragmentPagerAdapter {

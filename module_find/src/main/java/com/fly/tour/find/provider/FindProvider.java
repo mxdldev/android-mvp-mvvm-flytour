@@ -9,7 +9,7 @@ import com.fly.tour.find.fragment.MainFindFragment;
 
 /**
  * Description: <FindProvider><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/5/23<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

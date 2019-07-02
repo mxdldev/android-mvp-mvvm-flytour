@@ -2,6 +2,7 @@ package com.fly.tour.common.mvvm;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import  android.arch.lifecycle.ViewModelProvider.Factory;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,8 +14,8 @@ import java.util.Map;
 
 /**
  * Description: <BaseMvvmActivity><br>
- * Author:      gxl<br>
- * Date:        2018/1/16<br>
+ * Author:      mxdl<br>
+ * Date:        2019/06/30<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
@@ -29,13 +30,12 @@ public abstract class BaseMvvmActivity<VM extends BaseViewModel> extends BaseAct
     private void initViewModel() {
         mViewModel = createViewModel();
         getLifecycle().addObserver(mViewModel);
-        mViewModel.injectLifecycleProvider(this);
     }
     public VM createViewModel(){
-        return ViewModelProviders.of(this).get(onBindViewModel());
+        return ViewModelProviders.of(this,onBindViewModelFactory()).get(onBindViewModel());
     }
     public abstract Class<VM> onBindViewModel();
-
+    public abstract Factory onBindViewModelFactory();
     public abstract void initViewObservable();
 
     protected void initBaseViewObservable() {

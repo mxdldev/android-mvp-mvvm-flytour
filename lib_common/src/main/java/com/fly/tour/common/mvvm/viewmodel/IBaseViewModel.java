@@ -6,9 +6,12 @@ import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.OnLifecycleEvent;
 
 /**
- * Created by goldze on 2017/6/15.
+ * Description: <IBaseViewModel><br>
+ * Author:      mxdl<br>
+ * Date:        2019/06/30<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
  */
-
 public interface IBaseViewModel extends LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)

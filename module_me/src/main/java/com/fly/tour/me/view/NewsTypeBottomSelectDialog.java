@@ -21,14 +21,12 @@ import com.fly.tour.common.base.BaseAdapter;
 import com.fly.tour.common.util.DisplayUtil;
 import com.fly.tour.me.R;
 import com.fly.tour.me.adapter.NewsTypeSelectAdapter;
-import com.fly.tour.me.model.NewsTypeListModel;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Description: <PhotoSelectDialog><br>
- * Author: gxl<br>
+ * Author: mxdl<br>
  * Date: 2019/1/3<br>
  * Version: V1.0.0<br>
  * Update: <br>

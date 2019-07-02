@@ -13,7 +13,7 @@ import retrofit2.HttpException;
 
 /**
  * Description: <ExceptionHandler><br>
- * Author:      gxl<br>
+ * Author:      mxdl<br>
  * Date:        2019/3/18<br>
  * Version:     V1.0.0<br>
  * Update:     <br>

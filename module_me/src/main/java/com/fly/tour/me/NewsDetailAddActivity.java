@@ -1,5 +1,8 @@
 package com.fly.tour.me;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
+import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -7,24 +10,19 @@ import android.widget.EditText;
 
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.base.BaseAdapter;
-import com.fly.tour.common.base.BaseMvpActivity;
 import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.SettingBarView;
-import com.fly.tour.me.contract.NewsDetailAddContract;
-import com.fly.tour.me.inject.component.DaggerNewsDetailAddComponent;
-import com.fly.tour.me.inject.module.NewsDetailAddModule;
-import com.fly.tour.me.model.NewsDetailAddModel;
-import com.fly.tour.me.presenter.NewsDetailAddPresenter;
+import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
+import com.fly.tour.me.mvvm.model.NewsDetailAddViewModel;
 import com.fly.tour.me.view.NewsTypeBottomSelectDialog;
 
 import java.util.List;
 
-public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,NewsDetailAddContract.View,NewsDetailAddPresenter> implements NewsDetailAddContract.View {
+public class NewsDetailAddActivity extends BaseMvvmActivity<NewsDetailAddViewModel> {
 
     private SettingBarView mViewSetNewsType;
     private SettingBarView mViewSetNewsTitle;
-    //private SettingBarView mViewSetNewsContent;
     private Button mBtnSaveNewsConent;
     private NewsType mNewsType;
     private EditText mTxtNewsDetail;
@@ -38,11 +36,9 @@ public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,Ne
     public void initView() {
         mViewSetNewsType = findViewById(R.id.view_me_set_news_type);
         mViewSetNewsTitle = findViewById(R.id.view_me_set_news_title);
-        //mViewSetNewsContent = findViewById(R.id.view_me_set_news_content);
         mBtnSaveNewsConent = findViewById(R.id.btn_me_save_news_detail);
         mTxtNewsDetail = findViewById(R.id.txt_news_detail);
         mViewSetNewsTitle.enableEditContext(true);
-        //mViewSetNewsContent.enableEditContext(true);
     }
 
     @Override
@@ -50,41 +46,34 @@ public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,Ne
         mViewSetNewsType.setOnClickSettingBarViewListener(new SettingBarView.OnClickSettingBarViewListener() {
             @Override
             public void onClick() {
-                mPresenter.getListNewsType();
+                mViewModel.getListNewsType();
             }
         });
-        mBtnSaveNewsConent.setOnClickListener(new View.OnClickListener(){
+        mBtnSaveNewsConent.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                if(mNewsType == null || TextUtils.isEmpty(mViewSetNewsType.getContent())){
+                if (mNewsType == null || TextUtils.isEmpty(mViewSetNewsType.getContent())) {
                     ToastUtil.showToast("请选择新闻类型");
                     return;
                 }
-                if(TextUtils.isEmpty(mViewSetNewsTitle.getContent())){
+                if (TextUtils.isEmpty(mViewSetNewsTitle.getContent())) {
                     ToastUtil.showToast("请输入新闻标题");
                     return;
                 }
-                if(TextUtils.isEmpty(mTxtNewsDetail.getText().toString())){
+                if (TextUtils.isEmpty(mTxtNewsDetail.getText().toString())) {
                     ToastUtil.showToast("请输入新闻内容");
                     return;
                 }
-                mPresenter.addNewsDetail(mNewsType.getId(),mViewSetNewsTitle.getContent(),mTxtNewsDetail.getText().toString());
+                mViewModel.addNewsDetail(mNewsType.getId(), mViewSetNewsTitle.getContent(), mTxtNewsDetail.getText().toString());
             }
         });
     }
 
     @Override
     public void initData() {
-
     }
 
-    @Override
-    public void injectPresenter() {
-        DaggerNewsDetailAddComponent.builder().newsDetailAddModule(new NewsDetailAddModule(this)).build().inject(this);
-    }
-
-    @Override
     public void showNewsType(List<NewsType> typeList) {
         NewsTypeBottomSelectDialog newsTypeBottomSelectDialog = NewsTypeBottomSelectDialog.newInstance(typeList);
         newsTypeBottomSelectDialog.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsType>() {
@@ -94,6 +83,26 @@ public class NewsDetailAddActivity extends BaseMvpActivity<NewsDetailAddModel,Ne
                 mViewSetNewsType.setContent(newsType.getTypename());
             }
         });
-        newsTypeBottomSelectDialog.show(getSupportFragmentManager(),"dialog");
+        newsTypeBottomSelectDialog.show(getSupportFragmentManager(), "dialog");
+    }
+
+    @Override
+    public Class<NewsDetailAddViewModel> onBindViewModel() {
+        return NewsDetailAddViewModel.class;
+    }
+
+    @Override
+    public ViewModelProvider.Factory onBindViewModelFactory() {
+        return MeViewModelFactory.getInstance(getApplication());
+    }
+
+    @Override
+    public void initViewObservable() {
+        mViewModel.getSingleNewsTypeLiveEvent().observe(this, new Observer<List<NewsType>>() {
+            @Override
+            public void onChanged(@Nullable List<NewsType> newsTypes) {
+                showNewsType(newsTypes);
+            }
+        });
     }
 }
