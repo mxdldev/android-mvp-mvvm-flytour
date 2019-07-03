@@ -29,18 +29,19 @@ import io.reactivex.disposables.Disposable;
 public class NewsTypeAddViewModel extends BaseViewModel<NewsTypeAddModel> {
     public static final String TAG = NewsTypeAddModel.class.getSimpleName();
     private SingleLiveEvent<Void> addNewsTypeSuccViewEvent;
+    public ObservableField<String> typeName = new ObservableField<>("");
 
     public NewsTypeAddViewModel(@NonNull Application application, NewsTypeAddModel model) {
         super(application, model);
     }
 
-    public void addNewsType(String typename) {
-        if (TextUtils.isEmpty(typename)) {
+    public void addNewsType() {
+        if (TextUtils.isEmpty(typeName.get())) {
             ToastUtil.showToast("请输入新闻类型");
             return;
         }
         NewsType newsType = new NewsType();
-        newsType.setTypename(typename);
+        newsType.setTypename(typeName.get());
         newsType.setAddtime(DateUtil.formatDate(new Date(), DateUtil.FormatType.yyyyMMddHHmmss));
         mModel.addNewsType(newsType).doOnSubscribe(this).subscribe(new Observer<RespDTO<NewsType>>() {
             @Override
@@ -74,4 +75,5 @@ public class NewsTypeAddViewModel extends BaseViewModel<NewsTypeAddModel> {
     public SingleLiveEvent<Void> getAddNewsTypeSuccViewEvent() {
         return addNewsTypeSuccViewEvent = createLiveData(addNewsTypeSuccViewEvent);
     }
+
 }

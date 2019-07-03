@@ -3,11 +3,15 @@ package com.fly.tour.common.mvvm;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewStub;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -21,6 +25,7 @@ import com.fly.tour.common.view.LoadingTransView;
 import com.fly.tour.common.view.NetErrorView;
 import com.fly.tour.common.view.NoDataView;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
+
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -32,27 +37,28 @@ import org.greenrobot.eventbus.ThreadMode;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseActivity extends RxAppCompatActivity implements IBaseView {
-    protected static final String TAG = BaseActivity.class.getSimpleName();
+public abstract class BaseActivity1 extends RxAppCompatActivity implements IBaseView {
+    protected static final String TAG = BaseActivity1.class.getSimpleName();
     protected TextView mTxtTitle;
     protected Toolbar mToolbar;
     protected NetErrorView mNetErrorView;
     protected NoDataView mNoDataView;
     protected LoadingInitView mLoadingInitView;
     protected LoadingTransView mLoadingTransView;
+    private RelativeLayout mViewStubContent;
     private ViewStub mViewStubToolbar;
-    private ViewStub mViewStubContent;
     private ViewStub mViewStubInitLoading;
     private ViewStub mViewStubTransLoading;
     private ViewStub mViewStubNoData;
     private ViewStub mViewStubError;
-    protected View mContentView;
+    private ViewGroup mContentView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        setContentView(R.layout.activity_root);
+        super.setContentView(R.layout.activity_root1);
+        mContentView = (ViewGroup) findViewById(android.R.id.content);
         initCommonView();
         ARouter.getInstance().inject(this);
         initView();
@@ -77,10 +83,17 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
             View view = mViewStubToolbar.inflate();
             initToolbar(view);
         }
-        mViewStubContent.setLayoutResource(onBindLayout());
-        mViewStubContent.inflate();
     }
-
+    @Override
+    public void setContentView(@LayoutRes int layoutResID) {
+        if (mViewStubContent != null) {
+            View view = LayoutInflater.from(this).inflate(layoutResID, mViewStubContent, false);
+            mViewStubContent.setId(android.R.id.content);
+            mContentView.setId(View.NO_ID);
+            mViewStubContent.removeAllViews();
+            mViewStubContent.addView(view);
+        }
+    }
     protected void initToolbar(View view) {
         mToolbar = view.findViewById(R.id.toolbar_root);
         mTxtTitle = view.findViewById(R.id.toolbar_title);
