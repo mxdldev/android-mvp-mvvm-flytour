@@ -14,7 +14,7 @@ import io.reactivex.Observable;
 /**
  * Description: <NewsTypeAddModel><br>
  * Author:      mxdl<br>
- * Date:        2019/07/01<br>
+ * Date:        2019/07/02<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */

@@ -1,15 +1,15 @@
-package com.fly.tour.common.mvvm;
+package com.fly.tour.common.mvvm.view;
 
 import android.content.Context;
 
 /**
- * Description: <BaseView><br>
+ * Description: <IBaseView><br>
  * Author:      mxdl<br>
  * Date:        2019/06/30<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public interface BaseView{
+public interface IBaseView {
     void initView();
     void initListener();
     void initData();

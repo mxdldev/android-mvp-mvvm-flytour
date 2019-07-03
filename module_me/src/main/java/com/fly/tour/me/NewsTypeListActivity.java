@@ -20,7 +20,13 @@ import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
 import com.fly.tour.me.mvvm.viewmodel.NewsTypeListViewModel;
 
 import java.util.List;
-
+/**
+ * Description: <NewsTypeListActivity><br>
+ * Author:      mxdl<br>
+ * Date:        2019/07/02<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public class NewsTypeListActivity extends BaseMvvmRefreshActivity<NewsType, NewsTypeListViewModel> {
 
     private RecyclerView mRecViewNewsType;

@@ -20,7 +20,7 @@ import org.greenrobot.eventbus.EventBus;
 /**
  * Description: <NewsTypeAddActivity><br>
  * Author:      mxdl<br>
- * Date:        2019/5/24<br>
+ * Date:        2019/07/02<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */

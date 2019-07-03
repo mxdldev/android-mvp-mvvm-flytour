@@ -1,6 +1,5 @@
 package com.fly.tour.me.view;
 
-import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -17,7 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.base.BaseAdapter;
+import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.util.DisplayUtil;
 import com.fly.tour.me.R;
 import com.fly.tour.me.adapter.NewsTypeSelectAdapter;
@@ -25,11 +24,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description: <PhotoSelectDialog><br>
- * Author: mxdl<br>
- * Date: 2019/1/3<br>
- * Version: V1.0.0<br>
- * Update: <br>
+ * Description: <NewsTypeBottomSelectDialog><br>
+ * Author:      mxdl<br>
+ * Date:        2019/07/02<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
  */
 public class NewsTypeBottomSelectDialog extends BottomSheetDialogFragment {
     public static final String TAG = NewsTypeBottomSelectDialog.class.getSimpleName();

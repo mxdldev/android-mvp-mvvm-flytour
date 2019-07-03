@@ -37,49 +37,6 @@ public class BaseViewModel<M extends BaseModel> extends AndroidViewModel impleme
         return mUIChangeLiveData;
     }
 
-    @Override
-    public void onAny(LifecycleOwner owner, Lifecycle.Event event) {
-    }
-
-    @Override
-    public void onCreate() {
-    }
-
-    @Override
-    public void onDestroy() {
-    }
-
-    @Override
-    public void onStart() {
-    }
-
-    @Override
-    public void onStop() {
-    }
-
-    @Override
-    public void onResume() {
-    }
-
-    @Override
-    public void onPause() {
-    }
-
-    @Override
-    protected void onCleared() {
-        super.onCleared();
-        if (mModel != null) {
-            mModel.onCleared();
-        }
-    }
-
-    @Override
-    public void accept(Disposable disposable) throws Exception {
-        if(mModel != null){
-            mModel.addSubscribe(disposable);
-        }
-    }
-
     public final class UIChangeLiveData extends SingleLiveEvent {
         private SingleLiveEvent<Boolean> showInitLoadViewEvent;
         private SingleLiveEvent<Boolean> showTransLoadingViewEvent;
@@ -170,4 +127,49 @@ public class BaseViewModel<M extends BaseModel> extends AndroidViewModel impleme
     public void onBackPressed() {
         mUIChangeLiveData.onBackPressedEvent.call();
     }
+
+    @Override
+    public void onAny(LifecycleOwner owner, Lifecycle.Event event) {
+    }
+
+    @Override
+    public void onCreate() {
+    }
+
+    @Override
+    public void onDestroy() {
+    }
+
+    @Override
+    public void onStart() {
+    }
+
+    @Override
+    public void onStop() {
+    }
+
+    @Override
+    public void onResume() {
+    }
+
+    @Override
+    public void onPause() {
+    }
+
+    @Override
+    public void accept(Disposable disposable) throws Exception {
+        if(mModel != null){
+            mModel.addSubscribe(disposable);
+        }
+    }
+
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+        if (mModel != null) {
+            mModel.onCleared();
+        }
+    }
+
+
 }

@@ -1,18 +1,15 @@
 package com.fly.tour.news.mvvm.viewmodel;
 
 import android.app.Application;
-import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.news.entity.NewsDetail;
-import com.fly.tour.common.mvvm.viewmodel.BaseViewRefreshModel;
+import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.news.mvvm.model.NewsListModel;
 
 import java.util.List;
-
-import javax.inject.Inject;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -24,7 +21,7 @@ import io.reactivex.disposables.Disposable;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsListViewModel extends BaseViewRefreshModel<NewsDetail, NewsListModel>{
+public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsListModel> {
     private int newsType = 0;
 
     public NewsListViewModel(@NonNull Application application, NewsListModel model) {

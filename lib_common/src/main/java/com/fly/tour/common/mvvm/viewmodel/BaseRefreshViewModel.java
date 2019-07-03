@@ -8,16 +8,16 @@ import com.fly.tour.common.mvvm.model.BaseModel;
 import java.util.List;
 
 /**
- * Description: <BaseViewRefreshModel><br>
+ * Description: <BaseRefreshViewModel><br>
  * Author:      mxdl<br>
- * Date:        2019/7/2<br>
+ * Date:        2019/06/30<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class BaseViewRefreshModel<T,M extends BaseModel> extends BaseViewModel<M> {
+public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M> {
 
     protected UIChangeRefreshLiveData mUIChangeRefreshLiveData;
-    public BaseViewRefreshModel(@NonNull Application application, M model) {
+    public BaseRefreshViewModel(@NonNull Application application, M model) {
         super(application, model);
     }
 

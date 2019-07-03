@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.base.BaseAdapter;
+import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.SettingBarView;
@@ -18,7 +18,13 @@ import com.fly.tour.me.mvvm.model.NewsDetailAddViewModel;
 import com.fly.tour.me.view.NewsTypeBottomSelectDialog;
 
 import java.util.List;
-
+/**
+ * Description: <NewsDetailAddActivity><br>
+ * Author:      mxdl<br>
+ * Date:        2019/07/02<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
 public class NewsDetailAddActivity extends BaseMvvmActivity<NewsDetailAddViewModel> {
 
     private SettingBarView mViewSetNewsType;

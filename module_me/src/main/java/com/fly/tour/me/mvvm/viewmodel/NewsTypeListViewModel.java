@@ -8,7 +8,7 @@ import com.fly.tour.api.http.ExceptionHandler;
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.event.EventCode;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
-import com.fly.tour.common.mvvm.viewmodel.BaseViewRefreshModel;
+import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.me.mvvm.model.NewsTypeListModel;
 
@@ -22,11 +22,11 @@ import io.reactivex.disposables.Disposable;
 /**
  * Description: <NewsTypeListViewModel><br>
  * Author:      mxdl<br>
- * Date:        2019/7/2<br>
+ * Date:        2019/07/02<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsTypeListViewModel extends BaseViewRefreshModel<NewsType,NewsTypeListModel> {
+public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType,NewsTypeListModel> {
     private boolean isfirst = true;
 
     public NewsTypeListViewModel(@NonNull Application application, NewsTypeListModel model) {

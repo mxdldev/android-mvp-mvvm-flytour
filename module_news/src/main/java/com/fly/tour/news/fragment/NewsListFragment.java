@@ -10,7 +10,7 @@ import android.view.View;
 
 import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.base.BaseAdapter;
+import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.event.KeyCode;
 import com.fly.tour.common.event.me.NewsDetailCurdEvent;
 import com.fly.tour.common.mvvm.BaseMvvmRefreshFragment;

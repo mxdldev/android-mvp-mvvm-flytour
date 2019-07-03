@@ -1,4 +1,4 @@
-package com.fly.tour.common.base;
+package com.fly.tour.common.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

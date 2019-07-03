@@ -2,8 +2,6 @@ package com.fly.tour.common.mvvm.model;
 
 import android.app.Application;
 
-import com.trello.rxlifecycle2.LifecycleProvider;
-
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
@@ -14,7 +12,7 @@ import io.reactivex.disposables.Disposable;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseModel implements IModel {
+public abstract class BaseModel implements IBaseModel {
     protected Application mApplication;
     private CompositeDisposable mCompositeDisposable;
     public BaseModel(Application application) {

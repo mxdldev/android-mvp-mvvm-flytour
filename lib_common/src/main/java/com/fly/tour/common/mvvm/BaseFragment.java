@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.fly.tour.common.R;
 import com.fly.tour.common.event.common.BaseFragmentEvent;
+import com.fly.tour.common.mvvm.view.IBaseView;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.common.util.log.KLog;
 import com.fly.tour.common.view.LoadingInitView;
@@ -29,11 +30,11 @@ import org.greenrobot.eventbus.ThreadMode;
 /**
  * Description: <BaseFragment><br>
  * Author:      mxdl<br>
- * Date:        2018/1/15<br>
+ * Date:        2019/06/30<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseFragment extends Fragment implements BaseView {
+public abstract class BaseFragment extends Fragment implements IBaseView {
     protected static final String TAG = BaseFragment.class.getSimpleName();
     protected RxAppCompatActivity mActivity;
     protected View mView;
