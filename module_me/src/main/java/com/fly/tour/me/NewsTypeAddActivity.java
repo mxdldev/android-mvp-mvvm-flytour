@@ -44,7 +44,6 @@ public class NewsTypeAddActivity extends BaseMvvmActivity1<ActivityNewsTypeAddBi
     public ViewModelProvider.Factory onBindViewModelFactory() {
         return MeViewModelFactory.getInstance(getApplication());
     }
-
     @Override
     public void initViewObservable() {
         mViewModel.getAddNewsTypeSuccViewEvent().observe(this, new Observer<Void>() {

@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="com.fly.tour.me.mvvm.viewmodel.NewsTypeListViewModel"/>
+    </data>
+
 <com.refresh.lib.DaisyRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/refview_news_type"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    app:onRefreshCommand="@{viewModel.onRefreshCommand}"
+    app:onLoadMoreCommand="@{viewModel.onLoadMoreCommand}"
+    app:onAutoRefreshCommand="@{viewModel.onAutoRefreshCommand}"
+    app:refreshing="@{viewModel.isrefresh}"
+    app:loadmore="@{viewModel.isloadmore}"
+    app:autorefresh="@{viewModel.autorefresh}"
+    >
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:linearLayoutManager="@{viewModel.orientation}"
+        />
 </com.refresh.lib.DaisyRefreshLayout>
+</layout>

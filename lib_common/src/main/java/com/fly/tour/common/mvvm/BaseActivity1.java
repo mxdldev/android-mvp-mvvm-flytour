@@ -60,10 +60,10 @@ public abstract class BaseActivity1 extends RxAppCompatActivity implements IBase
         super.setContentView(R.layout.activity_root1);
         mContentView = (ViewGroup) findViewById(android.R.id.content);
         initCommonView();
+        initParam();
         ARouter.getInstance().inject(this);
         initView();
         initListener();
-        initParam();
         initData();
         EventBus.getDefault().register(this);
         ActivityManager.getInstance().addActivity(this);
