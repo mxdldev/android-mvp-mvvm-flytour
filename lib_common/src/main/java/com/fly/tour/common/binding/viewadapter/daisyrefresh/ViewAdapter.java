@@ -1,8 +1,6 @@
 package com.fly.tour.common.binding.viewadapter.daisyrefresh;
 
 import android.databinding.BindingAdapter;
-import android.support.v4.widget.SwipeRefreshLayout;
-
 import com.fly.tour.common.binding.command.BindingCommand;
 import com.refresh.lib.BaseRefreshLayout;
 import com.refresh.lib.DaisyRefreshLayout;
@@ -51,7 +49,6 @@ public class ViewAdapter {
                 }
             }
         });
-
     }
 
     //是否停止刷新

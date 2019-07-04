@@ -34,30 +34,12 @@ import io.reactivex.disposables.Disposable;
  */
 public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsTypeListModel> {
     private boolean isfirst = true;
-    public ObservableField<Boolean> isrefresh = new ObservableField();
-    public ObservableField<Boolean> isloadmore = new ObservableField();
-    public ObservableField<Boolean> autorefresh = new ObservableField();
-    public ObservableField<Boolean> orientation = new ObservableField();
 
     public NewsTypeListViewModel(@NonNull Application application, NewsTypeListModel model) {
         super(application, model);
     }
 
     @Override
-    public void onRefreshEvent() {
-        refreshData();
-    }
-
-    @Override
-    public void onLoadMoreEvent() {
-        loadMore();
-    }
-
-    @Override
-    public void onAutoLoadEvent() {
-        refreshData();
-    }
-
     public void refreshData() {
         showNoDataView(false);
         if (isfirst) {
@@ -99,6 +81,7 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsT
         });
     }
 
+    @Override
     public void loadMore() {
         mModel.getListNewsType().doOnSubscribe(this).subscribe(new Observer<RespDTO<List<NewsType>>>() {
             @Override
