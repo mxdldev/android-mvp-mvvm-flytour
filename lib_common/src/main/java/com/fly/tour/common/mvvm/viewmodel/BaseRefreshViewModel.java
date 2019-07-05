@@ -16,10 +16,10 @@ import java.util.List;
  */
 public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M> {
 
-    protected UIChangeRefreshLiveData mUIChangeRefreshLiveData;
     public BaseRefreshViewModel(@NonNull Application application, M model) {
         super(application, model);
     }
+    protected UIChangeRefreshLiveData mUIChangeRefreshLiveData;
 
     public UIChangeRefreshLiveData getUCRefresh() {
         if (mUIChangeRefreshLiveData == null) {
@@ -60,6 +60,11 @@ public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M
             mUIChangeRefreshLiveData.getAutoRefresLiveEvent().call();
         }
     }
+    public void stopLoadMore(){
+        if(mUIChangeRefreshLiveData != null){
+            mUIChangeRefreshLiveData.mStopLoadMoreLiveEvent.call();
+        }
+    }
     public void refreshData(List<T> list){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.getRefresLiveEvent().postValue(list);
@@ -70,9 +75,5 @@ public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M
             mUIChangeRefreshLiveData.getLoadMoreLiveEvent().postValue(list);
         }
     }
-    public void stopLoadMore(){
-        if(mUIChangeRefreshLiveData != null){
-            mUIChangeRefreshLiveData.mStopLoadMoreLiveEvent.call();
-        }
-    }
+
 }

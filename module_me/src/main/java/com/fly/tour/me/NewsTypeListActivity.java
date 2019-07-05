@@ -35,10 +35,8 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsTypeListActivity extends BaseMvvmActivity1<ActivityNewsTypeListBinding, NewsTypeListViewModel> {
-
+public class NewsTypeListActivity extends BaseMvvmRefreshActivity1<ActivityNewsTypeListBinding, NewsTypeListViewModel> {
     private NewsTypeShowBindingAdapter mNewsTypeShowAdapter;
-
     public int onBindLayout() {
         return R.layout.activity_news_type_list;
     }
@@ -95,7 +93,7 @@ public class NewsTypeListActivity extends BaseMvvmActivity1<ActivityNewsTypeList
         switch (requestCode) {
             case RequestCode.Me.NEWS_TYPE_ADD:
                 if (resultCode == Activity.RESULT_OK) {
-                    mViewModel.refreshData();
+                    autoLoadData();
                 }
                 break;
         }
@@ -119,5 +117,10 @@ public class NewsTypeListActivity extends BaseMvvmActivity1<ActivityNewsTypeList
     @Override
     public int onBindVariableId() {
         return BR.viewModel;
+    }
+
+    @Override
+    public DaisyRefreshLayout getRefreshLayout() {
+        return mBinding.refviewNewsType;
     }
 }

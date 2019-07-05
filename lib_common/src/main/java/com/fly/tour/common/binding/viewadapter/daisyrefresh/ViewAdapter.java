@@ -14,8 +14,8 @@ import com.refresh.lib.DaisyRefreshLayout;
  */
 public class ViewAdapter {
     //下拉刷新命令
-    @BindingAdapter({"onRefreshCommand"})
-    public static void onRefreshCommand(DaisyRefreshLayout refreshLayout, final BindingCommand onRefreshCommand) {
+    @BindingAdapter(value = {"onRefreshCommand","onLoadMoreCommand","onAutoRefreshCommand"},requireAll = false)
+    public static void onRefreshCommand(DaisyRefreshLayout refreshLayout, final BindingCommand onRefreshCommand,final BindingCommand onLoadMoreCommond,final BindingCommand onAutoRerefeshCommond) {
         refreshLayout.setOnRefreshListener(new BaseRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -24,10 +24,6 @@ public class ViewAdapter {
                 }
             }
         });
-    }
-    //上拉加载更多命令
-    @BindingAdapter({"onLoadMoreCommand"})
-    public static void onLoadMoreCommand(DaisyRefreshLayout refreshLayout, final BindingCommand onLoadMoreCommond) {
         refreshLayout.setOnLoadMoreListener(new BaseRefreshLayout.OnLoadMoreListener() {
             @Override
             public void onLoadMore() {
@@ -36,11 +32,6 @@ public class ViewAdapter {
                 }
             }
         });
-    }
-
-    //上拉加载更多命令
-    @BindingAdapter({"onAutoRefreshCommand"})
-    public static void onAutoRefreshCommand(DaisyRefreshLayout refreshLayout, final BindingCommand onAutoRerefeshCommond) {
         refreshLayout.setOnAutoLoadListener(new BaseRefreshLayout.OnAutoLoadListener() {
             @Override
             public void onAutoLoad() {
@@ -49,24 +40,5 @@ public class ViewAdapter {
                 }
             }
         });
-    }
-
-    //是否停止刷新
-    @BindingAdapter({"refreshing"})
-    public static void setRefreshing(DaisyRefreshLayout refreshLayout, boolean refreshing) {
-        refreshLayout.setRefreshing(refreshing);
-    }
-
-    //是否停止加载更多
-    @BindingAdapter({"loadmore"})
-    public static void setLoadmore(DaisyRefreshLayout refreshLayout, boolean loadmore) {
-        refreshLayout.setLoadMore(loadmore);
-    }
-    //是否停止加载更多
-    @BindingAdapter({"autorefresh"})
-    public static void setAutorefresh(DaisyRefreshLayout refreshLayout, boolean autorefresh) {
-        if(autorefresh){
-            refreshLayout.autoRefresh();
-        }
     }
 }

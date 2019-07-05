@@ -21,15 +21,59 @@ import java.util.List;
  */
 public abstract class BaseRefreshViewModel1<T, M extends BaseModel> extends BaseViewModel<M> {
     protected ObservableArrayList<T> mList = new ObservableArrayList<>();
-    public ObservableField<Boolean> isrefresh = new ObservableField();
-    public ObservableField<Boolean> isloadmore = new ObservableField();
-    public ObservableField<Boolean> autorefresh = new ObservableField();
     public ObservableField<Boolean> orientation = new ObservableField();
+    public ObservableField<Boolean> enableLoadMore = new ObservableField();
+    public ObservableField<Boolean>  enableRefresh = new ObservableField();
 
     public BaseRefreshViewModel1(@NonNull Application application, M model) {
         super(application, model);
+        enableLoadMore.set(enableLoadMore());
+        enableRefresh.set(enableRefresh());
+    }
+    public boolean enableLoadMore(){
+        return true;
+    }
+    public boolean enableRefresh(){
+        return true;
+    }
+    protected BaseRefreshViewModel1.UIChangeRefreshLiveData mUIChangeRefreshLiveData;
+
+    public BaseRefreshViewModel1.UIChangeRefreshLiveData getUCRefresh() {
+        if (mUIChangeRefreshLiveData == null) {
+            mUIChangeRefreshLiveData = new BaseRefreshViewModel1.UIChangeRefreshLiveData();
+        }
+        return mUIChangeRefreshLiveData;
     }
 
+    public final class UIChangeRefreshLiveData extends SingleLiveEvent {
+        private SingleLiveEvent<Void> mStopRefresLiveEvent;
+        private SingleLiveEvent<Void> mAutoRefresLiveEvent;
+        private SingleLiveEvent<Void> mStopLoadMoreLiveEvent;
+        public SingleLiveEvent<Void> getStopRefresLiveEvent() {
+            return mStopRefresLiveEvent = createLiveData(mStopRefresLiveEvent);
+        }
+        public SingleLiveEvent<Void> getAutoRefresLiveEvent() {
+            return mAutoRefresLiveEvent = createLiveData(mAutoRefresLiveEvent);
+        }
+        public SingleLiveEvent<Void> getStopLoadMoreLiveEvent() {
+            return mStopLoadMoreLiveEvent = createLiveData(mStopLoadMoreLiveEvent);
+        }
+    }
+    public void stopRefresh(){
+        if(mUIChangeRefreshLiveData != null){
+            mUIChangeRefreshLiveData.getStopRefresLiveEvent().call();
+        }
+    }
+    public void autoRefresh(){
+        if(mUIChangeRefreshLiveData != null){
+            mUIChangeRefreshLiveData.getAutoRefresLiveEvent().call();
+        }
+    }
+    public void stopLoadMore(){
+        if(mUIChangeRefreshLiveData != null){
+            mUIChangeRefreshLiveData.mStopLoadMoreLiveEvent.call();
+        }
+    }
     public ObservableArrayList<T> getList() {
         return mList;
     }

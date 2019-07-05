@@ -29,7 +29,7 @@ import io.reactivex.disposables.Disposable;
 public class NewsTypeAddViewModel extends BaseViewModel<NewsTypeAddModel> {
     public static final String TAG = NewsTypeAddModel.class.getSimpleName();
     private SingleLiveEvent<Void> addNewsTypeSuccViewEvent;
-    public ObservableField<String> typeName = new ObservableField<>("");
+    public ObservableField<String> typeName = new ObservableField<>();
 
     public NewsTypeAddViewModel(@NonNull Application application, NewsTypeAddModel model) {
         super(application, model);

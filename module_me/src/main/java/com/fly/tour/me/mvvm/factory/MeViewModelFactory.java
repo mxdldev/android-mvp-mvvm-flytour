@@ -8,7 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
 
 import com.fly.tour.me.mvvm.model.NewsDetailAddModel;
-import com.fly.tour.me.mvvm.model.NewsDetailAddViewModel;
+import com.fly.tour.me.mvvm.viewmodel.NewsDetailAddViewModel;
 import com.fly.tour.me.mvvm.model.NewsTypeAddModel;
 import com.fly.tour.me.mvvm.model.NewsTypeListModel;
 import com.fly.tour.me.mvvm.viewmodel.NewsTypeAddViewModel;

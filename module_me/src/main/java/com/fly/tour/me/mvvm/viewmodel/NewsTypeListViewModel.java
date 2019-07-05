@@ -40,6 +40,11 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsT
     }
 
     @Override
+    public boolean enableRefresh() {
+        return true;
+    }
+
+    @Override
     public void refreshData() {
         showNoDataView(false);
         if (isfirst) {
@@ -48,9 +53,6 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsT
         mModel.getListNewsType().doOnSubscribe(this).subscribe(new Observer<RespDTO<List<NewsType>>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                if (!isfirst) {
-                    isrefresh.set(true);
-                }
             }
 
             @Override
@@ -66,7 +68,7 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsT
                     isfirst = false;
                     showInitLoadView(false);
                 } else {
-                    isrefresh.set(false);
+                    stopRefresh();
                 }
             }
 
@@ -86,7 +88,7 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsT
         mModel.getListNewsType().doOnSubscribe(this).subscribe(new Observer<RespDTO<List<NewsType>>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                isloadmore.set(true);
+
             }
 
             @Override
@@ -95,12 +97,12 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsT
                 if (listNewsType != null && listNewsType.size() > 0) {
                     mList.addAll(listNewsType);
                 }
-                isloadmore.set(false);
+                stopLoadMore();
             }
 
             @Override
             public void onError(Throwable e) {
-                isloadmore.set(false);
+                stopLoadMore();
             }
 
             @Override
@@ -115,14 +117,13 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsT
             @Override
             public void onSubscribe(Disposable d) {
                 showTransLoadingView(true);
-                autorefresh.set(false);
             }
 
             @Override
             public void onNext(RespDTO respDTO) {
                 if (respDTO.code == ExceptionHandler.APP_ERROR.SUCC) {
                     ToastUtil.showToast("删除成功");
-                    autorefresh.set(true);
+                    autoRefresh();
                     EventBus.getDefault().post(new NewsTypeCrudEvent(EventCode.MeCode.NEWS_TYPE_DELETE));
                 } else {
                     ToastUtil.showToast("删除失败");

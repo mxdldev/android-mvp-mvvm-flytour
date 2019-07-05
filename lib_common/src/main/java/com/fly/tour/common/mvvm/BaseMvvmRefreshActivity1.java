@@ -21,22 +21,57 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseMvvmRefreshActivity1<T,V extends ViewDataBinding,VM extends BaseRefreshViewModel1> extends BaseMvvmActivity1<V,VM>{
-    //protected DaisyRefreshLayout mRefreshLayout;
-    //protected  A adapter;
-    protected VM mViewModel;
-     @Override
+public abstract class BaseMvvmRefreshActivity1<V extends ViewDataBinding, VM extends BaseRefreshViewModel1> extends BaseMvvmActivity1<V, VM> {
+    protected DaisyRefreshLayout mRefreshLayout;
+
+    @Override
+    public void initParam() {
+        super.initParam();
+        initRefreshView();
+    }
+
+    @Override
     protected void initBaseViewObservable() {
         super.initBaseViewObservable();
         initBaseViewRefreshObservable();
     }
 
-    @Override
-    public void initParam() {
-        super.initParam();
-     }
-
     private void initBaseViewRefreshObservable() {
+        mViewModel.getUCRefresh().getAutoRefresLiveEvent().observe(this, new Observer() {
+            @Override
+            public void onChanged(@Nullable Object o) {
+                autoLoadData();
+            }
+        });
+        mViewModel.getUCRefresh().getStopRefresLiveEvent().observe(this, new Observer() {
+            @Override
+            public void onChanged(@Nullable Object o) {
+                stopRefresh();
+            }
+        });
+        mViewModel.getUCRefresh().getStopLoadMoreLiveEvent().observe(this, new Observer() {
+            @Override
+            public void onChanged(@Nullable Object o) {
+                stopLoadMore();
+            }
+        });
     }
 
+    public abstract DaisyRefreshLayout getRefreshLayout();
+
+    public void initRefreshView() {
+        mRefreshLayout = getRefreshLayout();
+    }
+
+    public void stopRefresh() {
+        mRefreshLayout.setRefreshing(false);
+    }
+
+    public void stopLoadMore() {
+        mRefreshLayout.setLoadMore(false);
+    }
+
+    public void autoLoadData() {
+        mRefreshLayout.autoRefresh();
+    }
 }

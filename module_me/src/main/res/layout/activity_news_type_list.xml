@@ -16,9 +16,8 @@
     app:onRefreshCommand="@{viewModel.onRefreshCommand}"
     app:onLoadMoreCommand="@{viewModel.onLoadMoreCommand}"
     app:onAutoRefreshCommand="@{viewModel.onAutoRefreshCommand}"
-    app:refreshing="@{viewModel.isrefresh}"
-    app:loadmore="@{viewModel.isloadmore}"
-    app:autorefresh="@{viewModel.autorefresh}"
+    app:enableRefresh="@{viewModel.enableRefresh}"
+    app:enableLoadMore="@{viewModel.enableLoadMore}"
     >
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recview"

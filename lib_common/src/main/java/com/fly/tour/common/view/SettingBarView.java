@@ -2,8 +2,14 @@ package com.fly.tour.common.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.databinding.BindingAdapter;
+import android.databinding.InverseBindingAdapter;
+import android.databinding.InverseBindingListener;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -12,6 +18,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.fly.tour.common.R;
+import com.fly.tour.common.binding.command.BindingCommand;
+
+import org.w3c.dom.Text;
 
 /**
  * Description: <SettingBarView><br>
@@ -29,7 +38,7 @@ public class SettingBarView extends RelativeLayout {
     private OnClickSettingBarViewListener mOnClickSettingBarViewListener;
     private OnClickRightImgListener mOnClickRightImgListener;
     private boolean isEdit = false;//是否需要编辑
-
+    private OnViewChangeListener mOnViewChangeListener;
     public interface OnClickSettingBarViewListener {
         void onClick();
     }
@@ -92,6 +101,25 @@ public class SettingBarView extends RelativeLayout {
                 }
             }
         });
+        txtSetContent.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                Log.v("MYTAG","onTextChanged start....");
+                if(mOnViewChangeListener != null){
+                    mOnViewChangeListener.onChange();
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
 
     public void setContent(String value) {
@@ -99,15 +127,65 @@ public class SettingBarView extends RelativeLayout {
             txtSetContent.setText(value);
         }
     }
-
     public String getContent() {
         if (txtSetContent != null) {
             return txtSetContent.getText().toString();
         }
         return null;
     }
+    @BindingAdapter(value = "content", requireAll = false)
+    public static void setContent(SettingBarView view,String value) {
+        if(!TextUtils.isEmpty(view.getContent()) && view.getContent().equals(value)){
+            return;
+        }
+        if (view.txtSetContent != null && !TextUtils.isEmpty(value)) {
+            view.txtSetContent.setText(value);
+        }
+    }
+    @InverseBindingAdapter(attribute = "content", event = "contentAttrChanged")
+    public static String getContent(SettingBarView view) {
+        return view.getContent();
+    }
 
-    public void enableEditContext(boolean b) {
+    @BindingAdapter(value = {"contentAttrChanged"}, requireAll = false)
+    public static void setDisplayAttrChanged(SettingBarView view, final InverseBindingListener inverseBindingListener) {
+        Log.d("MYTAG", "setDisplayAttrChanged");
+
+        if (inverseBindingListener == null) {
+            view.setViewChangeListener(null);
+            Log.d("MYTAG", "setViewChangeListener(null)");
+        } else {
+            view.setViewChangeListener(new OnViewChangeListener() {
+
+                @Override
+                public void onChange() {
+                    Log.d("MYTAG", "setDisplayAttrChanged -> onChange");
+                    inverseBindingListener.onChange();
+                }
+            });
+        }
+    }
+    @BindingAdapter(value = {"onClickSettingBarView"}, requireAll = false)
+    public static void onClickSettingBarView(SettingBarView view, final BindingCommand bindingCommand){
+        view.layoutSettingBar.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                if(bindingCommand != null){
+                    bindingCommand.execute();
+                }
+            }
+        });
+    }
+    private interface OnViewChangeListener {
+        void onChange();
+    }
+
+    private void setViewChangeListener(OnViewChangeListener listener) {
+        this.mOnViewChangeListener = listener;
+    }
+
+    public void setEnableEditContext(boolean b) {
         isEdit = b;
         if (txtSetContent != null) {
             txtSetContent.setEnabled(b);
