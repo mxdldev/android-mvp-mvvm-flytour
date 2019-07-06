@@ -12,13 +12,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.mvvm.BaseMvvmFragment;
 import com.fly.tour.common.util.log.KLog;
 import com.fly.tour.news.mvvm.factory.NewsViewModelFactory;
 import com.fly.tour.news.mvvm.viewmodel.NewsTypeViewModel;
-import com.fly.tour.trip.R;
+import com.fly.tour.news.R;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -91,7 +91,7 @@ public class MainNewsFragment extends BaseMvvmFragment<NewsTypeViewModel>{
     }
 
 
-    public void showListNewsType(List<com.fly.tour.api.newstype.entity.NewsType> listNewsType) {
+    public void showListNewsType(List<NewsType> listNewsType) {
         KLog.v("MYTAG", "initNewsListFragment start..." + listNewsType.toString());
         mListFragments.clear();
         titles.clear();

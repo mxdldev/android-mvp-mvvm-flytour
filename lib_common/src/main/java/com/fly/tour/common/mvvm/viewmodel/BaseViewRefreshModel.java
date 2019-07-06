@@ -8,16 +8,16 @@ import com.fly.tour.common.mvvm.model.BaseModel;
 import java.util.List;
 
 /**
- * Description: <BaseRefreshViewModel><br>
+ * Description: <BaseViewRefreshModel><br>
  * Author:      mxdl<br>
  * Date:        2019/06/30<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M> {
+public class BaseViewRefreshModel<T,M extends BaseModel> extends BaseViewModel<M> {
 
     protected UIChangeRefreshLiveData mUIChangeRefreshLiveData;
-    public BaseRefreshViewModel(@NonNull Application application, M model) {
+    public BaseViewRefreshModel(@NonNull Application application, M model) {
         super(application, model);
     }
 
@@ -50,29 +50,29 @@ public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M
             return mStopLoadMoreLiveEvent = createLiveData(mStopLoadMoreLiveEvent);
         }
     }
-    public void stopRefresh(){
+    public void postStopRefreshEvent(){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.getStopRefresLiveEvent().call();
         }
     }
-    public void autoRefresh(){
+    public void postAutoRefreshEvent(){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.getAutoRefresLiveEvent().call();
         }
     }
-    public void refreshData(List<T> list){
+    public void postRefreshDataEvent(List<T> list){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.getRefresLiveEvent().postValue(list);
         }
     }
-    public void loadMore(List<T> list){
+    public void postLoadMoreEvent(List<T> list){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.getLoadMoreLiveEvent().postValue(list);
         }
     }
-    public void stopLoadMore(){
+    public void postStopLoadMoreEvent(){
         if(mUIChangeRefreshLiveData != null){
-            mUIChangeRefreshLiveData.mStopLoadMoreLiveEvent.call();
+            mUIChangeRefreshLiveData.getStopLoadMoreLiveEvent().call();
         }
     }
 }

@@ -6,9 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.fly.tour.api.news.entity.NewsDetail;
+import com.fly.tour.api.news.NewsDetail;
 import com.fly.tour.common.adapter.BaseAdapter;
-import com.fly.tour.trip.R;
+import com.fly.tour.news.R;
 
 /**
  * Description: <NewsListAdatper><br>

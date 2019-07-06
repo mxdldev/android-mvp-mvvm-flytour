@@ -1,9 +1,7 @@
-package com.fly.tour.api.newstype.entity;
+package com.fly.tour.api.news;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import java.util.Date;
 
 /**
  * Description: <NewsType><br>

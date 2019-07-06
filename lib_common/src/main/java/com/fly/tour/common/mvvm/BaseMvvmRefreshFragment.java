@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.fly.tour.common.mvvm.view.IBaseRefreshView;
-import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel;
+import com.fly.tour.common.mvvm.viewmodel.BaseViewRefreshModel;
 import com.fly.tour.common.util.log.KLog;
 import com.refresh.lib.BaseRefreshLayout;
 import com.refresh.lib.DaisyRefreshLayout;
@@ -19,7 +19,7 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseMvvmRefreshFragment<T,VM extends BaseRefreshViewModel> extends BaseMvvmFragment<VM> implements IBaseRefreshView<T> {
+public abstract class BaseMvvmRefreshFragment<T,VM extends BaseViewRefreshModel> extends BaseMvvmFragment<VM> implements IBaseRefreshView<T> {
     protected DaisyRefreshLayout mRefreshLayout;
 
     @Override

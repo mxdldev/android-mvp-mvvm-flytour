@@ -3,8 +3,7 @@ package com.fly.tour.api;
 
 import com.fly.tour.api.config.API;
 import com.fly.tour.api.dto.RespDTO;
-import com.fly.tour.api.news.entity.NewsDetail;
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsDetail;
 
 import java.util.List;
 import io.reactivex.Observable;

@@ -5,10 +5,10 @@ import android.support.annotation.NonNull;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.ExceptionHandler;
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.event.EventCode;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
-import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel;
+import com.fly.tour.common.mvvm.viewmodel.BaseViewRefreshModel;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.me.mvvm.model.NewsTypeListModel;
 
@@ -26,7 +26,7 @@ import io.reactivex.disposables.Disposable;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType,NewsTypeListModel> {
+public class NewsTypeListViewModel extends BaseViewRefreshModel<NewsType,NewsTypeListModel> {
     private boolean isfirst = true;
 
     public NewsTypeListViewModel(@NonNull Application application, NewsTypeListModel model) {
@@ -34,9 +34,9 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType,NewsTyp
     }
 
     public void refreshData() {
-        showNoDataView(false);
+        postShowNoDataViewEvent(false);
         if (isfirst) {
-            showInitLoadView(true);
+            postShowInitLoadViewEvent(true);
         }
         mModel.getListNewsType().doOnSubscribe(this).subscribe(new Observer<RespDTO<List<NewsType>>>() {
             @Override
@@ -48,21 +48,21 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType,NewsTyp
             public void onNext(RespDTO<List<NewsType>> listRespDTO) {
                 List<NewsType> listNewsType = listRespDTO.data;
                 if (listNewsType != null && listNewsType.size() > 0) {
-                    refreshData(listNewsType);
+                    postRefreshDataEvent(listNewsType);
                 } else {
-                    showNoDataView(true);
+                    postShowNoDataViewEvent(true);
                 }
                 if (isfirst) {
                     isfirst = false;
-                    showInitLoadView(false);
+                    postShowInitLoadViewEvent(false);
                 } else {
-                    stopRefresh();
+                    postStopRefreshEvent();
                 }
             }
 
             @Override
             public void onError(Throwable e) {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
 
             @Override
@@ -75,14 +75,14 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType,NewsTyp
         mModel.deleteNewsTypeById(id).subscribe(new Observer<RespDTO>() {
             @Override
             public void onSubscribe(Disposable d) {
-                showTransLoadingView(true);
+                postShowTransLoadingViewEvent(true);
             }
 
             @Override
             public void onNext(RespDTO respDTO) {
                 if (respDTO.code == ExceptionHandler.APP_ERROR.SUCC) {
                     ToastUtil.showToast("删除成功");
-                    autoRefresh();
+                    postAutoRefreshEvent();
                     EventBus.getDefault().post(new NewsTypeCrudEvent(EventCode.MeCode.NEWS_TYPE_DELETE));
                 } else {
                     ToastUtil.showToast("删除失败");
@@ -91,12 +91,12 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType,NewsTyp
 
             @Override
             public void onError(Throwable e){
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
         });
     }

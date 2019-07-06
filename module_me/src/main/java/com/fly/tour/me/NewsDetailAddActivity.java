@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.common.util.ToastUtil;

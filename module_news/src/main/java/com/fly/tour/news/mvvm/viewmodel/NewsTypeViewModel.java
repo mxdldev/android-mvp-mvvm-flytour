@@ -3,14 +3,12 @@ package com.fly.tour.news.mvvm.viewmodel;
 import android.app.Application;
 import android.support.annotation.NonNull;
 import com.fly.tour.api.dto.RespDTO;
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.event.SingleLiveEvent;
 import com.fly.tour.common.mvvm.viewmodel.BaseViewModel;
 import com.fly.tour.news.mvvm.model.NewsTypeModel;
 
 import java.util.List;
-
-import javax.inject.Inject;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;

@@ -8,8 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.fly.tour.api.news.entity.NewsDetail;
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsDetail;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.event.KeyCode;
 import com.fly.tour.common.event.me.NewsDetailCurdEvent;
@@ -19,7 +19,7 @@ import com.fly.tour.news.NewsDetailActivity;
 import com.fly.tour.news.adapter.NewsListAdatper;
 import com.fly.tour.news.mvvm.factory.NewsViewModelFactory;
 import com.fly.tour.news.mvvm.viewmodel.NewsListViewModel;
-import com.fly.tour.trip.R;
+import com.fly.tour.news.R;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;

@@ -1,13 +1,12 @@
 package com.fly.tour.me.mvvm.model;
 
 import android.app.Application;
-import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.ExceptionHandler;
-import com.fly.tour.api.news.entity.NewsDetail;
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsDetail;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.event.SingleLiveEvent;
 import com.fly.tour.common.event.me.NewsDetailCurdEvent;
 import com.fly.tour.common.mvvm.viewmodel.BaseViewModel;
@@ -16,9 +15,6 @@ import com.fly.tour.common.util.ToastUtil;
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
-import java.util.Map;
-
-import javax.inject.Inject;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -41,15 +37,15 @@ public class NewsDetailAddViewModel extends BaseViewModel<NewsDetailAddModel> {
         mModel.addNewsDetail(type, title, content).subscribe(new Observer<RespDTO<NewsDetail>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                showTransLoadingView(true);
+                postShowTransLoadingViewEvent(true);
             }
 
             @Override
             public void onNext(RespDTO<NewsDetail> newsDetailRespDTO) {
                 if (newsDetailRespDTO.code == ExceptionHandler.APP_ERROR.SUCC) {
                     ToastUtil.showToast("添加成功");
-                    showTransLoadingView(false);
-                    finishActivity();
+                    postShowTransLoadingViewEvent(false);
+                    postFinishActivityEvent();
                     EventBus.getDefault().post(new NewsDetailCurdEvent(type));
                 } else {
                     ToastUtil.showToast("添加失败");
@@ -58,12 +54,12 @@ public class NewsDetailAddViewModel extends BaseViewModel<NewsDetailAddModel> {
 
             @Override
             public void onError(Throwable e) {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
         });
     }

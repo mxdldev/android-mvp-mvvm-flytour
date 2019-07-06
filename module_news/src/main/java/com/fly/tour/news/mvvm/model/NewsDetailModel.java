@@ -1,16 +1,13 @@
 package com.fly.tour.news.mvvm.model;
 
 import android.app.Application;
-import android.content.Context;
 
 import com.fly.tour.api.NewsDetailService;
 import com.fly.tour.api.RetrofitManager;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.RxAdapter;
-import com.fly.tour.api.news.entity.NewsDetail;
+import com.fly.tour.api.news.NewsDetail;
 import com.fly.tour.common.mvvm.model.BaseModel;
-
-import javax.inject.Inject;
 
 import io.reactivex.Observable;
 

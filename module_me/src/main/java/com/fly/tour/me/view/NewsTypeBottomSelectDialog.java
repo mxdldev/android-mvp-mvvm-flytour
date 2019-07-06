@@ -15,7 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.util.DisplayUtil;
 import com.fly.tour.me.R;

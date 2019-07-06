@@ -6,12 +6,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.widget.TextView;
-import com.fly.tour.api.news.entity.NewsDetail;
+import com.fly.tour.api.news.NewsDetail;
 import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.common.event.KeyCode;
 import com.fly.tour.news.mvvm.factory.NewsViewModelFactory;
 import com.fly.tour.news.mvvm.viewmodel.NewsDetailViewModel;
-import com.fly.tour.trip.R;
 
 public class NewsDetailActivity extends BaseMvvmActivity<NewsDetailViewModel>{
     public static void startNewsDetailActivity(Context context,int id){

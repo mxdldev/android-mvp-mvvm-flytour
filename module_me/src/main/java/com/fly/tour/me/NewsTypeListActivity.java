@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.event.RequestCode;
 import com.fly.tour.common.mvvm.BaseMvvmRefreshActivity;
 import com.fly.tour.common.util.ToastUtil;

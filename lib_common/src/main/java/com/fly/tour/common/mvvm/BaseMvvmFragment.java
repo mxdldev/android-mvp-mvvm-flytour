@@ -49,7 +49,7 @@ public abstract class BaseMvvmFragment<VM extends BaseViewModel> extends BaseFra
         mViewModel.getUC().getShowTransLoadingViewEvent().observe(this,  new Observer<Boolean>() {
             @Override
             public void onChanged(@Nullable Boolean show) {
-                KLog.v("MYTAG","view showTransLoadingView start...");
+                KLog.v("MYTAG","view postShowTransLoadingViewEvent start...");
                 showTransLoadingView(show);
             }
         });

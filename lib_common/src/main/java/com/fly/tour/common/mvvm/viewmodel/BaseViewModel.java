@@ -86,30 +86,30 @@ public class BaseViewModel<M extends BaseModel> extends AndroidViewModel impleme
         public static String BUNDLE = "BUNDLE";
     }
 
-    public void showInitLoadView(boolean show) {
+    public void postShowInitLoadViewEvent(boolean show) {
         if (mUIChangeLiveData != null) {
             mUIChangeLiveData.showInitLoadViewEvent.postValue(show);
         }
     }
 
-    public void showNoDataView(boolean show) {
+    public void postShowNoDataViewEvent(boolean show) {
         if (mUIChangeLiveData != null) {
             mUIChangeLiveData.showNoDataViewEvent.postValue(show);
         }
     }
 
-    public void showTransLoadingView(boolean show) {
+    public void postShowTransLoadingViewEvent(boolean show) {
         if (mUIChangeLiveData != null) {
             mUIChangeLiveData.showTransLoadingViewEvent.postValue(show);
         }
     }
 
-    public void showNetWorkErrView(boolean show) {
+    public void postShowNetWorkErrViewEvent(boolean show) {
         if (mUIChangeLiveData != null) {
             mUIChangeLiveData.showNetWorkErrViewEvent.postValue(show);
         }
     }
-    public void startActivity(Class<?> clz, Bundle bundle) {
+    public void postStartActivityEvent(Class<?> clz, Bundle bundle) {
         Map<String, Object> params = new HashMap<>();
         params.put(ParameterField.CLASS, clz);
         if (bundle != null) {
@@ -119,12 +119,12 @@ public class BaseViewModel<M extends BaseModel> extends AndroidViewModel impleme
     }
 
 
-    public void finishActivity() {
+    public void postFinishActivityEvent() {
         mUIChangeLiveData.finishActivityEvent.call();
     }
 
 
-    public void onBackPressed() {
+    public void postOnBackPressedEvent() {
         mUIChangeLiveData.onBackPressedEvent.call();
     }
 
@@ -170,6 +170,4 @@ public class BaseViewModel<M extends BaseModel> extends AndroidViewModel impleme
             mModel.onCleared();
         }
     }
-
-
 }

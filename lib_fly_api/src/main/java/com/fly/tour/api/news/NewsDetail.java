@@ -1,4 +1,4 @@
-package com.fly.tour.api.news.entity;
+package com.fly.tour.api.news;
 
 /**
  * Description: <NewsDetail><br>

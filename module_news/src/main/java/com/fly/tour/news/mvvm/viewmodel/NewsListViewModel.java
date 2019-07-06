@@ -4,8 +4,8 @@ import android.app.Application;
 import android.support.annotation.NonNull;
 
 import com.fly.tour.api.dto.RespDTO;
-import com.fly.tour.api.news.entity.NewsDetail;
-import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel;
+import com.fly.tour.api.news.NewsDetail;
+import com.fly.tour.common.mvvm.viewmodel.BaseViewRefreshModel;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.news.mvvm.model.NewsListModel;
 
@@ -21,7 +21,7 @@ import io.reactivex.disposables.Disposable;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsListModel> {
+public class NewsListViewModel extends BaseViewRefreshModel<NewsDetail, NewsListModel> {
     private int newsType = 0;
 
     public NewsListViewModel(@NonNull Application application, NewsListModel model) {
@@ -29,36 +29,36 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
     }
 
     public void refreshData() {
-        showNoDataView(false);
+        postShowNoDataViewEvent(false);
         if (!NetUtil.checkNetToast()) {
-            showNetWorkErrView(true);
+            postShowNetWorkErrViewEvent(true);
             return;
         }
         mModel.getListNewsByType(newsType).subscribe(new Observer<RespDTO<List<NewsDetail>>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                showInitLoadView(true);
+                postShowInitLoadViewEvent(true);
             }
 
             @Override
             public void onNext(RespDTO<List<NewsDetail>> listRespDTO) {
                 List<NewsDetail> datailList = listRespDTO.data;
                 if (datailList != null && datailList.size() > 0) {
-                    refreshData(datailList);
+                    postRefreshDataEvent(datailList);
                 } else {
-                    showNoDataView(true);
+                    postShowNoDataViewEvent(true);
                 }
-                stopRefresh();
+                postStopRefreshEvent();
             }
 
             @Override
             public void onError(Throwable e) {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
         });
     }
@@ -74,18 +74,18 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
             public void onNext(RespDTO<List<NewsDetail>> listRespDTO) {
                 List<NewsDetail> datailList = listRespDTO.data;
                 if (datailList != null && datailList.size() > 0) {
-                    loadMore(datailList);
+                    postLoadMoreEvent(datailList);
                 }
             }
 
             @Override
             public void onError(Throwable e) {
-                stopLoadMore();
+                postStopLoadMoreEvent();
             }
 
             @Override
             public void onComplete() {
-                stopLoadMore();
+                postStopLoadMoreEvent();
             }
         });
     }

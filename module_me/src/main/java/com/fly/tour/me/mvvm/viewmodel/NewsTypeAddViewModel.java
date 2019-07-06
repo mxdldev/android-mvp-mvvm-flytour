@@ -1,13 +1,12 @@
 package com.fly.tour.me.mvvm.viewmodel;
 
 import android.app.Application;
-import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.ExceptionHandler;
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.event.SingleLiveEvent;
 import com.fly.tour.common.mvvm.viewmodel.BaseViewModel;
 import com.fly.tour.common.util.DateUtil;
@@ -45,8 +44,8 @@ public class NewsTypeAddViewModel extends BaseViewModel<NewsTypeAddModel> {
         mModel.addNewsType(newsType).doOnSubscribe(this).subscribe(new Observer<RespDTO<NewsType>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                KLog.v("MYTAG","viewmodel showTransLoadingView start...");
-                showTransLoadingView(true);
+                KLog.v("MYTAG","viewmodel postShowTransLoadingViewEvent start...");
+                postShowTransLoadingViewEvent(true);
             }
 
             @Override
@@ -62,12 +61,12 @@ public class NewsTypeAddViewModel extends BaseViewModel<NewsTypeAddModel> {
 
             @Override
             public void onError(Throwable e) {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
         });
     }

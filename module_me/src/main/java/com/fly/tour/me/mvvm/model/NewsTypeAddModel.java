@@ -6,7 +6,7 @@ import com.fly.tour.api.NewsTypeService;
 import com.fly.tour.api.RetrofitManager;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.RxAdapter;
-import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.api.news.NewsType;
 import com.fly.tour.common.mvvm.model.BaseModel;
 
 import io.reactivex.Observable;
