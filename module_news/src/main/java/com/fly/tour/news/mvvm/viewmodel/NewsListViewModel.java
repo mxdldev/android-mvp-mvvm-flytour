@@ -29,15 +29,15 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
     }
 
     public void refreshData() {
-        showNoDataView(false);
+        postShowNoDataViewEvent(false);
         if (!NetUtil.checkNetToast()) {
-            showNetWorkErrView(true);
+            postShowNetWorkErrViewEvent(true);
             return;
         }
         mModel.getListNewsByType(newsType).subscribe(new Observer<RespDTO<List<NewsDetail>>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                showInitLoadView(true);
+                postShowInitLoadViewEvent(true);
             }
 
             @Override
@@ -47,19 +47,19 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
                     mList.clear();
                     mList.addAll(datailList);
                 } else {
-                    showNoDataView(true);
+                    postShowNoDataViewEvent(true);
                 }
-                stopRefresh();
+                postStopRefreshEvent();
             }
 
             @Override
             public void onError(Throwable e) {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
         });
     }
@@ -82,12 +82,12 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
 
             @Override
             public void onError(Throwable e) {
-                stopLoadMore();
+                postStopLoadMoreEvent();
             }
 
             @Override
             public void onComplete() {
-                stopLoadMore();
+                postStopLoadMoreEvent();
             }
         });
     }

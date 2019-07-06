@@ -4,7 +4,6 @@ import android.app.Application;
 import android.databinding.ObservableArrayList;
 import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
-
 import com.fly.tour.common.binding.command.BindingAction;
 import com.fly.tour.common.binding.command.BindingCommand;
 import com.fly.tour.common.event.SingleLiveEvent;
@@ -57,17 +56,17 @@ public abstract class BaseRefreshViewModel<T, M extends BaseModel> extends BaseV
             return mStopLoadMoreLiveEvent = createLiveData(mStopLoadMoreLiveEvent);
         }
     }
-    public void stopRefresh(){
+    public void postStopRefreshEvent(){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.getStopRefresLiveEvent().call();
         }
     }
-    public void autoRefresh(){
+    public void postAutoRefreshEvent(){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.getAutoRefresLiveEvent().call();
         }
     }
-    public void stopLoadMore(){
+    public void postStopLoadMoreEvent(){
         if(mUIChangeRefreshLiveData != null){
             mUIChangeRefreshLiveData.mStopLoadMoreLiveEvent.call();
         }

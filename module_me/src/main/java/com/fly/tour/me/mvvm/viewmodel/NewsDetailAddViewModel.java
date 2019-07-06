@@ -1,7 +1,6 @@
 package com.fly.tour.me.mvvm.viewmodel;
 
 import android.app.Application;
-import android.content.Context;
 import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
@@ -21,9 +20,6 @@ import com.fly.tour.me.mvvm.model.NewsDetailAddModel;
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
-import java.util.Map;
-
-import javax.inject.Inject;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -72,15 +68,15 @@ public class NewsDetailAddViewModel extends BaseViewModel<NewsDetailAddModel> {
         mModel.addNewsDetail(mNewsType.getId(), newsTitle.get(), newsContent.get()).subscribe(new Observer<RespDTO<NewsDetail>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                showTransLoadingView(true);
+                postShowTransLoadingViewEvent(true);
             }
 
             @Override
             public void onNext(RespDTO<NewsDetail> newsDetailRespDTO) {
                 if (newsDetailRespDTO.code == ExceptionHandler.APP_ERROR.SUCC) {
                     ToastUtil.showToast("添加成功");
-                    showTransLoadingView(false);
-                    finishActivity();
+                    postShowTransLoadingViewEvent(false);
+                    postFinishActivityEvent();
                     EventBus.getDefault().post(new NewsDetailCurdEvent(mNewsType.getId()));
                 } else {
                     ToastUtil.showToast("添加失败");
@@ -89,12 +85,12 @@ public class NewsDetailAddViewModel extends BaseViewModel<NewsDetailAddModel> {
 
             @Override
             public void onError(Throwable e) {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
         });
     }

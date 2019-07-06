@@ -46,8 +46,8 @@ public class NewsTypeAddViewModel extends BaseViewModel<NewsTypeAddModel> {
         mModel.addNewsType(newsType).doOnSubscribe(this).subscribe(new Observer<RespDTO<NewsType>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                KLog.v("MYTAG","viewmodel showTransLoadingView start...");
-                showTransLoadingView(true);
+                KLog.v("MYTAG","viewmodel postShowTransLoadingViewEvent start...");
+                postShowTransLoadingViewEvent(true);
             }
 
             @Override
@@ -63,12 +63,12 @@ public class NewsTypeAddViewModel extends BaseViewModel<NewsTypeAddModel> {
 
             @Override
             public void onError(Throwable e) {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
         });
     }

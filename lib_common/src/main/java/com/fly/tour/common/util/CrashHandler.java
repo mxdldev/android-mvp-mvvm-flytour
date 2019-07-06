@@ -115,7 +115,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
       // ComponentName cn = new ComponentName(mContext.getPackageName(), className);
       // intent.setComponent(cn);
       // intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-      // mContext.startActivity(intent);
+      // mContext.postStartActivityEvent(intent);
 
       String packageName = mContext.getPackageName();
       // Log.v("TEST","packageName:"+packageName);

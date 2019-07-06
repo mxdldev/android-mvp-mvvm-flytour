@@ -40,9 +40,9 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType, NewsTy
 
     @Override
     public void refreshData() {
-        showNoDataView(false);
+        postShowNoDataViewEvent(false);
         if (isfirst) {
-            showInitLoadView(true);
+            postShowInitLoadViewEvent(true);
         }
         mModel.getListNewsType().doOnSubscribe(this).subscribe(new Observer<RespDTO<List<NewsType>>>() {
             @Override
@@ -56,19 +56,19 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType, NewsTy
                     mList.clear();
                     mList.addAll(listNewsType);
                 } else {
-                    showNoDataView(true);
+                    postShowNoDataViewEvent(true);
                 }
                 if (isfirst) {
                     isfirst = false;
-                    showInitLoadView(false);
+                    postShowInitLoadViewEvent(false);
                 } else {
-                    stopRefresh();
+                    postStopRefreshEvent();
                 }
             }
 
             @Override
             public void onError(Throwable e) {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
 
             @Override
@@ -91,12 +91,12 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType, NewsTy
                 if (listNewsType != null && listNewsType.size() > 0) {
                     mList.addAll(listNewsType);
                 }
-                stopLoadMore();
+                postStopLoadMoreEvent();
             }
 
             @Override
             public void onError(Throwable e) {
-                stopLoadMore();
+                postStopLoadMoreEvent();
             }
 
             @Override
@@ -110,14 +110,14 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType, NewsTy
         mModel.deleteNewsTypeById(id).subscribe(new Observer<RespDTO>() {
             @Override
             public void onSubscribe(Disposable d) {
-                showTransLoadingView(true);
+                postShowTransLoadingViewEvent(true);
             }
 
             @Override
             public void onNext(RespDTO respDTO) {
                 if (respDTO.code == ExceptionHandler.APP_ERROR.SUCC) {
                     ToastUtil.showToast("删除成功");
-                    autoRefresh();
+                    postAutoRefreshEvent();
                     EventBus.getDefault().post(new NewsTypeCrudEvent(EventCode.MeCode.NEWS_TYPE_DELETE));
                 } else {
                     ToastUtil.showToast("删除失败");
@@ -126,12 +126,12 @@ public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType, NewsTy
 
             @Override
             public void onError(Throwable e) {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showTransLoadingView(false);
+                postShowTransLoadingViewEvent(false);
             }
         });
     }

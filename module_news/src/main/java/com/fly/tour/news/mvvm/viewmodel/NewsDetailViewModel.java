@@ -1,19 +1,13 @@
 package com.fly.tour.news.mvvm.viewmodel;
 
 import android.app.Application;
-import android.databinding.ObservableArrayList;
 import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.news.entity.NewsDetail;
-import com.fly.tour.common.event.SingleLiveEvent;
 import com.fly.tour.common.mvvm.viewmodel.BaseViewModel;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.news.mvvm.model.NewsDetailModel;
-
-import java.util.Map;
-
-import javax.inject.Inject;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -33,13 +27,13 @@ public class NewsDetailViewModel extends BaseViewModel<NewsDetailModel> {
 
     public void getNewsDetailById(final int id) {
         if (!NetUtil.checkNetToast()) {
-            showNetWorkErrView(true);
+            postShowNetWorkErrViewEvent(true);
             return;
         }
         mModel.getNewsDetailById(id).subscribe(new Observer<RespDTO<NewsDetail>>() {
             @Override
             public void onSubscribe(Disposable d) {
-                showInitLoadView(true);
+                postShowInitLoadViewEvent(true);
             }
 
             @Override
@@ -49,18 +43,18 @@ public class NewsDetailViewModel extends BaseViewModel<NewsDetailModel> {
                     //todo getNewsDetailSingleLiveEvent().postValue(newsDetail);
                     mNewsDetails.set(newsDetail);
                 } else {
-                    showNoDataView(true);
+                    postShowNoDataViewEvent(true);
                 }
             }
 
             @Override
             public void onError(Throwable e) {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
 
             @Override
             public void onComplete() {
-                showInitLoadView(false);
+                postShowInitLoadViewEvent(false);
             }
         });
     }
