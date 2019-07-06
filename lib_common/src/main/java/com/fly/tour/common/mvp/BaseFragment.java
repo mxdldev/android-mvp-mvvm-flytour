@@ -1,4 +1,4 @@
-package com.fly.tour.common.mvvm;
+package com.fly.tour.common.mvp;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,13 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.fly.tour.common.R;
 import com.fly.tour.common.event.common.BaseFragmentEvent;
-import com.fly.tour.common.mvvm.view.IBaseView;
+import com.fly.tour.common.mvp.view.BaseView;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.common.util.log.KLog;
 import com.fly.tour.common.view.LoadingInitView;
@@ -30,12 +29,12 @@ import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Description: <BaseFragment><br>
- * Author:      mxdl<br>
- * Date:        2019/06/30<br>
+ * Author:      gxl<br>
+ * Date:        2018/1/15<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseFragment extends Fragment implements IBaseView {
+public abstract class BaseFragment extends Fragment implements BaseView {
     protected static final String TAG = BaseFragment.class.getSimpleName();
     protected RxAppCompatActivity mActivity;
     protected View mView;
@@ -48,7 +47,7 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     protected LoadingTransView mLoadingTransView;
 
     private ViewStub mViewStubToolbar;
-    protected RelativeLayout mViewStubContent;
+    private ViewStub mViewStubContent;
     private ViewStub mViewStubInitLoading;
     private ViewStub mViewStubTransLoading;
     private ViewStub mViewStubNoData;
@@ -67,14 +66,16 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.fragment_root1, container, false);
+        mView = inflater.inflate(R.layout.fragment_root, container, false);
         initCommonView(mView);
         initView(mView);
         initListener();
         return mView;
     }
+
     public void initCommonView(View view) {
         mViewStubToolbar = view.findViewById(R.id.view_stub_toolbar);
+        mViewStubContent = view.findViewById(R.id.view_stub_content);
         mViewStubContent = view.findViewById(R.id.view_stub_content);
         mViewStubInitLoading = view.findViewById(R.id.view_stub_init_loading);
         mViewStubTransLoading = view.findViewById(R.id.view_stub_trans_loading);
@@ -86,11 +87,10 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
             View viewTooBbar = mViewStubToolbar.inflate();
             initTooBar(viewTooBbar);
         }
-        initConentView(mViewStubContent);
+        mViewStubContent.setLayoutResource(onBindLayout());
+        mViewStubContent.inflate();
     }
-    public void initConentView(ViewGroup root){
-        LayoutInflater.from(mActivity).inflate(onBindLayout(), root, true);
-    }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -185,7 +185,43 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
         return R.layout.common_toolbar;
     }
 
-    public void showInitLoadView(boolean show) {
+    public void showInitLoadView() {
+        showInitLoadView(true);
+    }
+
+    public void hideInitLoadView() {
+        showInitLoadView(false);
+    }
+
+    @Override
+    public void showTransLoadingView() {
+        showTransLoadingView(true);
+    }
+
+    @Override
+    public void hideTransLoadingView() {
+        showTransLoadingView(false);
+    }
+
+    public void showNoDataView() {
+        showNoDataView(true);
+    }
+    public void showNoDataView(int resid) {
+        showNoDataView(true,resid);
+    }
+    public void hideNoDataView() {
+        showNoDataView(false);
+    }
+
+    public void showNetWorkErrView() {
+        showNetWorkErrView(true);
+    }
+
+    public void hideNetWorkErrView() {
+        showNetWorkErrView(false);
+    }
+
+    private void showInitLoadView(boolean show) {
         if (mLoadingInitView == null) {
             View view = mViewStubInitLoading.inflate();
             mLoadingInitView = view.findViewById(R.id.view_init_loading);
@@ -195,7 +231,7 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     }
 
 
-    public void showNetWorkErrView(boolean show) {
+    private void showNetWorkErrView(boolean show) {
         if (mNetErrorView == null) {
             View view = mViewStubError.inflate();
             mNetErrorView = view.findViewById(R.id.view_net_error);
@@ -205,7 +241,7 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
                     if (!NetUtil.checkNetToast()) {
                         return;
                     }
-                    showNetWorkErrView(false);
+                    hideNetWorkErrView();
                     initData();
                 }
             });
@@ -214,20 +250,20 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     }
 
 
-    public void showNoDataView(boolean show) {
+    private void showNoDataView(boolean show) {
         if (mNoDataView == null) {
             View view = mViewStubNoData.inflate();
             mNoDataView = view.findViewById(R.id.view_no_data);
         }
         mNoDataView.setVisibility(show ? View.VISIBLE : View.GONE);
     }
-    public void showNoDataView(boolean show,int resid) {
+    private void showNoDataView(boolean show,int resid) {
         showNoDataView(show);
         if(show){
             mNoDataView.setNoDataView(resid);
         }
     }
-    public void showTransLoadingView(boolean show) {
+    private void showTransLoadingView(boolean show) {
         if (mLoadingTransView == null) {
             View view = mViewStubTransLoading.inflate();
             mLoadingTransView = view.findViewById(R.id.view_trans_loading);

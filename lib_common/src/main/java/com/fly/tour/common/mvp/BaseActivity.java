@@ -1,24 +1,20 @@
-package com.fly.tour.common.mvvm;
+package com.fly.tour.common.mvp;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.ViewStub;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.fly.tour.common.R;
 import com.fly.tour.common.event.common.BaseActivityEvent;
 import com.fly.tour.common.manager.ActivityManager;
-import com.fly.tour.common.mvvm.view.IBaseView;
+import com.fly.tour.common.mvp.view.BaseView;
 import com.fly.tour.common.util.NetUtil;
 import com.fly.tour.common.view.LoadingInitView;
 import com.fly.tour.common.view.LoadingTransView;
@@ -32,12 +28,12 @@ import org.greenrobot.eventbus.ThreadMode;
 
 /**
  * Description: <BaseActivity><br>
- * Author:      mxdl<br>
- * Date:        2019/06/30<br>
+ * Author:      gxl<br>
+ * Date:        2018/1/16<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseActivity extends RxAppCompatActivity implements IBaseView {
+public abstract class BaseActivity extends RxAppCompatActivity implements BaseView {
     protected static final String TAG = BaseActivity.class.getSimpleName();
     protected TextView mTxtTitle;
     protected Toolbar mToolbar;
@@ -45,22 +41,19 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
     protected NoDataView mNoDataView;
     protected LoadingInitView mLoadingInitView;
     protected LoadingTransView mLoadingTransView;
-    private RelativeLayout mViewStubContent;
     private ViewStub mViewStubToolbar;
+    private ViewStub mViewStubContent;
     private ViewStub mViewStubInitLoading;
     private ViewStub mViewStubTransLoading;
     private ViewStub mViewStubNoData;
     private ViewStub mViewStubError;
-    private ViewGroup mContentView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        super.setContentView(R.layout.activity_root1);
-        mContentView = (ViewGroup) findViewById(android.R.id.content);
+        setContentView(R.layout.activity_root);
         initCommonView();
-        initContentView();
         ARouter.getInstance().inject(this);
         initView();
         initListener();
@@ -73,6 +66,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
     protected void initCommonView() {
         mViewStubToolbar = findViewById(R.id.view_stub_toolbar);
         mViewStubContent = findViewById(R.id.view_stub_content);
+        mViewStubContent = findViewById(R.id.view_stub_content);
         mViewStubInitLoading = findViewById(R.id.view_stub_init_loading);
         mViewStubTransLoading = findViewById(R.id.view_stub_trans_loading);
         mViewStubError = findViewById(R.id.view_stub_error);
@@ -83,22 +77,8 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
             View view = mViewStubToolbar.inflate();
             initToolbar(view);
         }
-    }
-    @Override
-    public void setContentView(@LayoutRes int layoutResID) {
-        if (mViewStubContent != null) {
-            initContentView(layoutResID);
-        }
-    }
-    public void initContentView(){
-        initContentView(onBindLayout());
-    }
-    private void initContentView(@LayoutRes int layoutResID) {
-        View view = LayoutInflater.from(this).inflate(layoutResID, mViewStubContent, false);
-        mViewStubContent.setId(android.R.id.content);
-        mContentView.setId(View.NO_ID);
-        mViewStubContent.removeAllViews();
-        mViewStubContent.addView(view);
+        mViewStubContent.setLayoutResource(onBindLayout());
+        mViewStubContent.inflate();
     }
 
     protected void initToolbar(View view) {
@@ -162,7 +142,45 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
         return true;
     }
 
-    public void showInitLoadView(boolean show) {
+    public void showInitLoadView() {
+        showInitLoadView(true);
+    }
+
+    public void hideInitLoadView() {
+        showInitLoadView(false);
+    }
+
+    @Override
+    public void showTransLoadingView() {
+        showTransLoadingView(true);
+    }
+
+    @Override
+    public void hideTransLoadingView() {
+        showTransLoadingView(false);
+    }
+
+    public void showNoDataView() {
+        showNoDataView(true);
+    }
+
+    public void showNoDataView(int resid) {
+        showNoDataView(true, resid);
+    }
+
+    public void hideNoDataView() {
+        showNoDataView(false);
+    }
+
+    public void hideNetWorkErrView() {
+        showNetWorkErrView(false);
+    }
+
+    public void showNetWorkErrView() {
+        showNetWorkErrView(true);
+    }
+
+    private void showInitLoadView(boolean show) {
         if (mLoadingInitView == null) {
             View view = mViewStubInitLoading.inflate();
             mLoadingInitView = view.findViewById(R.id.view_init_loading);
@@ -172,7 +190,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
     }
 
 
-    public void showNetWorkErrView(boolean show) {
+    private void showNetWorkErrView(boolean show) {
         if (mNetErrorView == null) {
             View view = mViewStubError.inflate();
             mNetErrorView = view.findViewById(R.id.view_net_error);
@@ -182,7 +200,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
                     if (!NetUtil.checkNetToast()) {
                         return;
                     }
-                    showNetWorkErrView(false);
+                    hideNetWorkErrView();
                     initData();
                 }
             });
@@ -191,7 +209,7 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
     }
 
 
-    public void showNoDataView(boolean show) {
+    private void showNoDataView(boolean show) {
         if (mNoDataView == null) {
             View view = mViewStubNoData.inflate();
             mNoDataView = view.findViewById(R.id.view_no_data);
@@ -199,8 +217,14 @@ public abstract class BaseActivity extends RxAppCompatActivity implements IBaseV
         mNoDataView.setVisibility(show ? View.VISIBLE : View.GONE);
     }
 
+    private void showNoDataView(boolean show, int resid) {
+        showNoDataView(show);
+        if (show) {
+            mNoDataView.setNoDataView(resid);
+        }
+    }
 
-    public void showTransLoadingView(boolean show) {
+    private void showTransLoadingView(boolean show) {
         if (mLoadingTransView == null) {
             View view = mViewStubTransLoading.inflate();
             mLoadingTransView = view.findViewById(R.id.view_trans_loading);

@@ -12,29 +12,6 @@ import com.fly.tour.common.event.RequestCode;
 import com.fly.tour.common.mvvm.BaseMvvmRefreshActivity;
 import com.fly.tour.common.util.ObservableListUtil;
 import com.fly.tour.common.view.CommonDialogFragment;
-<<<<<<< HEAD
-import com.fly.tour.db.entity.NewsType;
-import com.fly.tour.me.adapter.NewsTypeShowAdapter;
-import com.fly.tour.me.contract.NewsTypeListContract;
-import com.fly.tour.me.inject.component.DaggerNewsTypeListComponent;
-import com.fly.tour.me.inject.module.NewsTypeListModule;
-import com.fly.tour.me.model.NewsTypeListModel;
-import com.fly.tour.me.presenter.NewsTypeListPresenter;
-
-import java.util.List;
-/**
- * Description: <NewsTypeBottomSelectDialog><br>
- * Author:      mxdl<br>
- * Date:        2019/05/25<br>
- * Version:     V1.0.0<br>
- * Update:     <br>
- */
-public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel, NewsTypeListContract.View<NewsType>, NewsTypeListPresenter, NewsType> implements NewsTypeListContract.View<NewsType> {
-
-    private RecyclerView mRecViewNewsType;
-    private NewsTypeShowAdapter mNewsTypeShowAdapter;
-
-=======
 import com.fly.tour.me.adapter.NewsTypeShowBindAdapter;
 import com.fly.tour.me.databinding.ActivityNewsTypeListBinding;
 import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
@@ -50,7 +27,6 @@ import com.refresh.lib.DaisyRefreshLayout;
  */
 public class NewsTypeListActivity extends BaseMvvmRefreshActivity<ActivityNewsTypeListBinding, NewsTypeListViewModel> {
     private NewsTypeShowBindAdapter mNewsTypeShowAdapter;
->>>>>>> 4.1.0
     public int onBindLayout() {
         return R.layout.activity_news_type_list;
     }
