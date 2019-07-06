@@ -1,7 +1,7 @@
 package com.fly.tour;
 
+import com.fly.tour.api.RetrofitManager;
 import com.fly.tour.common.BaseApplication;
-import com.fly.tour.common.manager.NewsDBManager;
 
 /**
  * Description: <MyApplication><br>
@@ -14,6 +14,7 @@ public class MyApplication extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        NewsDBManager.getInstance(this).initNewsDB();
+        //NewsDBManager.getInstance(this).initNewsDB();
+        RetrofitManager.init(this);
     }
 }

@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetDialogFragment;
@@ -14,18 +15,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.fly.tour.common.base.BaseAdapter;
+import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.util.DisplayUtil;
-import com.fly.tour.db.dao.NewsTypeDao;
-import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.R;
 import com.fly.tour.me.adapter.NewsTypeSelectAdapter;
-import com.fly.tour.me.model.NewsTypeListModel;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Description: <NewsTypeBottomSelectDialog><br>
  * Author:      mxdl<br>
+<<<<<<< HEAD
  * Date:        2019/02/25<br>
+=======
+ * Date:        2019/07/02<br>
+>>>>>>> 4.1.0
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
@@ -38,8 +43,12 @@ public class NewsTypeBottomSelectDialog extends BottomSheetDialogFragment {
         mItemClickListener = itemClickListener;
     }
 
-    public static NewsTypeBottomSelectDialog newInstance() {
-        return new NewsTypeBottomSelectDialog();
+    public static NewsTypeBottomSelectDialog newInstance(List<NewsType> list) {
+        NewsTypeBottomSelectDialog newsTypeBottomSelectDialog = new NewsTypeBottomSelectDialog();
+        Bundle args = new Bundle();
+        args.putParcelableArrayList("newstype", (ArrayList<? extends Parcelable>) list);
+        newsTypeBottomSelectDialog.setArguments(args);
+        return newsTypeBottomSelectDialog;
     }
 
     @Override
@@ -75,7 +84,8 @@ public class NewsTypeBottomSelectDialog extends BottomSheetDialogFragment {
                 c.drawLine(0,0,0,DisplayUtil.dip2px(1), paint);
             }
         });
-        adapter.refresh(new NewsTypeListModel(getContext(),new NewsTypeDao(getContext())).getListNewsType());
+
+        adapter.refresh(getArguments().<NewsType>getParcelableArrayList("newstype"));
         adapter.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsType>() {
             @Override
             public void onItemClick(NewsType newsType, int position) {

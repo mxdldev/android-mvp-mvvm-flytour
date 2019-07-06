@@ -11,7 +11,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lib_common" />
             <option value="$PROJECT_DIR$/lib_fly_api" />
-            <option value="$PROJECT_DIR$/lib_fly_db" />
             <option value="$PROJECT_DIR$/lib_refresh_layout" />
             <option value="$PROJECT_DIR$/module_app" />
             <option value="$PROJECT_DIR$/module_find" />

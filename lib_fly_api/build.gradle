@@ -1,42 +1,53 @@
 apply plugin: 'com.android.library'
+
 android {
-    compileSdkVersion build_versions.target_sdk
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
     defaultConfig {
-        minSdkVersion build_versions.min_sdk
-        targetSdkVersion build_versions.target_sdk
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-        buildConfigField "String", "FLYHEADER_API_KEY", '"1da11d91-7ade-4da1-855d-24adfe39d173"'
-        buildConfigField "String", "FLYHEADER_CORPID", '"1001"' // 企业编号(corpid)
-        buildConfigField "String", "FLYHEADER_VERSION", '"1.0"' // API协议版本号
-        buildConfigField "String", "FLYHEADER_PRODOCT_ID", '"1020"' // 产品编号
-        buildConfigField "String", "URL_HOST", '"https://192.168.31.105/"'
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
     }
-
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            if (isModule.toBoolean()) {
+            } else {
+                resources {
+                    //正式版本时，排除debug文件夹下所有调试文件
+                    exclude 'src/debug/*'
+                }
+            }
+        }
+    }
     buildTypes {
         release {
-            consumerProguardFiles  'proguard-rules.pro'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    api deps.junit
-    api deps.testrunner
-    api deps.testespresso
-    api deps.arouter_api
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.support["appcompat-v7"]
 
-    api deps.rxjava2
-    api deps.rxandroid
-    api deps.adapter_rxjava2
-    api deps.converter_gson
-    api deps.logging_interceptor
-    api deps.support.multidex
-    api deps.rxlifecycle
-    api deps.rxlifecycle_android
-    api deps.rxlifecycle_components
+    //network
+    api rootProject.ext.dependencies.okhttp
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies["converter-gson"]
+    api rootProject.ext.dependencies["adapter-rxjava"]
+    api rootProject.ext.dependencies["logging-interceptor"]
+
+    //json解析
+    api rootProject.ext.dependencies.gson
+
+    //rx管理View的生命周期
+    api(rootProject.ext.dependencies.rxlifecycle) {
+        exclude group: 'com.android.support'
+    }
+    api(rootProject.ext.dependencies["rxlifecycle-components"]) {
+        exclude group: 'com.android.support'
+    }
 }

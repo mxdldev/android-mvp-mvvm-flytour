@@ -4,18 +4,14 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
-import com.alibaba.android.arouter.launcher.ARouter;
-import com.fly.tour.common.base.BaseActivity;
-import com.fly.tour.common.manager.NewsDBManager;
+import com.fly.tour.common.mvvm.BaseActivity;
 import com.fly.tour.common.provider.IFindProvider;
 import com.fly.tour.common.provider.IMeProvider;
 import com.fly.tour.common.provider.INewsProvider;
 import com.fly.tour.main.entity.MainChannel;
-import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 /**
  * Description: <BaseRefreshLayout><br>

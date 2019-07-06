@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.fly.tour.common.base.BaseAdapter;
+import com.fly.tour.api.newstype.entity.NewsType;
+import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.util.DateUtil;
-import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.R;
 
 /**

@@ -1,18 +1,18 @@
 package com.fly.tour.me;
 
 import android.app.Activity;
+import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.fly.tour.common.base.BaseRefreshActivity;
 import com.fly.tour.common.event.RequestCode;
-import com.fly.tour.common.util.ToastUtil;
+import com.fly.tour.common.mvvm.BaseMvvmRefreshActivity;
+import com.fly.tour.common.util.ObservableListUtil;
 import com.fly.tour.common.view.CommonDialogFragment;
+<<<<<<< HEAD
 import com.fly.tour.db.entity.NewsType;
 import com.fly.tour.me.adapter.NewsTypeShowAdapter;
 import com.fly.tour.me.contract.NewsTypeListContract;
@@ -34,6 +34,23 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
     private RecyclerView mRecViewNewsType;
     private NewsTypeShowAdapter mNewsTypeShowAdapter;
 
+=======
+import com.fly.tour.me.adapter.NewsTypeShowBindAdapter;
+import com.fly.tour.me.databinding.ActivityNewsTypeListBinding;
+import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
+import com.fly.tour.me.mvvm.viewmodel.NewsTypeListViewModel;
+import com.refresh.lib.DaisyRefreshLayout;
+
+/**
+ * Description: <NewsTypeListActivity><br>
+ * Author:      mxdl<br>
+ * Date:        2019/07/02<br>
+ * Version:     V1.0.0<br>
+ * Update:     <br>
+ */
+public class NewsTypeListActivity extends BaseMvvmRefreshActivity<ActivityNewsTypeListBinding, NewsTypeListViewModel> {
+    private NewsTypeShowBindAdapter mNewsTypeShowAdapter;
+>>>>>>> 4.1.0
     public int onBindLayout() {
         return R.layout.activity_news_type_list;
     }
@@ -55,27 +72,24 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
     @Override
     public void initView() {
-        mRecViewNewsType = findViewById(R.id.recview);
-        mRecViewNewsType.setLayoutManager(new LinearLayoutManager(this));
-        mNewsTypeShowAdapter = new NewsTypeShowAdapter(this);
-        mRecViewNewsType.setAdapter(mNewsTypeShowAdapter);
+        mNewsTypeShowAdapter = new NewsTypeShowBindAdapter(this, mViewModel.getList());
+        mViewModel.getList().addOnListChangedCallback(ObservableListUtil.getListChangedCallback(mNewsTypeShowAdapter));
+        mBinding.recview.setAdapter(mNewsTypeShowAdapter);
     }
 
     @Override
     public void initListener() {
-
-        mNewsTypeShowAdapter.setDeleteClickLisenter(new NewsTypeShowAdapter.DeleteClickLisenter() {
+        mNewsTypeShowAdapter.setDeleteClickLisenter(new NewsTypeShowBindAdapter.DeleteClickLisenter() {
             @Override
             public void onClickDeleteListener(final int id) {
                 new CommonDialogFragment.Builder().setTitle("信息提示").setDescribe("确定删除吗？").setLeftbtn("取消").setRightbtn("确定").setOnDialogClickListener(new CommonDialogFragment.OnDialogClickListener() {
                     @Override
                     public void onLeftBtnClick(View view) {
-
                     }
 
                     @Override
                     public void onRightBtnClick(View view) {
-                        mPresenter.deleteNewsTypeById(id);
+                        mViewModel.deleteNewsTypeById(id);
                     }
                 }).build().show(getSupportFragmentManager(), "dialog");
             }
@@ -84,54 +98,43 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
 
     @Override
     public void initData() {
-        mPresenter.refreshData();
+        mViewModel.refreshData();
     }
 
-    @Override
-    public void injectPresenter() {
-        DaggerNewsTypeListComponent.builder().newsTypeListModule(new NewsTypeListModule(this)).build().inject(this);
-    }
-
-    @Override
-    protected int onBindRreshLayout() {
-        return R.id.refview_news_type;
-    }
-
-
-    @Override
-    public void onRefreshEvent() {
-        mPresenter.refreshData();
-    }
-
-    @Override
-    public void onLoadMoreEvent() {
-        ToastUtil.showToast("没有更多数据了");
-        stopLoadMore();
-    }
-
-    @Override
-    public void onAutoLoadEvent() {
-
-    }
-
-    @Override
-    public void refreshData(List<NewsType> data) {
-        mNewsTypeShowAdapter.refresh(data);
-    }
-
-    @Override
-    public void loadMoreData(List<NewsType> data) {
-
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         switch (requestCode) {
             case RequestCode.Me.NEWS_TYPE_ADD:
-                if(resultCode == Activity.RESULT_OK){
-                    mPresenter.refreshData();
+                if (resultCode == Activity.RESULT_OK) {
+                    autoLoadData();
                 }
                 break;
         }
+    }
+
+    @Override
+    public Class<NewsTypeListViewModel> onBindViewModel() {
+        return NewsTypeListViewModel.class;
+    }
+
+    @Override
+    public ViewModelProvider.Factory onBindViewModelFactory() {
+        return MeViewModelFactory.getInstance(getApplication());
+    }
+
+    @Override
+    public void initViewObservable() {
+
+    }
+
+    @Override
+    public int onBindVariableId() {
+        return BR.viewModel;
+    }
+
+    @Override
+    public DaisyRefreshLayout getRefreshLayout() {
+        return mBinding.refviewNewsType;
     }
 }

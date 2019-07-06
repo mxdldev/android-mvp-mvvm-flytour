@@ -1,5 +1,8 @@
 package com.fly.tour.news.fragment;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
+import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -9,21 +12,20 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.view.ViewGroup;
 
-import com.fly.tour.common.base.BaseFragment;
+import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
-import com.fly.tour.common.manager.NewsDBManager;
+import com.fly.tour.common.mvvm.BaseMvvmFragment;
 import com.fly.tour.common.util.log.KLog;
-import com.fly.tour.db.entity.NewsType;
-import com.fly.tour.trip.R;
+import com.fly.tour.news.R;
+import com.fly.tour.news.mvvm.factory.NewsViewModelFactory;
+import com.fly.tour.news.mvvm.viewmodel.NewsTypeViewModel;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Handler;
 
 /**
  * Description: <MainNewsFragment><br>
@@ -32,7 +34,7 @@ import java.util.logging.Handler;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class MainNewsFragment extends BaseFragment {
+public class MainNewsFragment extends BaseMvvmFragment<ViewDataBinding,NewsTypeViewModel> {
     private List<String> titles = new ArrayList<>();
     private List<NewsListFragment> mListFragments = new ArrayList<>();
     private TabLayout mTabLayout;
@@ -52,21 +54,20 @@ public class MainNewsFragment extends BaseFragment {
     @Override
     public void initView(View view) {
         mViewPager = view.findViewById(R.id.pager_tour);
-
         mTabLayout = view.findViewById(R.id.layout_tour);
-
-
     }
 
     @Override
     public void initData() {
-
+        mViewModel.getListNewsType();
     }
 
     @Override
     public void initListener() {
-        initNewsListFragment();
         //mViewPager.setOffscreenPageLimit(mListFragments.size());
+    }
+
+    public void initTabLayout() {
         mNewsFragmentAdapter = new NewsFragmentAdapter(getChildFragmentManager());
         mViewPager.setAdapter(mNewsFragmentAdapter);
         mNewsFragmentAdapter.refreshViewPager(mListFragments);
@@ -88,6 +89,46 @@ public class MainNewsFragment extends BaseFragment {
             }
         });
         mTabLayout.setupWithViewPager(mViewPager);
+    }
+
+
+    public void showListNewsType(List<com.fly.tour.api.newstype.entity.NewsType> listNewsType) {
+        KLog.v("MYTAG", "initNewsListFragment start..." + listNewsType.toString());
+        mListFragments.clear();
+        titles.clear();
+        if (listNewsType != null && listNewsType.size() > 0) {
+            for (int i = 0; i < listNewsType.size(); i++) {
+                NewsType newsType = listNewsType.get(i);
+                mListFragments.add(NewsListFragment.newInstance(newsType));
+                titles.add(newsType.getTypename());
+            }
+        }
+    }
+
+    @Override
+    public Class<NewsTypeViewModel> onBindViewModel() {
+        return NewsTypeViewModel.class;
+    }
+
+    @Override
+    public ViewModelProvider.Factory onBindViewModelFactory() {
+        return NewsViewModelFactory.getInstance(mActivity.getApplication());
+    }
+
+    @Override
+    public void initViewObservable() {
+        mViewModel.getListSingleLiveEvent().observe(this, new Observer<List<NewsType>>() {
+            @Override
+            public void onChanged(@Nullable List<NewsType> newsTypes) {
+                showListNewsType(newsTypes);
+                initTabLayout();
+            }
+        });
+    }
+
+    @Override
+    public int onBindVariableId() {
+        return 0;
     }
 
     class NewsFragmentAdapter extends FragmentPagerAdapter {
@@ -141,20 +182,6 @@ public class MainNewsFragment extends BaseFragment {
         }
     }
 
-    private void initNewsListFragment() {
-        List<NewsType> listNewsType = NewsDBManager.getInstance(getContext()).getListNewsType();
-        KLog.v("MYTAG", "initNewsListFragment start..." + listNewsType.toString());
-        mListFragments.clear();
-        titles.clear();
-        if (listNewsType != null && listNewsType.size() > 0) {
-            for (int i = 0; i < listNewsType.size(); i++) {
-                NewsType newsType = listNewsType.get(i);
-                mListFragments.add(NewsListFragment.newInstance(newsType));
-                titles.add(newsType.getTypename());
-            }
-        }
-    }
-
     @Override
     public String getToolbarTitle() {
         return null;
@@ -173,8 +200,7 @@ public class MainNewsFragment extends BaseFragment {
             KLog.v("MYTAG", "ViewPager refresh start...");
             mIsfresh = false;
             mViewPager.setCurrentItem(mListFragments.size() - 1);
-            initNewsListFragment();
-            //mViewPager.setOffscreenPageLimit(mListFragments.size());
+            initData();
             mNewsFragmentAdapter.refreshViewPager(mListFragments);
         }
     }

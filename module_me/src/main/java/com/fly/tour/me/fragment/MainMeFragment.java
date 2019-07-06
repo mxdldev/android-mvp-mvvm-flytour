@@ -3,7 +3,7 @@ package com.fly.tour.me.fragment;
 import android.content.Intent;
 import android.view.View;
 
-import com.fly.tour.common.base.BaseFragment;
+import com.fly.tour.common.mvvm.BaseFragment;
 import com.fly.tour.common.view.SettingBarView;
 import com.fly.tour.me.NewsDetailAddActivity;
 import com.fly.tour.me.NewsTypeListActivity;
@@ -17,7 +17,7 @@ import com.fly.tour.me.R;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class MainMeFragment extends BaseFragment{
+public class MainMeFragment extends BaseFragment {
 
     private SettingBarView mSetNewsType;
     private SettingBarView mSetNewsDetail;

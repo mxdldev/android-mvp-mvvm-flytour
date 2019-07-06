@@ -1,7 +1,8 @@
 package com.fly.tour.find.fragment;
 
 import android.view.View;
-import com.fly.tour.common.base.BaseFragment;
+
+import com.fly.tour.common.mvvm.BaseFragment;
 import com.fly.tour.find.R;
 
 /**

@@ -17,11 +17,19 @@ import com.github.lib.R;
 import com.refresh.lib.contract.PullContract;
 
 /**
+<<<<<<< HEAD
  * Description: <BaseRefreshLayout><br>
  * Author:      mxdl<br>
  * Date:        2019/02/25<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
+=======
+ * Description: <DaisyHeaderView><br>
+ * Author: mxdl<br>
+ * Date: 2019/2/25<br>
+ * Version: V1.0.0<br>
+ * Update: <br>
+>>>>>>> 4.1.0
  */
 public class DaisyHeaderView extends RelativeLayout implements PullContract {
 

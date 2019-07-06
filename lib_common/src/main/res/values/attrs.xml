@@ -11,18 +11,18 @@
         <attr name="outerShadowDx" format="dimension"/>
         <attr name="outerShadowDy" format="dimension"/>
 
-        <attr name="typeface" format="string" />
+        <attr name="typeface" format="string"/>
 
         <attr name="foreground" format="reference|color"/>
         <attr name="backgroundcolor" format="reference|color"/>
 
-        <attr name="strokeWidth" format="dimension" />
-        <attr name="strokeMiter" format="dimension" />
-        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="strokeMiter" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
         <attr name="strokeJoinStyle">
-            <enum name="miter" value="0" />
-            <enum name="bevel" value="1" />
-            <enum name="round" value="2" />
+            <enum name="miter" value="0"/>
+            <enum name="bevel" value="1"/>
+            <enum name="round" value="2"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="ExpandableTextView">
@@ -40,12 +40,24 @@
         <attr name="expandToggleOnTextClick" format="boolean"/>
     </declare-styleable>
     <declare-styleable name="SettingBarView">
-        <attr name="set_left_icon_visable" format="boolean" />
-        <attr name="set_left_icon" format="reference" />
-        <attr name="set_title" format="string" />
-        <attr name="set_content" format="string" />
-        <attr name="set_content_hint" format="string" />
-        <attr name="set_right_icon_visable" format="boolean" />
-        <attr name="set_right_icon" format="reference" />
+        <attr name="set_left_icon_visable" format="boolean"/>
+        <attr name="set_left_icon" format="reference"/>
+        <attr name="set_title" format="string"/>
+        <attr name="set_content" format="string"/>
+        <attr name="set_content_hint" format="string"/>
+        <attr name="set_right_icon_visable" format="boolean"/>
+        <attr name="set_right_icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="DaisyRefreshLayout">
+        <attr name="onRefreshCommand" format="reference"/>
+        <attr name="onLoadMoreCommand" format="reference"/>
+        <attr name="onAutoRefreshCommand" format="reference"/>
+        <attr name="refreshing" format="boolean"/>
+        <attr name="loadmore" format="boolean"/>
+        <attr name="autorefresh" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RecyclerView">
+        <attr name="linearLayoutManager" format="boolean"/>
     </declare-styleable>
 </resources>

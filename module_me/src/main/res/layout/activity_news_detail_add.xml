@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.fly.tour.me.mvvm.viewmodel.NewsDetailAddViewModel"/>
+    </data>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
@@ -9,8 +15,10 @@
         android:id="@+id/view_me_set_news_type"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        app:onClickSettingBarView="@{viewModel.settingBarClickCommand}"
         app:set_content_hint="请选择"
         app:set_title="新闻类型"
+        app:content="@={viewModel.newsType}"
         />
 
     <com.fly.tour.common.view.SettingBarView
@@ -19,6 +27,8 @@
         android:layout_height="40dp"
         app:set_content_hint="请输入"
         app:set_title="标题"
+        app:enableEditContext="@{true}"
+        app:content="@={viewModel.newsTitle}"
         />
     <RelativeLayout
         android:id="@+id/layout_setting_bar"
@@ -60,6 +70,7 @@
             android:background="@null"
             android:ellipsize="end"
             android:gravity="top"
+            android:text="@={viewModel.newsContent}"
             />
     </RelativeLayout>
     <Button
@@ -73,5 +84,7 @@
         android:text="保存"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
+        android:onClick="@{() -> viewModel.addNewsDetail()}"
         />
 </LinearLayout>
+</layout>
