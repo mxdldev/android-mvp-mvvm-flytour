@@ -35,14 +35,8 @@ public abstract class BaseAdapter<E, VH extends RecyclerView.ViewHolder> extends
         View view = LayoutInflater.from(mContext).inflate(layoutid, parent, false);
         return onCreateHolder(view);
     }
-
-    //绑定布局文件
     protected abstract int onBindLayout();
-
-    //创建一个holder
     protected abstract VH onCreateHolder(View view);
-
-    //绑定数据
     protected abstract void onBindData(VH holder, E e,int positon);
 
     @Override

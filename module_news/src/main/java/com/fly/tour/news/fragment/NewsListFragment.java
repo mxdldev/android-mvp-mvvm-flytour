@@ -4,27 +4,28 @@ package com.fly.tour.news.fragment;
 import android.arch.lifecycle.ViewModelProvider;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.fly.tour.api.news.entity.NewsDetail;
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.adapter.BaseAdapter;
+import com.fly.tour.common.adapter.BaseBindAdapter;
 import com.fly.tour.common.event.KeyCode;
 import com.fly.tour.common.event.me.NewsDetailCurdEvent;
 import com.fly.tour.common.mvvm.BaseMvvmRefreshFragment;
+import com.fly.tour.common.util.ObservableListUtil;
 import com.fly.tour.common.util.log.KLog;
+import com.fly.tour.news.BR;
 import com.fly.tour.news.NewsDetailActivity;
+import com.fly.tour.news.R;
 import com.fly.tour.news.adapter.NewsListAdatper;
+import com.fly.tour.news.databinding.FragmentNewsListBinding;
 import com.fly.tour.news.mvvm.factory.NewsViewModelFactory;
 import com.fly.tour.news.mvvm.viewmodel.NewsListViewModel;
-import com.fly.tour.trip.R;
+
+import com.refresh.lib.DaisyRefreshLayout;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-
-import java.util.List;
 
 /**
  * Description: <NewsListFragment><br>
@@ -33,9 +34,8 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsListFragment extends BaseMvvmRefreshFragment<NewsDetail, NewsListViewModel> {
+public class NewsListFragment extends BaseMvvmRefreshFragment<NewsDetail, FragmentNewsListBinding, NewsListViewModel> {
     private NewsType mNewsType;
-    private RecyclerView mRecViewNewsDetail;
     private NewsListAdatper mNewsListAdatper;
 
     public static NewsListFragment newInstance(NewsType newsType) {
@@ -66,10 +66,17 @@ public class NewsListFragment extends BaseMvvmRefreshFragment<NewsDetail, NewsLi
     @Override
     public void initView(View view) {
         KLog.v("MYTAG", "initView start:" + mNewsType.getTypename());
-        mRecViewNewsDetail = view.findViewById(R.id.recview_news_list);
-        mRecViewNewsDetail.setLayoutManager(new LinearLayoutManager(mActivity));
-        mNewsListAdatper = new NewsListAdatper(mActivity);
-        mRecViewNewsDetail.setAdapter(mNewsListAdatper);
+
+        mNewsListAdatper = new NewsListAdatper(mActivity, mViewModel.getList());
+        mNewsListAdatper.setItemClickListener(new BaseBindAdapter.OnItemClickListener<NewsDetail>() {
+            @Override
+            public void onItemClick(NewsDetail newsDetail, int position) {
+                NewsDetailActivity.startNewsDetailActivity(mActivity,newsDetail.getId());
+            }
+        });
+        mViewModel.getList().addOnListChangedCallback(ObservableListUtil.getListChangedCallback(mNewsListAdatper));
+        //mBinding.recview.setLayoutManager(new LinearLayoutManager(mActivity));
+        mBinding.recview.setAdapter(mNewsListAdatper);
     }
 
     @Override
@@ -81,12 +88,12 @@ public class NewsListFragment extends BaseMvvmRefreshFragment<NewsDetail, NewsLi
 
     @Override
     public void initListener() {
-        mNewsListAdatper.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsDetail>() {
-            @Override
-            public void onItemClick(NewsDetail newsDetail, int position) {
-                NewsDetailActivity.startNewsDetailActivity(mActivity, newsDetail.getId());
-            }
-        });
+//        mNewsListAdatper.setItemClickListener(new BaseAdapter.OnItemClickListener<NewsDetail>() {
+//            @Override
+//            public void onItemClick(NewsDetail newsDetail, int position) {
+//                NewsDetailActivity.startNewsDetailActivity(mActivity, newsDetail.getId());
+//            }
+//        });
     }
 
     @Override
@@ -94,35 +101,6 @@ public class NewsListFragment extends BaseMvvmRefreshFragment<NewsDetail, NewsLi
         return null;
     }
 
-    @Override
-    protected int onBindRreshLayout() {
-        return R.id.refview_news_list;
-    }
-
-    @Override
-    public void onRefreshEvent() {
-        mViewModel.refreshData();
-    }
-
-    @Override
-    public void onLoadMoreEvent() {
-        mViewModel.loadMoreData();
-    }
-
-    @Override
-    public void onAutoLoadEvent() {
-        mViewModel.refreshData();
-    }
-
-    @Override
-    public void refreshData(List<NewsDetail> data) {
-        mNewsListAdatper.refresh(data);
-    }
-
-    @Override
-    public void loadMoreData(List<NewsDetail> data) {
-        mNewsListAdatper.addAll(data);
-    }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEvent(NewsDetailCurdEvent curdEvent) {
@@ -130,7 +108,6 @@ public class NewsListFragment extends BaseMvvmRefreshFragment<NewsDetail, NewsLi
             autoLoadData();
         }
     }
-
 
     @Override
     public Class<NewsListViewModel> onBindViewModel() {
@@ -145,5 +122,15 @@ public class NewsListFragment extends BaseMvvmRefreshFragment<NewsDetail, NewsLi
     @Override
     public void initViewObservable() {
 
+    }
+
+    @Override
+    public int onBindVariableId() {
+        return BR.viewModel;
+    }
+
+    @Override
+    public DaisyRefreshLayout getRefreshLayout() {
+        return mBinding.refviewNewsType;
     }
 }

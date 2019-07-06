@@ -1,16 +1,14 @@
 package com.fly.tour.common.mvvm;
 
 import android.arch.lifecycle.Observer;
+import android.databinding.ViewDataBinding;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.fly.tour.common.mvvm.view.IBaseRefreshView;
+import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel;
 import com.fly.tour.common.util.log.KLog;
-import com.refresh.lib.BaseRefreshLayout;
 import com.refresh.lib.DaisyRefreshLayout;
-
-import java.util.List;
 
 /**
  * Description: <下拉刷新、上拉加载更多的Fragment><br>
@@ -19,14 +17,16 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseMvvmRefreshFragment<T,VM extends BaseRefreshViewModel> extends BaseMvvmFragment<VM> implements IBaseRefreshView<T> {
+public abstract class BaseMvvmRefreshFragment<T, V extends ViewDataBinding, VM extends BaseRefreshViewModel> extends BaseMvvmFragment<V, VM> {
     protected DaisyRefreshLayout mRefreshLayout;
-
+    protected BaseAdapter.OnItemClickListener mItemClickListener;
+    protected BaseAdapter.OnItemLongClickListener mOnItemLongClickListener;
     @Override
     public void initCommonView(View view) {
         super.initCommonView(view);
-        initRefreshView(view);
+        initRefreshView();
     }
+
     @Override
     protected void initBaseViewObservable() {
         super.initBaseViewObservable();
@@ -34,13 +34,7 @@ public abstract class BaseMvvmRefreshFragment<T,VM extends BaseRefreshViewModel>
     }
 
     private void initBaseViewRefreshObservable() {
-        mViewModel.getUCRefresh().getRefresLiveEvent().observe(this, new Observer<List<T>>() {
 
-            @Override
-            public void onChanged(@Nullable List<T> list) {
-                refreshData(list);
-            }
-        });
         mViewModel.getUCRefresh().getAutoRefresLiveEvent().observe(this, new Observer() {
             @Override
             public void onChanged(@Nullable Object o) {
@@ -53,13 +47,6 @@ public abstract class BaseMvvmRefreshFragment<T,VM extends BaseRefreshViewModel>
                 stopRefresh();
             }
         });
-        mViewModel.getUCRefresh().getLoadMoreLiveEvent().observe(this, new Observer<List<T>>() {
-
-            @Override
-            public void onChanged(@Nullable List<T> list) {
-                loadMoreData(list);
-            }
-        });
         mViewModel.getUCRefresh().getStopLoadMoreLiveEvent().observe(this, new Observer() {
             @Override
             public void onChanged(@Nullable Object o) {
@@ -68,54 +55,32 @@ public abstract class BaseMvvmRefreshFragment<T,VM extends BaseRefreshViewModel>
         });
     }
 
-    public void initRefreshView(View view) {
-        mRefreshLayout = view.findViewById(onBindRreshLayout());
-        mRefreshLayout.setOnRefreshListener(new BaseRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                onRefreshEvent();
-            }
-        });
-        mRefreshLayout.setOnLoadMoreListener(new BaseRefreshLayout.OnLoadMoreListener() {
-            @Override
-            public void onLoadMore() {
-                onLoadMoreEvent();
-            }
-        });
-        mRefreshLayout.setOnAutoLoadListener(new BaseRefreshLayout.OnAutoLoadListener() {
-            @Override
-            public void onAutoLoad() {
-                onAutoLoadEvent();
-            }
-        });
-    }
-    protected abstract int onBindRreshLayout();
-    @Override
-    public void enableRefresh(boolean b) {
-        mRefreshLayout.setEnableRefresh(b);
+    public abstract DaisyRefreshLayout getRefreshLayout();
+
+    public void initRefreshView() {
+        mRefreshLayout = getRefreshLayout();
     }
 
-    @Override
-    public void enableLoadMore(boolean b) {
-        mRefreshLayout.setEnableLoadMore(b);
-    }
-
-    @Override
     public void stopRefresh() {
         mRefreshLayout.setRefreshing(false);
     }
 
-    @Override
     public void stopLoadMore() {
         mRefreshLayout.setLoadMore(false);
     }
 
-    @Override
     public void autoLoadData() {
-        KLog.v("MYTAG","autoLoadData start...");
-        if(mRefreshLayout != null){
-            KLog.v("MYTAG","autoLoadData1 start...");
+        KLog.v("MYTAG", "autoLoadData start...");
+        if (mRefreshLayout != null) {
+            KLog.v("MYTAG", "autoLoadData1 start...");
             mRefreshLayout.autoRefresh();
         }
+    }
+    public void setItemClickListener(BaseAdapter.OnItemClickListener itemClickListener) {
+        mItemClickListener = itemClickListener;
+    }
+
+    public void setOnItemLongClickListener(BaseAdapter.OnItemLongClickListener onItemLongClickListener) {
+        mOnItemLongClickListener = onItemLongClickListener;
     }
 }

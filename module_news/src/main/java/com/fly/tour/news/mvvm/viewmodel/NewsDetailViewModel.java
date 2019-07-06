@@ -1,6 +1,8 @@
 package com.fly.tour.news.mvvm.viewmodel;
 
 import android.app.Application;
+import android.databinding.ObservableArrayList;
+import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.news.entity.NewsDetail;
@@ -24,7 +26,7 @@ import io.reactivex.disposables.Disposable;
  * Update:     <br>
  */
 public class NewsDetailViewModel extends BaseViewModel<NewsDetailModel> {
-    private SingleLiveEvent<NewsDetail> mNewsDetailSingleLiveEvent;
+    public ObservableField<NewsDetail> mNewsDetails = new ObservableField<>();
     public NewsDetailViewModel(@NonNull Application application, NewsDetailModel model) {
         super(application, model);
     }
@@ -44,7 +46,8 @@ public class NewsDetailViewModel extends BaseViewModel<NewsDetailModel> {
             public void onNext(RespDTO<NewsDetail> newsDetailRespDTO) {
                 NewsDetail newsDetail = newsDetailRespDTO.data;
                 if (newsDetail != null) {
-                    getNewsDetailSingleLiveEvent().postValue(newsDetail);
+                    //todo getNewsDetailSingleLiveEvent().postValue(newsDetail);
+                    mNewsDetails.set(newsDetail);
                 } else {
                     showNoDataView(true);
                 }
@@ -61,8 +64,8 @@ public class NewsDetailViewModel extends BaseViewModel<NewsDetailModel> {
             }
         });
     }
-    public SingleLiveEvent<NewsDetail> getNewsDetailSingleLiveEvent() {
-        return mNewsDetailSingleLiveEvent = createLiveData(mNewsDetailSingleLiveEvent);
-    }
+//    public SingleLiveEvent<NewsDetail> getNewsDetailSingleLiveEvent() {
+//        return mNewsDetailSingleLiveEvent = createLiveData(mNewsDetailSingleLiveEvent);
+//    }
 
 }

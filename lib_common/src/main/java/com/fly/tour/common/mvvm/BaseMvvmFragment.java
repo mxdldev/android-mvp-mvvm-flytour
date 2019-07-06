@@ -4,15 +4,17 @@ import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 
 import com.fly.tour.common.mvvm.viewmodel.BaseViewModel;
 import com.fly.tour.common.util.log.KLog;
 
 import java.util.Map;
-
-import javax.inject.Inject;
 
 /**
  * Description: <BaseMvpFragment><br>
@@ -21,15 +23,25 @@ import javax.inject.Inject;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseMvvmFragment<VM extends BaseViewModel> extends BaseFragment {
+public abstract class BaseMvvmFragment<V extends ViewDataBinding,VM extends BaseViewModel> extends BaseFragment {
+    protected V mBinding;
     protected VM mViewModel;
-    public void initParam() {
+    private int viewModelId;
+
+    @Override
+    public void initConentView(ViewGroup root){
+        mBinding = DataBindingUtil.inflate(LayoutInflater.from(mActivity), onBindLayout(),root,true);
         initViewModel();
         initBaseViewObservable();
         initViewObservable();
     }
+
     private void initViewModel() {
         mViewModel = createViewModel();
+        viewModelId = onBindVariableId();
+        if(mBinding != null){
+            mBinding.setVariable(viewModelId, mViewModel);
+        }
         getLifecycle().addObserver(mViewModel);
     }
     public VM createViewModel(){
@@ -38,6 +50,7 @@ public abstract class BaseMvvmFragment<VM extends BaseViewModel> extends BaseFra
     public abstract Class<VM> onBindViewModel();
     public abstract ViewModelProvider.Factory onBindViewModelFactory();
     public abstract void initViewObservable();
+    public abstract int onBindVariableId();
 
     protected void initBaseViewObservable() {
         mViewModel.getUC().getShowInitLoadViewEvent().observe(this, new Observer<Boolean>() {

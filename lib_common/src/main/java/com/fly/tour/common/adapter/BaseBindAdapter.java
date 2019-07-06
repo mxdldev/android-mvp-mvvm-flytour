@@ -11,17 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Description: <BaseBindingAdapter><br>
+ * Description: <BaseBindAdapter><br>
  * Author:      mxdl<br>
  * Date:        2019/7/4<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseBindingAdapter<T, B extends ViewDataBinding> extends RecyclerView.Adapter {
+public abstract class BaseBindAdapter<T, B extends ViewDataBinding> extends RecyclerView.Adapter {
     protected Context context;
     protected ObservableArrayList<T> items;
-
-    public BaseBindingAdapter(Context context, ObservableArrayList<T> items) {
+    protected OnItemClickListener mItemClickListener;
+    protected OnItemLongClickListener mOnItemLongClickListener;
+    public BaseBindAdapter(Context context, ObservableArrayList<T> items) {
         this.context = context;
         this.items = items;
     }
@@ -53,5 +54,20 @@ public abstract class BaseBindingAdapter<T, B extends ViewDataBinding> extends R
     protected abstract int getLayoutItemId(int viewType);
 
     protected abstract void onBindItem(B binding, T item,int position);
+
+    public void setItemClickListener(OnItemClickListener itemClickListener) {
+        mItemClickListener = itemClickListener;
+    }
+
+    public void setOnItemLongClickListener(OnItemLongClickListener onItemLongClickListener) {
+        mOnItemLongClickListener = onItemLongClickListener;
+    }
+
+    public interface OnItemClickListener<E> {
+        void onItemClick(E e, int position);
+    }
+    public interface OnItemLongClickListener<E> {
+        boolean onItemLongClick(E e, int postion);
+    }
 
 }

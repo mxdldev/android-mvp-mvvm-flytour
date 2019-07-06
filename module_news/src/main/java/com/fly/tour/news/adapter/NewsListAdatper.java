@@ -1,14 +1,12 @@
 package com.fly.tour.news.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import android.databinding.ObservableArrayList;
 import android.view.View;
-import android.widget.TextView;
-
 import com.fly.tour.api.news.entity.NewsDetail;
-import com.fly.tour.common.adapter.BaseAdapter;
-import com.fly.tour.trip.R;
+import com.fly.tour.common.adapter.BaseBindAdapter;
+import com.fly.tour.news.R;
+import com.fly.tour.news.databinding.ItemNewsListBinding;
 
 /**
  * Description: <NewsListAdatper><br>
@@ -17,41 +15,31 @@ import com.fly.tour.trip.R;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsListAdatper extends BaseAdapter<NewsDetail, NewsListAdatper.MyViewHolder> {
-    public NewsListAdatper(Context context) {
-        super(context);
+public class NewsListAdatper extends BaseBindAdapter<NewsDetail, ItemNewsListBinding> {
+
+
+    public NewsListAdatper(Context context, ObservableArrayList<NewsDetail> items) {
+        super(context, items);
     }
 
     @Override
-    protected int onBindLayout() {
+    protected int getLayoutItemId(int viewType) {
         return R.layout.item_news_list;
     }
 
     @Override
-    protected MyViewHolder onCreateHolder(View view) {
-        return new MyViewHolder(view);
+    protected void onBindItem(ItemNewsListBinding binding, final NewsDetail item, final int position) {
+        binding.setNewsDetail(item);
+        binding.viewNewsDetal.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                if(mItemClickListener != null){
+                    mItemClickListener.onItemClick(item,position);
+                }
+            }
+        });
     }
 
-    @Override
-    protected void onBindData(MyViewHolder holder, NewsDetail newsDetail, int positon) {
-        holder.txtNewsDetailIdValue.setText(newsDetail.getId() + "");
-        holder.txtNewsDetailTitleValue.setText(newsDetail.getTitle());
-        holder.txtNewsDetailContentValue.setText(newsDetail.getContent());
-        holder.txtNewsDetailAddtimeValue.setText(newsDetail.getAddtime());
-    }
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView txtNewsDetailIdValue;
-        TextView txtNewsDetailTitleValue;
-        TextView txtNewsDetailContentValue;
-        TextView txtNewsDetailAddtimeValue;
-
-        public MyViewHolder(@NonNull View itemView) {
-            super(itemView);
-            txtNewsDetailIdValue = itemView.findViewById(R.id.txt_news_detail_id_value);
-            txtNewsDetailTitleValue = itemView.findViewById(R.id.txt_news_detail_title_value);
-            txtNewsDetailContentValue = itemView.findViewById(R.id.txt_news_detail_content_value);
-            txtNewsDetailAddtimeValue = itemView.findViewById(R.id.txt_news_detail_addtime_value);
-        }
-    }
 }

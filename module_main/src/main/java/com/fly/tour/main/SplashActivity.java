@@ -3,7 +3,9 @@ package com.fly.tour.main;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
+import android.databinding.ViewDataBinding;
 import android.support.annotation.Nullable;
+
 import com.fly.tour.common.mvvm.BaseMvvmActivity;
 import com.fly.tour.main.mvvm.factory.MainViewModelFactory;
 import com.fly.tour.main.mvvm.viewmodel.SplashViewModel;
@@ -15,7 +17,7 @@ import com.fly.tour.main.mvvm.viewmodel.SplashViewModel;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class SplashActivity extends BaseMvvmActivity<SplashViewModel> {
+public class SplashActivity extends BaseMvvmActivity<ViewDataBinding,SplashViewModel> {
 
     @Override
     public int onBindLayout() {
@@ -55,5 +57,10 @@ public class SplashActivity extends BaseMvvmActivity<SplashViewModel> {
                 startMainActivity();
             }
         });
+    }
+
+    @Override
+    public int onBindVariableId() {
+        return 0;
     }
 }

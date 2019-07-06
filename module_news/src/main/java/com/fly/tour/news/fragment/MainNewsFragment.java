@@ -2,6 +2,7 @@ package com.fly.tour.news.fragment;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
+import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -16,9 +17,9 @@ import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.mvvm.BaseMvvmFragment;
 import com.fly.tour.common.util.log.KLog;
+import com.fly.tour.news.R;
 import com.fly.tour.news.mvvm.factory.NewsViewModelFactory;
 import com.fly.tour.news.mvvm.viewmodel.NewsTypeViewModel;
-import com.fly.tour.trip.R;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -33,7 +34,7 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class MainNewsFragment extends BaseMvvmFragment<NewsTypeViewModel>{
+public class MainNewsFragment extends BaseMvvmFragment<ViewDataBinding,NewsTypeViewModel> {
     private List<String> titles = new ArrayList<>();
     private List<NewsListFragment> mListFragments = new ArrayList<>();
     private TabLayout mTabLayout;
@@ -123,6 +124,11 @@ public class MainNewsFragment extends BaseMvvmFragment<NewsTypeViewModel>{
                 initTabLayout();
             }
         });
+    }
+
+    @Override
+    public int onBindVariableId() {
+        return 0;
     }
 
     class NewsFragmentAdapter extends FragmentPagerAdapter {

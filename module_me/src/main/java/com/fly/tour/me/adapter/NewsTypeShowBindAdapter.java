@@ -2,32 +2,31 @@ package com.fly.tour.me.adapter;
 
 import android.content.Context;
 import android.databinding.ObservableArrayList;
-import android.databinding.ViewDataBinding;
 import android.view.View;
 
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.adapter.BaseBindingAdapter;
+import com.fly.tour.common.adapter.BaseBindAdapter;
 import com.fly.tour.me.R;
 import com.fly.tour.me.databinding.ItemNewsTypeShowBindingBinding;
 
 /**
- * Description: <NewsTypeShowBindingAdapter><br>
+ * Description: <NewsTypeShowBindAdapter><br>
  * Author:      mxdl<br>
  * Date:        2019/7/4<br>
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsTypeShowBindingAdapter extends BaseBindingAdapter<NewsType, ItemNewsTypeShowBindingBinding> {
-    private NewsTypeShowBindingAdapter.DeleteClickLisenter mDeleteClickLisenter;
+public class NewsTypeShowBindAdapter extends BaseBindAdapter<NewsType, ItemNewsTypeShowBindingBinding> {
+    private NewsTypeShowBindAdapter.DeleteClickLisenter mDeleteClickLisenter;
 
     public interface DeleteClickLisenter {
         void onClickDeleteListener(int id);
     }
 
-    public void setDeleteClickLisenter(NewsTypeShowBindingAdapter.DeleteClickLisenter deleteClickLisenter) {
+    public void setDeleteClickLisenter(NewsTypeShowBindAdapter.DeleteClickLisenter deleteClickLisenter) {
         mDeleteClickLisenter = deleteClickLisenter;
     }
-    public NewsTypeShowBindingAdapter(Context context, ObservableArrayList<NewsType> items) {
+    public NewsTypeShowBindAdapter(Context context, ObservableArrayList<NewsType> items) {
         super(context, items);
     }
     @Override
@@ -44,13 +43,6 @@ public class NewsTypeShowBindingAdapter extends BaseBindingAdapter<NewsType, Ite
                 if(mDeleteClickLisenter != null){
                     mDeleteClickLisenter.onClickDeleteListener(item.getId());
                 }
-            }
-        });
-        binding.layoutNewstypeList.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-
             }
         });
     }

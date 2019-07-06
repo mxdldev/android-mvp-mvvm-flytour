@@ -44,7 +44,8 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
             public void onNext(RespDTO<List<NewsDetail>> listRespDTO) {
                 List<NewsDetail> datailList = listRespDTO.data;
                 if (datailList != null && datailList.size() > 0) {
-                    refreshData(datailList);
+                    mList.clear();
+                    mList.addAll(datailList);
                 } else {
                     showNoDataView(true);
                 }
@@ -63,7 +64,8 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
         });
     }
 
-    public void loadMoreData() {
+    @Override
+    public void loadMore() {
         mModel.getListNewsByType(newsType).subscribe(new Observer<RespDTO<List<NewsDetail>>>() {
             @Override
             public void onSubscribe(Disposable d) {
@@ -74,7 +76,7 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
             public void onNext(RespDTO<List<NewsDetail>> listRespDTO) {
                 List<NewsDetail> datailList = listRespDTO.data;
                 if (datailList != null && datailList.size() > 0) {
-                    loadMore(datailList);
+                    mList.addAll(datailList);
                 }
             }
 
@@ -89,6 +91,7 @@ public class NewsListViewModel extends BaseRefreshViewModel<NewsDetail, NewsList
             }
         });
     }
+
 
     public void setNewsType(int newsType) {
         this.newsType = newsType;

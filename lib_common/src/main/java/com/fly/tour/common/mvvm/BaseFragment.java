@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -47,7 +48,7 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     protected LoadingTransView mLoadingTransView;
 
     private ViewStub mViewStubToolbar;
-    private ViewStub mViewStubContent;
+    protected RelativeLayout mViewStubContent;
     private ViewStub mViewStubInitLoading;
     private ViewStub mViewStubTransLoading;
     private ViewStub mViewStubNoData;
@@ -66,17 +67,14 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.fragment_root, container, false);
+        mView = inflater.inflate(R.layout.fragment_root1, container, false);
         initCommonView(mView);
         initView(mView);
         initListener();
-        initParam();
         return mView;
     }
-    public void initParam(){};
     public void initCommonView(View view) {
         mViewStubToolbar = view.findViewById(R.id.view_stub_toolbar);
-        mViewStubContent = view.findViewById(R.id.view_stub_content);
         mViewStubContent = view.findViewById(R.id.view_stub_content);
         mViewStubInitLoading = view.findViewById(R.id.view_stub_init_loading);
         mViewStubTransLoading = view.findViewById(R.id.view_stub_trans_loading);
@@ -88,10 +86,11 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
             View viewTooBbar = mViewStubToolbar.inflate();
             initTooBar(viewTooBbar);
         }
-        mViewStubContent.setLayoutResource(onBindLayout());
-        mViewStubContent.inflate();
+        initConentView(mViewStubContent);
     }
-
+    public void initConentView(ViewGroup root){
+        LayoutInflater.from(mActivity).inflate(onBindLayout(), root, true);
+    }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

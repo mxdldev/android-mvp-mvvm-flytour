@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.fly.tour.news.mvvm.viewmodel.NewsDetailViewModel"/>
+    </data>
+    <LinearLayout android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
               xmlns:android="http://schemas.android.com/apk/res/android">
@@ -16,6 +22,7 @@
         android:layout_marginRight="30dp"
         android:singleLine="true"
         android:gravity="center"
+        android:text="@{viewModel.mNewsDetails.title}"
         />
     <TextView
         android:id="@+id/txt_news_detail_content"
@@ -25,5 +32,7 @@
         android:layout_margin="20dp"
         android:textSize="15sp"
         android:lineSpacingExtra="10dp"
+        android:text="@{viewModel.mNewsDetails.content}"
         />
 </LinearLayout>
+</layout>

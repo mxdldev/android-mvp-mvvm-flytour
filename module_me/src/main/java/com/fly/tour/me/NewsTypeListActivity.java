@@ -3,30 +3,20 @@ package com.fly.tour.me;
 import android.app.Activity;
 import android.arch.lifecycle.ViewModelProvider;
 import android.content.Intent;
-import android.databinding.ObservableList;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.event.RequestCode;
-import com.fly.tour.common.mvvm.BaseMvvmActivity1;
 import com.fly.tour.common.mvvm.BaseMvvmRefreshActivity;
-import com.fly.tour.common.mvvm.BaseMvvmRefreshActivity1;
 import com.fly.tour.common.util.ObservableListUtil;
-import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.common.view.CommonDialogFragment;
-import com.fly.tour.me.adapter.NewsTypeShowAdapter;
-import com.fly.tour.me.adapter.NewsTypeShowBindingAdapter;
+import com.fly.tour.me.adapter.NewsTypeShowBindAdapter;
 import com.fly.tour.me.databinding.ActivityNewsTypeListBinding;
 import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
 import com.fly.tour.me.mvvm.viewmodel.NewsTypeListViewModel;
 import com.refresh.lib.DaisyRefreshLayout;
-
-import java.util.List;
 
 /**
  * Description: <NewsTypeListActivity><br>
@@ -35,8 +25,8 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsTypeListActivity extends BaseMvvmRefreshActivity1<ActivityNewsTypeListBinding, NewsTypeListViewModel> {
-    private NewsTypeShowBindingAdapter mNewsTypeShowAdapter;
+public class NewsTypeListActivity extends BaseMvvmRefreshActivity<ActivityNewsTypeListBinding, NewsTypeListViewModel> {
+    private NewsTypeShowBindAdapter mNewsTypeShowAdapter;
     public int onBindLayout() {
         return R.layout.activity_news_type_list;
     }
@@ -58,14 +48,14 @@ public class NewsTypeListActivity extends BaseMvvmRefreshActivity1<ActivityNewsT
 
     @Override
     public void initView() {
-        mNewsTypeShowAdapter = new NewsTypeShowBindingAdapter(this, mViewModel.getList());
+        mNewsTypeShowAdapter = new NewsTypeShowBindAdapter(this, mViewModel.getList());
         mViewModel.getList().addOnListChangedCallback(ObservableListUtil.getListChangedCallback(mNewsTypeShowAdapter));
         mBinding.recview.setAdapter(mNewsTypeShowAdapter);
     }
 
     @Override
     public void initListener() {
-        mNewsTypeShowAdapter.setDeleteClickLisenter(new NewsTypeShowBindingAdapter.DeleteClickLisenter() {
+        mNewsTypeShowAdapter.setDeleteClickLisenter(new NewsTypeShowBindAdapter.DeleteClickLisenter() {
             @Override
             public void onClickDeleteListener(final int id) {
                 new CommonDialogFragment.Builder().setTitle("信息提示").setDescribe("确定删除吗？").setLeftbtn("取消").setRightbtn("确定").setOnDialogClickListener(new CommonDialogFragment.OnDialogClickListener() {

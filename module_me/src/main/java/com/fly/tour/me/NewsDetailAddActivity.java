@@ -3,17 +3,10 @@ package com.fly.tour.me;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 import android.support.annotation.Nullable;
-import android.text.TextUtils;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
 import com.fly.tour.api.newstype.entity.NewsType;
 import com.fly.tour.common.adapter.BaseAdapter;
 import com.fly.tour.common.mvvm.BaseMvvmActivity;
-import com.fly.tour.common.mvvm.BaseMvvmActivity1;
-import com.fly.tour.common.util.ToastUtil;
-import com.fly.tour.common.view.SettingBarView;
 import com.fly.tour.me.databinding.ActivityNewsDetailAddBinding;
 import com.fly.tour.me.mvvm.factory.MeViewModelFactory;
 import com.fly.tour.me.mvvm.viewmodel.NewsDetailAddViewModel;
@@ -27,7 +20,7 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsDetailAddActivity extends BaseMvvmActivity1<ActivityNewsDetailAddBinding,NewsDetailAddViewModel> {
+public class NewsDetailAddActivity extends BaseMvvmActivity<ActivityNewsDetailAddBinding,NewsDetailAddViewModel> {
 
     @Override
     public int onBindLayout() {

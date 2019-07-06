@@ -1,9 +1,11 @@
 package com.fly.tour.common.mvvm;
 
 import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider.Factory;
 import android.arch.lifecycle.ViewModelProviders;
-import  android.arch.lifecycle.ViewModelProvider.Factory;
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
@@ -19,24 +21,33 @@ import java.util.Map;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public abstract class BaseMvvmActivity<VM extends BaseViewModel> extends BaseActivity {
+public abstract class BaseMvvmActivity<V extends ViewDataBinding,VM extends BaseViewModel> extends BaseActivity {
+    protected V mBinding;
     protected VM mViewModel;
+    private int viewModelId;
     @Override
-    public void initParam() {
-        initViewModel();
+    public void initContentView() {
+        initViewDataBinding();
         initBaseViewObservable();
         initViewObservable();
     }
-    private void initViewModel() {
-        mViewModel = createViewModel();
-        getLifecycle().addObserver(mViewModel);
-    }
+
     public VM createViewModel(){
         return ViewModelProviders.of(this,onBindViewModelFactory()).get(onBindViewModel());
+    }
+    private void initViewDataBinding() {
+        mBinding = DataBindingUtil.setContentView(this, onBindLayout());
+        viewModelId = onBindVariableId();
+        mViewModel = createViewModel();
+        if(mBinding != null){
+            mBinding.setVariable(viewModelId, mViewModel);
+        }
+        getLifecycle().addObserver(mViewModel);
     }
     public abstract Class<VM> onBindViewModel();
     public abstract Factory onBindViewModelFactory();
     public abstract void initViewObservable();
+    public abstract int onBindVariableId();
 
     protected void initBaseViewObservable() {
         mViewModel.getUC().getShowInitLoadViewEvent().observe(this, new Observer<Boolean>() {
@@ -94,4 +105,24 @@ public abstract class BaseMvvmActivity<VM extends BaseViewModel> extends BaseAct
         startActivity(intent);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(mBinding != null){
+            mBinding.unbind();
+        }
+    }
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
+    }
+
+    @Override
+    public void initListener() {
+
+    }
 }

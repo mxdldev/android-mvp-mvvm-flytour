@@ -1,11 +1,14 @@
 package com.fly.tour.common.mvvm.viewmodel;
 
 import android.app.Application;
+import android.databinding.ObservableArrayList;
+import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
 
+import com.fly.tour.common.binding.command.BindingAction;
+import com.fly.tour.common.binding.command.BindingCommand;
 import com.fly.tour.common.event.SingleLiveEvent;
 import com.fly.tour.common.mvvm.model.BaseModel;
-import java.util.List;
 
 /**
  * Description: <BaseRefreshViewModel><br>
@@ -14,16 +17,28 @@ import java.util.List;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M> {
+public abstract class BaseRefreshViewModel<T, M extends BaseModel> extends BaseViewModel<M> {
+    protected ObservableArrayList<T> mList = new ObservableArrayList<>();
+    public ObservableField<Boolean> orientation = new ObservableField();
+    public ObservableField<Boolean> enableLoadMore = new ObservableField();
+    public ObservableField<Boolean>  enableRefresh = new ObservableField();
 
     public BaseRefreshViewModel(@NonNull Application application, M model) {
         super(application, model);
+        enableLoadMore.set(enableLoadMore());
+        enableRefresh.set(enableRefresh());
     }
-    protected UIChangeRefreshLiveData mUIChangeRefreshLiveData;
+    public boolean enableLoadMore(){
+        return true;
+    }
+    public boolean enableRefresh(){
+        return true;
+    }
+    protected BaseRefreshViewModel.UIChangeRefreshLiveData mUIChangeRefreshLiveData;
 
-    public UIChangeRefreshLiveData getUCRefresh() {
+    public BaseRefreshViewModel.UIChangeRefreshLiveData getUCRefresh() {
         if (mUIChangeRefreshLiveData == null) {
-            mUIChangeRefreshLiveData = new UIChangeRefreshLiveData();
+            mUIChangeRefreshLiveData = new BaseRefreshViewModel.UIChangeRefreshLiveData();
         }
         return mUIChangeRefreshLiveData;
     }
@@ -31,20 +46,12 @@ public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M
     public final class UIChangeRefreshLiveData extends SingleLiveEvent {
         private SingleLiveEvent<Void> mStopRefresLiveEvent;
         private SingleLiveEvent<Void> mAutoRefresLiveEvent;
-        private SingleLiveEvent<List<T>> mRefresLiveEvent;
-        private SingleLiveEvent<List<T>> mLoadMoreLiveEvent;
         private SingleLiveEvent<Void> mStopLoadMoreLiveEvent;
         public SingleLiveEvent<Void> getStopRefresLiveEvent() {
             return mStopRefresLiveEvent = createLiveData(mStopRefresLiveEvent);
         }
         public SingleLiveEvent<Void> getAutoRefresLiveEvent() {
             return mAutoRefresLiveEvent = createLiveData(mAutoRefresLiveEvent);
-        }
-        public SingleLiveEvent<List<T>> getRefresLiveEvent() {
-            return mRefresLiveEvent = createLiveData(mRefresLiveEvent);
-        }
-        public SingleLiveEvent<List<T>> getLoadMoreLiveEvent() {
-            return mLoadMoreLiveEvent = createLiveData(mLoadMoreLiveEvent);
         }
         public SingleLiveEvent<Void> getStopLoadMoreLiveEvent() {
             return mStopLoadMoreLiveEvent = createLiveData(mStopLoadMoreLiveEvent);
@@ -65,15 +72,31 @@ public class BaseRefreshViewModel<T,M extends BaseModel> extends BaseViewModel<M
             mUIChangeRefreshLiveData.mStopLoadMoreLiveEvent.call();
         }
     }
-    public void refreshData(List<T> list){
-        if(mUIChangeRefreshLiveData != null){
-            mUIChangeRefreshLiveData.getRefresLiveEvent().postValue(list);
-        }
+    public ObservableArrayList<T> getList() {
+        return mList;
     }
-    public void loadMore(List<T> list){
-        if(mUIChangeRefreshLiveData != null){
-            mUIChangeRefreshLiveData.getLoadMoreLiveEvent().postValue(list);
+
+    public BindingCommand onRefreshCommand = new BindingCommand(new BindingAction() {
+        @Override
+        public void call() {
+            refreshData();
         }
-    }
+    });
+    public BindingCommand onLoadMoreCommand = new BindingCommand(new BindingAction() {
+        @Override
+        public void call() {
+            loadMore();
+        }
+    });
+    public BindingCommand onAutoRefreshCommand = new BindingCommand(new BindingAction() {
+        @Override
+        public void call() {
+            refreshData();
+        }
+    });
+
+    public abstract void refreshData();
+
+    public abstract void loadMore();
 
 }

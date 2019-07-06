@@ -13,7 +13,6 @@ import com.refresh.lib.DaisyRefreshLayout;
  * Update:     <br>
  */
 public class ViewAdapter {
-    //下拉刷新命令
     @BindingAdapter(value = {"onRefreshCommand","onLoadMoreCommand","onAutoRefreshCommand"},requireAll = false)
     public static void onRefreshCommand(DaisyRefreshLayout refreshLayout, final BindingCommand onRefreshCommand,final BindingCommand onLoadMoreCommond,final BindingCommand onAutoRerefeshCommond) {
         refreshLayout.setOnRefreshListener(new BaseRefreshLayout.OnRefreshListener() {

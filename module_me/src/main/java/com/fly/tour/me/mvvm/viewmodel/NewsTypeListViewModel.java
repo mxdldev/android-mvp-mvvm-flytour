@@ -1,20 +1,14 @@
 package com.fly.tour.me.mvvm.viewmodel;
 
 import android.app.Application;
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.ExceptionHandler;
 import com.fly.tour.api.newstype.entity.NewsType;
-import com.fly.tour.common.binding.command.BindingAction;
-import com.fly.tour.common.binding.command.BindingCommand;
 import com.fly.tour.common.event.EventCode;
-import com.fly.tour.common.event.SingleLiveEvent;
 import com.fly.tour.common.event.me.NewsTypeCrudEvent;
 import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel;
-import com.fly.tour.common.mvvm.viewmodel.BaseRefreshViewModel1;
 import com.fly.tour.common.util.ToastUtil;
 import com.fly.tour.me.mvvm.model.NewsTypeListModel;
 
@@ -32,7 +26,7 @@ import io.reactivex.disposables.Disposable;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class NewsTypeListViewModel extends BaseRefreshViewModel1<NewsType, NewsTypeListModel> {
+public class NewsTypeListViewModel extends BaseRefreshViewModel<NewsType, NewsTypeListModel> {
     private boolean isfirst = true;
 
     public NewsTypeListViewModel(@NonNull Application application, NewsTypeListModel model) {
