@@ -23,25 +23,25 @@
 ![](https://img-blog.csdnimg.cn/20190616183350269.png)
 
 ### 更新日志：
-###### FlyTour 4.1.0【DataBinding版】 2019-07-07
+### FlyTour 4.1.0【DataBinding版】 2019-07-07
 组件化+MVVM+DataDinding+RxJava+Retrofit，在4.0.0的MVVM架构基础之上增加了DataBinding的特性，配合FlyCloud微服务系统共同使用
 * 增加了DataBinding的特性
 
-###### FlyTour 4.0.0【MVVM版】 2019-07-03
+### FlyTour 4.0.0【MVVM版】 2019-07-03
 组件化+MVVM+RxJava+Retrofit，基本架构由3.0.0的MVP架构升级为MVVM架构，配合FlyCloud微服务系统共同使用
 * MVVM架构彻底改版
 
-###### FlyTour 3.0.0【网络版】 2019-06-26
+### FlyTour 3.0.0【网络版】 2019-06-26
 组件化+MVP+RxJava+Retrofit+Dagger2,该版本是在2.1.0的版本的基础之上对Model层的数据源做了升级，由本地数据源升级为网络数据源，配合FlyCloud微服务系统共同使用
 * 网络请求部分由Retrofit+RxJava完成
 
-###### FlyTour 2.1.0【Dagger版】 2019-06-06
+### FlyTour 2.1.0【Dagger版】 2019-06-06
 组件化+MVP+Dagger2，该版本在2.0.0的基础上添加了Dagger2的特性，Present、Model的创建都由Dagger2自动完成
 * 1.Presenter实例的创建由Dagger2完成
 * 2.Modle实例的创建有Dagger2完成
 * 3.DAO实例的创建由Dagger2完成
 
-###### FlyTour 2.0.0【稳定单机版】 2019-05-30
+### FlyTour 2.0.0【稳定单机版】 2019-05-30
 基本架构为组件化+MVP，数据由本地SQLLite数据库提供
 以新闻资讯为功能，对app的界面进行了全新的改版，由新闻列表展示、新闻详情展示、新闻添加、新闻类型添加、删除这几个简单的功能组成，基本上覆盖了整个框架的所有核心的、常用的一些功能
 * 新闻类型添加、删除、展示
@@ -61,10 +61,10 @@
 * 通用小菊花样式DaisyRefreshLayout
 * 通用小箭头样式ArrowRefreshLayout
 
-###### FlyTour 1.1.0【优化版】 2019-03-34
+### FlyTour 1.1.0【优化版】 2019-03-34
 * MVP功能的一些优化
 
-###### FlyTour 1.0.0【初始版】 2019-01-26 
+### FlyTour 1.0.0【初始版】 2019-01-26 
 * 初始版本，以车辆运动轨迹大数据采集为功能简单的实现了组件化和MVP的基本功能
 ### 功能演示
 * 新闻下来刷新、无数据、无网络、新闻详情展示
