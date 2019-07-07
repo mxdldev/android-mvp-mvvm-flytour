@@ -15,6 +15,14 @@
     <img src="https://img.shields.io/badge/QQ%E7%BE%A4-810970432%20%7C%20303704981-orange.svg?style=flat-square" alt="QQ Group" />
   </a>
 </p>
+FlyTour开源框架由自己的FlyTranslate框架和FlyAndroid MVP两大框架的基础上发展而来，是Android组件化、Android MVP架构、Android MVVM架构的集大成者.
+
+通过不断的升级迭代，已经有了七个不同的版本，4.1.0【MVVM+DataBinding版】、4.0.0【MVVM版】、3.0.0【网络版】、2.1.0【Dagger版】、2.0.0【稳定单机版】， 1.1.0【优化版】、1.0.0【初始版】
+其中FlyTour为组件化项目架构，如果需要单一结构项目架构请下载FlyTranslate【MVP+RxJava+Retrofit+Dagger2】或FlyAndroidMVP【android mvp】
+各个版本都不同的特性，基本能满足不同阶段的Android开发者，大家可根据自己的项目需求去选择自己所需要的版本。
+
+本框架的最大的特点就是和FlyCloud微服务框架配合使用，从移动前端和服务后端的一套完整解决方案，解决了很多开发者只会前端不会后台的问题，或者只会后端不会前端的问题，有了者两套框架，我们的开发不在受制于人。
+
 欢迎加星，打call https://github.com/geduo83/FlyTour
 在使用中有任何问题，请留言，或加入Android、Java开发技术交流群<br>
 * QQ群：810970432<br>
