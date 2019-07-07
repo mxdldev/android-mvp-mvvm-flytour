@@ -285,11 +285,11 @@ public void hideNetWorkErrView() {
 
 ### MVVM架构
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190707121416234.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9tZW54aW5kaWFvbG9uZy5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70)
-* View层类关系图
+* View层类关系图<br>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190707153247910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9tZW54aW5kaWFvbG9uZy5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70)
-* ViewModel层类关系图
+* ViewModel层类关系图<br>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190707153406804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9tZW54aW5kaWFvbG9uZy5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70)
-* model层类关系图
+* model层类关系图<br>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190707153421702.png)
 ### MVP架构
 这是整个项目的mvp结构图：
