@@ -28,7 +28,7 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 
 欢迎加星star，在使用中有任何问题，请留言，或加入Android、Java开发技术交流群<br>
 * QQ群：810970432<br>
-* email：303704981@qq.com
+* email：geduo_83@163.com
 
 ![](https://img-blog.csdnimg.cn/20190616183350269.png)
 
@@ -345,7 +345,7 @@ sourceSets {
 欢迎加星，打call https://github.com/geduo83/FlyTour
 在使用中有任何问题，请留言，或加入Android、Java开发技术交流群
 * QQ群：810970432
-* email：geduo_83@163.com
+* email：geduo_83@163.com<br>
 ![](https://img-blog.csdnimg.cn/20190126213618911.png)
 ### 关于作者
 ```
