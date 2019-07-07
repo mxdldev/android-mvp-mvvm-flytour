@@ -77,7 +77,7 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 ### [FlyTour 1.0.0【初始版】](https://github.com/geduo83/FlyTour/releases) 2019-01-26 
 * 初始版本，以车辆运动轨迹大数据采集为功能简单的实现了组件化和MVP的基本功能
 ### 功能演示
-*启动页
+* 启动页<br>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190707200528842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9tZW54aW5kaWFvbG9uZy5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70)
 * 新闻下来刷新、无数据、无网络、新闻详情展示
 <div>
