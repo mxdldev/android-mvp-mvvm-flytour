@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Author-%E9%97%A8%E5%BF%83%E5%8F%BC%E9%BE%99-orange.svg?style=flat-square" alt="Author" />
   </a>
   <a href="https://menxindiaolong.blog.csdn.net">
-    <img src="https://img.shields.io/badge/QQ%E7%BE%A4-810970432%20%7C%20303704981-orange.svg?style=flat-square" alt="QQ Group" />
+    <img src="https://img.shields.io/badge/QQ%E7%BE%A4-810970432-orange.svg?style=flat-square" alt="QQ Group" />
   </a>
 </p>
 
