@@ -30,6 +30,11 @@ public class SplashActivity extends BaseMvvmActivity<ViewDataBinding,SplashViewM
     }
 
     @Override
+    public boolean enableToolbar() {
+        return false;
+    }
+
+    @Override
     public void initData() {
         mViewModel.login();
     }

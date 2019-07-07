@@ -55,12 +55,6 @@ dependencies {
     }
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
 
-    api(rootProject.ext.dependencies.bindingcollectionadapter) {
-        exclude group: 'com.android.support'
-    }
-    api(rootProject.ext.dependencies["bindingcollectionadapter-recyclerview"]) {
-        exclude group: 'com.android.support'
-    }
     api rootProject.ext.dependencies["lifecycle-extensions"]
     annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
 
