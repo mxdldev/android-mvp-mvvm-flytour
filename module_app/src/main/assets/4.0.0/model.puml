@@ -1,0 +1,12 @@
+@startuml
+interface IBaseModel{
+void onCleared();
+}
+class BaseModel implements IBaseModel{
+    protected Application mApplication;
+    private CompositeDisposable mCompositeDisposable;
+    public void addSubscribe(Disposable disposable);
+    public void onCleared();
+}
+
+@enduml
