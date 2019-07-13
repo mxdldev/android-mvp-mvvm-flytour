@@ -33,7 +33,7 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 ![](https://img-blog.csdnimg.cn/20190616183350269.png)
 
 ### 更新日志：
-### [FlyTour 4.1.0【MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases) 2019-07-07
+### [FlyTour 4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases) 2019-07-07
 组件化+MVVM+DataDinding+RxJava+Retrofit，在4.0.0的MVVM架构基础之上增加了DataBinding的特性，配合FlyCloud微服务系统共同使用
 * 增加了DataBinding的特性
 
