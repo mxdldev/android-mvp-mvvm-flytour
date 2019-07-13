@@ -22,9 +22,9 @@ FlyTour是Android MVVM+MVP+Dagger2+Retrofit+RxJava+组件化组成的双架构�
 
 本框架的最大的特点就是和FlyCloud微服务框架配合使用，从移动前端和服务后端的一套完整解决方案，解决了很多开发者只会前端不会后端的问题，或者只会后端不会前端的问题，有了这两套框架，我们的开发不在受制于人。
 
-通过不断的升级迭代，该框架已经有了七个不同的版本，[4.1.0【MVVM+DataBinding版】](https://github.com/geduo83/FlyTour/releases)、[4.0.0【MVVM版】](https://github.com/geduo83/FlyTour/releases)、[3.0.0【网络版】](https://github.com/geduo83/FlyTour/releases)、[2.1.0【Dagger版】](https://github.com/geduo83/FlyTour/releases)、[2.0.0【稳定单机版】](https://github.com/geduo83/FlyTour/releases)， [1.1.0【优化版】](https://github.com/geduo83/FlyTour/releases)、[1.0.0【初始版】](https://github.com/geduo83/FlyTour/releases)，各个版本都有不同的特性，基本涵盖了目前Android领域的主流开发架构，能满足不同阶段的Android开发者的使用需求，大家可根据自己的项目需求去选择自己所需要的版本。
+通过不断的升级迭代，该框架已经有了七个不同的版本，[4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases)、[4.0.0【组件化+MVVM+RxJava+Retrofit标准版】](https://github.com/geduo83/FlyTour/releases)、[3.0.0【组件化+MVP+RxJava+Retrofit+Dagger2网络版】](https://github.com/geduo83/FlyTour/releases)、[2.1.0【组件化+MVP+Dagger2版】](https://github.com/geduo83/FlyTour/releases)、[2.0.0【组件化+MVP标准版】](https://github.com/geduo83/FlyTour/releases)， [1.1.0【优化版】](https://github.com/geduo83/FlyTour/releases)、[1.0.0【初始版】](https://github.com/geduo83/FlyTour/releases)，各个版本都有不同的特性，基本涵盖了目前Android领域的主流开发架构，能满足不同阶段的Android开发者的使用需求，大家可根据自己的项目需求去选择自己所需要的版本。
 
-FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](https://github.com/geduo83/FlyTranslate)，[FlyAndroidMVP](https://github.com/geduo83/FlyAndroidMVP)基础上孵化出来的框架，如果需要单一结构项目架构请下载[FlyTranslate【MVP+RxJava+Retrofit+Dagger2】](https://github.com/geduo83/FlyTranslate)或[FlyAndroidMVP【android mvp】](https://github.com/geduo83/FlyAndroidMVP)
+FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](https://github.com/geduo83/FlyTranslate)，[FlyAndroidMVP](https://github.com/geduo83/FlyAndroidMVP)基础上孵化出来的框架，如果需要单一结构体项目架构请下载[FlyTranslate【MVP+RxJava+Retrofit+Dagger2】](https://github.com/geduo83/FlyTranslate)或[FlyAndroidMVP【android mvp】](https://github.com/geduo83/FlyAndroidMVP)
 
 欢迎加星star，在使用中有任何问题，请留言，或加入Android、Java开发技术交流群<br>
 * QQ群：810970432<br>
@@ -33,25 +33,25 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 ![](https://img-blog.csdnimg.cn/20190616183350269.png)
 
 ### 更新日志：
-### [FlyTour 4.1.0【DataBinding版】](https://github.com/geduo83/FlyTour/releases) 2019-07-07
+### [FlyTour 4.1.0【MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases) 2019-07-07
 组件化+MVVM+DataDinding+RxJava+Retrofit，在4.0.0的MVVM架构基础之上增加了DataBinding的特性，配合FlyCloud微服务系统共同使用
 * 增加了DataBinding的特性
 
-### [FlyTour 4.0.0【MVVM版】](https://github.com/geduo83/FlyTour/releases) 2019-07-03
+### [FlyTour 4.0.0【组件化+MVVM+RxJava+Retrofit标准版】](https://github.com/geduo83/FlyTour/releases) 2019-07-03
 组件化+MVVM+RxJava+Retrofit，基本架构由3.0.0的MVP架构升级为MVVM架构，配合FlyCloud微服务系统共同使用
 * MVVM架构彻底改版
 
-### [FlyTour 3.0.0【网络版】](https://github.com/geduo83/FlyTour/releases) 2019-06-26
+### [FlyTour 3.0.0【组件化+MVP+RxJava+Retrofit+Dagger2网络版】](https://github.com/geduo83/FlyTour/releases) 2019-06-26
 组件化+MVP+RxJava+Retrofit+Dagger2,该版本是在2.1.0的版本的基础之上对Model层的数据源做了升级，由本地数据源升级为网络数据源，配合FlyCloud微服务系统共同使用
 * 网络请求部分由Retrofit+RxJava完成
 
-### [FlyTour 2.1.0【Dagger版】](https://github.com/geduo83/FlyTour/releases) 2019-06-06
+### [FlyTour 2.1.0【组件化+MVP+Dagger2版】](https://github.com/geduo83/FlyTour/releases) 2019-06-06
 组件化+MVP+Dagger2，该版本在2.0.0的基础上添加了Dagger2的特性，Present、Model的创建都由Dagger2自动完成
 * 1.Presenter实例的创建由Dagger2完成
 * 2.Modle实例的创建有Dagger2完成
 * 3.DAO实例的创建由Dagger2完成
 
-### [FlyTour 2.0.0【稳定单机版】](https://github.com/geduo83/FlyTour/releases) 2019-05-30
+### [FlyTour 2.0.0【组件化+MVP标准版】](https://github.com/geduo83/FlyTour/releases) 2019-05-30
 基本架构为组件化+MVP，数据由本地SQLLite数据库提供
 以新闻资讯为功能，对app的界面进行了全新的改版，由新闻列表展示、新闻详情展示、新闻添加、新闻类型添加、删除这几个简单的功能组成，基本上覆盖了整个框架的所有核心的、常用的一些功能
 * 新闻类型添加、删除、展示
