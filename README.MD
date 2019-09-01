@@ -21,7 +21,7 @@
 
 FlyTour是Android MVVM+MVP+Dagger2+Retrofit+RxJava+组件化组成的双架构框架，工程架构采用gradle配置实现组件化，模块的架构采用典型的MVVM+MVP架构，MVVM和MVP根据自己的项目实际需求去决定使用，该框架是Android组件化、Android MVP架构、Android MVVM架构的集大成者，帮助你快速的搭建自己的App项目开发框架，以便把主要的精力放在自己的项目的业务功能实现上，另外在长期的工作实践中总结整理大量的实用工具类在项目lib_common组件的util包当中方便大家调用。
 
-本框架的最大的特点就是和FlyCloud微服务框架配合使用，从移动前端和服务后端的一套完整解决方案，解决了很多开发者只会前端不会后端的问题，或者只会后端不会前端的问题，有了这两套框架，我们的开发不在受制于人。
+本框架的最大的特点就是和[FlyCloud微服务框架](https://github.com/mxdldev/spring-cloud-flycloud)配合使用，从移动前端和服务后端的一套完整解决方案，解决了很多开发者只会前端不会后端的问题，或者只会后端不会前端的问题，有了这两套框架，我们的开发不在受制于人。
 
 通过不断的升级迭代，该框架已经有了七个不同的版本，[4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases)、[4.0.0【组件化+MVVM+RxJava+Retrofit标准版】](https://github.com/geduo83/FlyTour/releases)、[3.0.0【组件化+MVP+RxJava+Retrofit+Dagger2网络版】](https://github.com/geduo83/FlyTour/releases)、[2.1.0【组件化+MVP+Dagger2版】](https://github.com/geduo83/FlyTour/releases)、[2.0.0【组件化+MVP标准版】](https://github.com/geduo83/FlyTour/releases)， [1.1.0【优化版】](https://github.com/geduo83/FlyTour/releases)、[1.0.0【初始版】](https://github.com/geduo83/FlyTour/releases)，各个版本都有不同的特性，基本涵盖了目前Android领域的主流开发架构，能满足不同阶段的Android开发者的使用需求，大家可根据自己的项目需求去选择自己所需要的版本。
 
