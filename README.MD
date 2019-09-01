@@ -17,7 +17,7 @@
 </p>
 
 
-![](https://img-blog.csdnimg.cn/20190901190553950.jpg)
+![](https://img-blog.csdnimg.cn/20190901195902972.jpg)
 
 FlyTour是Android MVVM+MVP+Dagger2+Retrofit+RxJava+组件化组成的双架构框架，工程架构采用gradle配置实现组件化，模块的架构采用典型的MVVM+MVP架构，MVVM和MVP根据自己的项目实际需求去决定使用，该框架是Android组件化、Android MVP架构、Android MVVM架构的集大成者，帮助你快速的搭建自己的App项目开发框架，以便把主要的精力放在自己的项目的业务功能实现上，另外在长期的工作实践中总结整理大量的实用工具类在项目lib_common组件的util包当中方便大家调用。
 
