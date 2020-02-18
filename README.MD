@@ -35,7 +35,7 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 
 ### 更新日志：
 ### [FlyTour 5.0.0【组件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-flytour-kotlin) 2020-02-18
-该版本是在2.0.0的基础上对所有的功能用Kotlin语言进行了重新的编写
+该版本是在2.0.0的基础上对所有的功能用Kotlin语言进行了重新编写
 * 对所有功能用Kotlin重新编写
 
 ### [FlyTour 4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases) 2019-07-07
