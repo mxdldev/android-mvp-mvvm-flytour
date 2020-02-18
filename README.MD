@@ -23,7 +23,7 @@ FlyTour是Android MVVM+MVP+Dagger2+Retrofit+RxJava+组件化组成的双架构�
 
 本框架的最大的特点就是和[FlyCloud微服务框架](https://github.com/mxdldev/spring-cloud-flycloud)配合使用，从移动前端和服务后端的一套完整解决方案，解决了很多开发者只会前端不会后端的问题，或者只会后端不会前端的问题，有了这两套框架，我们的开发不在受制于人。
 
-通过不断的升级迭代，该框架已经有了七个不同的版本，[4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases)、[4.0.0【组件化+MVVM+RxJava+Retrofit标准版】](https://github.com/geduo83/FlyTour/releases)、[3.0.0【组件化+MVP+RxJava+Retrofit+Dagger2网络版】](https://github.com/geduo83/FlyTour/releases)、[2.1.0【组件化+MVP+Dagger2版】](https://github.com/geduo83/FlyTour/releases)、[2.0.0【组件化+MVP标准版】](https://github.com/geduo83/FlyTour/releases)， [1.1.0【优化版】](https://github.com/geduo83/FlyTour/releases)、[1.0.0【初始版】](https://github.com/geduo83/FlyTour/releases)，各个版本都有不同的特性，基本涵盖了目前Android领域的主流开发架构，能满足不同阶段的Android开发者的使用需求，大家可根据自己的项目需求去选择自己所需要的版本。
+通过不断的升级迭代，该框架已经有了八个不同的版本，[5.0.0【组件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-flytour-kotlin)、[4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases)、[4.0.0【组件化+MVVM+RxJava+Retrofit标准版】](https://github.com/geduo83/FlyTour/releases)、[3.0.0【组件化+MVP+RxJava+Retrofit+Dagger2网络版】](https://github.com/geduo83/FlyTour/releases)、[2.1.0【组件化+MVP+Dagger2版】](https://github.com/geduo83/FlyTour/releases)、[2.0.0【组件化+MVP标准版】](https://github.com/geduo83/FlyTour/releases)， [1.1.0【优化版】](https://github.com/geduo83/FlyTour/releases)、[1.0.0【初始版】](https://github.com/geduo83/FlyTour/releases)，各个版本都有不同的特性，基本涵盖了目前Android领域的主流开发架构，能满足不同阶段的Android开发者的使用需求，大家可根据自己的项目需求去选择自己所需要的版本。
 
 FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](https://github.com/geduo83/FlyTranslate)，[FlyAndroidMVP](https://github.com/geduo83/FlyAndroidMVP)基础上孵化出来的框架，如果需要单一结构体项目架构请下载[FlyTranslate【MVP+RxJava+Retrofit+Dagger2】](https://github.com/geduo83/FlyTranslate)或 [FlyFun【android mvp】](https://github.com/geduo83/FlyAndroidMVP)
 
@@ -34,6 +34,10 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 ![](https://img-blog.csdnimg.cn/20190616183350269.png)
 
 ### 更新日志：
+### [FlyTour 5.0.0【组件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-flytour-kotlin) 2020-02-18
+该版本是在2.0.0的基础上对所有的功能用Kotlin语言进行了重新的编写
+* 对所有功能用Kotlin重新编写
+
 ### [FlyTour 4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/geduo83/FlyTour/releases) 2019-07-07
 组件化+MVVM+DataDinding+RxJava+Retrofit，在4.0.0的MVVM架构基础之上增加了DataBinding的特性，配合FlyCloud微服务系统共同使用
 * 增加了DataBinding的特性
