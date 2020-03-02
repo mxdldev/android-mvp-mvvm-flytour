@@ -1,28 +1,35 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
 
 android {
-    compileSdkVersion build_versions.target_sdk
-
+    compileSdkVersion build_versions.compile_sdk
+    buildToolsVersion build_versions.build_sdk
     defaultConfig {
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
-        versionCode 1
-        versionName "1.0"
+        versionCode app_version.version_code
+        versionName app_version.version_name
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName()]
-            }
-        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
         ndk {
-            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
-            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
     }
 
     buildTypes {
-        debug{
+        debug {
             buildConfigField "boolean", 'IS_DEBUG', 'true'
         }
         release {
@@ -30,33 +37,24 @@ android {
         }
     }
 
-
 }
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     api project(":lib_refresh_layout")
     api project(':lib_fly_db')
-    api deps.junit
-    api deps.testrunner
-    api deps.testespresso
 
-    // Support libraries
-    api deps.support.app_compat
-    api deps.support.v4
-    api deps.support.v13
-    api deps.support.design
-    api deps.support.cardview
-    api deps.support.percent
-    api deps.support.recyclerview
-    api deps.support.multidex
-    api deps.support.constraint_layout
+    api deps.kotlin_stdlib_jdk7
+    api deps.androidx_appcompat
+    api deps.core_ktx
+    api deps.constraintlayout
+    api deps.androidx_recyclerview
+    api deps.android_material
 
-    api deps.arouter_api
+
     api deps.rxpermissions
     api deps.eventbus;
     api deps.MultiImageSelector
-
 
     api deps.rxjava2
     api deps.rxandroid
@@ -74,6 +72,7 @@ dependencies {
     api deps.stetho
 
     annotationProcessor deps.glide_compiler
-    annotationProcessor deps.arouter_compiler
 
+    api deps.arouter_api
+    kapt deps.arouter_compiler
 }

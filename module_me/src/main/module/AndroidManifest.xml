@@ -15,15 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".NewsTypeAddActivity"
-            android:label="新闻类型设置"
-            android:theme="@style/AppTheme.BlackBackBar"
-            />
-        <activity
-            android:name=".NewsTypeListActivity"
-            android:label="新闻类型列表"
-            android:theme="@style/AppTheme.BackBar"/>
+
     </application>
 
 </manifest>

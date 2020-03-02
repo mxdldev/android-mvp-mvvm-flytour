@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.fly.tour">
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.fly.tour">
+
+    <dist:module dist:instant="true" />
 
     <application
         android:allowBackup="true"
@@ -10,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".MyApplication"
+        android:hardwareAccelerated = "false"
+        android:largeHeap = "true"
         >
-
     </application>
 
 </manifest>

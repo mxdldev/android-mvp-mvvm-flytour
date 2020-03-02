@@ -3,31 +3,36 @@ if (isModule.toBoolean()) {
 } else {
     apply plugin: 'com.android.library'
 }
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
 
 android {
-    compileSdkVersion build_versions.target_sdk
-
+    compileSdkVersion build_versions.compile_sdk
+    buildToolsVersion build_versions.build_sdk
     defaultConfig {
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
         versionCode app_version.version_code
         versionName app_version.version_name
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName()]
-            }
-        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
+
     buildTypes {
         release {
-            consumerProguardFiles  'proguard-rules.pro'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-
     }
+
     sourceSets {
         main {
             if (isModule.toBoolean()) {
@@ -40,12 +45,14 @@ android {
             }
         }
     }
+
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':lib_common')
     annotationProcessor deps.arouter_compiler
+    kapt deps.arouter_compiler
     annotationProcessor deps.glide_compiler
     annotationProcessor deps.dagger_compiler
 }

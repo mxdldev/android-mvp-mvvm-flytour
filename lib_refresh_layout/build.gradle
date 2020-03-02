@@ -1,32 +1,31 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 android {
-    compileSdkVersion build_versions.target_sdk
-
+    compileSdkVersion build_versions.compile_sdk
+    buildToolsVersion build_versions.build_sdk
     defaultConfig {
         minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
-        versionCode 1
-        versionName "1.0"
+        versionCode app_version.version_code
+        versionName app_version.version_name
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
-    api deps.support.recyclerview
-    api deps.support.app_compat
-    api deps.junit
-    api deps.testrunner
-    api deps.testespresso
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api deps.kotlin_stdlib_jdk7
+    api deps.androidx_appcompat
+    api deps.core_ktx
+    api deps.androidx_recyclerview
 }

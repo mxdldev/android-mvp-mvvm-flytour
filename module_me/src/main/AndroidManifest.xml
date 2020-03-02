@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.fly.tour.me">
+    package="com.fly.tour.me">
 
     <application
         android:allowBackup="true"
@@ -9,20 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".NewsTypeAddActivity"
-            android:label="新闻类型设置"
-            android:theme="@style/AppTheme.BackBar"/>
+        <activity android:name=".NewsDetailAddActivity"
+            android:theme="@style/AppTheme.BackBar"
+            android:label="新闻内容添加"
+            />
         <activity
             android:name=".NewsTypeListActivity"
             android:label="新闻类型列表"
-            android:theme="@style/AppTheme.BackBar"/>
+            android:theme="@style/AppTheme.BackBar" />
         <activity
-            android:name=".NewsDetailAddActivity"
-            android:label="新闻添加"
-            android:theme="@style/AppTheme.BackBar"
-            >
-        </activity>
+            android:name=".NewsTypeAddActivity"
+            android:label="新闻类型设置"
+            android:theme="@style/AppTheme.BackBar" />
     </application>
 
 </manifest>

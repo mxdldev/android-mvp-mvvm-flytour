@@ -1,6 +1,6 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">module_main</string>
-    <string name="title_news">新闻</string>
+    <string name="title_news" tools:ignore="ExtraTranslation">新闻</string>
     <string name="title_find">发现</string>
     <string name="title_my">我的</string>
 </resources>

@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_trip"
+        android:id="@+id/navigation_news"
         android:icon="@drawable/ic_bottom_trip"
         android:title="@string/title_news"/>
 

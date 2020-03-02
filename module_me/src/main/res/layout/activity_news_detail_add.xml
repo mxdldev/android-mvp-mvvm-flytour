@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <com.fly.tour.common.view.SettingBarView
-        android:id="@+id/view_me_set_news_type"
+        android:id="@+id/mViewMeSetNewsType"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         app:set_content_hint="请选择"
@@ -14,7 +14,7 @@
         />
 
     <com.fly.tour.common.view.SettingBarView
-        android:id="@+id/view_me_set_news_title"
+        android:id="@+id/mViewMeSetNewsTitle"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         app:set_content_hint="请输入"
@@ -36,7 +36,7 @@
             android:layout_centerVertical="true"
             />
         <TextView
-            android:id="@+id/txt_set_title"
+            android:id="@+id/mTxtSetTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="17sp"
@@ -47,12 +47,12 @@
             android:layout_alignParentTop="true"
             />
         <EditText
-            android:id="@+id/txt_news_detail"
+            android:id="@+id/mTxtNewsDetail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="15sp"
             android:textColor="#333333"
-            android:layout_toRightOf="@+id/txt_set_title"
+            android:layout_toRightOf="@+id/mTxtSetTitle"
             android:layout_toLeftOf="@+id/img_right_icon"
             android:layout_centerVertical="true"
             android:layout_marginLeft="14dp"
@@ -63,7 +63,7 @@
             />
     </RelativeLayout>
     <Button
-        android:id="@+id/btn_me_save_news_detail"
+        android:id="@+id/mBtnMeSaveNewsDetail"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="12dp"

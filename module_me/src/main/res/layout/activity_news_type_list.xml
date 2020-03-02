@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.refresh.lib.DaisyRefreshLayout
-    android:id="@+id/refview_news_type"
+<com.refresh.lib.DaisyRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mRefViewNewsType"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recview"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecViewNewsType"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 </com.refresh.lib.DaisyRefreshLayout>
