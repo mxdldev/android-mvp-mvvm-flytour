@@ -1,0 +1,4 @@
+#Tue Mar 03 19:54:49 CST 2020
+base.0=D\:\\work_android\\android-mvp-mvvm-flytour\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

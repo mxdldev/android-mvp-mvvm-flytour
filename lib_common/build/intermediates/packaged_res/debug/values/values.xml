@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#1976D2</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="menu_color">#1976D2</color>
+    <color name="textColorPrimary">#333333</color>
+    <declare-styleable name="DaisyRefreshLayout">
+        <attr format="reference" name="onRefreshCommand"/>
+        <attr format="reference" name="onLoadMoreCommand"/>
+        <attr format="reference" name="onAutoRefreshCommand"/>
+        <attr format="boolean" name="refreshing"/>
+        <attr format="boolean" name="loadmore"/>
+        <attr format="boolean" name="autorefresh"/>
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr format="integer" name="maxCollapsedLines"/>
+        <attr format="integer" name="animDuration"/>
+        <attr format="float" name="animAlphaStart"/>
+        <attr format="reference" name="expandIndicator"/>
+        <attr format="reference" name="collapseIndicator"/>
+        <attr format="enum" name="expandToggleType">
+            <enum name="ImageButton" value="0"/>
+            <enum name="TextView" value="1"/>
+        </attr>
+        <attr format="reference" name="expandableTextId"/>
+        <attr format="reference" name="expandCollapseToggleId"/>
+        <attr format="boolean" name="expandToggleOnTextClick"/>
+    </declare-styleable>
+    <declare-styleable name="MagicTextView">
+        <attr format="color" name="innerShadowColor"/>
+        <attr format="dimension" name="innerShadowRadius"/>
+        <attr format="dimension" name="innerShadowDx"/>
+        <attr format="dimension" name="innerShadowDy"/>
+
+        <attr format="color" name="outerShadowColor"/>
+        <attr format="dimension" name="outerShadowRadius"/>
+        <attr format="dimension" name="outerShadowDx"/>
+        <attr format="dimension" name="outerShadowDy"/>
+
+        <attr format="string" name="typeface"/>
+
+        <attr format="reference|color" name="foreground"/>
+        <attr format="reference|color" name="backgroundcolor"/>
+
+        <attr format="dimension" name="strokeWidth"/>
+        <attr format="dimension" name="strokeMiter"/>
+        <attr format="color" name="strokeColor"/>
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0"/>
+            <enum name="bevel" value="1"/>
+            <enum name="round" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RecyclerView">
+        <attr format="boolean" name="linearLayoutManager"/>
+    </declare-styleable>
+    <declare-styleable name="SettingBarView">
+        <attr format="boolean" name="set_left_icon_visable"/>
+        <attr format="reference" name="set_left_icon"/>
+        <attr format="string" name="set_title"/>
+        <attr format="string" name="set_content"/>
+        <attr format="string" name="set_content_hint"/>
+        <attr format="boolean" name="set_right_icon_visable"/>
+        <attr format="reference" name="set_right_icon"/>
+    </declare-styleable>
+    <item name="expand_collapse" type="id"/>
+    <item name="expandable_text" type="id"/>
+    <item name="glide_tag" type="id"/>
+    <string name="app_name">lib_common</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
+    <style name="AppTheme.BackBar" parent="AppTheme">
+        <item name="navigationIcon">@drawable/navbar_icon_return</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
+    <style name="AppTheme.BlackBackBar" parent="AppTheme">
+        <item name="colorPrimary">@color/color_black</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <item name="navigationIcon">@drawable/callback_white_icon</item>
+        <item name="toolbarStyle">@style/NoSpaceActionBarTheme</item>
+    </style>
+    <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/menu_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

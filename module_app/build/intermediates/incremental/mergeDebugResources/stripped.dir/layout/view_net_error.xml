@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rl_net_error_root"
+                android:background="#F0F0F0"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/txt_net_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_pic_net"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            />
+        <Button
+            android:id="@+id/btn_net_refresh"
+            android:layout_width="122dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_round_blue"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:text="刷新"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+</RelativeLayout>

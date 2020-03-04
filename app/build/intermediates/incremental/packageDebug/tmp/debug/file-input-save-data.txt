@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Tue Mar 03 19:54:49 CST 2020
+1.base=D\:\\work_android\\android-mvp-mvvm-flytour\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+2.path=app-beijing-release.apk
+0.baseType=DIRECTORY
+2.base=D\:\\work_android\\android-mvp-mvvm-flytour\\app\\build\\intermediates\\assets\\debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=DEX
+0.path=lib/armeabi/libaa.so
+0.set=NATIVE_RESOURCE
+0.base=D\:\\work_android\\android-mvp-mvvm-flytour\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+2.baseType=DIRECTORY
+1.path=classes.dex

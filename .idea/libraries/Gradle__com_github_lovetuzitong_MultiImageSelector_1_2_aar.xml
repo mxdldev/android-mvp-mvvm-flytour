@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.lovetuzitong:MultiImageSelector:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/66ace72925677743abf10076b811f035/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/66ace72925677743abf10076b811f035/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.lovetuzitong/MultiImageSelector/1.2/845a23d54448e3b469e755e7832e9185e22ba41c/MultiImageSelector-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

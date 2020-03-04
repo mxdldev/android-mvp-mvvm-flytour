@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\work_android\android-mvp-mvvm-flytour\app\src\main\assets"><file name="app-beijing-release.apk" path="D:\work_android\android-mvp-mvvm-flytour\app\src\main\assets\app-beijing-release.apk"/></source><source path="D:\work_android\android-mvp-mvvm-flytour\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\work_android\android-mvp-mvvm-flytour\app\src\debug\assets"/></dataSet></merger>

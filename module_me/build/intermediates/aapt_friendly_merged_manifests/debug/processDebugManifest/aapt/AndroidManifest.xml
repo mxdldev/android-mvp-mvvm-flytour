@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fly.tour.me"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.fly.tour.me.NewsTypeAddActivity"
+            android:label="新闻类型设置"
+            android:theme="@style/AppTheme.BackBar" />
+        <activity
+            android:name="com.fly.tour.me.NewsTypeListActivity"
+            android:label="新闻类型列表"
+            android:theme="@style/AppTheme.BackBar" />
+        <activity
+            android:name="com.fly.tour.me.NewsDetailAddActivity"
+            android:label="新闻添加"
+            android:theme="@style/AppTheme.BackBar" >
+        </activity>
+    </application>
+
+</manifest>

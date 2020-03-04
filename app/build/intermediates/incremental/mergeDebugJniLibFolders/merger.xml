@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\work_android\android-mvp-mvvm-flytour\app\src\main\jniLibs"><file name="armeabi/libaa.so" path="D:\work_android\android-mvp-mvvm-flytour\app\src\main\jniLibs\armeabi\libaa.so"/></source></dataSet><dataSet config="debug"><source path="D:\work_android\android-mvp-mvvm-flytour\app\src\debug\jniLibs"/></dataSet></merger>

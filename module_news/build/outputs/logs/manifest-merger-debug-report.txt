@@ -1,0 +1,123 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+	package
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:3:11-38
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:1-42:12
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:6:5-75
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:7:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:12:5-78
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:13:5-74
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:13:22-72
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:14:22-65
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:17:5-70
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:17:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:18:5-70
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:18:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:19:5-71
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:19:22-69
+uses-permission#android.permission.CAMERA
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:20:5-64
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:20:22-62
+uses-feature#android.hardware.camera
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:22:5-59
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:22:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:23:5-69
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:23:19-67
+application
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:25:5-40:19
+	android:supportsRtl
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:30:9-35
+	android:label
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:28:9-41
+	android:roundIcon
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:29:9-54
+	android:icon
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:27:9-43
+	android:allowBackup
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:26:9-35
+	android:theme
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:31:9-40
+activity#com.fly.tour.news.NewsDetailActivity
+ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:34:9-39:20
+	android:label
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:36:13-33
+	android:theme
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:37:13-52
+	android:name
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml:35:13-64
+uses-sdk
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+		ADDED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml
+		INJECTED from D:\work_android\android-mvp-mvvm-flytour\module_news\src\main\AndroidManifest.xml

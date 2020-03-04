@@ -19,7 +19,6 @@
       <PegdownExtensions>
         <option name="ANCHORLINKS" value="true" />
         <option name="ATXHEADERSPACE" value="true" />
-        <option name="AUTOLINKS" value="true" />
         <option name="FENCED_CODE_BLOCKS" value="true" />
         <option name="INTELLIJ_DUMMY_IDENTIFIER" value="true" />
         <option name="RELAXEDHRULES" value="true" />
@@ -44,7 +43,7 @@
       <bodyTop />
       <bodyBottom />
     </HtmlSettings>
-    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="false" isCssTextEnabled="false" isDynamicPageWidth="true">
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
       <StylesheetProvider>
         <provider providerId="com.vladsch.md.nav.editor.swing.html.css" providerName="Default Swing Stylesheet" />
       </StylesheetProvider>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\work_android\\android-mvp-mvvm-flytour\\module_app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\geduo\\.gradle\\caches\\transforms-2\\files-2.1\\66ace72925677743abf10076b811f035\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,161,217,265,325,378,438,493,554,624,708,753,796",
+                        "endColumns": "46,58,55,47,59,52,59,54,60,69,83,44,42,51",
+                        "endOffsets": "97,156,212,260,320,373,433,488,549,619,703,748,791,843"
+                    }
+                }
+            ]
+        }
+    ]
+}

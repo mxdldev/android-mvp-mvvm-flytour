@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+     
+    
+                 
+                            
+                                                                         
+           
+
+<com.refresh.lib.DaisyRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refview_news_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="layout/activity_news_type_list_0"      
+                                                          
+                                                                
+                                                  
+                                                    
+     >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="binding_1"                           
+        />
+</com.refresh.lib.DaisyRefreshLayout>
+         

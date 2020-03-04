@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fly.tour"
+    android:versionCode="3"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.fly.tour.MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.fly.tour.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.0.2" />
+
+        <activity
+            android:name="com.didi.virtualapk.delegate.StubActivity"
+            android:exported="false"
+            android:launchMode="standard" /> <!-- Stub Activities -->
+        <activity
+            android:name="com.didi.virtualapk.core.A$1"
+            android:exported="false"
+            android:launchMode="standard" />
+        <activity
+            android:name="com.didi.virtualapk.core.A$2"
+            android:exported="false"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Translucent" /> <!-- Stub Activities -->
+        <activity
+            android:name="com.didi.virtualapk.core.B$1"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.didi.virtualapk.core.B$2"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.didi.virtualapk.core.B$3"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.didi.virtualapk.core.B$4"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.didi.virtualapk.core.B$5"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.didi.virtualapk.core.B$6"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.didi.virtualapk.core.B$7"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.didi.virtualapk.core.B$8"
+            android:exported="false"
+            android:launchMode="singleTop" /> <!-- Stub Activities -->
+        <activity
+            android:name="com.didi.virtualapk.core.C$1"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.didi.virtualapk.core.C$2"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.didi.virtualapk.core.C$3"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.didi.virtualapk.core.C$4"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.didi.virtualapk.core.C$5"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.didi.virtualapk.core.C$6"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.didi.virtualapk.core.C$7"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.didi.virtualapk.core.C$8"
+            android:exported="false"
+            android:launchMode="singleTask" /> <!-- Stub Activities -->
+        <activity
+            android:name="com.didi.virtualapk.core.D$1"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.didi.virtualapk.core.D$2"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.didi.virtualapk.core.D$3"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.didi.virtualapk.core.D$4"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.didi.virtualapk.core.D$5"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.didi.virtualapk.core.D$6"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.didi.virtualapk.core.D$7"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.didi.virtualapk.core.D$8"
+            android:exported="false"
+            android:launchMode="singleInstance" /> <!-- Local Service running in main process -->
+        <service
+            android:name="com.didi.virtualapk.delegate.LocalService"
+            android:exported="false" /> <!-- Daemon Service running in child process -->
+        <service
+            android:name="com.didi.virtualapk.delegate.RemoteService"
+            android:exported="false"
+            android:process=":daemon" >
+            <intent-filter>
+                <action android:name="com.fly.tour.intent.ACTION_DAEMON_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.didi.virtualapk.delegate.RemoteContentProvider"
+            android:authorities="com.fly.tour.VirtualAPK.Provider"
+            android:exported="false"
+            android:process=":daemon" />
+    </application>
+
+</manifest>
