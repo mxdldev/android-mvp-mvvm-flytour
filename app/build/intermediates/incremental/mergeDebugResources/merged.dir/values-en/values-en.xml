@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="about">about</string>
-    <string name="about_detail">VirtualAPK is a plugin framework powered by DiDi company for Android，see the source code : https://github.com/didi/VirtualAPK</string>
-    <string name="app_name">VirtualAPK-EN</string>
-    <string name="open_plugin">open plugin</string>
-    <string name="webview">Append WebView</string>
-</resources>
