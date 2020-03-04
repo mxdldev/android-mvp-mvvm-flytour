@@ -1,0 +1,12 @@
+@startuml
+[Component]
+[Container]
+[ModuleA]
+[ModuleB]
+[ModuleC]
+
+[ModuleA]-->[Component]:依赖对象A
+[ModuleB]-->[Component]:依赖对象B
+[ModuleC]-->[Component]:依赖对象C
+[Component]-->[Container]:注入Container容器中
+ @enduml

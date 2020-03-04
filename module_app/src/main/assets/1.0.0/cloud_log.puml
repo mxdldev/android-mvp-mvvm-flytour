@@ -1,0 +1,6 @@
+@startuml
+[User Service]-->[RabbitMQ]:发送消息
+[Blog Service]-->[RabbitMQ]:发送消息
+[RabbitMQ]-->[Log Service]
+[Log Service]-->[MYSQL数据库]:保存日志
+@enduml

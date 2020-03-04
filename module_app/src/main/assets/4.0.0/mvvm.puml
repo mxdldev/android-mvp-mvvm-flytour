@@ -1,0 +1,54 @@
+@startuml
+interface IBaseView{
+    void initView();
+    void initListener();
+    void initData();
+    void finishActivity();
+    void showInitLoadView(boolean show);
+    void showNoDataView(boolean show);
+    void showTransLoadingView(boolean show);
+    void showNetWorkErrView(boolean show);
+    Context getContext();
+}
+
+abstract class BaseActivity implements IBaseView{
+    public abstract int onBindLayout();
+    public abstract void initView();
+    public abstract void initData();
+    public void initListener();
+}
+abstract class BaseMvvmActivity extends BaseActivity{
+ initViewDataBinding();
+ initBaseViewObservable();
+ initViewObservable();
+}
+abstract class BaseMvvmRefreshActivity extends BaseMvvmActivity{
+  private void initBaseViewRefreshObservable();
+    public abstract DaisyRefreshLayout getRefreshLayout();
+    public void initRefreshView();
+    public void stopRefresh();
+    public void stopLoadMore();
+    public void autoLoadData();
+}
+
+class BaseFragment implements IBaseView{
+   initCommonView(mView);
+        initView(mView);
+        initListener();
+}
+
+class BaseMvvmFragment extends BaseFragment{
+  initViewModel();
+        initBaseViewObservable();
+        initViewObservable();
+}
+class BaseMvvmRefreshFragment extends BaseMvvmFragment{
+    private void initBaseViewRefreshObservable();
+     public abstract DaisyRefreshLayout getRefreshLayout();
+        public void initRefreshView();
+        public void stopRefresh();
+        public void stopLoadMore();
+        public void autoLoadData() ;
+}
+
+@enduml

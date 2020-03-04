@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="newsDetail"
+            type="com.fly.tour.api.news.entity.NewsDetail" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view_news_detal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:contentPaddingBottom="15dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingTop="15dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_news_detail_id_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="ID"
+                android:textColor="#888888"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_news_detail_id_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt_news_detail_id_key"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/txt_news_detail_id_key"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textSize="15sp"
+                android:text="@{String.valueOf(newsDetail.id)}"
+                />
+
+            <TextView
+                android:id="@+id/txt_news_detail_title_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_news_detail_id_key"
+                android:layout_marginTop="4dp"
+                android:text="标题"
+                android:textColor="#888888"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_news_detail_title_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt_news_detail_title_key"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/txt_news_detail_title_key"
+                android:singleLine="true"
+                android:text="@{newsDetail.title}"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_news_detail_content_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_news_detail_title_value"
+                android:layout_marginTop="4dp"
+                android:text="内容详情"
+                android:textColor="#888888"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_news_detail_content_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt_news_detail_content_key"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/txt_news_detail_content_key"
+                android:singleLine="true"
+                android:text="@{newsDetail.content}"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_news_detail_addtime_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_news_detail_content_key"
+                android:layout_marginTop="4dp"
+                android:text="添加日期"
+                android:textColor="#888888"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_news_detail_addtime_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt_news_detail_addtime_key"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/txt_news_detail_addtime_key"
+                android:text="@{newsDetail.addtime}"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>
