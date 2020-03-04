@@ -7,18 +7,30 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.3'
-        
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.didi.virtualapk:gradle:0.9.8.6'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+}
+
+ext {
+    VERSION_COMPILE_SDK = 28
+    VERSION_BUILD_TOOLS = '26.0.2'
+
+    VERSION_MIN_SDK = 19
+    VERSION_TARGET_SDK = 28
+
 }
 
 allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://jitpack.io' }
+
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
     }
 }
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/toolbar_root"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="?attr/actionBarSize"
+                                   android:background="?attr/colorPrimary"
+                                   android:elevation="4dp"
+                                   android:minHeight="?attr/actionBarSize"
+                                   android:theme="@style/ToolbarTheme"
+                                   app:layout_collapseMode="pin"
+                                   app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <Button
+        android:id="@+id/bt_toolbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|left"
+        android:background="@null"
+        android:minWidth="0dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="易车队"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="17sp"/>
+</android.support.v7.widget.Toolbar>

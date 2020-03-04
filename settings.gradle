@@ -1,2 +1,7 @@
 include ':app'
-rootProject.name='android-mvp-mvvm-flytour'
+include ':plugin_fly_news'
+include ':plugin_fly_find'
+include ':plugin_fly_me'
+include ':lib_fly_db'
+include ':lib_refresh_layout'
+include ':lib_common'

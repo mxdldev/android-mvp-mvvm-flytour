@@ -1,0 +1,6 @@
+<resources>
+    <style name="TabLayoutTextStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+</resources>

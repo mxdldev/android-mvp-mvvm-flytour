@@ -9,6 +9,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/lib_common" />
+            <option value="$PROJECT_DIR$/lib_fly_db" />
+            <option value="$PROJECT_DIR$/lib_refresh_layout" />
+            <option value="$PROJECT_DIR$/plugin_fly_find" />
+            <option value="$PROJECT_DIR$/plugin_fly_me" />
+            <option value="$PROJECT_DIR$/plugin_fly_news" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
