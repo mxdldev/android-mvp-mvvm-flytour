@@ -35,7 +35,7 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 
 ### 更新日志：
 ### [FlyTour 5.1.0【插件化+MVP+Java标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases) 2020-03-02
-该版本是在2.0.0的基础上运用VirtualAPK框架对整个项目进行插件化改造，完美的实现了组件化到插件化的完美升级，关于组件化和插件化的区别请查阅[Android组件化方案最佳实践](https://menxindiaolong.blog.csdn.net/article/details/86604852)这篇文章
+该版本是在2.0.0的基础上运用VirtualAPK框架对整个项目进行插件化改造，实现了组件化到插件化的完美升级，关于组件化和插件化的区别请查阅[Android组件化方案最佳实践](https://menxindiaolong.blog.csdn.net/article/details/86604852)这篇文章
 * 运用VirtualAPK框架对整个项目进行插件化改造
 
 ### [FlyTour 5.0.0【组件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases) 2020-02-18
