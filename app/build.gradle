@@ -1,15 +1,17 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.didi.virtualapk.host'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion VERSION_COMPILE_SDK
     buildToolsVersion VERSION_BUILD_TOOLS
     defaultConfig {
         applicationId "com.fly.tour"
-        minSdkVersion  VERSION_MIN_SDK
+        minSdkVersion VERSION_MIN_SDK
         targetSdkVersion VERSION_TARGET_SDK
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -18,6 +20,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
@@ -25,6 +28,7 @@ dependencies {
     implementation 'com.didi.virtualapk:core:0.9.8'
     implementation project(':lib_common')
 
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

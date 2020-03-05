@@ -1,0 +1,71 @@
+ext.deps = [:]
+def build_versions = [:]
+build_versions.compile_sdk = 29
+build_versions.build_sdk = "29.0.0"
+build_versions.min_sdk = 16
+build_versions.target_sdk = 29
+ext.build_versions = build_versions
+
+def app_version = [:]
+app_version.version_code = 100
+app_version.version_name = "1.0.0"
+ext.app_version = app_version
+
+def deps = [:]
+//gradle插件依赖
+deps.android_gradle_plugin = "com.android.tools.build:gradle:3.5.3"
+deps.kotlin_gradle_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.61"
+
+deps.kotlin_stdlib_jdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61"
+deps.androidx_appcompat = 'androidx.appcompat:appcompat:1.1.0'
+deps.core_ktx = 'androidx.core:core-ktx:1.0.2'
+deps.constraintlayout = 'androidx.constraintlayout:constraintlayout:1.1.3'
+deps.androidx_recyclerview = 'androidx.recyclerview:recyclerview:1.1.0'
+deps.android_material = 'com.google.android.material:material:1.0.0'
+
+deps.arouter_api = "com.alibaba:arouter-api:1.5.0"
+deps.arouter_compiler = "com.alibaba:arouter-compiler:1.2.2"
+deps.rxpermissions = "com.github.tbruyelle:rxpermissions:0.10.2"
+deps.MultiImageSelector = "com.github.lovetuzitong:MultiImageSelector:1.2"
+deps.eventbus = "org.greenrobot:eventbus:3.1.1"
+
+deps.rxjava2 = "io.reactivex.rxjava2:rxjava:2.2.0"
+deps.rxandroid = "io.reactivex.rxjava2:rxandroid:2.0.2"
+deps.adapter_rxjava2 = "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+deps.converter_gson = "com.squareup.retrofit2:converter-gson:2.4.0"
+deps.logging_interceptor = "com.squareup.okhttp3:logging-interceptor:3.9.1"
+
+deps.dagger = "com.google.dagger:dagger:2.13"
+deps.dagger_compiler = "com.google.dagger:dagger-compiler:2.13"
+
+deps.glide = "com.github.bumptech.glide:glide:4.8.0"
+deps.glide_compiler = "com.github.bumptech.glide:compiler:4.8.0"
+
+deps.EasyPopup = "com.github.zyyoona7:EasyPopup:1.1.2"
+deps.flexbox = "com.google.android:flexbox:1.0.0"
+
+//rxlife
+deps.rxlifecycle = "com.trello.rxlifecycle2:rxlifecycle:2.2.1"
+deps.rxlifecycle_android = "com.trello.rxlifecycle2:rxlifecycle-android:2.2.1"
+deps.rxlifecycle_components = "com.trello.rxlifecycle2:rxlifecycle-components:2.2.1"
+
+//nohttp
+deps.nohttp = "com.yanzhenjie.nohttp:nohttp:1.1.4"
+deps.nohttp_ok = "com.yanzhenjie.nohttp:okhttp:1.1.4"
+deps.stetho = "com.facebook.stetho:stetho:1.3.1"
+
+ext.deps = deps
+
+def addRepos(RepositoryHandler handler) {
+    handler.mavenLocal()
+    handler.google()
+    handler.jcenter()
+    handler.mavenCentral()
+    //Add the JitPack repository
+    handler.maven { url "https://jitpack.io" }
+    handler.maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    handler.maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
+
+}
+
+ext.addRepos = this.&addRepos

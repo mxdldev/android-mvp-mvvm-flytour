@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <android.support.design.widget.TabLayout
-        android:id="@+id/layout_tour"
+        android:id="@+id/mTabLayout"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -20,7 +19,7 @@
 
         />
     <android.support.v4.view.ViewPager
-        android:id="@+id/pager_tour"
+        android:id="@+id/mViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>

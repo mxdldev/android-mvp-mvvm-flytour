@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion VERSION_COMPILE_SDK
 
@@ -10,6 +12,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+//        ndk {
+//            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+//        }
 
     }
 
@@ -27,6 +33,7 @@ dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     api project(":lib_refresh_layout")
     api project(':lib_fly_db')
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api 'com.android.support:appcompat-v7:28.0.0'
     api 'com.android.support:design:28.0.0'
     api 'com.android.support:recyclerview-v7:28.0.0'
@@ -38,7 +45,7 @@ dependencies {
     api 'com.google.code.gson:gson:2.6.1'
     api 'com.github.tbruyelle:rxpermissions:0.10.2'
     api 'com.github.lovetuzitong:MultiImageSelector:1.2'
-
+    api 'com.android.support:multidex:1.0.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
