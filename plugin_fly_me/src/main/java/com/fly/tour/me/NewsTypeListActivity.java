@@ -3,6 +3,7 @@ package com.fly.tour.me;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -127,7 +128,7 @@ public class NewsTypeListActivity extends BaseRefreshActivity<NewsTypeListModel,
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         switch (requestCode) {
             case RequestCode.Me.NEWS_TYPE_ADD:
-                if(resultCode == Activity.RESULT_OK){
+                if (resultCode == Activity.RESULT_OK) {
                     mPresenter.refreshData();
                 }
                 break;

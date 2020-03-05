@@ -53,7 +53,6 @@
             android:textSize="15sp"
             android:textColor="#333333"
             android:layout_toRightOf="@+id/txt_set_title"
-            android:layout_toLeftOf="@+id/img_right_icon"
             android:layout_centerVertical="true"
             android:layout_marginLeft="14dp"
             android:layout_marginRight="14dp"

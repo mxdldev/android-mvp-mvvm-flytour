@@ -30,8 +30,12 @@
             android:name=".NewsDetailAddActivity"
             android:label="新闻添加"
             android:theme="@style/AppTheme.BackBar"
-            >
-        </activity>
+           />
+        <activity
+            android:name=".PluginArouterActivity"
+            android:label="Plugin Arouter"
+            android:theme="@style/AppTheme.BackBar"
+            />
     </application>
 
 </manifest>
