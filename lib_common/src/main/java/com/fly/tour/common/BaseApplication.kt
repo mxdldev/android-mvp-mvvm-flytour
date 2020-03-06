@@ -10,7 +10,7 @@ import android.support.multidex.MultiDexApplication
  * Version:     V1.0.0<br>
  * Update:     <br>
 </初始化应用程序> */
-open class BaseApplication : MultiDexApplication() {
+open class BaseApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this

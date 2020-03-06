@@ -43,7 +43,7 @@ class NewsListPresenter(context: Context) :
                 mView?.enableLoadMore(false)
             }
             mView?.stopRefresh()
-        }, 2 * 1000)
+        }, 1000 * 2)
 
     }
 

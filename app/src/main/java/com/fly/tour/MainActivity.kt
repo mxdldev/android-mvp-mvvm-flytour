@@ -37,9 +37,9 @@ class MainActivity : BaseActivity() {
             }
             false
         })
-        PluginUtil.hookActivityResources(this, "com.fly.tour.news")
-        PluginUtil.hookActivityResources(this, "com.fly.tour.find")
-        PluginUtil.hookActivityResources(this, "com.fly.tour.me")
+        //PluginUtil.hookActivityResources(this, "com.fly.tour.news")
+        //PluginUtil.hookActivityResources(this, "com.fly.tour.find")
+        //PluginUtil.hookActivityResources(this, "com.fly.tour.me")
         if (PluginManager.getInstance(this).getLoadedPlugin("com.fly.tour.news") == null) {
             Toast.makeText(this, "plugin [com.fly.tour.news] not loaded", Toast.LENGTH_SHORT).show()
             return
