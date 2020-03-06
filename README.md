@@ -19,11 +19,11 @@
 
 ![](https://img-blog.csdnimg.cn/20190901195902972.jpg)
 
-FlyTour是Android MVVM+MVP+Dagger2+Retrofit+RxJava+组件化组成的双架构框架，工程架构采用gradle配置实现组件化，模块的架构采用典型的MVVM+MVP架构，MVVM和MVP根据自己的项目实际需求去决定使用，该框架是Android组件化、Android MVP架构、Android MVVM架构的集大成者，帮助你快速的搭建自己的App项目开发框架，以便把主要的精力放在自己的项目的业务功能实现上，另外在长期的工作实践中总结整理大量的实用工具类在项目lib_common组件的util包当中方便大家调用。
+FlyTour是Android MVVM+MVP+Dagger2+Retrofit+RxJava+组件化+插件组成的双编码架构+双工程架构+双语言Android应用开发框架，通过不断的升级迭代该框架已经有了十个不同的版本，5.0之前工程架构采用gradle配置实现组件化，5.0之后的工程架构采用VirtualAPK实现了插件化，5.0之前采用Java编码实现，5.0之后采用Kotlin编码实现，编码架构由MVVM和MVP组成，工程架构和编码架构及编码语言开发者可根据自己具体的项目实际需求去决定选择使用，该框架是Android组件化、Android插件化、Android MVP架构、Android MVVM架构的集大成者，帮助你快速的搭建自己的App项目开发框架，以便把主要的精力放在自己的项目的业务功能实现上，另外在长期的工作实践中总结整理大量的实用工具类在项目lib_common组件的util包当中方便大家调用。
 
 本框架的最大的特点就是和[FlyCloud微服务框架](https://github.com/mxdldev/spring-cloud-flycloud)配合使用，从移动前端和服务后端的一套完整解决方案，解决了很多开发者只会前端不会后端的问题，或者只会后端不会前端的问题，有了这两套框架，我们的开发不在受制于人。
 
-通过不断的升级迭代，该框架已经有了九个不同的版本，[FlyTour 5.1.0【插件化+MVP+Java标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[5.0.0【组件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[4.0.0【组件化+MVVM+RxJava+Retrofit标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[3.0.0【组件化+MVP+RxJava+Retrofit+Dagger2网络版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[2.1.0【组件化+MVP+Dagger2版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[2.0.0【组件化+MVP标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)， [1.1.0【优化版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[1.0.0【初始版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)，各个版本都有不同的特性，基本涵盖了目前Android领域的主流开发架构，能满足不同阶段的Android开发者的使用需求，大家可根据自己的项目需求去选择自己所需要的版本。
+通过不断的升级迭代，该框架已经有了十个不同的版本，[FlyTour 5.2.0【插件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[FlyTour 5.1.0【插件化+MVP+Java标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[5.0.0【组件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[4.1.0【组件化+MVVM+RxJava+Retrofit+DataBinding升级版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[4.0.0【组件化+MVVM+RxJava+Retrofit标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[3.0.0【组件化+MVP+RxJava+Retrofit+Dagger2网络版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[2.1.0【组件化+MVP+Dagger2版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[2.0.0【组件化+MVP标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)， [1.1.0【优化版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)、[1.0.0【初始版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases)，各个版本都有不同的特性，基本涵盖了目前Android领域的主流开发架构，能满足不同阶段的Android开发者的使用需求，大家可根据自己的项目需求去选择自己所需要的版本。
 
 FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](https://github.com/geduo83/FlyTranslate)，[FlyAndroidMVP](https://github.com/geduo83/FlyAndroidMVP)基础上孵化出来的框架，如果需要单一结构体项目架构请下载[FlyTranslate【MVP+RxJava+Retrofit+Dagger2】](https://github.com/geduo83/FlyTranslate)或 [FlyFun【android mvp】](https://github.com/geduo83/FlyAndroidMVP)
 
@@ -34,6 +34,12 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 ![](https://img-blog.csdnimg.cn/20190616183350269.png)
 
 ### 更新日志：
+
+### [FlyTour 5.2.0【插件化+MVP+Kotlin标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases) 2020-03-06
+该版本是对5.0.0的Kotlin特性和5.1.0的VirtualAPK插件化特性进行了整合
+* 对所有功能用Kotlin重新编写
+* VirtualAPK框架的插件化支持
+
 ### [FlyTour 5.1.0【插件化+MVP+Java标准版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases) 2020-03-02
 该版本是在2.0.0的基础上运用VirtualAPK框架对整个项目进行插件化改造，实现了组件化到插件化的完美升级，关于组件化和插件化的区别请查阅[Android组件化方案最佳实践](https://menxindiaolong.blog.csdn.net/article/details/86604852)这篇文章
 * 运用VirtualAPK框架对整个项目进行插件化改造
