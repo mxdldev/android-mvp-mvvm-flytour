@@ -24,11 +24,10 @@ public class ExceptionHandler {
         ResponseThrowable ex;
         if (e instanceof HttpException) {
             HttpException httpException = (HttpException) e;
-            ex = new ResponseThrowable(e, SYSTEM_ERROR.HTTP_ERROR);
+            ex = new ResponseThrowable(e, httpException.code());
             switch (httpException.code()) {
                 case SYSTEM_ERROR.UNAUTHORIZED:
                     ex.message = "操作未授权";
-                    ex.code = SYSTEM_ERROR.UNAUTHORIZED;
                     Toast.makeText(RetrofitManager.mContext,"您的登录已失效,请重新登录",Toast.LENGTH_SHORT).show();
                     break;
                 case SYSTEM_ERROR.FORBIDDEN:
