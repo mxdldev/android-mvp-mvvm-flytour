@@ -45,7 +45,6 @@ public class RetrofitManager {
         okHttpBuilder.addInterceptor(new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
-                Log.v("MYTAG","intercept start.................................");
                 Request request = chain.request();
                 if(!TextUtils.isEmpty(mToken)){
                     Request.Builder requestBuilder = request.newBuilder()
