@@ -2,6 +2,8 @@ package com.fly.tour.api;
 
 import android.app.Application;
 import android.content.Context;
+import android.text.TextUtils;
+import android.util.Log;
 
 import com.fly.tour.api.config.API;
 import com.fly.tour.api.util.SSLContextUtil;
@@ -31,22 +33,45 @@ public class RetrofitManager {
     public static RetrofitManager retrofitManager;
     public static Context mContext;
     private Retrofit mRetrofit;
-    public String TOKEN;
-    OkHttpClient.Builder okHttpBuilder;
+    private OkHttpClient.Builder okHttpBuilder;
+    private String mToken;
 
     private RetrofitManager() {
+        //给client的builder添加了一个日志拦截器
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
         okHttpBuilder = new OkHttpClient.Builder();
-        okHttpBuilder.interceptors().add(logging);
-
+        okHttpBuilder.addInterceptor(logging);
+        okHttpBuilder.addInterceptor(new Interceptor() {
+            @Override
+            public Response intercept(Chain chain) throws IOException {
+                Log.v("MYTAG","intercept start.................................");
+                Request request = chain.request();
+                if(!TextUtils.isEmpty(mToken)){
+                    Request.Builder requestBuilder = request.newBuilder()
+                            .header("Authorization", "Bearer " + mToken);
+                    request = requestBuilder.build();
+                }
+                return chain.proceed(request);
+            }
+        });
+        //给client的builder添加了一个socketFactory
         SSLContext sslContext = SSLContextUtil.getDefaultSLLContext();
         if (sslContext != null) {
             SSLSocketFactory socketFactory = sslContext.getSocketFactory();
             okHttpBuilder.sslSocketFactory(socketFactory);
         }
         okHttpBuilder.hostnameVerifier(SSLContextUtil.HOSTNAME_VERIFIER);
-        mRetrofit = new Retrofit.Builder().client(okHttpBuilder.build()).baseUrl(API.URL_HOST_USER).addCallAdapterFactory(RxJava2CallAdapterFactory.create()).addConverterFactory(GsonConverterFactory.create()).build();
+
+        //创建client
+        OkHttpClient okHttpClient = okHttpBuilder.build();
+        mRetrofit = new Retrofit.Builder()
+                .client(okHttpClient)
+                .baseUrl(API.URL_HOST_USER)
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
     }
 
     public static void init(Application application) {
@@ -91,17 +116,7 @@ public class RetrofitManager {
         return mRetrofit.create(NewsDetailService.class);
     }
 
-    public void addToken(final String token) {
-        if (okHttpBuilder != null)
-            okHttpBuilder.addInterceptor(new Interceptor() {
-                @Override
-                public Response intercept(Chain chain) throws IOException {
-                    Request original = chain.request();
-                    Request.Builder requestBuilder = original.newBuilder()
-                            .header("Authorization", "Bearer " + token);
-                    Request request = requestBuilder.build();
-                    return chain.proceed(request);
-                }
-            });
+    public void addToken(String token) {
+        mToken = token;
     }
 }

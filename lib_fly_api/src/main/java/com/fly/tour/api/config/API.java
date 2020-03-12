@@ -8,8 +8,5 @@ package com.fly.tour.api.config;
  * Update:     <br>
  */
 public class API {
-    public static final String URL_HOST_USER = "http://192.168.31.105:8762";
-    public static final String URL_HOST_NEWS = "http://192.168.31.105:8767";
-//    public static final String URL_HOST_USER = "http://192.168.0.189:8762";
-//    public static final String URL_HOST_NEWS = "http://192.168.0.189:8767";
+    public static final String URL_HOST_USER = "http://192.168.31.105:5000";
 }

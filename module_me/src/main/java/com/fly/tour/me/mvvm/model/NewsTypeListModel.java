@@ -31,13 +31,13 @@ public class NewsTypeListModel extends BaseModel {
 
 
     public Observable<RespDTO<List<NewsType>>> getListNewsType() {
-        return mNewsTypeService.getListNewsType(RetrofitManager.getInstance().TOKEN)
+        return mNewsTypeService.getListNewsType()
                 .compose(RxAdapter.schedulersTransformer())
                 .compose(RxAdapter.exceptionTransformer());
     }
 
     public Observable<RespDTO> deleteNewsTypeById(int id) {
-        return mNewsTypeService.deleteNewsTypeById(RetrofitManager.getInstance().TOKEN,id)
+        return mNewsTypeService.deleteNewsTypeById(id)
                 .compose(RxAdapter.schedulersTransformer())
                 .compose(RxAdapter.exceptionTransformer());
     }

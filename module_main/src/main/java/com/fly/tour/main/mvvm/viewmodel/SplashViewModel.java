@@ -2,6 +2,7 @@ package com.fly.tour.main.mvvm.viewmodel;
 
 import android.app.Application;
 import android.support.annotation.NonNull;
+import android.text.TextUtils;
 import android.util.Log;
 
 import com.fly.tour.api.RetrofitManager;
@@ -25,6 +26,7 @@ import io.reactivex.disposables.Disposable;
 public class SplashViewModel extends BaseViewModel<SplashModel>{
     public static String TAG = SplashViewModel.class.getSimpleName();
     private SingleLiveEvent<Void> mVoidSingleLiveEvent;
+
     public SplashViewModel(@NonNull Application application, SplashModel model) {
         super(application, model);
     }
@@ -38,8 +40,8 @@ public class SplashViewModel extends BaseViewModel<SplashModel>{
             @Override
             public void onNext(RespDTO<LoginDTO> loginDTORespDTO) {
                 if(loginDTORespDTO.code == ExceptionHandler.APP_ERROR.SUCC){
-                    Log.v(TAG,"tolen:"+loginDTORespDTO.data.getToken());
-                    RetrofitManager.getInstance().TOKEN = "Bearer "+loginDTORespDTO.data.getToken();
+                    //RetrofitManager.getInstance().TOKEN = "Bearer "+loginDTORespDTO.data.getToken();
+                    RetrofitManager.getInstance().addToken(loginDTORespDTO.data.getToken());
                 }else{
                     Log.v(TAG,"error:"+loginDTORespDTO.error);
                 }

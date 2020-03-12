@@ -32,7 +32,7 @@ public class NewsListModel extends BaseModel {
     }
 
     public Observable<RespDTO<List<NewsDetail>>> getListNewsByType(int typeid) {
-        return mNewsDetailService.getListNewsDetailByType(RetrofitManager.getInstance().TOKEN,typeid)
+        return mNewsDetailService.getListNewsDetailByType(typeid)
         .compose(RxAdapter.exceptionTransformer())
         .compose(RxAdapter.schedulersTransformer());
     }

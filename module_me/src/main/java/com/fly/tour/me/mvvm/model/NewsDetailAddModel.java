@@ -43,13 +43,13 @@ public class NewsDetailAddModel extends BaseModel {
         newsDetail.setTitle(title);
         newsDetail.setContent(content);
         newsDetail.setAddtime(DateUtil.formatDate(new Date(), DateUtil.FormatType.yyyyMMddHHmmss));
-        return mNewsDetailService.addNewsDetail(RetrofitManager.getInstance().TOKEN, newsDetail)
+        return mNewsDetailService.addNewsDetail(newsDetail)
                 .compose(RxAdapter.schedulersTransformer())
                 .compose(RxAdapter.exceptionTransformer());
     }
 
     public Observable<RespDTO<List<NewsType>>> getNewsType() {
-        return mNewsTypeService.getListNewsType(RetrofitManager.getInstance().TOKEN)
+        return mNewsTypeService.getListNewsType()
                 .compose(RxAdapter.schedulersTransformer())
                 .compose(RxAdapter.exceptionTransformer());
     }

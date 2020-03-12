@@ -30,7 +30,7 @@ public class NewsDetailModel extends BaseModel {
     }
 
     public Observable<RespDTO<NewsDetail>> getNewsDetailById(int id) {
-        return mNewsDetailService.getNewsDetailById(RetrofitManager.getInstance().TOKEN,id)
+        return mNewsDetailService.getNewsDetailById(id)
                 .compose(RxAdapter.schedulersTransformer())
                 .compose(RxAdapter.exceptionTransformer());
     }

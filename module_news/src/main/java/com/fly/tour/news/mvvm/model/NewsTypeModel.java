@@ -26,6 +26,8 @@ public class NewsTypeModel extends BaseModel {
     }
 
     public Observable<RespDTO<List<NewsType>>> getListNewsType() {
-        return mNewsTypeService.getListNewsType(RetrofitManager.getInstance().TOKEN).compose(RxAdapter.schedulersTransformer()).compose(RxAdapter.exceptionTransformer());
+        return mNewsTypeService.getListNewsType()
+                .compose(RxAdapter.schedulersTransformer())
+                .compose(RxAdapter.exceptionTransformer());
     }
 }

@@ -25,7 +25,7 @@ public class NewsTypeAddModel extends BaseModel{
         mNewsTypeService = RetrofitManager.getInstance().getNewsTypeService();
     }
     public Observable<RespDTO<NewsType>> addNewsType(NewsType type) {
-        return mNewsTypeService.addNewsType(RetrofitManager.getInstance().TOKEN,type)
+        return mNewsTypeService.addNewsType(type)
                 .compose(RxAdapter.schedulersTransformer())
                 .compose(RxAdapter.exceptionTransformer());
     }
