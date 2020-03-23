@@ -7,6 +7,7 @@ import com.fly.tour.api.CommonService;
 import com.fly.tour.api.RetrofitManager;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.RxAdapter;
+import com.fly.tour.api.security.Token;
 import com.fly.tour.api.user.LoginDTO;
 import com.fly.tour.common.mvvm.model.BaseModel;
 
@@ -32,6 +33,11 @@ public class SplashModel extends BaseModel {
 
     public Observable<RespDTO<LoginDTO>> login(String username, String password) {
         return mCommonService.login(username, password)
+                .compose(RxAdapter.schedulersTransformer())
+                .compose(RxAdapter.exceptionTransformer());
+    }
+    public Observable<Token> getToken(String username, String password) {
+        return mCommonService.getToken("Basic bXhkbC1jbGllbnQ6bXhkbC1zZWNyZXQ=","password",username, password)
                 .compose(RxAdapter.schedulersTransformer())
                 .compose(RxAdapter.exceptionTransformer());
     }

@@ -8,6 +8,7 @@ import android.util.Log;
 import com.fly.tour.api.RetrofitManager;
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.http.ExceptionHandler;
+import com.fly.tour.api.security.Token;
 import com.fly.tour.api.user.LoginDTO;
 import com.fly.tour.common.event.SingleLiveEvent;
 import com.fly.tour.common.mvvm.viewmodel.BaseViewModel;
@@ -31,6 +32,34 @@ public class SplashViewModel extends BaseViewModel<SplashModel>{
         super(application, model);
     }
     public void login() {
+        mModel.getToken("mxdl","123456").subscribe(new Observer<Token>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(Token token) {
+                if(token != null){
+                    RetrofitManager.getInstance().addToken(token.getAccess_token());
+                }else{
+                    Log.v(TAG,"token is null");
+                }
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                getmVoidSingleLiveEvent().call();
+            }
+
+            @Override
+            public void onComplete() {
+                getmVoidSingleLiveEvent().call();
+            }
+        });
+    }
+
+    private void login1() {
         mModel.login("gxl","123456").subscribe(new Observer<RespDTO<LoginDTO>>() {
             @Override
             public void onSubscribe(Disposable d) {
@@ -58,6 +87,7 @@ public class SplashViewModel extends BaseViewModel<SplashModel>{
             }
         });
     }
+
     public SingleLiveEvent<Void> getmVoidSingleLiveEvent() {
         return mVoidSingleLiveEvent = createLiveData(mVoidSingleLiveEvent);
     }

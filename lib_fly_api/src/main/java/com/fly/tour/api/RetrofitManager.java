@@ -9,10 +9,12 @@ import com.fly.tour.api.config.API;
 import com.fly.tour.api.util.SSLContextUtil;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 
+import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -41,19 +43,28 @@ public class RetrofitManager {
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
         okHttpBuilder = new OkHttpClient.Builder();
+        okHttpBuilder.connectTimeout(20 * 1000, TimeUnit.MILLISECONDS).
+                readTimeout(20 * 1000, TimeUnit.MILLISECONDS).
+                writeTimeout(20 * 1000, TimeUnit.MILLISECONDS);
+
         okHttpBuilder.addInterceptor(logging);
         okHttpBuilder.addInterceptor(new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request();
-                if(!TextUtils.isEmpty(mToken)){
-                    Request.Builder requestBuilder = request.newBuilder()
-                            .header("Authorization", "Bearer " + mToken);
-                    request = requestBuilder.build();
+
+                if (!TextUtils.isEmpty(mToken)) {
+                        //Request.Builder requestBuilder = request.newBuilder()
+                        //.header("Authorization", "Bearer " + mToken);
+                        //request = requestBuilder.build();
+                    Request.Builder requestBuilder = request.newBuilder();
+                    HttpUrl.Builder urlBuilder = request.url().newBuilder().addQueryParameter("access_token", mToken);
+                    request = requestBuilder.url(urlBuilder.build()).build();
                 }
                 return chain.proceed(request);
             }
         });
+
         //给client的builder添加了一个socketFactory
         SSLContext sslContext = SSLContextUtil.getDefaultSLLContext();
         if (sslContext != null) {
