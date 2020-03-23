@@ -36,7 +36,7 @@ FlyTour为组件化项目架构，它由自己的开源框架[FlyTranslate](http
 ### 更新日志：
 
 ### [FlyTour 4.2.0【组件化+MVVM+RxJava+Retrofit+DataBinding网络优化版】](https://github.com/mxdldev/android-mvp-mvvm-flytour/releases) 2020-03-23
-该版本是在4.1.0的基础上对网络请求部分进行了优化，请求令牌Token通过拦截器统一处理，不必每个请求都单独携带Token，为了满足广大开发者的测试需求，对服务端FlyCloud进行了全新的升级，已经将后端代码部署在了外网上，接口文档如下：[http://106.12.61.238:8080/swagger-ui.html](http://106.12.61.238:8080/swagger-ui.html)
+该版本是在4.1.0的基础上对网络请求部分进行了优化，请求令牌Token通过拦截器统一处理，不必每个请求都单独携带Token，另外为了满足广大开发者的测试需求，对服务端FlyCloud进行了全新的升级，已经将后端代码部署在了外网上，接口文档如下：[http://106.12.61.238:8080/swagger-ui.html](http://106.12.61.238:8080/swagger-ui.html)
 * 网络请求token传递优化
 * 将所有的访问接口开放在外网上
 
