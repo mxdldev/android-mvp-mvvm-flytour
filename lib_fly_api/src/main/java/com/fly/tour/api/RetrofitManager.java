@@ -7,6 +7,8 @@ import android.util.Log;
 
 import com.fly.tour.api.config.API;
 import com.fly.tour.api.util.SSLContextUtil;
+import com.ihsanbal.logging.Level;
+import com.ihsanbal.logging.LoggingInterceptor;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -19,6 +21,7 @@ import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import okhttp3.internal.platform.Platform;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -39,27 +42,33 @@ public class RetrofitManager {
     private String mToken;
 
     private RetrofitManager() {
-        //给client的builder添加了一个日志拦截器
-        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+
         okHttpBuilder = new OkHttpClient.Builder();
         okHttpBuilder.connectTimeout(20 * 1000, TimeUnit.MILLISECONDS).
                 readTimeout(20 * 1000, TimeUnit.MILLISECONDS).
                 writeTimeout(20 * 1000, TimeUnit.MILLISECONDS);
 
-        okHttpBuilder.addInterceptor(logging);
+        okHttpBuilder.addInterceptor(new LoggingInterceptor.Builder()
+                .setLevel(Level.BODY)
+                .log(Platform.INFO)
+                .request("request")
+                .response("response")
+                .build());
         okHttpBuilder.addInterceptor(new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request();
 
                 if (!TextUtils.isEmpty(mToken)) {
-                        //Request.Builder requestBuilder = request.newBuilder()
-                        //.header("Authorization", "Bearer " + mToken);
-                        //request = requestBuilder.build();
-                    Request.Builder requestBuilder = request.newBuilder();
-                    HttpUrl.Builder urlBuilder = request.url().newBuilder().addQueryParameter("access_token", mToken);
-                    request = requestBuilder.url(urlBuilder.build()).build();
+//                    request = request.newBuilder()
+//                            .header("Authorization", "Bearer " + mToken)
+//                            .build();
+
+                    request = request.newBuilder().url(
+                            request.url().newBuilder()
+                                    .addQueryParameter("access_token", mToken)
+                                    .build()
+                    ).build();
                 }
                 return chain.proceed(request);
             }

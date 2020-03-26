@@ -38,8 +38,10 @@ dependencies {
     api rootProject.ext.dependencies.retrofit
     api rootProject.ext.dependencies["converter-gson"]
     api rootProject.ext.dependencies["adapter-rxjava"]
-    api rootProject.ext.dependencies["logging-interceptor"]
-
+    //api rootProject.ext.dependencies["logging-interceptor"]
+    api(rootProject.ext.dependencies["LoggingInterceptor"]) {
+        exclude group: 'org.json', module: 'json'
+    }
     //json解析
     api rootProject.ext.dependencies.gson
 

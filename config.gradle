@@ -44,6 +44,7 @@ ext {
             "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.4.0",
             "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
             "logging-interceptor"                  : "com.squareup.okhttp3:logging-interceptor:3.9.1",
+            "LoggingInterceptor"                   : "com.github.ihsanbal:LoggingInterceptor:3.1.0-rc5",
 
             //glide图片加载
             "glide"                                : "com.github.bumptech.glide:glide:4.8.0",
