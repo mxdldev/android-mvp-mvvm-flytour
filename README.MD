@@ -373,8 +373,8 @@ sourceSets {
 ### 关于作者
 ```
 var geduo_83 = {
-    nickName  : "门心叼龙",
-    site : "http://www.weibo.com/geduo83"
+    nickName  : 门心叼龙,
+    site : https://menxindiaolong.blog.csdn.net
  }
 ```
 ### License
