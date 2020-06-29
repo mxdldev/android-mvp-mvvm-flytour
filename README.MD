@@ -372,10 +372,10 @@ sourceSets {
 ![](https://img-blog.csdnimg.cn/20190126213618911.png)
 ### 关于作者
 ```
-var geduo_83 = {
-    nickName  : 门心叼龙,
-    site : https://menxindiaolong.blog.csdn.net
- }
+var mxdl = {
+    name : "门心叼龙",
+    blog : "https://menxindiaolong.blog.csdn.net"
+}
 ```
 ### License
 ```
